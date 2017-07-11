@@ -15,15 +15,55 @@
         <!--Custom Scripting-->
         <script>
             $(document).ready(function(){
-                console.log("jQuery On")
-                $(".nav-tabs").children().css("color","black")
+                console.log('jQuery On');
+                $('.nav-tabs').children().css('color','black');
+
+                $('a:contains("Home")').click(function(){
+                    console.log("Click home tab");
+                    remActiveTab();
+                    $('.nav-tabs').children()[0].setAttribute('class','active');
+                });
+
+                $('a:contains("Motor")').click(function(){
+                    console.log("Click bike tab");
+                    remActiveTab();
+                    $('.nav-tabs').children()[1].setAttribute('class','active');
+                });
+
+                $('a:contains("4x4")').click(function(){
+                    console.log("Click 4x4 tab");
+                    remActiveTab()
+                    $('.nav-tabs').children()[2].setAttribute('class','active');
+                });
+
+                $('a:contains("Contact")').click(function(){
+                    console.log("Click contact tab");
+                    remActiveTab();
+                    $('.nav-tabs').children()[3].setAttribute("class", "active");
+                });
+                
+                console.log($('.nav-tabs').children().length);
+                
+                function remActiveTab(){
+                    var i = 0
+                    $('.nav-tabs').children().each(function(li) {
+                        console.log($('.nav-tabs').children()[i].className);
+                        if ($('.nav-tabs').children()[i].className = 'active'){
+                            $('.nav-tabs').children()[i].removeAttribute('class')
+                        }
+                        i++
+                    });
+                    console.log(i)
+                }
+                       
+
             });
         </script>
 
         <!--Custom CSS-->
         <style>
             .bd1 {
-                border: 5px solid black
+                border: 1px solid rgba(255, 255, 255, 0.5);
             }
             body {
                 background-color:grey;
@@ -42,19 +82,32 @@
                 font-family: Black ops one;
                 text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
             }
+            ul{
+                background-color: rgba(1,1,1,0.7);
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                
+            }
+            a {
+                text-decoration: none;
+                color: white;
+                font-family: play
+            }
             .hDiv {
                 background-color: lightgray;
                 height: 10px;
             }
             .navbar{
-                Margin: 1% 4% 0% 4%; 
+                Margin: 1% 5% 0% 5%; 
                 padding: 10px 0% 0% 0%;
                 font-size: 20px;
-                color:               
+                border-width: 0px;
+                               
             }
             .mainSec {
-                margin: 0% 4% 0% 4%;
-                height: 2000px
+                margin: 0% 5% 0% 5%;
+                height: 1000px;
+                background-color: rgba(255, 255, 255, 0.7);
             }
         </style>
     </head>
@@ -70,7 +123,7 @@
             </div>
             
             <!--Navbar-->
-            <div class="navbar bd1">
+            <div class="navbar">
                 <ul class="nav nav-tabs nav-justified" role="tablist">
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="#">Motor Cycle Parts</a></li>
@@ -80,8 +133,20 @@
             </div>
 
             <!--Content-->
-            <div class="mainSec bd1">
+            <div id="home"class="mainSec bd1">
                 <h2>Home Page</h2>
+            </div>
+
+            <div id="bikes"class="mainSec bd1">
+                <h2>Bike Parts</h2>
+            </div>
+
+            <div id="4x4"class="mainSec bd1">
+                <h2>4x4 Parts</h2>
+            </div>
+
+            <div id="contact"class="mainSec bd1">
+                <h2>Contact</h2>
             </div>
 
         </div>
