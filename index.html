@@ -16,6 +16,7 @@
         <script>
             $(document).ready(function(){
                 console.log("jQuery On")
+                $(".nav-tabs").children().css("color","black")
             });
         </script>
 
@@ -26,27 +27,34 @@
             }
             body {
                 background-color:grey;
+                background: url("http://tinyurl.com/ydap5j6h") no-repeat fixed center;
+
             }
             #titleDiv {
-                background-image: url("http://tinyurl.com/yctgktf6");
+                background-image: url("http://tinyurl.com/yctgktf6") ;
                 background-size: contain;
+                
             }
             h1{
-                font-size: calc(20px + 2vw);
+                font-size: calc(25px + 2vw);
                 color: white;
                 margin: 2%;
                 font-family: Black ops one;
+                text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
             }
             .hDiv {
-                background-color: black;
+                background-color: lightgray;
                 height: 10px;
-                display: block;
             }
-            .mainSec{
-                Margin: 1% 2% 0% 2%; 
-                padding: 1% 2% 0% 2%;
+            .navbar{
+                Margin: 1% 4% 0% 4%; 
+                padding: 10px 0% 0% 0%;
                 font-size: 20px;
                 color:               
+            }
+            .mainSec {
+                margin: 0% 4% 0% 4%;
+                height: 2000px
             }
         </style>
     </head>
@@ -62,7 +70,7 @@
             </div>
             
             <!--Navbar-->
-            <div class="mainSec bd1">
+            <div class="navbar bd1">
                 <ul class="nav nav-tabs nav-justified" role="tablist">
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="#">Motor Cycle Parts</a></li>
@@ -73,7 +81,7 @@
 
             <!--Content-->
             <div class="mainSec bd1">
-
+                <h2>Home Page</h2>
             </div>
 
         </div>
