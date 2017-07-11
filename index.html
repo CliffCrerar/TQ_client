@@ -8,46 +8,72 @@
         <!--Bootstrap-->
 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
-        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!--Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Play" rel="stylesheet">
+
+        <!--Custom Scripting-->
         <script>
             $(document).ready(function(){
                 console.log("jQuery On")
             });
         </script>
+
+        <!--Custom CSS-->
         <style>
+            .bd1 {
+                border: 5px solid black
+            }
             body {
-                background-color:coral;
+                background-color:grey;
+            }
+            #titleDiv {
+                background-image: url("http://tinyurl.com/yctgktf6");
+                background-size: contain;
             }
             h1{
+                font-size: calc(20px + 2vw);
                 color: white;
-
+                margin: 2%;
+                font-family: Black ops one;
             }
             .hDiv {
                 background-color: black;
-                height: 5px;
+                height: 10px;
                 display: block;
             }
-            #navTabs{
-                padding: 5px 0px 0px 0px;
-                
+            .mainSec{
+                Margin: 1% 2% 0% 2%; 
+                padding: 1% 2% 0% 2%;
+                font-size: 20px;
+                color:               
             }
         </style>
     </head>
+
+    <!--Page-->
     <body>
         <div class="container-fluid">
-            <div class="row">
+            <!--Page Title-->
+            <div class="row" id="titleDiv">
                 <div class="hDiv"></div>
-                <h1>Page title</h1>
+                <h1>TQ Bike and 4x4 accessories</h1>
                 <div class="hDiv"><div>
             </div>
-            <div id="navTabs">
+            
+            <!--Navbar-->
+            <div class="mainSec bd1">
                 <ul class="nav nav-tabs nav-justified" role="tablist">
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="#">Motor Cycle Parts</a></li>
                     <li><a href="#">4x4 Parts</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
+            </div>
+
+            <!--Content-->
+            <div class="mainSec bd1">
+
             </div>
 
         </div>
