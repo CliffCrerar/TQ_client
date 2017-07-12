@@ -82,8 +82,7 @@
             }
             body {
                 background-color:grey;
-                background: url("http://tinyurl.com/ydap5j6h") no-repeat fixed center;
-
+                background: url("http://tinyurl.com/ydap5j6h") no-repeat fixed;
             }
             #titleDiv {
                 background-image: url("http://tinyurl.com/yctgktf6") ;
@@ -91,7 +90,7 @@
                 
             }
             h1{
-                font-size: calc(25px + 2vw);
+                font-size: calc(15px + 3vw);
                 color: white;
                 margin: 2%;
                 font-family: Black ops one;
@@ -104,8 +103,7 @@
             ul{
                 background-color: rgba(1,1,1,0.7);
                 border-top-left-radius: 10px;
-                border-top-right-radius: 10px;
-                
+                border-top-right-radius: 10px;                
             }
             a {
                 text-decoration: none;
@@ -119,22 +117,44 @@
             .navbar{
                 Margin: 1% 5% 0% 5%; 
                 padding: 10px 0% 0% 0%;
-                font-size: 20px;
-                border-width: 0px;
-                               
+                font-size: calc(15px + 1vw);
+                border-width: 0px;                               
             }
             .mainSec {
                 margin: 0% 5% 0% 5%;
-                height: 500px;
                 background-color: rgba(255, 255, 255, 0.7);
                 border: 1px solid rgba(255, 255, 255, 0.5);
+                height: 1000px min;
+                
             }
             .sideNav{
-                padding: 0px;
+                padding: 5px;
                 margin: auto;
-                background-color: grey;
-                height: 100%;
+                background-color: grey;                
             }
+            .btn {
+                font-family: play;
+                font-size: calc(5px + 1vw)
+            }
+            button:hover {
+                color: white; 
+                background-color:slategrey                              
+            }
+            .thumbnail {
+                background-color: rgb(34,34,34);
+                padding: 2%;
+            }
+            .imgCaption {
+                text-decoration: none;
+                text-align: center;
+                color: black;
+                margin: auto;
+                font-family: play;
+                font-size: calc(5px + 1vw);
+                color: white;
+                
+            }
+
         </style>
     </head>
 
@@ -144,7 +164,7 @@
             <!--Page Title-->
             <div class="row" id="titleDiv">
                 <div class="hDiv"></div>
-                <h1>TQ Bike and 4x4 accessories</h1>
+                <h1>TQ Bike and 4x4 Accessories</h1>
                 <div class="hDiv"></div>
             </div>
             
@@ -163,15 +183,116 @@
                 <h2>Home Page</h2>
             </div>
 
-            <div id="bikes" class="mainSec">
+            <div id="bikes" class="mainSec container-fluid">
                 <h2>Bike Parts</h2>
-                <div class="container row">
-                    <div class="col-sm-2 sideNav ">
-                        <p>Side Nav</p>
+                <div class="container-fluid row">
+                    <div class="col-sm-2 sideNav">
+                        <button class="btn btn-block">All Bike Parts</button>
+                        <button class="btn btn-block">KTM</button>
+                        <button class="btn btn-block">BMW</button>
                     </div>
+                    <!--KTM-->
                     <div class="col-sm-10 bd1">
-                        <p>Parts info</p>
+                        <div class="row"> <!--Row 1-->
+
+                            <div class="col-md-3">
+                                <a href="#" class="thumbnail">
+                                    <img class="imgSpace img-responsive" src="http://tinyurl.com/ybjdqlw5" alt="thumbnail">
+                                    <p class="imgCaption">Part Name</p>
+                                </a>
+                            </div>
+
+                            <div class="col-md-3">
+                                <a href="#" class="thumbnail">
+                                    <img class="imgSpace img-responsive" src="http://tinyurl.com/ybjdqlw5" alt="thumbnail">
+                                    <p class="imgCaption">Part Name</p>
+                                </a>                                
+                            </div>
+
+                            <div class="col-md-3">
+                                <a href="#" class="thumbnail">
+                                    <img class="imgSpace img-responsive" src="http://tinyurl.com/ybjdqlw5" alt="thumbnail">
+                                    <p class="imgCaption">Part Name</p>
+                                </a>
+                            </div>
+
+                            <div class="col-md-3">
+                                <a href="#" class="thumbnail">
+                                    <img class="imgSpace img-responsive" src="http://tinyurl.com/ybjdqlw5" alt="thumbnail">
+                                    <p class="imgCaption">Part Name</p>
+                                </a>
+                            </div>
+
+                        </div> <!--Row 1-->
+                        
+                        <div class="row"> <!--Row 2-->
+
+                            <div class="col-md-3">
+                                <a href="#" class="thumbnail">
+                                    <img class="imgSpace img-responsive" src="http://tinyurl.com/ybjdqlw5" alt="thumbnail">
+                                    <p class="imgCaption">Part Name</p>
+                                </a>
+                            </div>
+
+                            <div class="col-md-3">
+                                <a href="#" class="thumbnail">
+                                    <img class="imgSpace img-responsive" src="http://tinyurl.com/ybjdqlw5" alt="thumbnail">
+                                    <p class="imgCaption">Part Name</p>
+                                </a>                                
+                            </div>
+
+                            <div class="col-md-3">
+                                <a href="#" class="thumbnail">
+                                    <img class="imgSpace img-responsive" src="http://tinyurl.com/ybjdqlw5" alt="thumbnail">
+                                    <p class="imgCaption">Part Name</p>
+                                </a>
+                            </div>
+
+                            <div class="col-md-3">
+                                <a href="#" class="thumbnail">
+                                    <img class="imgSpace img-responsive" src="http://tinyurl.com/ybjdqlw5" alt="thumbnail">
+                                    <p class="imgCaption">Part Name</p>
+                                </a>
+                            </div>
+                            
+                        </div> <!--Row 2-->
+                        
+                        <div class="row"> <!--Row 3-->
+
+                            <div class="col-md-3">
+                                <a href="#" class="thumbnail">
+                                    <img class="imgSpace img-responsive" src="http://tinyurl.com/ybjdqlw5" alt="thumbnail">
+                                    <p class="imgCaption">Part Name</p>
+                                </a>
+                            </div>
+
+                            <div class="col-md-3">
+                                <a href="#" class="thumbnail">
+                                    <img class="imgSpace img-responsive" src="http://tinyurl.com/ybjdqlw5" alt="thumbnail">
+                                    <p class="imgCaption">Part Name</p>
+                                </a>                                
+                            </div>
+
+                            <div class="col-md-3">
+                                <a href="#" class="thumbnail">
+                                    <img class="imgSpace img-responsive" src="http://tinyurl.com/ybjdqlw5" alt="thumbnail">
+                                    <p class="imgCaption">Part Name</p>
+                                </a>
+                            </div>
+
+                            <div class="col-md-3">
+                                <a href="#" class="thumbnail">
+                                    <img class="imgSpace img-responsive" src="http://tinyurl.com/ybjdqlw5" alt="thumbnail">
+                                    <p class="imgCaption">Part Name</p>
+                                </a>
+                            </div>
+                            
+                        </div> <!--Row 3-->
+
+
                     </div>
+                    
+                    
                 </div>
             </div>
 
