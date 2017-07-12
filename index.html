@@ -16,30 +16,39 @@
         <script>
             $(document).ready(function(){
                 console.log('jQuery On');
+                $('#bikes').hide();
+                $('#4x4').hide();
+                $('#contact').hide();
+                
                 $('.nav-tabs').children().css('color','black');
 
                 $('a:contains("Home")').click(function(){
                     console.log("Click home tab");
                     remActiveTab();
                     $('.nav-tabs').children()[0].setAttribute('class','active');
+                    $('#home').show();
                 });
 
                 $('a:contains("Motor")').click(function(){
                     console.log("Click bike tab");
                     remActiveTab();
                     $('.nav-tabs').children()[1].setAttribute('class','active');
+                    $('#bikes').show();
                 });
 
                 $('a:contains("4x4")').click(function(){
                     console.log("Click 4x4 tab");
-                    remActiveTab()
+                    remActiveTab();
                     $('.nav-tabs').children()[2].setAttribute('class','active');
+                    $('#4x4').show();
+                    
                 });
 
                 $('a:contains("Contact")').click(function(){
                     console.log("Click contact tab");
                     remActiveTab();
                     $('.nav-tabs').children()[3].setAttribute("class", "active");
+                    $('#contact').show();
                 });
                 
                 console.log($('.nav-tabs').children().length);
@@ -49,7 +58,13 @@
                     $('.nav-tabs').children().each(function(li) {
                         console.log($('.nav-tabs').children()[i].className);
                         if ($('.nav-tabs').children()[i].className = 'active'){
-                            $('.nav-tabs').children()[i].removeAttribute('class')
+                            $('.nav-tabs').children()[i].removeAttribute('class');
+                            switch(i) {
+                                case 0: $('#home').hide(); break;
+                                case 1: $('#bikes').hide(); break;
+                                case 2: $('#4x4').hide(); break;
+                                case 3: $('#contact').hide(); break;
+                            }                           
                         }
                         i++
                     });
@@ -63,7 +78,7 @@
         <!--Custom CSS-->
         <style>
             .bd1 {
-                border: 1px solid rgba(255, 255, 255, 0.5);
+                border: 1px solid black;
             }
             body {
                 background-color:grey;
@@ -81,6 +96,10 @@
                 margin: 2%;
                 font-family: Black ops one;
                 text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+            }
+            h2{
+                font-size: calc(20 + 3vw);
+                font-family: black ops one;                
             }
             ul{
                 background-color: rgba(1,1,1,0.7);
@@ -106,8 +125,15 @@
             }
             .mainSec {
                 margin: 0% 5% 0% 5%;
-                height: 1000px;
+                height: 500px;
                 background-color: rgba(255, 255, 255, 0.7);
+                border: 1px solid rgba(255, 255, 255, 0.5);
+            }
+            .sideNav{
+                padding: 0px;
+                margin: auto;
+                background-color: grey;
+                height: 100%;
             }
         </style>
     </head>
@@ -119,7 +145,7 @@
             <div class="row" id="titleDiv">
                 <div class="hDiv"></div>
                 <h1>TQ Bike and 4x4 accessories</h1>
-                <div class="hDiv"><div>
+                <div class="hDiv"></div>
             </div>
             
             <!--Navbar-->
@@ -133,21 +159,30 @@
             </div>
 
             <!--Content-->
-            <div id="home"class="mainSec bd1">
+            <div id="home" class="mainSec">
                 <h2>Home Page</h2>
             </div>
 
-            <div id="bikes"class="mainSec bd1">
+            <div id="bikes" class="mainSec">
                 <h2>Bike Parts</h2>
+                <div class="container row">
+                    <div class="col-sm-2 sideNav ">
+                        <p>Side Nav</p>
+                    </div>
+                    <div class="col-sm-10 bd1">
+                        <p>Parts info</p>
+                    </div>
+                </div>
             </div>
 
-            <div id="4x4"class="mainSec bd1">
+            <div id="4x4" class="mainSec">
                 <h2>4x4 Parts</h2>
             </div>
 
-            <div id="contact"class="mainSec bd1">
+            <div id="contact" class="mainSec">
                 <h2>Contact</h2>
             </div>
+            <!--Footer-->
 
         </div>
     </body>
