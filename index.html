@@ -101,7 +101,7 @@
                 font-family: black ops one;
                 text-align: center;                
             }
-            ul{
+            .nav-tabs{
                 background-color: rgba(1,1,1,0.7);
                 border-top-left-radius: 10px;
                 border-top-right-radius: 10px;                
@@ -133,9 +133,16 @@
                 margin: auto;
                 
             }
-            .btn {
+            .btn.btn-block {
                 font-family: play;
-                font-size: calc(5px + 1vw)
+                font-size: calc(5px + 1vw);
+                border:0px;
+            }
+            .btn:focus{
+                outline: none;
+                background-color: black;
+                color: white
+
             }
             button:hover {
                 color: white; 
@@ -308,10 +315,18 @@
                             <h3>PartName</h3>
                             <div class="row">
                                 <div class="col-sm-3">
-                                    <img src="">
+                                    <img class="img-responsive" src="http://tinyurl.com/ybjdqlw5">
                                 </div>
                                 <div class="col-sm-9">
-                                    <p>Part description</p>
+                                    <h4>Part description</h4>
+                                    <p>This description is of a part, what it is made of, how does it make the ride better or how will it improve my biking experience</p>
+                                    <h4>Part fits on these models</h4>
+                                    <ul>
+                                        <li>This is a model</li>
+                                        <li>This is another model</li>
+                                        <li>Yet another model</li>
+                                        <li>Final model</li>                                        
+                                    </ul>
                                 </div>
                             </div>
                         </div>
