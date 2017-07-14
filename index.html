@@ -11,6 +11,8 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <!--Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Play" rel="stylesheet">
+        <!--Part Data-->
+        <script src="/Users/cliffordcrerar/Github/PartSales/PartData.js" type="text/javascript"></script>
 
         <!--Custom Scripting-->
         <script>
@@ -20,6 +22,7 @@
                 $('#4x4').hide();
                 $('#contact').hide();
                 
+                /* navbar functions */
                 $('.nav-tabs').children().css('color','black');
 
                 $('a:contains("Home")').click(function(){
@@ -52,7 +55,14 @@
                 });
                 
                 console.log($('.nav-tabs').children().length);
+
+                //JS parts object testing below
+
+                console.log(KTM_Parts);
+                alert(KTM_Parts);
                 
+                //JS parts object testing above
+
                 function remActiveTab(){
                     var i = 0
                     $('.nav-tabs').children().each(function(li) {
@@ -148,18 +158,25 @@
                 color: white; 
                 background-color:slategrey                              
             }
-            .thumbnail {
-                background-color: rgb(34,34,34);
-                padding: 2%;
+            .imgCont {
+                border: 2px solid black;
+                border-radius: 2%;
+
+                box-shadow: 5px 5px 5px grey
             }
-            .imgCaption {
-                text-decoration: none;
-                text-align: center;
-                color: black;
-                margin: auto;
-                font-family: play;
-                font-size: calc(5px + 1vw);
-                color: white;                
+            .partImage {
+                -webkit-transition: all 1s ease; /* Safari and Chrome */
+                -moz-transition: all 1s ease; /* Firefox */
+                -ms-transition: all 1s ease; /* IE 9 */
+                -o-transition: all 1s ease; /* Opera */
+                transition: all 1s ease;
+            }
+            .partImage:hover{
+                -webkit-transform:scale(1.5); /* Safari and Chrome */
+                -moz-transform:scale(1.5); /* Firefox */
+                -ms-transform:scale(1.5); /* IE 9 */
+                -o-transform:scale(1.5); /* Opera */
+                transform:scale(1.5);
             }
         </style>
     </head>
@@ -189,118 +206,45 @@
                 <h2>Home Page</h2>
             </div>
 
-            <!--Motor cycle Parts-->
-            <div id="bikes" class="mainSec">
+            
+            <div id="bikes" class="mainSec"><!--Motor cycle Parts-->
                 <h2>Motor cycle Parts</h2>
-                <div class="container-fluid row">
-                    <div class="col-sm-2 sideNav">
+                <div class="container-fluid row"> <!--Right Side-->
+                    <div class="col-sm-3 sideNav">
                         <button class="btn btn-block" type="button">All Bike Parts</button>
                         <button class="btn btn-block" type="button">KTM</button>
                         <button class="btn btn-block" type="button">BMW</button>
                     </div>
 
-                    <!--KTM-->
-                    <div class="col-sm-10">
-                        <div class="row"> <!--Row 1-->
-
-                            <div class="col-md-3">
-                                <a href="#" class="thumbnail">
-                                    <img class="imgSpace img-responsive" src="http://tinyurl.com/ybjdqlw5" alt="thumbnail">
-                                    <p class="imgCaption">Part Name</p>
-                                </a>
-                            </div>
-
-                            <div class="col-md-3">
-                                <a href="#" class="thumbnail">
-                                    <img class="imgSpace img-responsive" src="http://tinyurl.com/ybjdqlw5" alt="thumbnail">
-                                    <p class="imgCaption">Part Name</p>
-                                </a>                                
-                            </div>
-
-                            <div class="col-md-3">
-                                <a href="#" class="thumbnail">
-                                    <img class="imgSpace img-responsive" src="http://tinyurl.com/ybjdqlw5" alt="thumbnail">
-                                    <p class="imgCaption">Part Name</p>
-                                </a>
-                            </div>
-
-                            <div class="col-md-3">
-                                <a href="#" class="thumbnail">
-                                    <img class="imgSpace img-responsive" src="http://tinyurl.com/ybjdqlw5" alt="thumbnail">
-                                    <p class="imgCaption">Part Name</p>
-                                </a>
-                            </div>
-
-                        </div> <!--Row 1-->
-                        
-                        <div class="row"> <!--Row 2-->
-
-                            <div class="col-md-3">
-                                <a href="#" class="thumbnail">
-                                    <img class="imgSpace img-responsive" src="http://tinyurl.com/ybjdqlw5" alt="thumbnail">
-                                    <p class="imgCaption">Part Name</p>
-                                </a>
-                            </div>
-
-                            <div class="col-md-3">
-                                <a href="#" class="thumbnail">
-                                    <img class="imgSpace img-responsive" src="http://tinyurl.com/ybjdqlw5" alt="thumbnail">
-                                    <p class="imgCaption">Part Name</p>
-                                </a>                                
-                            </div>
-
-                            <div class="col-md-3">
-                                <a href="#" class="thumbnail">
-                                    <img class="imgSpace img-responsive" src="http://tinyurl.com/ybjdqlw5" alt="thumbnail">
-                                    <p class="imgCaption">Part Name</p>
-                                </a>
-                            </div>
-
-                            <div class="col-md-3">
-                                <a href="#" class="thumbnail">
-                                    <img class="imgSpace img-responsive" src="http://tinyurl.com/ybjdqlw5" alt="thumbnail">
-                                    <p class="imgCaption">Part Name</p>
-                                </a>
-                            </div>
-                            
-                        </div> <!--Row 2-->
-                        
-                        <div class="row"> <!--Row 3-->
-
-                            <div class="col-md-3">
-                                <a href="#" class="thumbnail">
-                                    <img class="imgSpace img-responsive" src="http://tinyurl.com/ybjdqlw5" alt="thumbnail">
-                                    <p class="imgCaption">Part Name</p>
-                                </a>
-                            </div>
-
-                            <div class="col-md-3">
-                                <a href="#" class="thumbnail">
-                                    <img class="imgSpace img-responsive" src="http://tinyurl.com/ybjdqlw5" alt="thumbnail">
-                                    <p class="imgCaption">Part Name</p>
-                                </a>                                
-                            </div>
-
-                            <div class="col-md-3">
-                                <a href="#" class="thumbnail">
-                                    <img class="imgSpace img-responsive" src="http://tinyurl.com/ybjdqlw5" alt="thumbnail">
-                                    <p class="imgCaption">Part Name</p>
-                                </a>
-                            </div>
-
-                            <div class="col-md-3">
-                                <a href="#" class="thumbnail">
-                                    <img class="imgSpace img-responsive" src="http://tinyurl.com/ybjdqlw5" alt="thumbnail">
-                                    <p class="imgCaption">Part Name</p>
-                                </a>
-                            </div>
-                            
-                        </div> <!--Row 3-->
-
-                    </div>                    
                     
-                </div>
-            </div> <!--Bikes-->
+                    <div class="col-sm-9"><!--KTM-->
+                        
+                        <div class="well"><!--Part Description-->
+                            <h3>PartName</h3>
+                            <div class="row">
+
+                                <div class="col-sm-9">
+                                    <h4>Part description</h4>
+                                    <p>This description is of a part, what it is made of, how does it make the ride better or how will it improve my biking experience</p>
+                                    <h4>Part fits on these models</h4>
+                                    <ul>
+                                        <li>This is a model</li>
+                                        <li>This is another model</li>
+                                        <li>Yet another model</li>
+                                        <li>Final model</li>                                        
+                                    </ul>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img class="imgCont partImage img-responsive" src="http://tinyurl.com/yage98cq">
+                                </div>
+                            </div>
+                        </div><!--Part Description-->
+                        
+
+                    </div> <!--ktm-->                
+                    
+                </div><!--Right Side-->
+            </div> <!--Motor cycle Parts-->
 
             <div id="4x4" class="mainSec" style="height: 1000px"> <!--4x4-->
                 <h2>4x4 Parts</h2>
@@ -314,9 +258,7 @@
                         <div class="well">
                             <h3>PartName</h3>
                             <div class="row">
-                                <div class="col-sm-3">
-                                    <img class="img-responsive" src="http://tinyurl.com/ybjdqlw5">
-                                </div>
+
                                 <div class="col-sm-9">
                                     <h4>Part description</h4>
                                     <p>This description is of a part, what it is made of, how does it make the ride better or how will it improve my biking experience</p>
@@ -328,6 +270,10 @@
                                         <li>Final model</li>                                        
                                     </ul>
                                 </div>
+                                <div class="col-sm-3">
+                                    <img class="img-responsive" src="http://tinyurl.com/yage98cq">
+                                </div>
+
                             </div>
                         </div>
                     </div>
