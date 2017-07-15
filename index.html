@@ -56,13 +56,6 @@
                 
                 console.log($('.nav-tabs').children().length);
 
-                //JS parts object testing below
-
-                console.log(KTM_Parts);
-                alert(KTM_Parts);
-                
-                //JS parts object testing above
-
                 function remActiveTab(){
                     var i = 0
                     $('.nav-tabs').children().each(function(li) {
@@ -81,7 +74,17 @@
                     console.log(i)
                 }
                        
+                //JS parts object testing below
 
+                console.log(KTM_Parts);
+                
+                function displayParts(){
+                    KTM_Parts.forEach(function() {
+                        console.log(KTM_Parts.)
+                    }, this);
+                }
+                
+                //JS parts object testing above
             });
         </script>
 
@@ -219,7 +222,7 @@
                     
                     <div class="col-sm-9"><!--KTM-->
                         
-                        <div class="well"><!--Part Description-->
+                        <div class="well" id="#partNum"><!--Part Description-->
                             <h3>PartName</h3>
                             <div class="row">
 
@@ -238,8 +241,7 @@
                                     <img class="imgCont partImage img-responsive" src="http://tinyurl.com/yage98cq">
                                 </div>
                             </div>
-                        </div><!--Part Description-->
-                        
+                        </div><!--Part Description-->                        
 
                     </div> <!--ktm-->                
                     

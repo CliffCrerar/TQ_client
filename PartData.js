@@ -1,6 +1,7 @@
 var KTM_Parts = {
-    A08255:
-    {
+    Part0:
+    {   
+        partNum: "A08255",
         partType: 'Luggage Rack',
         partDesc: 'Made from lightweight suspect alluminium, '+
                   'used to tie down appropriate luggage with straps included with the luggage wrack.'+
@@ -12,8 +13,9 @@ var KTM_Parts = {
         instTime: 30,
         price: 1120,
     },
-    A08201:
+    Part1:
     {
+        partNum: "A08201",
         partType: 'Bash Plate',
         partDesc: 'Made from ? , protects the engine casing from loose projectiles and road hazards, must have for offroading.',
         models: ['KTM 950','KTM 990'],
@@ -22,7 +24,6 @@ var KTM_Parts = {
         grnt: '1 Year',
         instTime: 45,
         price: 2395,
-
     }
 
 }
