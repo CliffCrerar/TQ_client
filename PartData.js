@@ -54,5 +54,19 @@ var KTM_Parts = [
         grnt: '1 Year',
         instTime: 30 ,
         price: 755 ,
+    },
+//Part A08250
+    {
+        partnum: 'A08250',
+        partName: 'Standard Luggage Rack',
+        partDesc: 'Made from lightweight suspect alluminium, '+
+                  'used to tie down appropriate luggage with straps included with the luggage wrack.'+
+                  'Also includes a securing kit.',
+        models: ['KTM 1190'],
+        imgLink: 'http://tinyurl.com/y8jy6jgq',
+        colors: 'Black',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 1120,
     }
 ]
