@@ -68,5 +68,17 @@ var KTM_Parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 1120,
+    },
+    //Part A08260
+    {  
+        partNum: 'A08260',
+        partName: 'Big Foot',
+        partDesc: 'Manufactured from aluminium and is sold with a rubber insert. Prevents side stand from sinking into soft surfaces and cracks in paving.',
+        models: ['KTM 1190','KTM 1290','KTM 1050'],
+        imgLink: 'http://tinyurl.com/yaj42fdx',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 30 ,
+        price: 365,
     }
 ]
