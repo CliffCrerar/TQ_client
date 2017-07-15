@@ -11,8 +11,9 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <!--Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Play" rel="stylesheet">
-        <!--Part Data-->
-        <script src="/Users/cliffordcrerar/Github/PartSales/PartData.js" type="text/javascript"></script>
+        <!--Part Data
+        <script src="/Users/cliffordcrerar/Github/PartSales/PartData.js" type="text/javascript"></script>-->
+        <script src="C:\Users\clifford.crear\Documents\GitHub\PartSales\PartData.js" type="text/javascript"></script>
 
         <!--Custom Scripting-->
         <script>
@@ -79,10 +80,24 @@
                 console.log(KTM_Parts);
                 
                 function displayParts(){
-                    KTM_Parts.forEach(function() {
-                        console.log(KTM_Parts.)
-                    }, this);
+                    var partObj = KTM_Parts;
+                    var objLen = KTM_Parts.length;
+
+                    console.log(partObj.length);
+                    console.log(partObj[0].partNum);
+                    
+                    for(i=0; i<objLen; i++) {                        
+                        $('#KTM').append('<div class="well" id="'+partObj[i].partNum+'"></div>');
+                        $('#'+partObj[i].partNum).append('<h3>'+partObj[i].partName+'</h3>')
+                        $('#'+partObj[i].partNum).append('<div class="Row"></div>')
+                        $('#'+partObj[i].partNum+'>.row').append('<div class="col-sm-9">Col-sm-9</div>','<div class="col-sm-3">Col-sm-3</div>')
+                    }
                 }
+                
+                $('#test1').click(function(){
+                    console.log("test1Click")
+                    displayParts();
+                })
                 
                 //JS parts object testing above
             });
@@ -175,11 +190,11 @@
                 transition: all 1s ease;
             }
             .partImage:hover{
-                -webkit-transform:scale(1.5); /* Safari and Chrome */
-                -moz-transform:scale(1.5); /* Firefox */
-                -ms-transform:scale(1.5); /* IE 9 */
-                -o-transform:scale(1.5); /* Opera */
-                transform:scale(1.5);
+                -webkit-transform:scale(2.0); /* Safari and Chrome */
+                -moz-transform:scale(2.0); /* Firefox */
+                -ms-transform:scale(2.0); /* IE 9 */
+                -o-transform:scale(2.0); /* Opera */
+                transform:scale(2.0);
             }
         </style>
     </head>
@@ -220,7 +235,7 @@
                     </div>
 
                     
-                    <div class="col-sm-9"><!--KTM-->
+                    <div class="col-sm-9" id="KTM"><!--KTM-->
                         
                         <div class="well" id="#partNum"><!--Part Description-->
                             <h3>PartName</h3>
@@ -241,7 +256,9 @@
                                     <img class="imgCont partImage img-responsive" src="http://tinyurl.com/yage98cq">
                                 </div>
                             </div>
-                        </div><!--Part Description-->                        
+                        </div><!--Part Description--> 
+
+                        <button type="button" id="test1">Test1</button><!--Test button-->
 
                     </div> <!--ktm-->                
                     
