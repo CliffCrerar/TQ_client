@@ -30,18 +30,29 @@ var KTM_Parts = [
         grnt: '1 Year',
         instTime: 45,
         price: 2395,
+    },
+    //Part A08271
+    {  
+        partNum: 'A08271',
+        partName: 'Head Light Mesh Guard',
+        partDesc: 'Manufactured from stainless steel, made with quick release connectors for easy cleaning.',
+        models: ['KTM 1050','KTM 1090','KTM 1190','KTM 1290(pre 2017)'],
+        imgLink: 'http://tinyurl.com/y7l54cgu',
+        colors: 'Stainless Steel',
+        grnt: '1 Year',
+        instTime: 30 ,
+        price:1425 ,
+    },
+//Part A11150
+    {  
+        partNum: 'A11150',
+        partName: 'Top Box Bracket',
+        partDesc: 'Made from aluminium and is used to mount top box above rear mud guard. Can be used in off road conditions. ',
+        models: ['KTM 1190'],
+        imgLink: 'http://tinyurl.com/ycj2l37v',
+        colors: 'Aluminium',
+        grnt: '1 Year',
+        instTime: 30 ,
+        price: 755 ,
     }
-    //Part NEWPART
-    /*{  
-        partNum: '',
-        partName: '',
-        partDesc: '',
-        models: ['','',''],
-        imgLink: '',
-        colors: '',
-        grnt: '',
-        instTime: ,
-        price: ,
-    }*/
-
 ]
