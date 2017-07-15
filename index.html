@@ -11,9 +11,14 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <!--Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Play" rel="stylesheet">
-        <!--Part Data
+        
+        <!--Part Data Macbook Air
         <script src="/Users/cliffordcrerar/Github/PartSales/PartData.js" type="text/javascript"></script>-->
-        <script src="C:\Users\clifford.crear\Documents\GitHub\PartSales\PartData.js" type="text/javascript"></script>
+        <!--Part Data Clifford01
+        <script src="C:\Users\clifford.crear\Documents\GitHub\PartSales\PartData.js" type="text/javascript"></script>-->
+        <!--Clive Crerar-->
+        <script src="C:\Users\clive\OneDrive\Documents\GitHub\PartSales\PartData.js" type="text/javascript"></script>
+
 
         <!--Custom Scripting-->
         <script>
@@ -80,17 +85,37 @@
                 console.log(KTM_Parts);
                 
                 function displayParts(){
-                    var partObj = KTM_Parts;
-                    var objLen = KTM_Parts.length;
-
-                    console.log(partObj.length);
-                    console.log(partObj[0].partNum);
+                    var partsData = KTM_Parts;
+                    var objLen = partsData.length;
+                    var modelCount = ''
+                    
+                    console.log(partsData.length);
+                    console.log(partsData[0].partNum);
                     
                     for(i=0; i<objLen; i++) {                        
-                        $('#KTM').append('<div class="well" id="'+partObj[i].partNum+'"></div>');
-                        $('#'+partObj[i].partNum).append('<h3>'+partObj[i].partName+'</h3>')
-                        $('#'+partObj[i].partNum).append('<div class="Row"></div>')
-                        $('#'+partObj[i].partNum+'>.row').append('<div class="col-sm-9">Col-sm-9</div>','<div class="col-sm-3">Col-sm-3</div>')
+                        $('#KTM').append('<div class="well" id="'+partsData[i].partNum+'"></div>');
+                        $('#'+partsData[i].partNum).append('<h3>'+partsData[i].partName+'</h3>')
+                        $('#'+partsData[i].partNum).append('<div class="Row"></div>')
+                        $('#'+partsData[i].partNum+'>.row').append(
+                            '<div class="col-sm-9"></div>',
+                            '<div class="col-sm-3"></div>'
+                        )
+                        $('#'+partsData[i].partNum+'>.row>.col-sm-9').append(
+                            '<p>'+partsData[i].partDesc+'</p>',
+                            '<h4>Part fits on these models</h4>',
+                            '<ul></ul>'
+                        )
+
+                        modelCount = partsData[i].models.length;
+                        console.log(partsData[i].models.length)
+                        for(l=0; l < modelCount; l++){
+                            $('#'+partsData[i].partNum+'>.row>.col-sm-9>ul').append(
+                                '<li>'+partsData[i].models[l]+'</li>'
+                            )
+                        }
+                        $('#'+partsData[i].partNum+'>.row>.col-sm-3').append(
+                            '<img class="imgCont partImage img-responsive" src="'+partsData[i].imgLink+'">'
+                        )
                     }
                 }
                 
