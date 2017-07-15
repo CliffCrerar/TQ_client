@@ -6,7 +6,7 @@ var KTM_Parts = [
     
     //Part A08255
     {  
-        partNum: "A08255",
+        partNum: 'A08255',
         partName: 'Luggage Rack',
         partDesc: 'Made from lightweight suspect alluminium, '+
                   'used to tie down appropriate luggage with straps included with the luggage wrack.'+
@@ -21,7 +21,7 @@ var KTM_Parts = [
     
     //Part A08201
     {
-        partNum: "A08201",
+        partNum: 'A08201',
         partName: 'Bash Plate',
         partDesc: 'Made from ? , protects the engine casing from loose projectiles and road hazards, must have for offroading.',
         models: ['KTM 950','KTM 990'],
@@ -31,5 +31,17 @@ var KTM_Parts = [
         instTime: 45,
         price: 2395,
     }
+    //Part NEWPART
+    /*{  
+        partNum: '',
+        partName: '',
+        partDesc: '',
+        models: ['','',''],
+        imgLink: '',
+        colors: '',
+        grnt: '',
+        instTime: ,
+        price: ,
+    }*/
 
 ]
