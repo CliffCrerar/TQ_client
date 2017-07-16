@@ -43,7 +43,7 @@ var KTM_Parts = [
         instTime: 30 ,
         price:1425 ,
     },
-//Part A11150
+    //Part A11150
     {  
         partNum: 'A11150',
         partName: 'Top Box Bracket',
@@ -55,7 +55,7 @@ var KTM_Parts = [
         instTime: 30 ,
         price: 755 ,
     },
-//Part A08250
+    //Part A08250
     {
         partnum: 'A08250',
         partName: 'Standard Luggage Rack',
