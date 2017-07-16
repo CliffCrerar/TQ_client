@@ -41,7 +41,7 @@ var KTM_Parts = [
         colors: 'Stainless Steel',
         grnt: '1 Year',
         instTime: 30 ,
-        price:1425 ,
+        price: 1425 ,
     },
     //Part A11150
     {  
@@ -57,7 +57,7 @@ var KTM_Parts = [
     },
     //Part A08250
     {
-        partnum: 'A08250',
+        partNum: 'A08250',
         partName: 'Standard Luggage Rack',
         partDesc: 'Made from lightweight suspect alluminium, '+
                   'used to tie down appropriate luggage with straps included with the luggage wrack.'+

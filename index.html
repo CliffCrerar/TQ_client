@@ -12,12 +12,12 @@
         <!--Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Play" rel="stylesheet">
         
-        <!--Part Data Macbook Air-->
-        <script src="/Users/cliffordcrerar/Github/PartSales/PartData.js" type="text/javascript"></script>
+        <!--Part Data Macbook Air
+        <script src="/Users/cliffordcrerar/Github/PartSales/PartData.js" type="text/javascript"></script>-->
         <!--Part Data Clifford01
         <script src="C:\Users\clifford.crear\Documents\GitHub\PartSales\PartData.js" type="text/javascript"></script>-->
-        <!--Clive Crerar
-        <script src="C:\Users\clive\OneDrive\Documents\GitHub\PartSales\PartData.js" type="text/javascript"></script>-->
+        <!--Clive Crerar-->
+        <script src="C:\Users\clive\OneDrive\Documents\GitHub\PartSales\PartData.js" type="text/javascript"></script>
 
         <!--Custom Scripting-->
         <script>
@@ -89,36 +89,58 @@
                     var modelCount = ''
                     
                     console.log(partsData.length);
-                    console.log(partsData[0].partNum);
                     
-                    for(i=0; i<objLen; i++) {                        
+                    for(i=0; i<objLen; i++) {
+                        console.log(partsData[i].partNum+' & '+partsData[i].partName);                
                         $('#KTM').append('<div class="well" id="'+partsData[i].partNum+'"></div>');
-                        $('#'+partsData[i].partNum).append('<h3>'+partsData[i].partName+'</h3>')
-                        $('#'+partsData[i].partNum).append('<div class="Row"></div>')
+                        $('#'+partsData[i].partNum).append('<h3>'+partsData[i].partName+'</h3>');
+                        $('#'+partsData[i].partNum).append('<div class="Row"></div>');
+                        
                         $('#'+partsData[i].partNum+'>.row').append(
                             '<div class="col-sm-9"></div>',
                             '<div class="col-sm-3"></div>'
-                        )
+                        );
 
                         $('#'+partsData[i].partNum+'>.row>.col-sm-9').append(
-                            '<p>'+partsData[i].partDesc+'</p>',
-                            '<h4>Part fits on these models</h4>',
-                            '<ul></ul>'
-                        )
-
+                            '<blockquote><p>'+partsData[i].partDesc+'</p></blockquote>',
+                            '<div class="row">'+
+                                '<div class="col-sm-6" id="'+partsData[i].partNum+'Models"></div>'+
+                                '<div class="col-sm-6" id="'+partsData[i].partNum+'Meta"></div>'+
+                            '</div>'
+                        );           
+                        
+                        $('#'+partsData[i].partNum+'Models').append('<h4>Part fits on these models:</h4>')
                         modelCount = partsData[i].models.length;
-                        console.log(partsData[i].models.length)
                         for(l=0; l < modelCount; l++) {
-                            $('#'+partsData[i].partNum+'>.row>.col-sm-9>ul').append(
+                            $('#'+partsData[i].partNum+'Models').append(
                                 '<li>'+partsData[i].models[l]+'</li>'
-                            )
+                            );
                         }
+
+                        $('#'+partsData[i].partNum+'Meta').append(
+                            '<table>'+
+                                '<tr>'+
+                                    '<td class="dataType">Price:</td>'+
+                                    '<td> R '+partsData[i].price+'</td>'+
+                                '</tr>'+
+                                '<tr>'+
+                                    '<td class="dataType">Guarentee:</td>'+
+                                    '<td>'+partsData[i].grnt+'</td>'+                                    
+                                '</tr>'+
+                                '<tr>'+
+                                    '<td class="dataType">Installation Time:</td>'+
+                                    '<td>'+partsData[i].instTime+' Minutes</td>'+                                
+                                '</tr>'+
+                                '<tr>'+
+                                    '<td class="dataType">Part Number:</td>'+
+                                    '<td>'+partsData[i].partNum+'</td>'+                                    
+                                '</tr>'+                                                                                            
+                            '</table>'
+                        )
                         
                         $('#'+partsData[i].partNum+'>.row>.col-sm-3').append(
                             '<img class="imgCont partImage img-responsive" src="'+partsData[i].imgLink+'">'
                         )
-
-
                     }
                 }
                 
@@ -279,9 +301,9 @@
                                     <blockquote>
                                         <p>This description is of a part, what it is made of, how does it make the ride better or how will it improve my biking experience</p>
                                     </blockquote>
-                                    <h4>Part fits on these models</h4>
                                     <div class="row">
                                         <div class="col-sm-6 bd1">
+                                            <h4>Part fits on these models</h4>
                                             <ul>
                                                 <li>This is a model</li>
                                                 <li>This is another model</li>
