@@ -80,5 +80,29 @@ var KTM_Parts = [
         grnt: '1 Year',
         instTime: 30 ,
         price: 365,
+    },
+    //Part 'A08400'
+    {  
+        partNum: 'A08400',
+        partName: 'Top Box',
+        partDesc: 'Manufactured from 2mm natural aluminium has a capacity of 41 volumetric litres. Requires top box plate A11155 to be mounted to bike ',
+        models: ['KTM 1290 Adventure'],
+        imgLink: 'http://tinyurl.com/y8t9ulwu',
+        colors: 'Natural Aliminuim',
+        grnt: '1 Year',
+        instTime: 10,
+        price: 3930,
+    },
+    //Part A11155
+    {  
+        partNum: 'A11155',
+        partName: 'Bracket Top Box',
+        partDesc: 'Bracket to secure top box to top of mudguard',
+        models: ['KTM 1290'],
+        imgLink: 'http://tinyurl.com/y86j87c3',
+        colors: 'Stainless steel',
+        grnt: '1 Year',
+        instTime: 30,
+        price:755 ,
     }
 ]
