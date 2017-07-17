@@ -177,16 +177,4 @@ var KTM_Parts = [
         instTime: 20,
         price: 340,
     }
-    //Part NEWPART
-    {  
-        partNum: '',
-        partName: '',
-        partDesc: '',
-        models: ['','',''],
-        imgLink: '',
-        colors: '',
-        grnt: '',
-        instTime: ,
-        price: ,
-    }
 ]
