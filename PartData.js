@@ -152,5 +152,17 @@ var KTM_Parts = [
         grnt: '1 year',
         instTime: 60,
         price: 2395,
+    },
+    //Part A08070
+    {  
+        partNum: 'A08070',
+        partName: 'Luggage rack Adventure',
+        partDesc: 'Manufactured from aluminium, suitable for carry light weight soft luggage secured with straps supplied and fitting kit',
+        models: ['KTM 950','KTM 990',''],
+        imgLink: 'http://tinyurl.com/yb3y6ahf',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 1120,
     }
 ]
