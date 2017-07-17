@@ -9,7 +9,7 @@ var KTM_Parts = [
         partNum: 'A08255',
         partName: 'Luggage Rack',
         partDesc: 'Made from lightweight suspect alluminium, '+
-                  'used to tie down appropriate luggage with straps included with the luggage wrack.'+
+                  'used to tie down appropriate luggage with straps included with the luggage rack.'+
                   'Also includes a securing kit.',
         models: ['KTM 1050','KTM 1090','KTM 1290'],
         imgLink: 'http://tinyurl.com/ybw5lg64',
@@ -60,7 +60,7 @@ var KTM_Parts = [
         partNum: 'A08250',
         partName: 'Standard Luggage Rack',
         partDesc: 'Made from lightweight suspect alluminium, '+
-                  'used to tie down appropriate luggage with straps included with the luggage wrack.'+
+                  'used to tie down appropriate luggage with straps included with the luggage rack.'+
                   'Also includes a securing kit.',
         models: ['KTM 1190'],
         imgLink: 'http://tinyurl.com/y8jy6jgq',
@@ -103,6 +103,30 @@ var KTM_Parts = [
         colors: 'Stainless steel',
         grnt: '1 Year',
         instTime: 30,
-        price:755 ,
+        price: 755,
+    },
+    //Part A08258
+    {  
+        partNum: 'A8258',
+        partName: 'Luggage Rack',
+        partDesc: 'Made from lightweight suspect alluminium, used to secure appropiate luggage with straps included in luggage rack, also includes a securing kit',
+        models: ['KTM 1050','KTM 1090','KTM 1190','KTM 1290'],
+        imgLink: 'http://tinyurl.com/yd87phcd',
+        colors: 'Black',
+        grnt: '1 year',
+        instTime: 30 ,
+        price: 1120,
+    }, 
+    //Part A08273
+    { 
+        partNum: 'A08273',
+        partName: 'Head Light Mess Guard',
+        partDesc: 'Manufactured from stainless steel, made with quick connectors for easy cleaning',
+        models: ['KTM 1290','KTM 1050','KTM 1090','KTM1190(Pre 2017)'],
+        imgLink: 'http://tinyurl.com/yaq7kfmr',
+        colors: 'Stainless Steel',
+        grnt: '1 Year',
+        instTime: 15,
+        price: 1425,
     }
 ]
