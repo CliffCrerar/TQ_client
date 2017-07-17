@@ -128,5 +128,29 @@ var KTM_Parts = [
         grnt: '1 Year',
         instTime: 15,
         price: 1425,
+    },
+    //Part A11143
+    {  
+        partNum: 'A11143',
+        partName: 'Luggage Rack',
+        partDesc: 'Manufactured from stainless steel and 19.05mm stainless tube, can carry Enduro Pannier or soft luggage.',
+        models: ['KTM 690'],
+        imgLink: 'http://tinyurl.com/y89qcx35',
+        colors: 'Stainless Steel',
+        grnt: ' 1 year',
+        instTime: 60 ,
+        price: 2780,
+    },
+    //Part A08200
+    {  
+        partNum: 'A08200',
+        partName: 'Bash Plate',
+        partDesc: 'Made off aliminuim. Protects the engine casing from lose protectiles and road hazards must have for off roading',
+        models: ['KTM960','KTM 990',''],
+        imgLink: 'http://tinyurl.com/ybdwkblj',
+        colors: 'Naturel Anodized',
+        grnt: '1 year',
+        instTime: 60,
+        price: 2395,
     }
 ]
