@@ -146,7 +146,7 @@ var KTM_Parts = [
         partNum: 'A08200',
         partName: 'Bash Plate',
         partDesc: 'Made off aliminuim. Protects the engine casing from lose protectiles and road hazards must have for off roading',
-        models: ['KTM960','KTM 990'],
+        models: ['KTM960','KTM 990',''],
         imgLink: 'http://tinyurl.com/ybdwkblj',
         colors: 'Naturel Anodized',
         grnt: '1 year',
@@ -164,5 +164,29 @@ var KTM_Parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 1120,
+    },
+    //Part A08060
+    {  
+        partNum: 'A08060',
+        partName: 'Side Stand Extender Adventure ',
+        partDesc: 'Manufactured from aluminium, helps keep bike straight up',
+        models: ['KTM 950','KTM 990'],
+        imgLink: 'http://tinyurl.com/ycq8voj7',
+        colors: 'Black',
+        grnt: '1 Year',
+        instTime: 20,
+        price: 340,
+    }
+    //Part NEWPART
+    {  
+        partNum: '',
+        partName: '',
+        partDesc: '',
+        models: ['','',''],
+        imgLink: '',
+        colors: '',
+        grnt: '',
+        instTime: ,
+        price: ,
     }
 ]
