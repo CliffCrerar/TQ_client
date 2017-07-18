@@ -255,10 +255,35 @@ var KTM_Parts = [
         partName: 'Luggage Rack STD',
         partDesc: 'Made from lightweight suspect aluminium used to tie down appropriate luggage with straps included with the luggage rackAlso includes a securing kit',
         models: ['KTM 1050','KTM 1090','KTM 1190'],
-        imgLink: '',
+        imgLink: 'http://tinyurl.com/ycwjxp52',
         colors: 'Aliminuim',
         grnt: '1 Year',
         instTime: 45,
         price:1120,
+    },
+    //Part A8280
+    {  
+        partNum: 'A08280',
+        partName: 'Complete Compressor Kit',
+        partDesc: 'Complete compressor kit with wiring and hose fits onto KTM factory pannier frame',
+        models: ['KTM 1190 R','KTM 1190 Adventure'],
+        imgLink: 'http://tinyurl.com/ybwj8gsd',
+        colors: 'None',
+        grnt: '1 year',
+        instTime: 10,
+        price: 4690,
+    },
+    //Part A08270
+    {  
+        partNum: 'A08270',
+        partName: 'Head Light Mess Guard',
+        partDesc: 'Manufactured from stainless steel, made with quick connectors for easy cleaning',
+        models: ['KTM 1050','KTM 1090','KTM 1190','KTM 1290(pre 2017)'],
+        imgLink: 'http://tinyurl.com/y9qvclvt',
+        colors: 'Stainless Steel',
+        grnt: '1 Year',
+        instTime: 45,
+        price: 1350,
     }
+
 ]
