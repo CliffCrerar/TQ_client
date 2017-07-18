@@ -1,7 +1,7 @@
 <!DOCTYPE <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Page Title goes here</title>
+        <title>TQ Bike & 4x4</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
@@ -16,10 +16,22 @@
         <script>
             $(document).ready(function(){
                 console.log('jQuery On');
-                
+                                
                 $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/KTM_Parts.js', function(){
                     displayParts(KTM_Parts,'KTM');
-                })
+                });
+
+                $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/BMW_Parts.js', function(){
+                    displayParts(BMW_parts,'BMW');
+                });
+
+                $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/LRDef_parts.js', function(){
+                    displayParts(LRDef_parts,'LRDef');
+                });
+                
+                $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/LRDisc_parts.js', function(){
+                    displayParts(LRDisc_parts,'LRDisc');
+                });
 
                 $('#bikes').hide();
                 $('#4x4').hide();
@@ -107,7 +119,7 @@
                             '</div>'
                         );           
                         
-                        $('#'+partsData[i].partNum+'Models').append('<h4>Part fits on these models:</h4>')
+                        $('#'+partsData[i].partNum+'Models').append('<h4>Fits:</h4>')
                         modelCount = partsData[i].models.length;
                         for(l=0; l < modelCount; l++) {
                             $('#'+partsData[i].partNum+'Models').append(
@@ -116,24 +128,26 @@
                         }
 
                         $('#'+partsData[i].partNum+'Meta').append(
-                            '<table>'+
-                                '<tr>'+
-                                    '<td class="dataType">Price:</td>'+
-                                    '<td> R '+partsData[i].price+'</td>'+
-                                '</tr>'+
-                                '<tr>'+
-                                    '<td class="dataType">Guarentee:</td>'+
-                                    '<td>'+partsData[i].grnt+'</td>'+                                    
-                                '</tr>'+
-                                '<tr>'+
-                                    '<td class="dataType">Installation Time:</td>'+
-                                    '<td>'+partsData[i].instTime+' Minutes</td>'+                                
-                                '</tr>'+
-                                '<tr>'+
-                                    '<td class="dataType">Part Number:</td>'+
-                                    '<td>'+partsData[i].partNum+'</td>'+                                    
-                                '</tr>'+                                                                                            
-                            '</table>'
+                            '<div class="table">'+
+                                '<table>'+
+                                    '<tr>'+
+                                        '<td class="dataType">Price:</td>'+
+                                        '<td> R '+partsData[i].price+'</td>'+
+                                    '</tr>'+
+                                    '<tr>'+
+                                        '<td class="dataType">Guarentee:</td>'+
+                                        '<td>'+partsData[i].grnt+'</td>'+                                    
+                                    '</tr>'+
+                                    '<tr>'+
+                                        '<td class="dataType">Installation Time:</td>'+
+                                        '<td>'+partsData[i].instTime+' Minutes</td>'+                                
+                                    '</tr>'+
+                                    '<tr>'+
+                                        '<td class="dataType">Part Number:</td>'+
+                                        '<td>'+partsData[i].partNum+'</td>'+                                    
+                                    '</tr>'+                                                                                            
+                                '</table>'+
+                            '</div>'
                         )
                         
                         $('#'+partsData[i].partNum+'>.row>.col-sm-3').append(
@@ -154,7 +168,8 @@
         <!--Custom CSS-->
         <style>
             .bd1 {
-                border: 1px solid black;
+                border: 10% solid black;
+                padding: 0% 20px 20px 20px
             }
             body {
                 background-color:grey;
@@ -173,6 +188,7 @@
                 text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
             }
             h2{
+                margin: 0px 0px 10px 0px;
                 font-size: calc(20 + 3vw);
                 font-family: black ops one;
                 text-align: center;                
@@ -200,12 +216,11 @@
             .mainSec {
                 margin: 0% 5% 0% 5%;
                 background-color: rgba(255, 255, 255, 0.7);
-                border: 1px solid rgba(255, 255, 255, 0.5);
                 height: 1000px min;
                 
             }
             .sideNav{
-                padding: 5px;
+                padding: 5px 5px 100% 5px;
                 margin: auto;
                 
             }
@@ -248,6 +263,24 @@
                 font-weight: bold;
                 text-align: right;
                 padding: 2.5px 5px 2.5px 2.5px;
+            
+            }
+            .table {
+                display: block;
+                padding: 5px;
+                background-color: white;
+                border: 1px solid black;
+                border-radius: 10px
+            }
+            table{
+                margin: 0px auto 0px auto;
+            }
+            .well{
+                margin: 0px 0px 10% 0px;
+                padding: 0% 20px 20px 20px;
+                background-image: url("");
+                border-radius: 10px;
+                
             }
         </style>
     </head>
@@ -282,13 +315,20 @@
                 <h2>Motor cycle Parts</h2>
                 <div class="container-fluid row"> <!--Right Side-->
                     <div class="col-sm-3 sideNav">
-                        <button class="btn btn-block" type="button">All Bike Parts</button>
-                        <button class="btn btn-block" type="button">KTM</button>
-                        <button class="btn btn-block" type="button">BMW</button>
+
+                        <button class="btn btn-block" type="button">Luggage Rack</button>
+                        <button class="btn btn-block" type="button">Bush Plate</button>
+                        <button class="btn btn-block" type="button">Head Light Guard</button>
+                        <button class="btn btn-block" type="button">Top Box and Brackets</button>
+                        <button class="btn btn-block" type="button">Side Stand Extender</button>
+                        <button class="btn btn-block" type="button">Disc Brake Guard</button>
+                        <button class="btn btn-block" type="button">Wide Foot Pegs</button>
+                        <button class="btn btn-block" type="button">Compressor Kit</button>
+
                     </div>
 
-                    
-                    <div class="col-sm-9" id="KTM"><!--KTM-->
+                    <!--KTM temp
+                    <div class="col-sm-9" id="KTM">-->
                         <!--Part Description demo div-->
                         <!--
                         <div class="well" id="#partNum">
@@ -345,26 +385,37 @@
                         <button type="button" id="test1">Test1</button>
                         <button type="button" id="test2">Test2</button>-->
                         
-                    </div> <!--ktm-->                
-                    
-                    <div class="col-sm-9" id="BMW"><!--BMW-->
-                    </div>
+                    <!--</div> 
+                    ktm-->
 
+                    <div class="col-sm-9">
+
+                        <div id="KTM"><!--KTM-->
+                        </div>
+
+                        <div id="BMW"><!--BMW-->
+                        </div>
+
+                    </div>
                 </div><!--Right Side-->
             </div> <!--Motor cycle Parts-->
 
-            <div id="4x4" class="mainSec" style="height: 1000px"> <!--4x4-->
+            <div id="4x4" class="mainSec"> <!--4x4-->
                 <h2>4x4 Parts</h2>
-                <div class="row  container-fluid">
+                <div class="row container-fluid">
                     <div class="col-sm-3 sideNav">
                         <button class="btn btn-block" type="button">Land Rover Defender</button>
                         <button class="btn btn-block" type="button">Land Rover Discovery</button>
                     </div>
 
-                    <div class="col-sm-9" id="LRDef"> <!--Land rover discovery-->
-                    </div>
-                    
-                    <div class="col-sm-9" id="LRDisc"> <!--Land rover discovery-->
+                    <div class="col-sm-9">
+
+                        <div id="LRDef"> <!--Land rover defender-->
+                        </div>
+
+                        <div id="LRDisc"> <!--Land rover discovery-->
+                        </div>
+
                     </div>
 
                 </div>
