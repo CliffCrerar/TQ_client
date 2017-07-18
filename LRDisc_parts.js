@@ -2,8 +2,8 @@
  /*  LAND ROVER DISCOVERY 4x4 PARTS DATA  */
 /*****************************************/ 
 
-var BMW_parts = [
-    //Part NEWPART
+var LRDisc_parts = [
+    //Part A23010
     {  
         partNum: 'A23010',
         partName: 'Heavey Duty Tow Hitch',

@@ -26,5 +26,5 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 45,
         price: 795,
-    }
+    },
 ]
