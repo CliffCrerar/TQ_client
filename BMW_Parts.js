@@ -3,10 +3,6 @@
 /*************************/ 
 
 var BMW_parts = [
-    //Part #newBMWPart number#
-    {
-        //paste part attributes here and continue
-    },
     //Part A09020
     {  
         partNum: 'A09020',

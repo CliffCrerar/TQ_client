@@ -3,10 +3,6 @@
 /*****************************************/ 
 
 var BMW_parts = [
-    //Part #newLRDISCpart number#
-    {
-        //paste part attributes here and continue
-    },
     //Part NEWPART
     {  
         partNum: 'A23010',

@@ -3,10 +3,6 @@
 /****************************************/ 
 
 var LRDef_parts = [
-    //Part #newLRDEFPart number#
-    {
-        //paste part attributes here and continue
-    },
     //Part A22000
     {  
         partNum: 'A22000',
