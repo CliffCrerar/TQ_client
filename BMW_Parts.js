@@ -26,6 +26,18 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 45,
         price: 2295 ,
+    },
+    //Part A09040
+    {  
+        partNum: 'A09040',
+        partName: 'Spot Light Kit(under Beak fitment',
+        partDesc: 'Secure spot lights',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/y8lswq57',
+        colors: 'Black',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 2900,
     }
 
 ]
