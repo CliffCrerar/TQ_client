@@ -207,7 +207,7 @@ var KTM_Parts = [
         partName: 'Rear Brake Disc Guard',
         partDesc: 'Manufactured from aliminuim, protects the rear brake disc from loose projectiles and road hazards',
         models: ['KTM EXC','KTM XC KTM XC-W','KTM XCF','KTM XCF-W'],
-        imgLink: 'http://tinyurl.com/yb3j94c5',
+        imgLink: 'http://tinyurl.com/y7khpdcy',
         colors: 'Aluminuim',
         grnt: '1 year',
         instTime: 30,
