@@ -16,6 +16,19 @@
         <script>
             $(document).ready(function(){
                 console.log('jQuery On');
+
+                //Sorting function
+                var sideNavList = $('#MotCycPartSideNav');
+                console.log(sideNavList);
+                var listItems = sideNavList.children().get();
+                console.log(listItems);
+                listItems.sort(function(a,b){
+                    var compA = $(a).text().toUpperCase();
+                    var compB = $(b).text().toUpperCase();
+                    return(compA < compB) ? -1 : (compA > compB) ? 1 : 0;
+                })
+                $.each(listItems, function(idx, itm) {sideNavList.append(itm);});
+                //Sorting function
                                 
                 $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/KTM_Parts.js', function(){
                     displayParts(KTM_Parts,'KTM');
@@ -276,8 +289,8 @@
                 margin: 0px auto 0px auto;
             }
             .well{
-                margin: 0px 0px 10% 0px;
-                padding: 0% 20px 20px 20px;
+                margin: 0px 10% 10% 10%;
+                padding: 0% 40px 20px 40px;
                 background-image: url("");
                 border-radius: 10px;
                 
@@ -314,7 +327,7 @@
             <div id="bikes" class="mainSec"><!--Motor cycle Parts-->
                 <h2>Motor cycle Parts</h2>
                 <div class="container-fluid row"> <!--Right Side-->
-                    <div class="col-sm-3 sideNav">
+                    <div class="col-sm-3 sideNav" id="MotCycPartSideNav">
 
                         <button class="btn btn-block" type="button">Luggage Rack</button>
                         <button class="btn btn-block" type="button">Bush Plate</button>
