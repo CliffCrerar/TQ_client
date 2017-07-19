@@ -53,15 +53,15 @@ var BMW_parts = [
     },
     //Part A09055
     {  
-        partNum: '',
-        partName: '',
-        partDesc: '',
-        models: ['','',''],
-        imgLink: '',
-        colors: '',
-        grnt: '',
-        instTime: ,
-        price: ,
+        partNum: 'A09055',
+        partName: 'Rear brake lever extension',
+        partDesc: 'Extension of rear brake lever easier to access ',
+        models: ['F650GS','F700GS','F800GS','F8000GSA'],
+        imgLink: 'http://tinyurl.com/y6vunjxz',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 45,
+        price: 245,
     }
 
 ]
