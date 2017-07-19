@@ -30,14 +30,26 @@ var BMW_parts = [
     //Part A09040
     {  
         partNum: 'A09040',
-        partName: 'Spot Light Kit(under Beak fitment',
-        partDesc: 'Secure spot lights',
-        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        partName: 'Spot Light Kit(under Beak fitment)',
+        partDesc: 'Spot light Kit',
+        models: ['F650GS','F700GS','F800GS','F800GSA''Also fits Pre F800GS pre face lift'],
         imgLink: 'http://tinyurl.com/y8lswq57',
         colors: 'Black',
         grnt: '1 Year',
         instTime: 30,
         price: 2900,
+    },
+    //Part A09041
+    {  
+        partNum: 'A09041',
+        partName: 'Spot Lihgt Bracket(under Beak fitment)',
+        partDesc: 'Manufactured from aluminium and comes with securing kit',
+        models: ['F650GS','F700GS','F800GS','F800GSA''Also fits Pre F800GS pre face lift'],
+        imgLink: 'http://tinyurl.com/y8q3q4fd',
+        colors: 'Black',
+        grnt: '1 Year',
+        instTime: 60,
+        price: 778,
     }
 
 ]
