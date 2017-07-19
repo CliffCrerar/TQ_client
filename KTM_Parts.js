@@ -123,7 +123,7 @@ var KTM_Parts = [
         partName: 'Head Light Mess Guard',
         partDesc: 'Manufactured from stainless steel, made with quick connectors for easy cleaning',
         models: ['KTM 1290','KTM 1050','KTM 1090','KTM1190(Pre 2017)'],
-        imgLink: 'http://tinyurl.com/yaq7kfmr',
+        imgLink: '',
         colors: 'Stainless Steel',
         grnt: '1 Year',
         instTime: 15,
