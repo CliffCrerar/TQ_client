@@ -195,7 +195,7 @@ var KTM_Parts = [
         partName: 'Front brake Disc Guard',
         partDesc: 'Manufactured from aliminuim, protects the front brake disc from loose projectiles and road hazards',
         models: ['KTM EXE','KTM XC','KTM XC-W','KTM XCF','KTM XCF-W' ],
-        imgLink: 'http://tinyurl.com/y9bb6bb4',
+        imgLink: 'http://tinyurl.com/yahrfxpy',
         colors: 'Aliminuim',
         grnt: '1 Year',
         instTime: 50,
