@@ -327,4 +327,66 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 90,
         price: 1985,
+    },
+    //Part A09120
+    {  
+        partNum: 'A09120',
+        partName: 'Soft luggage touring Bracket',
+        partDesc: 'Manufactured from aluminium, secures soft luggage with straps and comes with securing kit',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/ycq8gvao',
+        colors: 'Black',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 995,
+    },
+    //Part A09122
+    {  
+        partNum: 'A09122',
+        partName: 'Stoft Luggage Tourng Bracket',
+        partDesc: 'Stoft Luggage Tourng Bracket for BMW Bag and comes with securing kit',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/y9xzd2qr',
+        colors: 'Black',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 995,
+    },
+    //Part A09125
+    {  
+        partNum: 'A09125',
+        partName: 'Handlebar Raisers',
+        partDesc: 'Lifts the Handle bars into a more comfortable sitting position',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/y77mb7fq',
+        colors: '0',
+        grnt: '1 Year',
+        instTime: 45,
+        price: 615,
+    },
+    //Part A09127
+    {  
+        partNum: 'A09127',
+        partName: 'Handlebar Raisers',
+        partDesc: 'Lifts the Handle bars into a more comfortable sitting position',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/ybxqut4r',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 45,
+        price: 615,
+    },
+    //Part A09128
+    {  
+        partNum: 'A09128',
+        partName: 'Two Finger Brake Lever',
+        partDesc: 'Manufactured from aluminium and is more effective than the standard lever  ',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: '',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 995,
     }
+
+
