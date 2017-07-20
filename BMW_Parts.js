@@ -231,16 +231,4 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 15,
         price: 245,
-    },    
-   //Part NEWPART
-    {  
-        partNum: '',
-        partName: '',
-        partDesc: '',
-        models: ['','',''],
-        imgLink: '',
-        colors: '',
-        grnt: '',
-        instTime: ,
-        price: ,
     }
