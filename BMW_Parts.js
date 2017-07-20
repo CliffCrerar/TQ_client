@@ -221,7 +221,7 @@ var BMW_parts = [
         price: 420,
     },
     //Part A09098
-       {  
+    {  
         partNum: 'A09098',
         partName: 'Rear Brake Lever Extension',
         partDesc: 'Manufactured from aluminium, easy access to brake lever especially in an emergency',
@@ -231,4 +231,4 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 15,
         price: 245,
-    }
+    },
