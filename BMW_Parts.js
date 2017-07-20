@@ -380,13 +380,49 @@ var BMW_parts = [
     {  
         partNum: 'A09128',
         partName: 'Two Finger Brake Lever',
-        partDesc: 'Manufactured from aluminium and is more effective than the standard lever  ',
+        partDesc: 'Manufactured from aluminium and is more effective than the standard lever',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
-        imgLink: '',
+        imgLink: 'http://tinyurl.com/yd8oodb2',
         colors: 'Silver',
         grnt: '1 Year',
         instTime: 30,
         price: 995,
+    },
+   //Part A09129
+    {  
+        partNum: '019129',
+        partName: 'Two Finger Brake Lever',
+        partDesc: 'Manufactured from aluminium and is more effective than the standard lever',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yd9lr4qr',
+        colors: 'Black',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 995,
+    },
+     //Part A09137
+    {  
+        partNum: 'A09137',
+        partName: 'Led Spot Light Protector',
+        partDesc: 'Encases the Led lights protects them from damages if the bike falls over',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/y8u2dprm',
+        colors: 'Black',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 490,
+    }
+    //Part A11115
+    {  
+        partNum: 'A11115',
+        partName: 'Top Box Bracket',
+        partDesc: 'Manufactured from aluminium, secure the top box to top of rear mudguard even in off road conditions',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/y9xvbggc',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 735,
     }
 
 
