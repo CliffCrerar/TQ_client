@@ -140,12 +140,24 @@ var BMW_parts = [
     {  
         partNum: 'A09089P',
         partName: 'Head Light Guard SS Grid Type Dzus Connectors',
-        partDesc: 'Manufactured from stainless steel and has stainless steel arms protects the Head Light from loose projectile and is a must foe off road riding',
+        partDesc: 'Manufactured from aluminium and has stainless steel arms protects the Head Light from loose projectile and is a must foe off road riding',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/yc63tlg8',
         colors: 'Silver',
         grnt: '1 year',
         instTime: 45,
         price: 952,
+    },
+    //Part A09090
+    {  
+        partNum: 'A09090',
+        partName: 'Head Light Guard with Polycarp Lens',
+        partDesc: 'Frame is made from aluminium and has stainless steel arms, glass is Polycarp to protects the head light from loose projectile as weel as stone chips and is a must foe off road riding',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/ybnw9596',
+        colors: 'Black and Silver',
+        grnt: '1 Year',
+        instTime: 45,
+        price: 740,
     }
 ]// 
