@@ -55,7 +55,7 @@ var BMW_parts = [
     {  
         partNum: 'A09055',
         partName: 'Rear brake lever extension',
-        partDesc: 'Extension of rear brake lever easier to access ',
+        partDesc: 'Extension of rear brake lever easier to access',
         models: ['F650GS','F700GS','F800GS','F8000GSA'],
         imgLink: 'http://tinyurl.com/y6vunjxz',
         colors: 'Silver',
@@ -67,7 +67,7 @@ var BMW_parts = [
     {  
         partNum: 'A09060',
         partName: 'Luggage Touring Plate',
-        partDesc: 'Manufactured from aluminium for light weight secures soft luggage with straps. ',
+        partDesc: 'Manufactured from aluminium for light weight secures soft luggage with straps',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/y9d9kqnr',
         colors: 'Black',
@@ -80,7 +80,7 @@ var BMW_parts = [
     {  
         partNum: 'A09077',
         partName: 'Wide Pillion Foot Peg',
-        partDesc: 'Made from Stainless steel corrosive resist and has more foot surface ',
+        partDesc: 'Made from Stainless steel corrosive resist and has more foot surface',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/y7xhzzr8',
         colors: 'Stainless Steel',
@@ -176,7 +176,7 @@ var BMW_parts = [
     {  
         partNum: 'A09092',
         partName: 'Rear brake reservoir protector',
-        partDesc: 'Manufactured from aluminium, protects the reservoir from damage due to loose projectiles and road hazards  ',
+        partDesc: 'Manufactured from aluminium, protects the reservoir from damage due to loose projectiles and road hazards',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/ycnyc6kl',
         colors: 'Black',
@@ -188,7 +188,7 @@ var BMW_parts = [
     {  
         partNum: 'A09095',
         partName: 'Front Brake reservoir protector',
-        partDesc: 'Manufactured from aluminium, protects the reservoir from damage due to loose projectiles and road hazards  ',
+        partDesc: 'Manufactured from aluminium, protects the reservoir from damage due to loose projectiles and road hazards',
         models: ['F650GS','F700GS','F800GS','F800GS(pre 2012'],
         imgLink: 'http://tinyurl.com/yc62zpdj',
         colors: 'Black or Silver',
@@ -224,7 +224,7 @@ var BMW_parts = [
     {  
         partNum: 'A09098',
         partName: 'Rear Brake Lever Extension',
-        partDesc: 'Manufactured from aluminium, easy access to brake lever especially in an emergency',
+        partDesc: 'Manufactured from aluminium  easy access to brake lever especially in an emergency',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/yc668vfh',
         colors: 'Siver',
