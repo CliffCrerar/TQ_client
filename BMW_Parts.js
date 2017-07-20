@@ -87,5 +87,65 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 940,
+    },
+    //Part A09078
+    {  
+        partNum: 'A09078',
+        partName: 'Wide Pillion',
+        partDesc: 'Made from Stainless steel corrosive resist and has more foot surface',
+        models:['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/ycv3txso',
+        colors: 'Black',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 975,
+    },
+    //Part A09080
+    {  
+        partNum: 'A09080',
+        partName: 'Bash Plate',
+        partDesc: 'Made off aliminuim. Protects the engine casing from lose protectiles and road hazards must have for off roading',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/y8mkszs3',
+        colors: 'Aliminium',
+        grnt: '1 year',
+        instTime: 45,
+        price: 2020,
+    },
+    //Part A09085
+    {  
+        partNum: 'A09085',
+        partName: 'Bash Plate',
+        partDesc: 'Made off aliminuim. Protects the engine casing from lose protectiles and road hazards must have for off roading',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yaocnyoy',
+        colors: 'Black',
+        grnt: '1 Year',
+        instTime: 45,
+        price: 2065,
+    },
+    //Part A09088
+    {  
+        partNum: 'A09088',
+        partName: 'Radiator protector',
+        partDesc: 'Manufactured in aluminium protects radiator from loose projectiles on the road and is a must for off riding off road',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yd7eks67',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 60,
+        price: 865,
+    },
+    //Part A09089P
+    {  
+        partNum: 'A09089P',
+        partName: 'Head Light Guard SS Grid Type Dzus Connectors',
+        partDesc: 'Manufactured from stainless steel and has stainless steel arms protects the Head Light from loose projectile and is a must foe off road riding',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: '',
+        colors: 'Silver',
+        grnt: '! year',
+        instTime: 45,
+        price: 952,
     }
 ]// 
