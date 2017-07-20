@@ -224,11 +224,23 @@ var BMW_parts = [
     {  
         partNum: 'A09098',
         partName: 'Rear Brake Lever Extension',
-        partDesc: 'Manufactured from aluminium  easy access to brake lever especially in an emergency',
+        partDesc: 'Manufactured from aluminium easy access to brake lever especially in an emergency',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/yc668vfh',
         colors: 'Siver',
         grnt: '1 Year',
         instTime: 15,
         price: 245,
-    },
+    },    
+   //Part NEWPART
+    {  
+        partNum: '',
+        partName: '',
+        partDesc: '',
+        models: ['','',''],
+        imgLink: '',
+        colors: '',
+        grnt: '',
+        instTime: ,
+        price: ,
+    }
