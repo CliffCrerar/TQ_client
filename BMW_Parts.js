@@ -62,6 +62,30 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 45,
         price: 245,
-    }
+    },
+    //Part A09060
+    {  
+        partNum: 'A09060',
+        partName: 'Luggage Touring Plate',
+        partDesc: 'Manufactured from aluminium for light weight secures soft luggage with straps. ',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/y9d9kqnr',
+        colors: 'Black',
+        grnt: '1 Year',
+        instTime:30,
+        price: 995,
+    },
 
-]
+//Part A09077
+    {  
+        partNum: 'A09077',
+        partName: 'Wide Pillion Foot Peg',
+        partDesc: 'Made from Stainless steel corrosive resist and has more foot surface ',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/y7xhzzr8',
+        colors: 'Stainless Steel',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 940,
+    }
+]// 
