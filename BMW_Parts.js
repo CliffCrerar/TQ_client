@@ -159,5 +159,76 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 45,
         price: 740,
+    },
+// //Part A09091
+    {  
+        partNum: 'A09091',
+        partName: 'Ornge clip on lens',
+        partDesc: 'Ornge lens that clips onto the Head Light guard for day time riding',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/ybhgmmta',
+        colors: 'Orange',
+        grnt: '0',
+        instTime: 5,
+        price: 595,
+    },
+    //Part A09092
+    {  
+        partNum: 'A09092',
+        partName: 'Rear brake reservoir protector',
+        partDesc: 'Manufactured from aluminium, protects the reservoir from damage due to loose projectiles and road hazards  ',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/ycnyc6kl',
+        colors: 'Black',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 375,
+    },
+    //Part A09095
+    {  
+        partNum: 'A09095',
+        partName: 'Front Brake reservoir protector',
+        partDesc: 'Manufactured from aluminium, protects the reservoir from damage due to loose projectiles and road hazards  ',
+        models: ['F650GS','F700GS','F800GS','F800GS(pre 2012'],
+        imgLink: 'http://tinyurl.com/yc62zpdj',
+        colors: 'Black or Silver',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 375,
+    },
+    //Part A09096
+    {  
+        partNum: 'A09096',
+        partName: 'Front Brake reservoir protector 3mm Aliminuim anodized',
+        partDesc: 'Manufactured from aluminium, protects the reservoir from damage due to loose projectiles and road hazards',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/y8uajevf',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 420,
+    },
+    //Part A09097
+    {  
+        partNum: 'A09097',
+        partName: 'Front Brake reservoir protector 3mm Aliminuim Powder Coated Black',
+        partDesc: 'Manufactured from aluminium, protects the reservoir from damage due to loose projectiles and road hazards',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/y9wdjoff',
+        colors: 'Black',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 420,
+    },
+    //Part A09098
+       {  
+        partNum: 'A09098',
+        partName: 'Rear Brake Lever Extension',
+        partDesc: 'Manufactured from aluminium, easy access to brake lever especially in an emergency',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yc668vfh',
+        colors: 'Siver',
+        grnt: '1 Year',
+        instTime: 15,
+        price: 245,
     }
-]// 
