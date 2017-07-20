@@ -231,4 +231,28 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 15,
         price: 245,
+    },
+    //Part A09100
+    {  
+        partNum: 'A09100',
+        partName: 'Spot Light Brackets set 08-11',
+        partDesc: 'Secures spot Lights',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'https://2mju3q-am3pap001.files.1drv.com/y4mcsqz8Str6tnIm2dP5mHCSGIlrnD8dAV2nXSv_WKtLSoUU15qCgKw8FIfjIZS_WvXNEhYAbk19l934UaGFQdsJCJtidkPaj9uXNqL4SkZk8LgasjZoYHF3IC4Ii1kRHNys7Pr44EuOpY0wcD01rJCOl_K-1VXqakKHzdF1X8Tzy0mUxYMdITDouGBM9xyrK0ZLvZ7DOGDwP73EmIQB0YPA37PdXzPV3bLz0uTTrB8zzM?width=213&height=220&cropmode=none',
+        colors: 'Black',
+        grnt: '1 year',
+        instTime: 30,
+        price: 625,
+    },
+    //Part A09102
+    {  
+        partNum: 'A09102',
+        partName: 'Spot Light Bracket(2012)',
+        partDesc: 'Secures spot Lights',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yb7mwola',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 625,
     }
