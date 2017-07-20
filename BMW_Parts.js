@@ -142,9 +142,9 @@ var BMW_parts = [
         partName: 'Head Light Guard SS Grid Type Dzus Connectors',
         partDesc: 'Manufactured from stainless steel and has stainless steel arms protects the Head Light from loose projectile and is a must foe off road riding',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
-        imgLink: '',
+        imgLink: 'http://tinyurl.com/yc63tlg8',
         colors: 'Silver',
-        grnt: '! year',
+        grnt: '1 year',
         instTime: 45,
         price: 952,
     }
