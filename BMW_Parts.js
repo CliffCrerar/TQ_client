@@ -75,8 +75,7 @@ var BMW_parts = [
         instTime:30,
         price: 995,
     },
-
-//Part A09077
+    //Part A09077
     {  
         partNum: 'A09077',
         partName: 'Wide Pillion Foot Peg',
@@ -390,7 +389,7 @@ var BMW_parts = [
     },
    //Part A09129
     {  
-        partNum: '019129',
+        partNum: 'A09129',
         partName: 'Two Finger Brake Lever',
         partDesc: 'Manufactured from aluminium and is more effective than the standard lever',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
