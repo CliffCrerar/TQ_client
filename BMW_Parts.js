@@ -75,7 +75,8 @@ var BMW_parts = [
         instTime:30,
         price: 995,
     },
-    //Part A09077
+
+//Part A09077
     {  
         partNum: 'A09077',
         partName: 'Wide Pillion Foot Peg',
@@ -159,7 +160,7 @@ var BMW_parts = [
         instTime: 45,
         price: 740,
     },
-    //Part A09091
+// //Part A09091
     {  
         partNum: 'A09091',
         partName: 'Ornge clip on lens',
@@ -410,7 +411,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 490,
-    },
+    }
     //Part A11115
     {  
         partNum: 'A11115',
@@ -422,6 +423,18 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 735,
+    },
+    //Part A11550
+    {  
+        partNum: 'A11550',
+        partName: 'Right Side Pannier Aluminium',
+        partDesc: 'Manufactured from aluminium 405X455X285 and can lock',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: http://tinyurl.com/y882ub4x'',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 4370,
     }
 
-]
+
