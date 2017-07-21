@@ -75,8 +75,7 @@ var BMW_parts = [
         instTime:30,
         price: 995,
     },
-
-//Part A09077
+    //Part A09077
     {  
         partNum: 'A09077',
         partName: 'Wide Pillion Foot Peg',
@@ -160,7 +159,7 @@ var BMW_parts = [
         instTime: 45,
         price: 740,
     },
-// //Part A09091
+    //Part A09091
     {  
         partNum: 'A09091',
         partName: 'Ornge clip on lens',
@@ -411,7 +410,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 490,
-    }
+    },
     //Part A11115
     {  
         partNum: 'A11115',
@@ -425,4 +424,4 @@ var BMW_parts = [
         price: 735,
     }
 
-
+]
