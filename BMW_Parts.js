@@ -530,7 +530,128 @@ var BMW_parts = [
         grnt: '0',
         instTime: 0,
         price: 795,
-    }
+    },
+    //Part A01030
+    {  
+        partNum: 'A01030',
+        partName: 'Handle Bar Raiser(pivotng and Rotational)',
+        partDesc: 'Manufactured of aluminium can be pivoted and rotated',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/ychzclvg',
+        colors: 'Siver',
+        grnt: '1 Year',
+        instTime: 60,
+        price: 1260,
+    },
+    //Part A01031
+    {  
+        partNum: 'A01031',
+        partName: 'Handle Bar Raiser(pivoting and Rotational)',
+        partDesc: 'Manufactured of aluminium can be pivoted and rotated',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/y9u8l24l',
+        colors: 'Orange',
+        grnt: '1 year',
+        instTime:30 ,
+        price: 1260,
+    },
+    //Part A01100
+    {  
+        partNum: 'A01100',
+        partName: 'Spot Light Set 80N-Incandecent 55W Bulb',
+        partDesc: 'Spot Light set  mounted on front of bike for better visibility',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yde568a7',
+        colors: '0',
+        grnt: '0',
+        instTime: 60,
+        price: 625,
+    },
+    //Part A01110
+    {  
+        partNum: 'A01110',
+        partName: 'LED Spotlight(Oledone 10W 900 Lumens)',
+        partDesc: 'Spot Light set  mounted on front of bike for better visibility',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yd3wopr3',
+        colors: 'Black',
+        grnt: '0',
+        instTime: 60,
+        price: 885,
+    },
+    //Part A01190
+    {  
+        partNum: 'A01190',
+        partName: '5 Lt Fuel Tank Bracket',
+        partDesc: '5 Lt Adventure Fuel tank bracket can be mounted on flat surface or a roof rack ',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yb5zqjrl',
+        colors: 'Black',
+        grnt: '1 year',
+        instTime: 30,
+        price: 627,
+    },
+    //Part A01200
+    {  
+        partNum: 'A01200',
+        partName: 'M8X62 Bolts with 5mm inserts',
+        partDesc: 'M8X62 Bolts with 5mm inserts bar mounted to secure accessories',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yda62max',
+        colors: 'Silver',
+        grnt: '1 year',
+        instTime: 0,
+        price: 220,
+    },
+    //Part A01205
+    {  
+        partNum: 'A01205',
+        partName: 'M8X40 Bolts with 5mm inserts',
+        partDesc: 'M8X40 Bolts with 5mm inserts bar mounted to secure accessories',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/ycwmn45t',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 0,
+        price: 220,
+    },
+    //Part A01210
+    {  
+        partNum: 'A01210',
+        partName: 'Front Wheel Socket',
+        partDesc: 'Socket to remove front wheel of bike 17/ 19/22/24MM',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yaj2erg7',
+        colors: 'Silver/Black',
+        grnt: '1 year',
+        instTime: 0,
+        price: 285,
+    },
+    //Part A01215
+    {  
+        partNum: 'A01215',
+        partName: 'Rubber mounting',
+        partDesc: 'Rubber mounting for bash plate F650GS',
+        models: ['F650GS'],
+        imgLink: 'http://tinyurl.com/ycg2pplq',
+        colors: 'Black',
+        grnt: '1 Year',
+        instTime: 20,
+        price: 55,
+    },
+    //Part A01220
+    {  
+        partNum: 'A01220',
+        partName: 'Tool Kit Bag',
+        partDesc: 'Tool kit bag for motorcycle',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/ydxthvv6',
+        colors: 'Grey',
+        grnt: '0',
+        instTime: 0,
+        price: 420,
+    },
+
 
 
 ]
