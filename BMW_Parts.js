@@ -651,6 +651,30 @@ var BMW_parts = [
         instTime: 0,
         price: 420,
     },
+    //Part A01250
+    {  
+        partNum: 'A01250',
+        partName: 'Boot end Cap Replacement',
+        partDesc: 'Stainless steel boot end caps replacements',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/y9cjfmrn',
+        colors: 'Stainless Steel',
+        grnt: '0',
+        instTime: 10,
+        price: 155,
+    },
+    //Part A01300
+    {  
+        partNum: 'A01300',
+        partName: 'Switch Bracket',
+        partDesc: 'Switch bracket(BMW) SS 304 1.6mm (BWT-ELE-112)(BR1195958)',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yb52r3pm',
+        colors: 'Black',
+        grnt: '0',
+        instTime: 20,
+        price: 75,
+    }
 
 
 
