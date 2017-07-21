@@ -434,6 +434,103 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 4370,
+    },
+    //Part A11560
+    {  
+        partNum: 'A11560',
+        partName: 'Left Side Pannier Aluminium',
+        partDesc: 'Manufactured from aluminium 405X455X285 and can lock',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/ybhrc8rp',
+        colors: 'Siver',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 4370,
+    },
+    //Part A90000
+    {  
+        partNum: 'A90000',
+        partName: 'AVANT FGS front fender',
+        partDesc: 'Stops rain ',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/ycp8rey8',
+        colors: '?',
+        grnt: '1 Year',
+        instTime: 60,
+        price: 995,
+    },
+    //Part A09070
+    {  
+        partNum: 'A09070',
+        partName: 'Wide Foot Pegs Pair',
+        partDesc: 'Make riding more comfortable and less chance of your foot slipping off the pegs when wet',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/ycd68euc',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 20,
+        price: 880,
+    },
+    //Part A09075
+    {  
+        partNum: 'A09075',
+        partName: 'Wide Foot Pegs Pair',
+        partDesc: 'Make riding more comfortable and less chance of your foot slipping off the pegs when wet',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yc6nnufz',
+        colors: 'Black',
+        grnt: '1 Year',
+        instTime: 20,
+        price: 915,
+    },
+    //Part A01007
+    {  
+        partNum: 'A01007',
+        partName: 'Kinetic Tow Strap',
+        partDesc: 'Tow Bike to Bike',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yahax5h4',
+        colors: 'Biege',
+        grnt: '0',
+        instTime: 0,
+        price: 208,
+    },
+    //Part A01010
+    {  
+        partNum: 'A01010',
+        partName: 'Hella Female Power Outlet Socket',
+        partDesc: 'Supplies auxiliary power for add ons',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/ybzkfut4',
+        colors: 'Black cap',
+        grnt: '0',
+        instTime: 30,
+        price: 55,
+    },
+    //Part A01020
+    {  
+        partNum: 'A01020',
+        partName: 'ARB ATV 12V Compressor',
+        partDesc: 'Compressor without hose kit',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/y9mekb5e',
+        colors: '0',
+        grnt: '0',
+        instTime: 0,
+        price: 3895,
+    },
+    //Part A01025
+    {  
+        partNum: 'A01025',
+        partName: 'ARB ATV Compressor Hose Kit',
+        partDesc: 'Hose kit for Compressor    ',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yaw4zukd',
+        colors: 'Orange',
+        grnt: '0',
+        instTime: 0,
+        price: 795,
     }
+
 
 ]
