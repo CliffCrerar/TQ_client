@@ -160,7 +160,7 @@ var BMW_parts = [
         instTime: 45,
         price: 740,
     },
-// //Part A09091
+    //Part A09091
     {  
         partNum: 'A09091',
         partName: 'Ornge clip on lens',
@@ -430,7 +430,7 @@ var BMW_parts = [
         partName: 'Right Side Pannier Aluminium',
         partDesc: 'Manufactured from aluminium 405X455X285 and can lock',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
-        imgLink: http://tinyurl.com/y882ub4x'',
+        imgLink: 'http://tinyurl.com/y882ub4x',
         colors: 'Silver',
         grnt: '1 Year',
         instTime: 30,
