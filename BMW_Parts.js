@@ -411,7 +411,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 490,
-    }
+    },
     //Part A11115
     {  
         partNum: 'A11115',
@@ -437,4 +437,4 @@ var BMW_parts = [
         price: 4370,
     }
 
-
+]
