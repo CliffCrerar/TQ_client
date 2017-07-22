@@ -17,8 +17,8 @@ var KTM_Parts = [
         grnt: '1 year',
         instTime: 30,
         price: 1120,
-    },
-    
+        cat: 'LR'
+    },    
     //Part A08201
     {
         partNum: 'A08201',
@@ -168,7 +168,7 @@ var KTM_Parts = [
     //Part A08060
     {  
         partNum: 'A08060',
-        partName: 'Side Stand Extender Adventure ',
+        partName: 'Side Stand Extender',
         partDesc: 'Manufactured from aluminium, helps keep bike straight up',
         models: ['KTM 950','KTM 990'],
         imgLink: 'http://tinyurl.com/ycq8voj7',
@@ -285,5 +285,4 @@ var KTM_Parts = [
         instTime: 45,
         price: 1350,
     }
-
 ]

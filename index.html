@@ -1,4 +1,5 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE 
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <title>TQ Bike & 4x4</title>
@@ -15,13 +16,13 @@
         <!--Custom Scripting-->
         <script>
             $(document).ready(function(){
-                console.log('jQuery On');
+                //console.log('jQuery On');
                 
                 //Sorting function
                 var sideNavList = $('#MotCycPartSideNav');
-                console.log(sideNavList);
+                //console.log(sideNavList);
                 var listItems = sideNavList.children().get();
-                console.log(listItems);
+                //console.log(listItems);
                 listItems.sort(function(a,b){
                     var compA = $(a).text().toUpperCase();
                     var compB = $(b).text().toUpperCase();
@@ -30,9 +31,9 @@
                 $.each(listItems, function(idx, itm) {sideNavList.append(itm);});
                 //Sorting function
                                 
-                $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/KTM_Parts.js', function(){
-                    console.log(KTM_Parts)
+                $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/KTM_Parts.js', function(){                    
                     displayParts(KTM_Parts,'KTM');
+                    
                 });
 
                 $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/BMW_Parts.js', function(){
@@ -55,21 +56,21 @@
                 $('.nav-tabs').children().css('color','black');
 
                 $('a:contains("Home")').click(function(){
-                    console.log("Click home tab");
+                    //console.log("Click home tab");
                     remActiveTab();
                     $('.nav-tabs').children()[0].setAttribute('class','active');
                     $('#home').show();
                 });
 
                 $('a:contains("Motor")').click(function(){
-                    console.log("Click bike tab");
+                    //console.log("Click bike tab");
                     remActiveTab();
                     $('.nav-tabs').children()[1].setAttribute('class','active');
                     $('#bikes').show();
                 });
 
                 $('a:contains("4x4")').click(function(){
-                    console.log("Click 4x4 tab");
+                    //console.log("Click 4x4 tab");
                     remActiveTab();
                     $('.nav-tabs').children()[2].setAttribute('class','active');
                     $('#4x4').show();
@@ -77,18 +78,18 @@
                 });
 
                 $('a:contains("Contact")').click(function(){
-                    console.log("Click contact tab");
+                    //console.log("Click contact tab");
                     remActiveTab();
                     $('.nav-tabs').children()[3].setAttribute("class", "active");
                     $('#contact').show();
                 });
                 
-                console.log($('.nav-tabs').children().length);
+                //console.log($('.nav-tabs').children().length);
 
                 function remActiveTab(){
                     var i = 0
                     $('.nav-tabs').children().each(function(li) {
-                        console.log($('.nav-tabs').children()[i].className);
+                        //console.log($('.nav-tabs').children()[i].className);
                         if ($('.nav-tabs').children()[i].className = 'active'){
                             $('.nav-tabs').children()[i].removeAttribute('class');
                             switch(i) {
@@ -100,10 +101,8 @@
                         }
                         i++
                     });
-                    console.log(i)
+                    //console.log(i)
                 }
-                       
-                //JS parts object testing below
 
                 //console.log(KTM_Parts);
                 
@@ -112,10 +111,10 @@
                     var objLen = partsData.length;
                     var modelCount = ''
                     
-                    console.log(partsData.length);
+                    //console.log(partsData.length);
                     
                     for(i=0; i<objLen; i++) {
-                        console.log(partsData[i].partNum+' & '+partsData[i].partName);                
+                        //console.log(partsData[i].partNum+' & '+partsData[i].partName);                
                         $('#'+divId).append('<div class="well" id="'+partsData[i].partNum+'"></div>');
                         $('#'+partsData[i].partNum).append('<h3>'+partsData[i].partName+'</h3>');
                         $('#'+partsData[i].partNum).append('<div class="Row"></div>');
@@ -170,12 +169,6 @@
                     }
                 }
                 
-                $('#test1').click(function(){
-                    console.log("test1Click")
-                    displayParts(KTM_Parts,'KTM');
-                })
-                
-                //JS parts object testing above
             });
         </script>
 
@@ -230,13 +223,10 @@
             .mainSec {
                 margin: 0% 5% 0% 5%;
                 background-color: rgba(255, 255, 255, 0.7);
-                height: 1000px min;
-                
             }
             .sideNav{
                 padding: 5px 5px 100% 5px;
                 margin: auto;
-                
             }
             .btn.btn-block {
                 font-family: play;
@@ -276,8 +266,7 @@
             .dataType {
                 font-weight: bold;
                 text-align: right;
-                padding: 2.5px 5px 2.5px 2.5px;
-            
+                padding: 2.5px 5px 2.5px 2.5px;            
             }
             .table {
                 display: block;
@@ -293,8 +282,7 @@
                 margin: 0px 10% 10% 10%;
                 padding: 0% 40px 20px 40px;
                 background-image: url("");
-                border-radius: 10px;
-                
+                border-radius: 10px;                
             }
         </style>
     </head>
@@ -320,8 +308,53 @@
             </div>
 
             <!--Content-->
-            <div id="home" class="mainSec" style="height: 700px">
-                <h2>Home Page</h2>
+            <div id="home" class="mainSec">
+                <style>                
+
+                    /* Slideshow container */
+                    .slideshow-container {
+                        max-width: 70%;
+                        position: relative;
+                        margin: auto;
+                    }
+
+                    .mySlides {
+                        display: none;
+                    }
+
+                </style>
+                <script>    
+                $(document).ready(function(){
+                    var slideNum = 0
+                    var slideId = $('.mySlides')[slideNum].id
+                    changeSlide();
+                    function changeSlide(){
+                        slideId = $('.mySlides')[slideNum].id;
+                        $('#'+slideId).fadeIn('slow').delay(2000).fadeOut("sloe");
+                        slideNum++;
+                        if ((slideNum) == $('.mySlides').length) {slideNum = 0};
+                        setTimeout(changeSlide, 3000);                        
+                    }
+                    
+                    
+                });
+                </script>
+
+                <div class="slideshow-container">
+                    
+                    <div class="mySlides" id="slide0">
+                        <img src="http://tinyurl.com/y6utpp75" alt="land rover" style="width: 100%">
+                    </div>
+
+                    <div class="mySlides" id="slide1">
+                        <img src="http://tinyurl.com/yc2pyoal" alt="KTM" style="width: 100%">
+                    </div>
+                        
+                    <div class="mySlides" id="slide2">
+                        <img src="http://tinyurl.com/y9zkoy9e" alt="BMW" style="width: 100%">
+                    </div>
+
+                </div>
             </div>
 
             
