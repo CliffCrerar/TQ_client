@@ -33,7 +33,6 @@
                                 
                 $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/KTM_Parts.js', function(){                    
                     displayParts(KTM_Parts,'KTM');
-                    
                 });
 
                 $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/BMW_Parts.js', function(){
@@ -175,12 +174,14 @@
         <!--Custom CSS-->
         <style>
             .bd1 {
-                border: 10% solid black;
-                padding: 0% 20px 20px 20px
+                border: 10px solid black;
+                
             }
             body {
                 background-color:grey;
-                background: url("http://tinyurl.com/ydap5j6h") no-repeat fixed;
+                background: url("http://tinyurl.com/y9svxru2") 100%, 100%;
+                
+
             }
             #titleDiv {
                 background-image: url("http://tinyurl.com/yctgktf6") ;
@@ -201,9 +202,7 @@
                 text-align: center;                
             }
             .nav-tabs{
-                background-color: rgba(1,1,1,0.7);
-                border-top-left-radius: 10px;
-                border-top-right-radius: 10px;                
+                background-color: rgba(1,1,1,0.7);              
             }
             a {
                 text-decoration: none;
@@ -215,13 +214,14 @@
                 height: 10px;
             }
             .navbar{
-                Margin: 1% 5% 0% 5%; 
-                padding: 10px 0% 0% 0%;
-                font-size: calc(15px + 1vw);
+                Margin: 0% 0% 0% 0%; 
+                padding: 0px 0% 0% 0%;
+                font-size: calc(5px + 1vw);
                 border-width: 0px;                               
             }
+
             .mainSec {
-                margin: 0% 5% 0% 5%;
+                margin: 2% 5% 0% 5%;
                 background-color: rgba(255, 255, 255, 0.7);
             }
             .sideNav{
@@ -289,16 +289,16 @@
 
     <!--Page-->
     <body>
-        <div class="container-fluid">
+        <div>
             <!--Page Title-->
-            <div class="row" id="titleDiv">
+            <div class="row container-fluid" id="titleDiv">
                 <div class="hDiv"></div>
                 <h1>TQ Bike and 4x4 Accessories</h1>
                 <div class="hDiv"></div>
             </div>
             
             <!--Navbar-->
-            <div class="navbar">
+            <div class="navbar container-fluid" class="">
                 <ul class="nav nav-tabs nav-justified" role="tablist">
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="#">Motor Cycle Parts</a></li>
@@ -308,52 +308,54 @@
             </div>
 
             <!--Content-->
-            <div id="home" class="mainSec">
-                <style>                
-
+            <div id="home" class="container-fluid" >
+                <style>
                     /* Slideshow container */
                     .slideshow-container {
-                        max-width: 70%;
+                        max-width: 70%;                        
                         position: relative;
-                        margin: auto;
+                        margin: auto;                        
                     }
-
                     .mySlides {
                         display: none;
+                        margin: 5% 0 5% 0;                        
                     }
-
+                    .mySlides>img{
+                        border-radius: 40px;
+                        border: 7px solid black;
+                        box-shadow: 30px 30px 20px rgba(1,1,1,0.7)
+                    }
                 </style>
-                <script>    
-                $(document).ready(function(){
-                    var slideNum = 0
-                    var slideId = $('.mySlides')[slideNum].id
-                    changeSlide();
-                    function changeSlide(){
-                        slideId = $('.mySlides')[slideNum].id;
-                        $('#'+slideId).fadeIn('slow').delay(2000).fadeOut("sloe");
-                        slideNum++;
-                        if ((slideNum) == $('.mySlides').length) {slideNum = 0};
-                        setTimeout(changeSlide, 3000);                        
-                    }
-                    
-                    
-                });
+                <script>                    
+                    $(document).ready(function(){
+                        var slideNum = 0
+                        var slideId = $('.mySlides')[slideNum].id
+                        changeSlide();
+                        function changeSlide(){
+                            slideId = $('.mySlides')[slideNum].id;
+                            $('#'+slideId).fadeIn('slow').delay(4000).fadeOut("slow");
+                            slideNum++;
+                            if ((slideNum) == $('.mySlides').length) {slideNum = 0};
+                            setTimeout(changeSlide, 5200);                        
+                        }
+                    });
                 </script>
-
-                <div class="slideshow-container">
-                    
+                <div class="slideshow-container">                    
                     <div class="mySlides" id="slide0">
-                        <img src="http://tinyurl.com/y6utpp75" alt="land rover" style="width: 100%">
+                        <img class="" src="http://tinyurl.com/y9pbjs3x" alt="KTM" style="width: 100%">
                     </div>
 
                     <div class="mySlides" id="slide1">
-                        <img src="http://tinyurl.com/yc2pyoal" alt="KTM" style="width: 100%">
-                    </div>
-                        
-                    <div class="mySlides" id="slide2">
-                        <img src="http://tinyurl.com/y9zkoy9e" alt="BMW" style="width: 100%">
+                        <img src="http://tinyurl.com/yaee2un2" alt="BMW" style="width: 100%">
                     </div>
 
+                    <div class="mySlides" id="slide2">
+                        <img src="http://tinyurl.com/y8jcgccg" alt="Defender" style="width: 100%">
+                    </div>
+
+                    <div class="mySlides" id="slide3">
+                        <img src="http://tinyurl.com/ya7lty7k" alt="Discovery" style="width: 100%">
+                    </div>
                 </div>
             </div>
 
