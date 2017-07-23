@@ -237,7 +237,7 @@ var BMW_parts = [
         partName: 'Spot Light Brackets set 08-11',
         partDesc: 'Secures spot Lights',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
-        imgLink: 'https://2mju3q-am3pap001.files.1drv.com/y4mcsqz8Str6tnIm2dP5mHCSGIlrnD8dAV2nXSv_WKtLSoUU15qCgKw8FIfjIZS_WvXNEhYAbk19l934UaGFQdsJCJtidkPaj9uXNqL4SkZk8LgasjZoYHF3IC4Ii1kRHNys7Pr44EuOpY0wcD01rJCOl_K-1VXqakKHzdF1X8Tzy0mUxYMdITDouGBM9xyrK0ZLvZ7DOGDwP73EmIQB0YPA37PdXzPV3bLz0uTTrB8zzM?width=213&height=220&cropmode=none',
+        imgLink: 'http://tinyurl.com/yb7mwola',
         colors: 'Black',
         grnt: '1 year',
         instTime: 30,
@@ -699,5 +699,65 @@ var BMW_parts = [
         instTime: 60,
         price: 650,
     },
+    //Part A01311
+    {  
+        partNum: 'A01311',
+        partName: 'Spotlight Wiring Harness',
+        partDesc: 'Connect Spotlights',
+        models: ['F650GS','F700GS','F800GS'],
+        imgLink: 'http://tinyurl.com/y957n5xe',
+        colors: '0',
+        grnt: '0',
+        instTime: 60,
+        price: 650,
+    },
+    //Part A01400
+    {  
+        partNum: 'A01400',
+        partName: '12V Socket-Male Hella Plug to Fwmale Cigarette Lighter Sochet',
+        partDesc: 'Connection between Male and Female Cigarette Lighter Socket',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/y86ybjyh',
+        colors: 'Black',
+        grnt: '0',
+        instTime: 0,
+        price: 165,
+    },
+    //Part A01450
+    {  
+        partNum: 'A01450',
+        partName: 'BMW R1200-K20 and Yamaha Foot peg Spring',
+        partDesc: ' Springs to asist the foot pegs to be tucked upwards out of way when required',
+        models: ['BMW R1200-K50 and Yamaha'],
+        imgLink: 'http://tinyurl.com/yclsnjcc',
+        colors: 'Black',
+        grnt: '0',
+        instTime: 45,
+        price: 32,
+    },
+    //Part A01460
+    {  
+        partNum: 'A01460',
+        partName: 'Pannnier and Top Box Lid Strap Assembly',
+        partDesc: 'Straps to secure Panniers and Top Boxes',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yazs8tw2',
+        colors: 'Black',
+        grnt: '0',
+        instTime: 0,
+        price: 235,
+    },
+    //Part NEWPART
+    {  
+        partNum: 'A01470',
+        partName: 'Ctek Keep Power Small CAnbus(Ctek Battery Charger)',
+        partDesc: 'CTek battery charger tokeep bike batteries charged',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/ycrdvp6d',
+        colors: '0',
+        grnt: '0',
+        instTime: 0,
+        price: 1680,
+    }
     
 ]
