@@ -674,6 +674,42 @@ var BMW_parts = [
         grnt: '0',
         instTime: 20,
         price: 75,
+    },
+    //Part A01305
+    {  
+        partNum: 'A01305',
+        partName: 'Rocker Switch',
+        partDesc: 'Rocker Switch fits into A01300',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/ybw3qbyb',
+        colors: '0',
+        grnt: '0',
+        instTime: 0,
+        price: 40,
+    },
+    //Part A01310
+    {  
+        partNum: 'A01310',
+        partName: 'Spotlight Wiring Harness',
+        partDesc: 'Connect Spotlights',
+        models: ['F650GS','F700GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/y79n7h9n',
+        colors: '0',
+        grnt: '0',
+        instTime: 60,
+        price: 650,
+    },
+    //Part NEWPART
+    {  
+        partNum: '',
+        partName: '',
+        partDesc: '',
+        models: ['F650','F700','F800GS'],
+        imgLink: '',
+        colors: '',
+        grnt: '',
+        instTime: ,
+        price: ,
     }
 
 
