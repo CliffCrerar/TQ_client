@@ -699,19 +699,5 @@ var BMW_parts = [
         instTime: 60,
         price: 650,
     },
-    //Part NEWPART
-    {  
-        partNum: '',
-        partName: '',
-        partDesc: '',
-        models: ['F650','F700','F800GS'],
-        imgLink: '',
-        colors: '',
-        grnt: '',
-        instTime: ,
-        price: ,
-    }
-
-
-
+    
 ]
