@@ -18,25 +18,44 @@
             $(document).ready(function(){
                 //console.log('jQuery On');
                 
-                //Sorting function
-                var sideNavList = $('#MotCycPartSideNav');
-                //console.log(sideNavList);
-                var listItems = sideNavList.children().get();
-                //console.log(listItems);
-                listItems.sort(function(a,b){
-                    var compA = $(a).text().toUpperCase();
-                    var compB = $(b).text().toUpperCase();
-                    return(compA < compB) ? -1 : (compA > compB) ? 1 : 0;
-                })
-                $.each(listItems, function(idx, itm) {sideNavList.append(itm);});
-                //Sorting function
+                /* Start of Sorting functions */
+                
+                //Sort Bike Sidenav Buttons
+
+                    var sideNavList = $('#MotCycPartSideNav');
+                    //console.log(sideNavList);
+                    var listItems = sideNavList.children().get();
+                    //console.log(listItems);
+                    listItems.sort(function(a,b){
+                        var compA = $(a).text().toUpperCase();
+                        var compB = $(b).text().toUpperCase();
+                        return(compA < compB) ? -1 : (compA > compB) ? 1 : 0;
+                    })
+                    $.each(listItems, function(idx, itm) {sideNavList.append(itm);});
+
+                    function sortItems(container) {
+                        var partsList = container
+                        console.log(partsList);
+                        var partListItems = partsList.children().get()
+                        console.log(partListItems);
+                        partListItems.sort(function(a,b){
+                            var compA = $(a).text().toUpperCase();
+                            var compB = $(b).text().toUpperCase();
+                            return(compA < compB) ? -1 : (compA > compB) ? 1 : 0;
+                        })
+                        $.each(partListItems, function(idx,itm) {partsList.append(itm);});
+                    }
+                
+                //Sort Bike Parts
+
+                /* End of Sorting functions */
                                 
                 $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/KTM_Parts.js', function(){                    
-                    displayParts(KTM_Parts,'KTM');
+                    displayParts(KTM_Parts,'bikeParts');
                 });
 
                 $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/BMW_Parts.js', function(){
-                    displayParts(BMW_parts,'BMW');
+                    displayParts(BMW_parts,'bikeParts');
                 });
 
                 $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/LRDef_parts.js', function(){
@@ -66,6 +85,8 @@
                     remActiveTab();
                     $('.nav-tabs').children()[1].setAttribute('class','active');
                     $('#bikes').show();
+                    var sortList = $('#bikeParts')
+                    sortItems(sortList);
                 });
 
                 $('a:contains("4x4")').click(function(){
@@ -109,7 +130,7 @@
                     var partsData = partsObject;
                     var objLen = partsData.length;
                     var modelCount = ''
-                    
+                    //console.log(divId)
                     //console.log(partsData.length);
                     
                     for(i=0; i<objLen; i++) {
@@ -180,6 +201,7 @@
             body {
                 background-color:grey;
                 background: url("http://tinyurl.com/y9svxru2") 100%, 100%;
+                -webkit-font-smoothing: antialiased;
             }
             #titleDiv {
                 background-image: url("http://tinyurl.com/yctgktf6") ;
@@ -229,6 +251,7 @@
             .mainSec {
                 margin: 2% 5% 0% 5%;
                 background-color: rgba(255, 255, 255, 0.7);
+                border-radius: 5px
             }
             .sideNav{
                 padding: 5px 5px 100% 5px;
@@ -253,6 +276,9 @@
                 border-radius: 2%;
                 margin: 0% auto 0% auto;
                 box-shadow: 5px 5px 5px grey
+            }
+            #bikeParts {
+                padding: 1% 0 1% 0%
             }
             .partImage {
                 -webkit-transition: all 1s ease; /* Safari and Chrome */
@@ -366,10 +392,9 @@
 
             
             <div id="bikes" class="mainSec"><!--Motor cycle Parts-->
-                <h2>Motor cycle Parts</h2>
+
                 <div class="container-fluid row"> <!--Right Side-->
                     <div class="col-sm-3 sideNav" id="MotCycPartSideNav">
-
                         <button class="btn btn-block" type="button">Luggage Rack</button>
                         <button class="btn btn-block" type="button">Bash Plate</button>
                         <button class="btn btn-block" type="button">Head Light Guard</button>
@@ -377,8 +402,14 @@
                         <button class="btn btn-block" type="button">Side Stand Extender</button>
                         <button class="btn btn-block" type="button">Disc Brake Guard</button>
                         <button class="btn btn-block" type="button">Wide Foot Pegs</button>
-                        <button class="btn btn-block" type="button">Compressor Kit</button>
-
+                        <button class="btn btn-block" type="button">Compressor Kit</button>                        
+                        <button class="btn btn-block" type="button">Brake Lever Extensions</button>
+                        <button class="btn btn-block" type="button">Radiator Protectors</button>
+                        <button class="btn btn-block" type="button">Brake Reservoir Protectors</button>
+                        <button class="btn btn-block" type="button">Spot Lights and Brackets</button>
+                        <button class="btn btn-block" type="button">Crash Bars</button>
+                        <button class="btn btn-block" type="button">Handle Bar Raisers</button>
+                        <button class="btn btn-block" type="button">Other Accessories</button>                 
                     </div>
 
                     <!--KTM temp
@@ -444,10 +475,7 @@
 
                     <div class="col-sm-9">
 
-                        <div id="KTM"><!--KTM-->
-                        </div>
-
-                        <div id="BMW"><!--BMW-->
+                        <div id="bikeParts"><!--bikes-->
                         </div>
 
                     </div>
