@@ -180,8 +180,6 @@
             body {
                 background-color:grey;
                 background: url("http://tinyurl.com/y9svxru2") 100%, 100%;
-                
-
             }
             #titleDiv {
                 background-image: url("http://tinyurl.com/yctgktf6") ;
@@ -202,12 +200,21 @@
                 text-align: center;                
             }
             .nav-tabs{
-                background-color: rgba(1,1,1,0.7);              
+                background-color: rgba(1,1,1,0.7);
+                
             }
-            a {
+            .nav>li>a {
                 text-decoration: none;
                 color: white;
                 font-family: play
+            }
+            .nav>li>a:hover{
+                color:black;
+                border-radius: 0px
+            }
+            .active{
+                color: red;
+                border-radius: 0px
             }
             .hDiv {
                 background-color: lightgray;
@@ -219,7 +226,6 @@
                 font-size: calc(5px + 1vw);
                 border-width: 0px;                               
             }
-
             .mainSec {
                 margin: 2% 5% 0% 5%;
                 background-color: rgba(255, 255, 255, 0.7);
@@ -237,7 +243,6 @@
                 outline: none;
                 background-color: black;
                 color: white
-
             }
             button:hover {
                 color: white; 
@@ -308,7 +313,7 @@
             </div>
 
             <!--Content-->
-            <div id="home" class="container-fluid" >
+            <div id="home" class="container-fluid">
                 <style>
                     /* Slideshow container */
                     .slideshow-container {
