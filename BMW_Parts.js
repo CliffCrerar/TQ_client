@@ -758,6 +758,66 @@ var BMW_parts = [
         grnt: '0',
         instTime: 0,
         price: 1680,
+    },
+    //Part NEWPART
+    {  
+        partNum: 'A01480',
+        partName: '5 Litre Adventure Fuel Tank',
+        partDesc: '5 Litre Adventure Fuel Tank to carry extra fuel when going on a long off road expedition and can be strapped to a motorcycle or roof rack',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/ybbpt8kn',
+        colors: 'Red',
+        grnt: '0',
+        instTime: 0,
+        price: 320,
+    },
+    //Part A01490
+    {  
+        partNum: 'A01490',
+        partName: '5 Litre Adventure Water Tank',
+        partDesc: '5 Litre Adventure water tank to carry extra water on a long distance off road expedition and can be strapped to motorcycle or roof rack',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/y7wp9sn3',
+        colors: 'Blue',
+        grnt: '0',
+        instTime: 0,
+        price: 320,
+    },
+    //Part A01500
+    {  
+        partNum: 'A01500',
+        partName: 'Spot Light/Accessory 18-19mm Bar Mount Bracket to fit Spot Lights ',
+        partDesc: '18-19MM Accessory bar to fit spot lights',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/y95r7bjh',
+        colors: 'Silver',
+        grnt: '0',
+        instTime: 60,
+        price: 680,
+    },
+    //Part A01510
+    {  
+        partNum: 'A01510',
+        partName: '25MM spot Light Mounting Bracket',
+        partDesc: '25mm bar spot light mounting bracket',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yc9wpttn',
+        colors: 'Silver',
+        grnt: '0',
+        instTime:20 ,
+        price: 680,
+    },
+    //Part A01520
+    {  
+        partNum: 'A01520',
+        partName: 'Exhaust Header Guards',
+        partDesc: 'A set of exhaust heads which will prevent the rider from burning legs if fallen and is suitable for 4 stroke engines  ',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yas2a364',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 45,
+        price: 490,
     }
     
 ]
