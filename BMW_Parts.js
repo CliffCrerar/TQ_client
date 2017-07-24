@@ -818,6 +818,18 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 45,
         price: 490,
+    },
+    //Part A19000
+    {  
+        partNum: 'A19000',
+        partName: 'Pannier And Top Box Lid Strap Assembly',
+        partDesc: 'Straps to secure Pannier and top box ',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/y7dtjgwb',
+        colors: '0',
+        grnt: '0',
+        instTime: 0,
+        price: 235,
     }
     
 ]
