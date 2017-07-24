@@ -136,7 +136,7 @@
                     for(i=0; i<objLen; i++) {
                         //console.log(partsData[i].partNum+' & '+partsData[i].partName);                
                         $('#'+divId).append('<div class="well" id="'+partsData[i].partNum+'"></div>');
-                        $('#'+partsData[i].partNum).append('<h3>'+partsData[i].partName+'</h3>');
+                        $('#'+partsData[i].partNum).append('<span class="partName">'+partsData[i].partName+'</h3>');
                         $('#'+partsData[i].partNum).append('<div class="Row"></div>');
                         
                         $('#'+partsData[i].partNum+'>.row').append(
@@ -271,6 +271,21 @@
                 color: white; 
                 background-color:slategrey                              
             }
+            partNameDiv{
+                margin: 1% 0 1% 0;
+            }
+            .partName{
+                font-size: 24px;
+                font-weight: bold;
+                
+            }
+            .manuBadge{
+               vertical-align: middle;
+               margin-bottom: 0.75em;
+               height: 30px;
+               
+            }
+            
             .imgCont {
                 border: 2px solid black;
                 border-radius: 2%;
@@ -412,13 +427,18 @@
                         <button class="btn btn-block" type="button">Other Accessories</button>                 
                     </div>
 
-                    <!--KTM temp
-                    <div class="col-sm-9" id="KTM">-->
-                        <!--Part Description demo div-->
-                        <!--
+                    <!--Part Description demo div-->
+                    <div class="col-sm-9" id="KTM">                        
+                        
                         <div class="well" id="#partNum">
                             
-                            <h3>PartName</h3>
+                            <div class="partNameDiv">
+                                <img class="manuBadge" src="http://www.carlogos.org/logo/BMW-logo-2000-2048x2048.png" alt="badge">
+                                <img class="manuBadge" src="http://tinyurl.com/y6utpp75" alt="badge">
+                                <img class="manuBadge" src="http://www.chapmotors.com/fckimages/Pages/KTM_Logo.png" alt="badge">
+                                <span class="partName">PartName</span>
+                            </div>
+                            
                             <div class="row">
 
                                 <div class="col-sm-9">
@@ -463,15 +483,15 @@
                                     <img class="imgCont partImage img-responsive" src="http://tinyurl.com/ybjdqlw5">
                                 </div>
                             </div>
-                        </div>--> 
-                        <!--end of Part Description demo div-->
+                        </div>                        
                         
                         <!--Test buttons
                         <button type="button" id="test1">Test1</button>
                         <button type="button" id="test2">Test2</button>-->
                         
-                    <!--</div> 
-                    ktm-->
+                    </div>
+                    <!--end of Part Description demo div--> 
+                    
 
                     <div class="col-sm-9">
 
