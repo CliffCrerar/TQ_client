@@ -27,4 +27,52 @@ var LRDef_parts = [
         instTime: 45,
         price: 795,
     },
+    //Part A22011
+    {  
+        partNum: 'A22011',
+        partName: 'Fender Top Black',
+        partDesc: 'Manufactured from aluminium cheque plate reinforces the fenders to accommodate more weight',
+        models: ['90','110','130'],
+        imgLink: 'http://tinyurl.com/ybck4nh8',
+        colors: 'Black',
+        grnt: '1 Year',
+        instTime: 45,
+        price: 925,
+    },
+    //Part A22016
+    {  
+        partNum: 'A22016',
+        partName: 'Bonnet Plate',
+        partDesc: 'Manufactured from aluminium reinforces the bonnet to accommodate more weight',
+        models: ['90','110','130'],
+        imgLink: 'http://tinyurl.com/y75m9v5g',
+        colors: 'Black',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 2495,
+    },
+    //Part A22016
+    {  
+        partNum: 'A22016',
+        partName: 'Fuel Filer Protection Plate',
+        partDesc: 'Manufactured from aluminium protects paint work around the filler cap',
+        models: ['110','130'],
+        imgLink: 'http://tinyurl.com/y79r9ob8',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 280,
+    },
+    //Part A22017
+    {  
+        partNum: 'A22017',
+        partName: 'Fuel Filer Protection Plate',
+        partDesc: 'Manufactured from aluminium protects paint work around the filler cap',
+        models: ['90'],
+        imgLink: 'http://tinyurl.com/ybzl4klx',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 280,
+    }
 ]
