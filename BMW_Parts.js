@@ -835,7 +835,7 @@ var BMW_parts = [
     {  
         partNum: 'A19010',
         partName: 'Top Box back Rest Pad',
-        partDesc: '',
+        partDesc: 'Pad secured to the top box so passenger can sit comfortable',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/ybool5ll',
         colors: 'Black',
@@ -854,6 +854,102 @@ var BMW_parts = [
         grnt: '0',
         instTime: 0,
         price: 540,
+    },
+    //Part A190105
+    {  
+        partNum: 'A190105',
+        partName: 'Multi Pocket Inner Pannier Bag ',
+        partDesc: 'Multi pocket bag to keep items organized, clean and protects the inside of the Pannier',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/y7gsxqqo',
+        colors: 'Black and Orange',
+        grnt: '0',
+        instTime: 0,
+        price: 600,
+
+    },
+    //Part A190110
+    {  
+        partNum: 'A190110',
+        partName: 'Pannier Inner Bag Exhaust Side',
+        partDesc: 'Inner lining for pannier to protect and keep inside of pannier clean',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yd7d4bzt',
+        colors: 'Black and Orange',
+        grnt: '0',
+        instTime: 0,
+        price: 540,
+    },
+    //Part A190120
+    {  
+        partNum: 'A190120',
+        partName: 'Top Box Inner Bag Single Pocket',
+        partDesc: 'Single pocket bag to keep inside of top box clean and can be removed for easy excess to items inside bag',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/y7uh522w',
+        colors: 'Black and Orange',
+        grnt: '0',
+        instTime: 0,
+        price: 525,
+    },
+    //Part A190125
+    {  
+        partNum: 'A190125',
+        partName: 'Top Box Multi Pocket Bag',
+        partDesc: 'Bag with multi pockets to items organized, and easy excess to items and keeps top box clean',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yckkykz4',
+        colors: 'Black and Orange',
+        grnt: '0',
+        instTime: 0,
+        price: 600,
+    },
+    //Part A190140
+    {  
+        partNum: 'A190140',
+        partName: 'Top Box Lid Organizer',
+        partDesc: 'To carry smaller items in the lid of top box ETC first aid kit ',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yckkykz4',
+        colors: 'Black and Orange',
+        grnt: '0',
+        instTime: 0,
+        price: 525,
+    },
+    //Part A190145
+    {  
+        partNum: 'A190145',
+        partName: 'Pannier Lid Organizer',
+        partDesc: 'To carry small items in the lid of the pannier and kept organised',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/ycvxcspj',
+        colors: 'Black and Orange',
+        grnt: '0',
+        instTime: 0,
+        price: 525,
+    },
+    //Part A9MR10010
+    {  
+        partNum: 'A9MR10010',
+        partName: 'Tubeless Punctuer Repair Kit',
+        partDesc: 'Kit to repair tubeless tires',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/y7p948zo',
+        colors: '0',
+        grnt: '0',
+        instTime: 0,
+        price: 465,
+    },
+    //Part A9MR10020
+    {  
+        partNum: 'A9MR100200',
+        partName: 'BNMW Handle Functional Bar Bags ',
+        partDesc: 'Handle bar bags especially made for BMW’s to carry small items in them',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yd4zrjnn',
+        colors: 'Black',
+        grnt: '0',
+        instTime: 10 ,
+        price: 1295,
     }
-    
 ]
