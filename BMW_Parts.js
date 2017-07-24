@@ -830,6 +830,30 @@ var BMW_parts = [
         grnt: '0',
         instTime: 0,
         price: 235,
+    },
+    //Part A19010
+    {  
+        partNum: 'A19010',
+        partName: 'Top Box back Rest Pad',
+        partDesc: '',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/ybool5ll',
+        colors: 'Black',
+        grnt: '0',
+        instTime: 15,
+        price: 540,
+    },
+    //Part A190105
+    {  
+        partNum: 'A190100',
+        partName: 'Single Pocket inner Pannier Bag',
+        partDesc: 'Inner lining for pannier to protect and keep inside of pannier clean  ',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yb23po6o',
+        colors: 'Black and Orange',
+        grnt: '0',
+        instTime: 0,
+        price: 540,
     }
     
 ]
