@@ -74,6 +74,42 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 280,
+    },
+    //Part A22020
+    {  
+        partNum: 'A22020',
+        partName: 'Hi Lift Jack Chassis Mount Bracket',
+        partDesc: 'Bracket manufactured from steel and secures the Hi Lift jack to rear of chassis',
+        models: ['110','130'],
+        imgLink: 'http://tinyurl.com/y9hkvf3x',
+        colors: 'Black',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 560,
+    },
+    //Part A22030
+    {  
+        partNum: 'A22030',
+        partName: 'Console Safe',
+        partDesc: 'Manufactured from steel secures to the original securing point for the centre Land Rover console, strong and durable',
+        models: ['90','110','130'],
+        imgLink: 'http://tinyurl.com/y74y8d6o',
+        colors: 'Black',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 425,
+    },
+    //Part A22040
+    {  
+        partNum: 'A22040',
+        partName: 'Front Seat Rail Extensions',
+        partDesc: 'Manufactured from steel strong, durable and moves the driver’s seat further backwards for more comfortable driving',
+        models: ['90','110','130'],
+        imgLink: 'http://tinyurl.com/yctaa6ee',
+        colors: 'Black',
+        grnt: '1 Year',
+        instTime: 60,
+        price:375 ,
     }
 
       
