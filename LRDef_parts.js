@@ -51,18 +51,6 @@ var LRDef_parts = [
         instTime: 45,
         price: 2495,
     },
-    //Part A22016
-    {  
-        partNum: 'A22016',
-        partName: 'Fuel Filler Protection Plate',
-        partDesc: 'Manufactured of aluminium, protects the paint around the filler cap from scratches and fuel staining the paint',
-        models: ['110','130'],
-        imgLink: 'http://tinyurl.com/y79r9ob8',
-        colors: 'Silver',
-        grnt: '1 Year',
-        instTime: 30,
-        price: 280,
-    },
     //Part A22017
     {  
         partNum: 'A22017',
@@ -74,4 +62,19 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime:30,
         price: 280,
+    },  
+    //Part A22016
+    {  
+        partNum: 'A22016',
+        partName: 'Fuel Filler Protection Plate',
+        partDesc: 'Manufactured of aluminium, protects the paint around the filler cap from scratches and fuel staining the paint',
+        models: ['110','130'],
+        imgLink: 'http://tinyurl.com/y79r9ob8',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 280,
     }
+
+      
+]
