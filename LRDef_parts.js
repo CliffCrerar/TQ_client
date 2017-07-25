@@ -39,7 +39,7 @@ var LRDef_parts = [
         instTime: 45,
         price: 925,
     },
-    //Part A22015T
+    //Part A22015
     {  
         partNum: 'A22015',
         partName: 'Bonnet Protector',
@@ -71,8 +71,7 @@ var LRDef_parts = [
         models: ['90'],
         imgLink: 'http://tinyurl.com/ybzl4klx',
         colors: 'Silver',
-        grnt: '! Year',
+        grnt: '1 Year',
         instTime:30,
         price: 280,
     }
-    
