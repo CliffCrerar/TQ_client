@@ -146,6 +146,42 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 60,
         price: 2490,
+    },
+    //Part A22080
+    {  
+        partNum: 'A22080',
+        partName: 'Swing Away Spare Wheel Carrier',
+        partDesc: 'Manufactured from mild steel, secured to the R/rear corner of the vehicle where it is the sturdiest and prevents the rear door cracking when going off roads.',
+        models: ['90','110','130'],
+        imgLink: 'http://tinyurl.com/yd3z344z',
+        colors: 'Black',
+        grnt: '1 Year',
+        instTime: 90,
+        price: 3895,
+    },
+    //Part A22210
+    {  
+        partNum: 'A22210',
+        partName: 'Side Sill Kit 90',
+        partDesc: 'Manufactured from aluminium checker plate and protects the body from damage and paint getting stone chipped.',
+        models: ['90'],
+        imgLink: 'http://tinyurl.com/yd4sa6t5',
+        colors: 'Silver',
+        grnt: '0',
+        instTime: 45,
+        price: 690,
+    },
+    //Part A22250
+    {  
+        partNum: 'A22250',
+        partName: 'Fuel Tankd Guard',
+        partDesc: 'Manufactured from aluminium secure to the rear under carriage and protects the fuel from loose projectiles in the road as well when going off road',
+        models: ['90'],
+        imgLink: 'http://tinyurl.com/ycvb7kdy',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 60,
+        price: 2475,
     }
 
       
