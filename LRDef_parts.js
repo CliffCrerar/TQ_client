@@ -188,7 +188,7 @@ var LRDef_parts = [
         partNum: 'A22310',
         partName: 'Side Sill Kit 110',
         partDesc: 'Manufactured from aluminium checker plate and protects the body from damage and paint getting stone chipped.',
-        models: ['110'],
+        models: ['110 Station Wagon'],
         imgLink: 'http://tinyurl.com/y9h78txp',
         colors: 'Silver',
         grnt: '0',
@@ -198,9 +198,9 @@ var LRDef_parts = [
     //Part A22315
     {  
         partNum: 'A22315',
-        partName: 'Side Sill Kit 130',
+        partName: 'Side Sill Kit 110',
         partDesc: 'Manufactured from aluminium checker plate and protects the body from damage and paint getting stone chipped.',
-        models: ['130'],
+        models: ['110 Single Cab'],
         imgLink: 'http://tinyurl.com/ycfc3l3t',
         colors: 'Silver',
         grnt: '0',
