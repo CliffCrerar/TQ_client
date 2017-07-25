@@ -212,6 +212,7 @@ var KTM_Parts = [
         grnt: '1 year',
         instTime: 30,
         price: 1995,
+        cat: 'DBG'
     },
     //Part A08040
     {  
@@ -224,6 +225,7 @@ var KTM_Parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 890,
+        cat: 'DBG'
     },
     //Part A08045
     {  
