@@ -110,6 +110,42 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 60,
         price:375 ,
+    },
+    //Part A22050
+    {  
+        partNum: 'A22050',
+        partName: 'Battery Tray',
+        partDesc: 'Mounted in battery box next to vehicles battery and assist with power to any extra accessory fitted that requires battery power',
+        models: ['90','110','130'],
+        imgLink: 'http://tinyurl.com/ybphsqd7',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 60,
+        price: 250,
+    },
+    //Part A22060
+    {  
+        partNum: 'A22060',
+        partName: 'Mantec Raised Air Intake',
+        partDesc: 'Raised Air intake(Snorkel) for off road keeps air intake to engine dust free',
+        models: ['90','110','130'],
+        imgLink: 'http://tinyurl.com/yc8vee79',
+        colors: 'Black',
+        grnt: '1 Year',
+        instTime: 90,
+        price: 4295,
+    },
+    //Part A22070
+    {  
+        partNum: 'A22070',
+        partName: 'Steering Guard',
+        partDesc: 'Manufactured from 8MM aluminium or mild steel, protects the steering arms from damage when going off road and any loose projectiles in the road ',
+        models: ['90','110','130'],
+        imgLink: 'http://tinyurl.com/yckdjzrz',
+        colors: 'Silver or Black',
+        grnt: '1 Year',
+        instTime: 60,
+        price: 2490,
     }
 
       
