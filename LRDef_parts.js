@@ -38,5 +38,41 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 45,
         price: 925,
+    },
+    //Part A22015T
+    {  
+        partNum: 'A22015',
+        partName: 'Bonnet Protector',
+        partDesc: 'Manufactured of aluminium checked plate, reinforces the bonnet to carry extra weight so when there is a roof rack items in the front of the roof rack are easy excess able   ',
+        models: ['90','110','130'],
+        imgLink: 'http://tinyurl.com/y75m9v5g',
+        colors: 'Black',
+        grnt: '1 Year',
+        instTime: 45,
+        price: 2495,
+    },
+    //Part A22016
+    {  
+        partNum: 'A22016',
+        partName: 'Fuel Filler Protection Plate',
+        partDesc: 'Manufactured of aluminium, protects the paint around the filler cap from scratches and fuel staining the paint',
+        models: ['110','130'],
+        imgLink: 'http://tinyurl.com/y79r9ob8',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 280,
+    },
+    //Part A22017
+    {  
+        partNum: 'A22017',
+        partName: 'Fuel Filler Protection Plate',
+        partDesc: 'Manufactured of aluminium, protects the paint around the filler cap from scratches and fuel staining the paint',
+        models: ['90'],
+        imgLink: 'http://tinyurl.com/ybzl4klx',
+        colors: 'Silver',
+        grnt: '! Year',
+        instTime:30,
+        price: 280,
     }
     
