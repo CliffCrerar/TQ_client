@@ -59,13 +59,14 @@
                 });
 
                 $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/LRDef_parts.js', function(){
-                    displayParts(LRDef_parts,'LRDef','LandRover');
+                    displayParts(LRDef_parts,'Parts4x4','LandRover');
                 });
                 
                 $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/LRDisc_parts.js', function(){
-                    displayParts(LRDisc_parts,'LRDisc','LandRover');
+                    displayParts(LRDisc_parts,'Parts4x4','LandRover');
                 });
 
+                $('#TopBoxPannier').hide();
                 $('#bikes').hide();
                 $('#4x4').hide();
                 $('#contact').hide();
@@ -80,27 +81,38 @@
                     $('#home').show();
                 });
 
-                $('a:contains("Motor")').click(function(){
+                $('a:contains("Top")').click(function(){
                     //console.log("Click bike tab");
                     remActiveTab();
                     $('.nav-tabs').children()[1].setAttribute('class','active');
+                    $('#TopBoxPannier').show();
+                    //sortItems(sortList);
+                });
+
+                $('a:contains("Bike")').click(function(){
+                    //console.log("Click bike tab");
+                    remActiveTab();
+                    $('.nav-tabs').children()[2].setAttribute('class','active');
                     $('#bikes').show();
-                    var sortList = $('#bikeParts')
+                    
+                    var sortList = $('#bikeParts');
                     sortItems(sortList);
                 });
 
                 $('a:contains("4x4")').click(function(){
                     //console.log("Click 4x4 tab");
                     remActiveTab();
-                    $('.nav-tabs').children()[2].setAttribute('class','active');
+                    $('.nav-tabs').children()[3].setAttribute('class','active');
                     $('#4x4').show();
-                    
+
+                    var sortList = $('#Parts4x4');
+                    sortItems(sortList);                    
                 });
 
                 $('a:contains("Contact")').click(function(){
                     //console.log("Click contact tab");
                     remActiveTab();
-                    $('.nav-tabs').children()[3].setAttribute("class", "active");
+                    $('.nav-tabs').children()[4].setAttribute("class", "active");
                     $('#contact').show();
                 });
                 
@@ -114,9 +126,10 @@
                             $('.nav-tabs').children()[i].removeAttribute('class');
                             switch(i) {
                                 case 0: $('#home').hide(); break;
-                                case 1: $('#bikes').hide(); break;
-                                case 2: $('#4x4').hide(); break;
-                                case 3: $('#contact').hide(); break;
+                                case 1: $('#TopBoxPannier').hide(); break;
+                                case 2: $('#bikes').hide(); break;
+                                case 3: $('#4x4').hide(); break;
+                                case 4: $('#contact').hide(); break;
                             }                           
                         }
                         i++
@@ -215,8 +228,7 @@
             }
             #titleDiv {
                 background-image: url("http://tinyurl.com/yctgktf6") ;
-                background-size: contain;
-                
+                background-size: contain;                
             }
             h1{
                 font-size: calc(15px + 2vw);
@@ -233,7 +245,7 @@
             }
             .nav-tabs{
                 background-color: rgba(1,1,1,0.7);
-                
+                               
             }
             .nav>li>a {
                 text-decoration: none;
@@ -304,7 +316,10 @@
                 margin: 0% auto 0% auto;
                 box-shadow: 5px 5px 5px grey
             }
-            #bikeParts {
+            #bikeParts{
+                padding: 1% 0 1% 0%;
+            }
+            #Parts4x4{
                 padding: 1% 0 1% 0%
             }
             .partImage {
@@ -359,7 +374,8 @@
             <div class="navbar container-fluid" class="">
                 <ul class="nav nav-tabs nav-justified" role="tablist">
                     <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Motor Cycle Parts</a></li>
+                    <li><a href="#">Top Box and Panniers</a></li>
+                    <li><a href="#">Bike Parts</a></li>
                     <li><a href="#">4x4 Parts</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -417,6 +433,24 @@
                 </div>
             </div>
 
+            <div id="TopBoxPannier" class="mainSec"> <!--4x4-->
+                <h2>Top Box and Panniers</h2>
+                <div class="row container-fluid">
+                    <div class="col-sm-3 sideNav">
+                        <button class="btn btn-block" type="button">Top Boxes</button>
+                        <button class="btn btn-block" type="button">Panniers</button>
+                        <button class="btn btn-block" type="button">Mounting Brackets</button>
+                    </div>
+
+                    <div class="col-sm-9">
+
+                        <div id="TopBoxPannierParts"> <!--Top Boxes and Panniers-->
+                        </div>
+
+                    </div>
+
+                </div>
+            </div> <!--4x4-->
             
             <div id="bikes" class="mainSec"><!--Motor cycle Parts-->
 
@@ -503,7 +537,6 @@
                         
                     </div>-->
                     <!--end of Part Description demo div--> 
-                    
 
                     <div class="col-sm-9">
 
@@ -524,10 +557,7 @@
 
                     <div class="col-sm-9">
 
-                        <div id="LRDef"> <!--Land rover defender-->
-                        </div>
-
-                        <div id="LRDisc"> <!--Land rover discovery-->
+                        <div id="Parts4x4"> <!--Land Rover Parts-->
                         </div>
 
                     </div>
