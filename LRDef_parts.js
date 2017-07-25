@@ -182,6 +182,42 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 60,
         price: 2475,
+    },
+    //Part A22310
+    {  
+        partNum: 'A22310',
+        partName: 'Side Sill Kit 110',
+        partDesc: 'Manufactured from aluminium checker plate and protects the body from damage and paint getting stone chipped.',
+        models: ['110'],
+        imgLink: 'http://tinyurl.com/y9h78txp',
+        colors: 'Silver',
+        grnt: '0',
+        instTime: 45,
+        price: 855,
+    },
+    //Part A22315
+    {  
+        partNum: 'A22315',
+        partName: 'Side Sill Kit 130',
+        partDesc: 'Manufactured from aluminium checker plate and protects the body from damage and paint getting stone chipped.',
+        models: ['130'],
+        imgLink: 'http://tinyurl.com/ycfc3l3t',
+        colors: 'Silver',
+        grnt: '0',
+        instTime: 45,
+        price: 855,
+    },
+    //Part A22350
+    {  
+        partNum: 'A22350',
+        partName: 'Fuel Tank Guard',
+        partDesc: 'Manufactured from aluminium secure to the rear under carriage and protects the fuel from loose projectiles in the road as well when going off road',
+        models: ['110'],
+        imgLink: 'http://tinyurl.com/y7a89pgk',
+        colors: 'Silver',
+        grnt: '0',
+        instTime: 60,
+        price: 2875,
     }
 
       
