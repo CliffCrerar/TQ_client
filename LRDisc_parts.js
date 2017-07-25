@@ -81,10 +81,22 @@ var LRDisc_parts = [
         partName: 'Roof Rack Mounting Kit ',
         partDesc: 'Mounting kit for a full length roof rack to carry extra luggage on roof  ',
         models: ['Disco 3 and 4'],
-        imgLink: '',
+        imgLink: 'http://tinyurl.com/y6vxc95x',
         colors: 'Black',
         grnt: '1 Year',
         instTime: 60,
         price: 1025,
+    },
+    //Part A31355
+    {  
+        partNum: 'A31355',
+        partName: 'Rear Door Mount Ladder',
+        partDesc: 'Manufactured from aluminium and is made for easy excess to the full length roof rack',
+        models: ['Disco 3 and 4'],
+        imgLink: 'http://tinyurl.com/y6vxc95x',
+        colors: 'Black',
+        grnt: '1 year',
+        instTime: 30,
+        price: 900,
     }
 ]
