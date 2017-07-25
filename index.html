@@ -51,19 +51,19 @@
                 /* End of Sorting functions */
                                 
                 $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/KTM_Parts.js', function(){                    
-                    displayParts(KTM_Parts,'bikeParts');
+                    displayParts(KTM_Parts,'bikeParts','ktm');
                 });
 
                 $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/BMW_Parts.js', function(){
-                    displayParts(BMW_parts,'bikeParts');
+                    displayParts(BMW_parts,'bikeParts','bmw');
                 });
 
                 $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/LRDef_parts.js', function(){
-                    displayParts(LRDef_parts,'LRDef');
+                    displayParts(LRDef_parts,'LRDef','LandRover');
                 });
                 
                 $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/LRDisc_parts.js', function(){
-                    displayParts(LRDisc_parts,'LRDisc');
+                    displayParts(LRDisc_parts,'LRDisc','LandRover');
                 });
 
                 $('#bikes').hide();
@@ -126,17 +126,27 @@
 
                 //console.log(KTM_Parts);
                 
-                function displayParts(partsObject, divId){
+                function displayParts(partsObject, divId, badgeType){
                     var partsData = partsObject;
                     var objLen = partsData.length;
                     var modelCount = ''
+                    var badgeUrl;
                     //console.log(divId)
                     //console.log(partsData.length);
+                    console.log(badgeType)
+                    switch (badgeType) {
+                        case 'bmw': badgeUrl = 'http://www.carlogos.org/logo/BMW-logo-2000-2048x2048.png'; break;
+                        case 'ktm': badgeUrl = 'http://www.chapmotors.com/fckimages/Pages/KTM_Logo.png'; break;
+                        case 'LandRover': badgeUrl = 'http://tinyurl.com/y6utpp75'; break;
+                        default: badgeUrl = 'http://tinyurl.com/ybjdqlw5'; break;
+                    }
                     
                     for(i=0; i<objLen; i++) {
                         //console.log(partsData[i].partNum+' & '+partsData[i].partName);                
                         $('#'+divId).append('<div class="well" id="'+partsData[i].partNum+'"></div>');
-                        $('#'+partsData[i].partNum).append('<span class="partName">'+partsData[i].partName+'</h3>');
+                        $('#'+partsData[i].partNum).append('<div class="partNameDiv"></div>');
+                        $('#'+partsData[i].partNum+'>.partNameDiv').append('<img class="manuBadge" src="'+badgeUrl+'" alt="badge">');
+                        $('#'+partsData[i].partNum+'>.partNameDiv').append('<span class="partName">'+partsData[i].partName+'</span>');
                         $('#'+partsData[i].partNum).append('<div class="Row"></div>');
                         
                         $('#'+partsData[i].partNum+'>.row').append(
@@ -209,9 +219,9 @@
                 
             }
             h1{
-                font-size: calc(15px + 3vw);
+                font-size: calc(15px + 2vw);
                 color: white;
-                margin: 2%;
+                margin: 1% 2% 1% 2%;
                 font-family: Black ops one;
                 text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
             }
@@ -235,7 +245,7 @@
                 border-radius: 0px
             }
             .active{
-                color: red;
+                
                 border-radius: 0px
             }
             .hDiv {
@@ -276,14 +286,16 @@
             }
             .partName{
                 font-size: 24px;
-                font-weight: bold;
-                
+                font-weight: bold;                
+            }
+            div.well>div.row{
+                margin: 10px 0px 0px 0px
             }
             .manuBadge{
                vertical-align: middle;
                margin-bottom: 0.75em;
+               margin-right: 5px;
                height: 30px;
-               
             }
             
             .imgCont {
@@ -325,8 +337,8 @@
                 margin: 0px auto 0px auto;
             }
             .well{
-                margin: 0px 10% 10% 10%;
-                padding: 0% 40px 20px 40px;
+                margin: 0px 5% 5% 5%;
+                padding: 1% 40px 20px 40px;
                 background-image: url("");
                 border-radius: 10px;                
             }
@@ -427,7 +439,7 @@
                         <button class="btn btn-block" type="button">Other Accessories</button>                 
                     </div>
 
-                    <!--Part Description demo div-->
+                    <!--Part Description demo div--> <!--
                     <div class="col-sm-9" id="KTM">                        
                         
                         <div class="well" id="#partNum">
@@ -485,11 +497,11 @@
                             </div>
                         </div>                        
                         
-                        <!--Test buttons
+                        Test buttons
                         <button type="button" id="test1">Test1</button>
-                        <button type="button" id="test2">Test2</button>-->
+                        <button type="button" id="test2">Test2</button>
                         
-                    </div>
+                    </div>-->
                     <!--end of Part Description demo div--> 
                     
 
