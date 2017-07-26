@@ -42,7 +42,7 @@ var TopBoxPannier = [
         price: 4040,
         cat: 'TB', 
     },
-       //Part A11112
+    //Part A11112
     {  
         partNum: 'A11112',
         partName: 'Top Box',
@@ -55,7 +55,7 @@ var TopBoxPannier = [
         price: 4150,
         cat: 'TB', 
     },
-       //Part A11232
+    //Part A11232
     {  
         partNum: 'A11232',
         partName: 'Top Box',
@@ -79,9 +79,9 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 30,
         price: 4040,
-        cat: TB, 
+        cat: 'TB', 
     },
-       //Part A11236
+    //Part A11236
     {  
         partNum: 'A11236',
         partName: 'Top Box',
@@ -92,9 +92,9 @@ var TopBoxPannier = [
         grnt: '1 year',
         instTime: 30,
         price: 4150,
-        cat: TB, 
+        cat: 'TB', 
     },
-      //Part A11242
+    //Part A11242
     {  
         partNum: 'A11242',
         partName: 'Top Box',
@@ -105,9 +105,9 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 30,
         price: 3930,
-        cat: TB, 
+        cat: 'TB', 
     },
-        //Part A11246
+    //Part A11246
     {  
         partNum: 'A11246',
         partName: 'Top Box',
@@ -118,9 +118,9 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 30,
         price: 4040,
-        cat: TB, 
+        cat: 'TB', 
     },
-       //Part A11248
+    //Part A11248
     {  
         partNum: 'A11248',
         partName: 'Top Box',
@@ -131,9 +131,9 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 30,
         price: 4150,
-        cat: TB, 
+        cat: 'TB', 
     },
-     //Part A11500
+    //Part A11500
     {  
         partNum: 'A11500',
         partName: 'Top Box',
@@ -144,9 +144,9 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 30,
         price: 4290,
-        cat: TB, 
+        cat: 'TB', 
     } ,
-        //Part A11501
+    //Part A11501
     {  
         partNum: 'A11501',
         partName: 'Top Box',
@@ -157,7 +157,7 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 10,
         price: 3960,
-        cat: TB, 
+        cat: 'TB', 
     },
     //Part A11502
     {  
@@ -170,7 +170,7 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 10,
         price: 4350,
-        cat: TB, 
+        cat: 'TB', 
 
     },
      //Part A11248
@@ -184,34 +184,32 @@ var TopBoxPannier = [
         grnt: '1 year',
         instTime: 10,
         price: 4390,
-        cat: TB, 
+        cat: 'TB', 
     },
        //Part A19000
     {  
         partNum: 'A19000',
         partName: 'Pannier and Top Box strap',
         partDesc: 'Secures the lids of the Top Boxes and Panniers from coming open while riding',
-        models: ['BMW< KTM and Yamaha'],
+        models: ['BMW KTM and Yamaha'],
         imgLink: 'http://tinyurl.com/y7dtjgwb',
         colors: '0',
         grnt: '0',
         instTime: 0,
         price: 235,
-        cat: TB, 
+        cat: 'TB', 
     },
        //Part A19010
     {  
         partNum: 'A19010',
         partName: 'Top Box Back Rest Pad',
         partDesc: 'Pad secured to the top box so passenger can sit comfortable',
-        models: ['All'],
+        models: ['BMW KTM and Yamaha'],
         imgLink: 'http://tinyurl.com/ybool5ll',
         colors: 'Black',
         grnt: '0',
         instTime: 15,
         price: 795,
-        cat: TB, 
-    }   
-
-     
+        cat: 'TB', 
+    }     
 ]
