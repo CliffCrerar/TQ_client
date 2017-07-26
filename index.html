@@ -275,6 +275,12 @@
                 background-color: rgba(255, 255, 255, 0.7);
                 border-radius: 5px
             }
+            #contact.mainSec{
+                width: 50%;
+                margin: 2% auto 0% auto;
+                margin-bottom: 20%;
+                padding-top: 2%
+            }
             .sideNav{
                 padding: 5px 5px 100% 5px;
                 margin: auto;
@@ -356,6 +362,11 @@
                 padding: 1% 40px 20px 40px;
                 background-image: url("");
                 border-radius: 10px;                
+            }
+            form{
+                width: 70%;
+                margin: auto;
+                padding-bottom: 3%
             }
         </style>
     </head>
@@ -574,7 +585,32 @@
             </div> <!--4x4-->
 
             <div id="contact" class="mainSec">
-                <h2>Contact</h2>
+                <h2>LET US CONTACT YOU</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nameInput">*Name:</label>
+                        <input id="nameInput" class="form-control" placeholder="Enter Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="emailInput">*Your contact:</label>
+                        <input id="emailInput" class="form-control" placeholder="Enter Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="custMessage">Tell us what you are interested in:</label>
+                        <textarea class="form-control" id="custMessage"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-default" type="submit">Submit</button>
+                    </div>
+                    <div class="form-group">
+                        <h2 class="text-center">OR CONTACT SALES</h2>
+                        <div class="well" style="margin: auto">
+                            <h3>email: sales@tqoffroadparts.co.za</h3>
+                            
+                            <h3>cell: 082 689 0434</h3>
+                        </div>
+                    </div>
+                </form>
             </div>
 
             <!--Footer-->
