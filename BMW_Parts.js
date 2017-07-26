@@ -714,7 +714,7 @@ var BMW_parts = [
     //Part A01400
     {  
         partNum: 'A01400',
-        partName: '12V Socket-Male Hella Plug to Fwmale Cigarette Lighter Sochet',
+        partName: 'Male Hella Plug',
         partDesc: 'Connection between Male and Female Cigarette Lighter Socket',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/y86ybjyh',
