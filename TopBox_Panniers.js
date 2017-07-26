@@ -179,7 +179,7 @@ var TopBoxPannier = [
         partName: 'Top Box',
         partDesc: 'Manufactured from 2 mm aluminium with side latch no top plate required, powder coated new silver, no plate required',
         models: ['BMW R1200GS Adventuer K51'],
-        imgLink: '',
+        imgLink: 'http://tinyurl.com/ybjdqlw5',
         colors: 'New silver',
         grnt: '1 year',
         instTime: 10,
