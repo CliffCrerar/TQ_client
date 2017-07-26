@@ -66,7 +66,7 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 30,
         price: 3930,
-        cat: TB, 
+        cat: 'TB', 
     },
     //Part A11234
     {  
