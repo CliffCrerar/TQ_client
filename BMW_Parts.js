@@ -860,7 +860,7 @@ var BMW_parts = [
     {  
         partNum: 'A01510',
         partName: '25MM spot Light Mounting Bracket',
-        partDesc: '25mm bar spot light mounting bracket to munt spot lights to crash bars',
+        partDesc: '25mm bar spot light mounting bracket to mount spot lights to crash bars',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/yc9wpttn',
         colors: 'Silver',
