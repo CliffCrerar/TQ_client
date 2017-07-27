@@ -20,7 +20,7 @@ var TopBoxPannier = [
     {  
         partNum: 'A11110',
         partName: 'Top Box',
-        partDesc: 'Manufactured from 2 mm aluminium walls with stainless and has 41 litre volumetric capacity .',
+        partDesc: 'Manufactured from 2 mm aluminium walls with stainless and has 41 litre volumetric capacity',
         models: ['BMW R1200GS/R1200GS Adventure'],
         imgLink: 'http://tinyurl.com/y7fts7tc',
         colors: 'Silver',
@@ -170,8 +170,7 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 10,
         price: 4350,
-        cat: 'TB', 
-    
+        cat: 'TB',     
     },
     //Part A11505
     {  
@@ -184,9 +183,9 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 10,
         price: 4390,
-        cat: TB, 
+        cat: 'TB',
     },   
-       //Part A19000
+    //Part A19000
     {  
         partNum: 'A19000',
         partName: 'Pannier and Top Box strap',
@@ -199,7 +198,7 @@ var TopBoxPannier = [
         price: 235,
         cat: 'TB', 
     },
-       //Part A19010
+    //Part A19010
     {  
         partNum: 'A19010',
         partName: 'Top Box Back Rest Pad',
