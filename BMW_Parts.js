@@ -882,30 +882,6 @@ var BMW_parts = [
         price: 490,
         cat:'OTH'
     },
-    //Part A19000
-    {  
-        partNum: 'A19000',
-        partName: 'Pannier And Top Box Lid Strap Assembly',
-        partDesc: 'Straps to secure Pannier and top box ',
-        models: ['F650GS','F700GS','F800GS','F800GSA'],
-        imgLink: 'http://tinyurl.com/y7dtjgwb',
-        colors: '0',
-        grnt: '0',
-        instTime: 0,
-        price: 235,
-    },
-    //Part A19010
-    {  
-        partNum: 'A19010',
-        partName: 'Top Box back Rest Pad',
-        partDesc: 'Pad secured to the top box so passenger can sit comfortable',
-        models: ['F650GS','F700GS','F800GS','F800GSA'],
-        imgLink: 'http://tinyurl.com/ybool5ll',
-        colors: 'Black',
-        grnt: '0',
-        instTime: 15,
-        price: 540,
-    },
     //Part A190105
     {  
         partNum: 'A190100',
