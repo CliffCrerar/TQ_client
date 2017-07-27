@@ -333,4 +333,40 @@ var TopBoxPannier = [
         instTime: 30,
         price: 735,        
     },
+    //Part A190120
+    {  
+        partNum: 'A190120',
+        partName: 'Top Box Inner Bag Single Pocket',
+        partDesc: 'Single pocket bag to keep inside of top box clean and can be removed for easy excess to items inside bag',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/y7uh522w',
+        colors: 'Black and Orange',
+        grnt: '0',
+        instTime: 0,
+        price: 525,
+    },
+    //Part A190125
+    {  
+        partNum: 'A190125',
+        partName: 'Top Box Multi Pocket Bag',
+        partDesc: 'Bag with multi pockets to items organized, and easy excess to items and keeps top box clean',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yckkykz4',
+        colors: 'Black and Orange',
+        grnt: '0',
+        instTime: 0,
+        price: 600,
+    },
+    //Part A190140
+    {  
+        partNum: 'A190140',
+        partName: 'Top Box Lid Organizer',
+        partDesc: 'To carry smaller items in the lid of top box ETC first aid kit ',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yckkykz4',
+        colors: 'Black and Orange',
+        grnt: '0',
+        instTime: 0,
+        price: 525,
+    },
 ]

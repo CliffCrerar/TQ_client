@@ -45,7 +45,7 @@ var BMW_parts = [
     //Part A09041
     {  
         partNum: 'A09041',
-        partName: 'Spot Lihgt Bracket(under Beak fitment)',
+        partName: 'Spot Lightt Bracket(under Beak fitment)',
         partDesc: 'Manufactured from aluminium and comes with securing kit',
         models: ['F650GS','F700GS','F800GS','F800GSA','Also fits Pre F800GS pre face lift'],
         imgLink: 'http://tinyurl.com/y8q3q4fd',
@@ -79,6 +79,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime:30,
         price: 995,
+        cat: 'LR'
     },
     //Part A09077
     {  
@@ -364,6 +365,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 995,
+        cat: 'LR'
     },
     //Part A09122
     {  
@@ -376,6 +378,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 995,
+        cat: 'LR'
     },
     //Part A09125
     {  
@@ -832,42 +835,7 @@ var BMW_parts = [
         price: 490,
         cat:'OTH'
     },
-    //Part A190120
-    {  
-        partNum: 'A190120',
-        partName: 'Top Box Inner Bag Single Pocket',
-        partDesc: 'Single pocket bag to keep inside of top box clean and can be removed for easy excess to items inside bag',
-        models: ['F650GS','F700GS','F800GS','F800GSA'],
-        imgLink: 'http://tinyurl.com/y7uh522w',
-        colors: 'Black and Orange',
-        grnt: '0',
-        instTime: 0,
-        price: 525,
-    },
-    //Part A190125
-    {  
-        partNum: 'A190125',
-        partName: 'Top Box Multi Pocket Bag',
-        partDesc: 'Bag with multi pockets to items organized, and easy excess to items and keeps top box clean',
-        models: ['F650GS','F700GS','F800GS','F800GSA'],
-        imgLink: 'http://tinyurl.com/yckkykz4',
-        colors: 'Black and Orange',
-        grnt: '0',
-        instTime: 0,
-        price: 600,
-    },
-    //Part A190140
-    {  
-        partNum: 'A190140',
-        partName: 'Top Box Lid Organizer',
-        partDesc: 'To carry smaller items in the lid of top box ETC first aid kit ',
-        models: ['F650GS','F700GS','F800GS','F800GSA'],
-        imgLink: 'http://tinyurl.com/yckkykz4',
-        colors: 'Black and Orange',
-        grnt: '0',
-        instTime: 0,
-        price: 525,
-    },
+
     //Part A9MR10010
     {  
         partNum: 'A9MR10010',
