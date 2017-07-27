@@ -846,7 +846,7 @@ var BMW_parts = [
     //Part A01500
     {  
         partNum: 'A01500',
-        partName: 'Spot Light/Accessory 18-19mm Bar Mount Bracket to fit Spot Lights ',
+        partName: 'Spot Light/Accessory 18-19mm Bar Mount Bracket to fit Spot Lights to crash bars',
         partDesc: '18-19MM Accessory bar to fit spot lights',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/y95r7bjh',
@@ -860,7 +860,7 @@ var BMW_parts = [
     {  
         partNum: 'A01510',
         partName: '25MM spot Light Mounting Bracket',
-        partDesc: '25mm bar spot light mounting bracket',
+        partDesc: '25mm bar spot light mounting bracket to munt spot lights to crash bars',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/yc9wpttn',
         colors: 'Silver',

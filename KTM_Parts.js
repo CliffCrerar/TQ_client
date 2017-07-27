@@ -249,13 +249,13 @@ var KTM_Parts = [
         price: 890,
         cat: 'DBG'
     },
-    //Part A0810
+    //Part A08100
     {  
-        partNum: 'A0810',
+        partNum: 'A08100',
         partName: 'KTM Pillion Wide Fot Peg',
         partDesc: 'Manufactured of aliminuim safer than the standard as there is more surface for the passengers foot to grip on the pig',
         models: ['ALL KTM'],
-        imgLink: 'http://tinyurl.com/y7x47yrh',
+        imgLink: 'http://tinyurl.com/y8t7wppy',
         colors: 'Black',
         grnt: '1 Year',
         instTime: 20,
