@@ -170,15 +170,9 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 10,
         price: 4350,
-<<<<<<< HEAD
         cat: 'TB', 
     },
     //Part A11248
-=======
-        cat: 'TB',     
-    },
-    //Part A11505
->>>>>>> 835bf7853aabc2f636bbc4c8ad370db2f81f93d0
     {  
         partNum: 'A11505',
         partName: 'Top Box',
@@ -189,13 +183,8 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 10,
         price: 4390,
-<<<<<<< HEAD
         cat: 'TB', 
     },
-=======
-        cat: 'TB',
-    },   
->>>>>>> 835bf7853aabc2f636bbc4c8ad370db2f81f93d0
     //Part A19000
     {  
         partNum: 'A19000',
