@@ -45,19 +45,7 @@ var KTM_Parts = [
         price: 1425 ,
         cat: 'HLG'
     },
-    //Part A11150
-    {  
-        partNum: 'A11150',
-        partName: 'Top Box Bracket',
-        partDesc: 'Made from aluminium and is used to mount top box above rear mud guard. Can be used in off road conditions. ',
-        models: ['KTM 1190'],
-        imgLink: 'http://tinyurl.com/ycj2l37v',
-        colors: 'Aluminium',
-        grnt: '1 Year',
-        instTime: 30 ,
-        price: 755 ,
-        cat:''
-    },
+
     //Part A08250
     {
         partNum: 'A08250',
@@ -71,6 +59,7 @@ var KTM_Parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 1120,
+        cat: 'LR'
     },
     //Part A08260
     {  
@@ -84,19 +73,6 @@ var KTM_Parts = [
         instTime: 30 ,
         price: 365,
         cat: 'WFP'
-    },
-    //Part 'A08400'
-    {  
-        partNum: 'A08400',
-        partName: 'Top Box',
-        partDesc: 'Manufactured from 2mm natural aluminium has a capacity of 41 volumetric litres. Requires top box plate A11155 to be mounted to bike ',
-        models: ['KTM 1290 Adventure'],
-        imgLink: 'http://tinyurl.com/y8t9ulwu',
-        colors: 'Natural Aliminuim',
-        grnt: '1 Year',
-        instTime: 10,
-        price: 3930,
-        
     },
     //Part A11155
     {  
@@ -200,7 +176,7 @@ var KTM_Parts = [
    //Part A08010
     {  
         partNum: 'A08010',
-        partName: 'Front brake Disc Guard',
+        partName: 'Front Brake Disc Guard',
         partDesc: 'Manufactured from aliminuim, protects the front brake disc from loose projectiles and road hazards',
         models: ['KTM EXE','KTM XC','KTM XC-W','KTM XCF','KTM XCF-W' ],
         imgLink: 'http://tinyurl.com/yahrfxpy',

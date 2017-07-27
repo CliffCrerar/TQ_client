@@ -145,7 +145,7 @@ var TopBoxPannier = [
         instTime: 30,
         price: 4290,
         cat: 'TB', 
-    } ,
+    },
     //Part A11501
     {  
         partNum: 'A11501',
@@ -210,5 +210,31 @@ var TopBoxPannier = [
         instTime: 15,
         price: 795,
         cat: 'TB', 
-    }     
+    },
+    //Part A11150
+    {  
+        partNum: 'A11150',
+        partName: 'Top Box Bracket',
+        partDesc: 'Made from aluminium and is used to mount top box above rear mud guard. Can be used in off road conditions. ',
+        models: ['KTM 1190'],
+        imgLink: 'http://tinyurl.com/ycj2l37v',
+        colors: 'Aluminium',
+        grnt: '1 Year',
+        instTime: 30 ,
+        price: 755 ,
+        cat:''
+    },
+    //Part A11115
+    {  
+        partNum: 'A11115',
+        partName: 'Top Box Bracket',
+        partDesc: 'Manufactured from aluminium, secure the top box to top of rear mudguard even in off road conditions',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/y9xvbggc',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 735,
+        
+    },
 ]
