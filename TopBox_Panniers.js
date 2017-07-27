@@ -171,9 +171,8 @@ var TopBoxPannier = [
         instTime: 10,
         price: 4350,
         cat: 'TB', 
-
     },
-     //Part A11248
+    //Part A11248
     {  
         partNum: 'A11248',
         partName: 'Top Box',
@@ -186,7 +185,7 @@ var TopBoxPannier = [
         price: 4390,
         cat: 'TB', 
     },
-       //Part A19000
+    //Part A19000
     {  
         partNum: 'A19000',
         partName: 'Pannier and Top Box strap',
@@ -199,7 +198,7 @@ var TopBoxPannier = [
         price: 235,
         cat: 'TB', 
     },
-       //Part A19010
+    //Part A19010
     {  
         partNum: 'A19010',
         partName: 'Top Box Back Rest Pad',
