@@ -173,7 +173,6 @@ var TopBoxPannier = [
         cat: 'TB', 
     
     },
-
     //Part A11505
     {  
         partNum: 'A11505',
@@ -186,7 +185,7 @@ var TopBoxPannier = [
         instTime: 10,
         price: 4390,
         cat: TB, 
-    }   
+    },   
        //Part A19000
     {  
         partNum: 'A19000',
