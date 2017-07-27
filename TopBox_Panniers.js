@@ -173,6 +173,20 @@ var TopBoxPannier = [
         cat: 'TB', 
     
     },
+
+    //Part A11505
+    {  
+        partNum: 'A11505',
+        partName: 'Top Box',
+        partDesc: 'Manufactured from 2 mm aluminium with side latch no top plate required, powder coated new silver, no plate required',
+        models: ['BMW R1200GS Adventuer K51'],
+        imgLink: 'http://tinyurl.com/y8w5p6e5',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 10,
+        price: 4390,
+        cat: TB, 
+    }   
        //Part A19000
     {  
         partNum: 'A19000',
