@@ -484,7 +484,7 @@ var BMW_parts = [
     {  
         partNum: 'A90000',
         partName: 'AVANT FGS front fender',
-        partDesc: 'Stops rain ',
+        partDesc: 'Stops mud from being sprayed onto engine from the front wheel',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/ycp8rey8',
         colors: '?',
