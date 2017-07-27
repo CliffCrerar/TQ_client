@@ -161,18 +161,7 @@ var KTM_Parts = [
         price: 340,
         cat: 'SSE'
     },
-    //Part A11140
-    {  
-        partNum: 'A11140',
-        partName: 'Top Bracket Adventure',
-        partDesc: 'Manufactured from aliminuim, secures the top even off roading',
-        models: ['KTM 950','KTM 990',''],
-        imgLink: 'http://tinyurl.com/y7w5o2yo',
-        colors: 'Silver',
-        grnt: '!1 Year',
-        instTime: 30,
-        price: 735,
-    },
+
    //Part A08010
     {  
         partNum: 'A08010',
