@@ -442,19 +442,7 @@ var BMW_parts = [
         price: 490,
         cat: 'SLB'
     },
-    //Part A11115
-    {  
-        partNum: 'A11115',
-        partName: 'Top Box Bracket',
-        partDesc: 'Manufactured from aluminium, secure the top box to top of rear mudguard even in off road conditions',
-        models: ['F650GS','F700GS','F800GS','F800GSA'],
-        imgLink: 'http://tinyurl.com/y9xvbggc',
-        colors: 'Silver',
-        grnt: '1 Year',
-        instTime: 30,
-        price: 735,        
-    },
-    //Part A90000
+   //Part A90000
     {  
         partNum: 'A90000',
         partName: 'AVANT FGS front fender',

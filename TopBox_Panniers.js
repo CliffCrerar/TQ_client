@@ -321,4 +321,16 @@ var TopBoxPannier = [
         instTime: 0,
         price: 525,
     },
+    //Part A11115
+    {  
+        partNum: 'A11115',
+        partName: 'Top Box Bracket',
+        partDesc: 'Manufactured from aluminium, secure the top box to top of rear mudguard even in off road conditions',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/y9xvbggc',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 735,        
+    },
 ]
