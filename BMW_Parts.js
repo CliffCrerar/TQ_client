@@ -14,6 +14,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 45,
         price: 2260,
+        cat:'BP'
     },
     //Part A09025
     {  
@@ -25,7 +26,8 @@ var BMW_parts = [
         colors: 'Black',
         grnt: '1 Year',
         instTime: 45,
-        price: 2295 ,
+        price: 2295,
+        cat: 'BP'
     },
     //Part A09040
     {  
@@ -38,6 +40,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 2900,
+        cat: 'SLB'
     },
     //Part A09041
     {  
@@ -50,6 +53,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 60,
         price: 778,
+        cat:'SLB'
     },
     //Part A09055
     {  
@@ -62,6 +66,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 45,
         price: 245,
+        cat: 'BLE'
     },
     //Part A09060
     {  
@@ -86,6 +91,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 940,
+        cat: 'WFP'
     },
     //Part A09078
     {  
@@ -98,6 +104,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 975,
+        cat: 'WFP'
     },
     //Part A09080
     {  
@@ -110,6 +117,7 @@ var BMW_parts = [
         grnt: '1 year',
         instTime: 45,
         price: 2020,
+        cat: 'BP'
     },
     //Part A09085
     {  
@@ -122,6 +130,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 45,
         price: 2065,
+        cat: 'BP'
     },
     //Part A09088
     {  
@@ -134,6 +143,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 60,
         price: 865,
+        cat: 'RP'
     },
     //Part A09089P
     {  
@@ -146,6 +156,7 @@ var BMW_parts = [
         grnt: '1 year',
         instTime: 45,
         price: 952,
+        cat: 'HLG'
     },
     //Part A09090
     {  
@@ -158,6 +169,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 45,
         price: 740,
+        cat: 'HLG'
     },
     //Part A09091
     {  
@@ -170,6 +182,7 @@ var BMW_parts = [
         grnt: '0',
         instTime: 5,
         price: 595,
+        cat: 'HLG'
     },
     //Part A09092
     {  
@@ -182,6 +195,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 375,
+        cat: 'BRP'
     },
     //Part A09095
     {  
@@ -194,30 +208,33 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 375,
+        cat: 'BRP'
     },
     //Part A09096
     {  
         partNum: 'A09096',
-        partName: 'Front Brake reservoir protector 3mm Aliminuim anodized',
-        partDesc: 'Manufactured from aluminium, protects the reservoir from damage due to loose projectiles and road hazards',
+        partName: 'Front Brake reservoir protector',
+        partDesc: 'Manufactured from 3mm aluminium anodized, protects the reservoir from damage due to loose projectiles and road hazards',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/y8uajevf',
         colors: 'Silver',
         grnt: '1 Year',
         instTime: 30,
         price: 420,
+        cat:'BRP'
     },
     //Part A09097
     {  
         partNum: 'A09097',
-        partName: 'Front Brake reservoir protector 3mm Aliminuim Powder Coated Black',
-        partDesc: 'Manufactured from aluminium, protects the reservoir from damage due to loose projectiles and road hazards',
+        partName: 'Front Brake reservoir protector',
+        partDesc: 'Manufactured from 3 mm aluminium powder coated black, protects the reservoir from damage due to loose projectiles and road hazards',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/y9wdjoff',
         colors: 'Black',
         grnt: '1 Year',
         instTime: 30,
         price: 420,
+        cat: 'BRP'
     },
     //Part A09098
     {  
@@ -230,18 +247,20 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 15,
         price: 245,
+        cat: 'BLE'
     },
     //Part A09100
     {  
         partNum: 'A09100',
-        partName: 'Spot Light Brackets set 08-11',
-        partDesc: 'Secures spot Lights',
+        partName: 'Spot Light Brackets ',
+        partDesc: 'Secures spot Lights (set 08-11)',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/yb7mwola',
         colors: 'Black',
         grnt: '1 year',
         instTime: 30,
         price: 625,
+        cat: 'SLB'
     },
     //Part A09102
     {  
@@ -254,6 +273,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 625,
+        cat: 'SLB'
     },
     //Part A09105
     {  
@@ -266,6 +286,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 60,
         price: 2020,
+        cat: 'SLB'
     },
     //Part A09106
     {  
@@ -278,6 +299,7 @@ var BMW_parts = [
         grnt: '0',
         instTime: 60,
         price: 2900,
+        cat: 'SLB'
     },
     //Part A09108
     {  
@@ -290,6 +312,7 @@ var BMW_parts = [
         grnt: '0',
         instTime: 60,
         price: 2900,
+        cat: 'SLB'
     },
     //Part A09110
     {  
@@ -302,6 +325,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 20,
         price: 305,
+        cat: 'WFP'
     },
     //Part A09115
     {  
@@ -314,6 +338,7 @@ var BMW_parts = [
         grnt: '1 year',
         instTime: 90,
         price: 2235,
+        cat:'CB'
     },
     //Part A09117
     {  
@@ -326,6 +351,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 90,
         price: 1985,
+        cat: 'CB'
     },
     //Part A09120
     {  
@@ -362,6 +388,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 45,
         price: 615,
+        cat: 'HBR'
     },
     //Part A09127
     {  
@@ -374,6 +401,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 45,
         price: 615,
+        cat: 'HBR'
     },
     //Part A09128
     {  
@@ -386,6 +414,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 995,
+        cat: 'BLE'
     },
    //Part A09129
     {  
@@ -398,6 +427,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 995,
+        cat: 'BLE'
     },
      //Part A09137
     {  
@@ -410,6 +440,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 490,
+        cat: 'SLB'
     },
     //Part A11115
     {  
@@ -422,6 +453,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 735,
+        
     },
     //Part A11550
     {  
@@ -434,6 +466,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 4370,
+    
     },
     //Part A11560
     {  
@@ -451,13 +484,14 @@ var BMW_parts = [
     {  
         partNum: 'A90000',
         partName: 'AVANT FGS front fender',
-        partDesc: 'Stops rain ',
+        partDesc: 'Stops mud from being sprayed onto engine from the front wheel',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/ycp8rey8',
         colors: '?',
         grnt: '1 Year',
         instTime: 60,
         price: 995,
+        cat:'OTH'
     },
     //Part A09070
     {  
@@ -470,6 +504,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 20,
         price: 880,
+        cat: 'WFP'
     },
     //Part A09075
     {  
@@ -482,6 +517,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 20,
         price: 915,
+        cat: 'WFP'
     },
     //Part A01007
     {  
@@ -494,6 +530,7 @@ var BMW_parts = [
         grnt: '0',
         instTime: 0,
         price: 208,
+        cat: 'OTH'
     },
     //Part A01010
     {  
@@ -506,6 +543,7 @@ var BMW_parts = [
         grnt: '0',
         instTime: 30,
         price: 55,
+        cat: 'OTH'
     },
     //Part A01020
     {  
@@ -518,6 +556,7 @@ var BMW_parts = [
         grnt: '0',
         instTime: 0,
         price: 3895,
+        cat: 'OTH'
     },
     //Part A01025
     {  
@@ -530,6 +569,7 @@ var BMW_parts = [
         grnt: '0',
         instTime: 0,
         price: 795,
+        cat: 'OTH'
     },
     //Part A01030
     {  
@@ -542,6 +582,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 60,
         price: 1260,
+        cat:'HBR'
     },
     //Part A01031
     {  
@@ -554,6 +595,7 @@ var BMW_parts = [
         grnt: '1 year',
         instTime:30 ,
         price: 1260,
+        cat: 'BBR'
     },
     //Part A01100
     {  
@@ -566,6 +608,7 @@ var BMW_parts = [
         grnt: '0',
         instTime: 60,
         price: 625,
+        cat: 'SLB'
     },
     //Part A01110
     {  
@@ -578,6 +621,7 @@ var BMW_parts = [
         grnt: '0',
         instTime: 60,
         price: 885,
+        cat: 'SLB'
     },
     //Part A01190
     {  
@@ -590,6 +634,7 @@ var BMW_parts = [
         grnt: '1 year',
         instTime: 30,
         price: 627,
+        cat: 'OTH'
     },
     //Part A01200
     {  
@@ -602,6 +647,7 @@ var BMW_parts = [
         grnt: '1 year',
         instTime: 0,
         price: 220,
+        cat: 'OTH'
     },
     //Part A01205
     {  
@@ -614,6 +660,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 0,
         price: 220,
+        cat: 'OTH'
     },
     //Part A01210
     {  
@@ -626,6 +673,7 @@ var BMW_parts = [
         grnt: '1 year',
         instTime: 0,
         price: 285,
+        cat: 'OTH'
     },
     //Part A01215
     {  
@@ -638,6 +686,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 20,
         price: 55,
+        cat: 'BP'
     },
     //Part A01220
     {  
@@ -650,6 +699,7 @@ var BMW_parts = [
         grnt: '0',
         instTime: 0,
         price: 420,
+        cat: 'OTH'
     },
     //Part A01250
     {  
@@ -662,6 +712,7 @@ var BMW_parts = [
         grnt: '0',
         instTime: 10,
         price: 155,
+        cat: 'OTH'
     },
     //Part A01300
     {  
@@ -674,6 +725,7 @@ var BMW_parts = [
         grnt: '0',
         instTime: 20,
         price: 75,
+        cat:'OTH'
     },
     //Part A01305
     {  
@@ -686,6 +738,7 @@ var BMW_parts = [
         grnt: '0',
         instTime: 0,
         price: 40,
+        cat: 'SLB'
     },
     //Part A01310
     {  
@@ -698,6 +751,7 @@ var BMW_parts = [
         grnt: '0',
         instTime: 60,
         price: 650,
+        cat: 'SLB'
     },
     //Part A01311
     {  
@@ -710,6 +764,7 @@ var BMW_parts = [
         grnt: '0',
         instTime: 60,
         price: 650,
+        cat:'SLB'
     },
     //Part A01400
     {  
@@ -722,6 +777,7 @@ var BMW_parts = [
         grnt: '0',
         instTime: 0,
         price: 165,
+        cat:'OTH'
     },
     //Part A01450
     {  
@@ -734,6 +790,7 @@ var BMW_parts = [
         grnt: '0',
         instTime: 45,
         price: 32,
+        cat:'OTH'
     },
     //Part A01460
     {  
@@ -758,6 +815,7 @@ var BMW_parts = [
         grnt: '0',
         instTime: 0,
         price: 1680,
+        cat:'OTH'
     },
     //Part NEWPART
     {  
@@ -770,6 +828,7 @@ var BMW_parts = [
         grnt: '0',
         instTime: 0,
         price: 320,
+        cat:'OTH'
     },
     //Part A01490
     {  
@@ -782,11 +841,12 @@ var BMW_parts = [
         grnt: '0',
         instTime: 0,
         price: 320,
+        cat:'OTH'
     },
     //Part A01500
     {  
         partNum: 'A01500',
-        partName: 'Spot Light/Accessory 18-19mm Bar Mount Bracket to fit Spot Lights ',
+        partName: 'Spot Light/Accessory 18-19mm Bar Mount Bracket to fit Spot Lights to crash bars',
         partDesc: '18-19MM Accessory bar to fit spot lights',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/y95r7bjh',
@@ -794,18 +854,20 @@ var BMW_parts = [
         grnt: '0',
         instTime: 60,
         price: 680,
+        cat:'SLB'
     },
     //Part A01510
     {  
         partNum: 'A01510',
         partName: '25MM spot Light Mounting Bracket',
-        partDesc: '25mm bar spot light mounting bracket',
+        partDesc: '25mm bar spot light mounting bracket to mount spot lights to crash bars',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/yc9wpttn',
         colors: 'Silver',
         grnt: '0',
         instTime:20 ,
         price: 680,
+        cat:'SLB'
     },
     //Part A01520
     {  
@@ -818,30 +880,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 45,
         price: 490,
-    },
-    //Part A19000
-    {  
-        partNum: 'A19000',
-        partName: 'Pannier And Top Box Lid Strap Assembly',
-        partDesc: 'Straps to secure Pannier and top box ',
-        models: ['F650GS','F700GS','F800GS','F800GSA'],
-        imgLink: 'http://tinyurl.com/y7dtjgwb',
-        colors: '0',
-        grnt: '0',
-        instTime: 0,
-        price: 235,
-    },
-    //Part A19010
-    {  
-        partNum: 'A19010',
-        partName: 'Top Box back Rest Pad',
-        partDesc: 'Pad secured to the top box so passenger can sit comfortable',
-        models: ['F650GS','F700GS','F800GS','F800GSA'],
-        imgLink: 'http://tinyurl.com/ybool5ll',
-        colors: 'Black',
-        grnt: '0',
-        instTime: 15,
-        price: 540,
+        cat:'OTH'
     },
     //Part A190105
     {  
@@ -939,6 +978,7 @@ var BMW_parts = [
         grnt: '0',
         instTime: 0,
         price: 465,
+        cat:'OTH'
     },
     //Part A9MR10020
     {  
@@ -951,5 +991,6 @@ var BMW_parts = [
         grnt: '0',
         instTime: 10 ,
         price: 1295,
+        cat:'OTH'
     }
 ]

@@ -20,7 +20,7 @@ var TopBoxPannier = [
     {  
         partNum: 'A11110',
         partName: 'Top Box',
-        partDesc: 'Manufactured from 2 mm aluminium walls with stainless and has 41 litre volumetric capacity .',
+        partDesc: 'Manufactured from 2 mm aluminium walls with stainless and has 41 litre volumetric capacity',
         models: ['BMW R1200GS/R1200GS Adventure'],
         imgLink: 'http://tinyurl.com/y7fts7tc',
         colors: 'Silver',
@@ -170,21 +170,32 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 10,
         price: 4350,
+<<<<<<< HEAD
         cat: 'TB', 
     },
     //Part A11248
+=======
+        cat: 'TB',     
+    },
+    //Part A11505
+>>>>>>> 835bf7853aabc2f636bbc4c8ad370db2f81f93d0
     {  
-        partNum: 'A11248',
+        partNum: 'A11505',
         partName: 'Top Box',
         partDesc: 'Manufactured from 2 mm aluminium with side latch no top plate required, powder coated new silver, no plate required',
         models: ['BMW R1200GS Adventuer K51'],
-        imgLink: 'http://tinyurl.com/ybjdqlw5',
-        colors: 'New silver',
-        grnt: '1 year',
+        imgLink: 'http://tinyurl.com/y8w5p6e5',
+        colors: 'Silver',
+        grnt: '1 Year',
         instTime: 10,
         price: 4390,
+<<<<<<< HEAD
         cat: 'TB', 
     },
+=======
+        cat: 'TB',
+    },   
+>>>>>>> 835bf7853aabc2f636bbc4c8ad370db2f81f93d0
     //Part A19000
     {  
         partNum: 'A19000',

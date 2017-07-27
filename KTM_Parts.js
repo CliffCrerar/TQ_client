@@ -23,13 +23,14 @@ var KTM_Parts = [
     {
         partNum: 'A08201',
         partName: 'Bash Plate',
-        partDesc: 'Made from ? , protects the engine casing from loose projectiles and road hazards, must have for offroading.',
+        partDesc: 'Made from aluminium, protects the engine casing from loose projectiles and road hazards, must have for offroading.',
         models: ['KTM 950','KTM 990'],
         imgLink: 'http://tinyurl.com/yage98cq',
         colors: 'Black',
         grnt: '1 Year',
         instTime: 45,
         price: 2395,
+        cat: 'BP'
     },
     //Part A08271
     {  
@@ -42,6 +43,7 @@ var KTM_Parts = [
         grnt: '1 Year',
         instTime: 30 ,
         price: 1425 ,
+        cat: 'HLG'
     },
     //Part A11150
     {  
@@ -54,6 +56,7 @@ var KTM_Parts = [
         grnt: '1 Year',
         instTime: 30 ,
         price: 755 ,
+        cat:''
     },
     //Part A08250
     {
@@ -80,6 +83,7 @@ var KTM_Parts = [
         grnt: '1 Year',
         instTime: 30 ,
         price: 365,
+        cat: 'WFP'
     },
     //Part 'A08400'
     {  
@@ -92,6 +96,7 @@ var KTM_Parts = [
         grnt: '1 Year',
         instTime: 10,
         price: 3930,
+        
     },
     //Part A11155
     {  
@@ -128,6 +133,7 @@ var KTM_Parts = [
         grnt: '1 Year',
         instTime: 15,
         price: 1425,
+        cat: 'HLG'
     },
     //Part A11143
     {  
@@ -152,6 +158,7 @@ var KTM_Parts = [
         grnt: '1 year',
         instTime: 60,
         price: 2395,
+        cat: 'BP'
     },
     //Part A08070
     {  
@@ -176,6 +183,7 @@ var KTM_Parts = [
         grnt: '1 Year',
         instTime: 20,
         price: 340,
+        cat: 'SSE'
     },
     //Part A11140
     {  
@@ -200,6 +208,7 @@ var KTM_Parts = [
         grnt: '1 Year',
         instTime: 50,
         price: 1890,
+        cat: 'DBG'
     },
      //Part A08020
     {  
@@ -238,18 +247,20 @@ var KTM_Parts = [
         grnt: '1 year',
         instTime: 30,
         price: 890,
+        cat: 'DBG'
     },
-    //Part A0810
+    //Part A08100
     {  
-        partNum: 'A0810',
+        partNum: 'A08100',
         partName: 'KTM Pillion Wide Fot Peg',
         partDesc: 'Manufactured of aliminuim safer than the standard as there is more surface for the passengers foot to grip on the pig',
         models: ['ALL KTM'],
-        imgLink: 'http://tinyurl.com/y7x47yrh',
+        imgLink: 'http://tinyurl.com/y8t7wppy',
         colors: 'Black',
         grnt: '1 Year',
         instTime: 20,
         price: 970,
+        cat: 'WFP'
     },
     //Part A08256
     {  
@@ -274,6 +285,7 @@ var KTM_Parts = [
         grnt: '1 year',
         instTime: 10,
         price: 4690,
+        cat: 'CK'
     },
     //Part A08270
     {  
@@ -286,5 +298,6 @@ var KTM_Parts = [
         grnt: '1 Year',
         instTime: 45,
         price: 1350,
+        cat: 'HLG'
     }
 ]
