@@ -7,7 +7,7 @@ var BMW_parts = [
     {  
         partNum: 'A09020',
         partName: 'Bash plate',
-        partDesc: 'Made off aliminuim. Protects the engine casing from lose protectiles and road hazards must have for off roading',
+        partDesc: 'Made off aliminium. Protects the engine casing from lose protectiles and road hazards must have for off roading',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/y86f4qpb',
         colors: 'Silver',
@@ -20,7 +20,7 @@ var BMW_parts = [
     {  
         partNum: 'A090025',
         partName: 'Bash plate',
-        partDesc: 'Made off aliminuim. Protects the engine casing from lose protectiles and road hazards must have for off roading',
+        partDesc: 'Made off aliminium. Protects the engine casing from lose protectiles and road hazards must have for off roading',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/y8ecotqe',
         colors: 'Black',
@@ -111,7 +111,7 @@ var BMW_parts = [
     {  
         partNum: 'A09080',
         partName: 'Bash Plate',
-        partDesc: 'Made off aliminuim. Protects the engine casing from lose protectiles and road hazards must have for off roading',
+        partDesc: 'Made off aliminium. Protects the engine casing from lose protectiles and road hazards must have for off roading',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/y8mkszs3',
         colors: 'Aliminium',
@@ -124,7 +124,7 @@ var BMW_parts = [
     {  
         partNum: 'A09085',
         partName: 'Bash Plate',
-        partDesc: 'Made off aliminuim. Protects the engine casing from lose protectiles and road hazards must have for off roading',
+        partDesc: 'Made off aliminium. Protects the engine casing from lose protectiles and road hazards must have for off roading',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/yaocnyoy',
         colors: 'Black',

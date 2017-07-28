@@ -50,7 +50,7 @@ var KTM_Parts = [
     {
         partNum: 'A08250',
         partName: 'Standard Luggage Rack',
-        partDesc: 'Made from lightweight suspect alluminium, '+
+        partDesc: 'Made from lightweight suspect aluminium, '+
                   'used to tie down appropriate luggage with straps included with the luggage rack.'+
                   'Also includes a securing kit.',
         models: ['KTM 1190'],
@@ -90,7 +90,7 @@ var KTM_Parts = [
     {  
         partNum: 'A8258',
         partName: 'Luggage Rack',
-        partDesc: 'Made from lightweight suspect alluminium, used to secure appropiate luggage with straps included in luggage rack, also includes a securing kit',
+        partDesc: 'Made from lightweight suspect aluminium, used to secure appropiate luggage with straps included in luggage rack, also includes a securing kit',
         models: ['KTM 1050','KTM 1090','KTM 1190','KTM 1290'],
         imgLink: 'http://tinyurl.com/yd87phcd',
         colors: 'Black',
@@ -166,7 +166,7 @@ var KTM_Parts = [
     {  
         partNum: 'A08010',
         partName: 'Front Brake Disc Guard',
-        partDesc: 'Manufactured from aliminuim, protects the front brake disc from loose projectiles and road hazards',
+        partDesc: 'Manufactured from aliminium, protects the front brake disc from loose projectiles and road hazards',
         models: ['KTM EXE','KTM XC','KTM XC-W','KTM XCF','KTM XCF-W' ],
         imgLink: 'http://tinyurl.com/yahrfxpy',
         colors: 'Aliminuim',
@@ -179,7 +179,7 @@ var KTM_Parts = [
     {  
         partNum: 'A08020',
         partName: 'Rear Brake Disc Guard',
-        partDesc: 'Manufactured from aliminuim, protects the rear brake disc from loose projectiles and road hazards',
+        partDesc: 'Manufactured from aliminium, protects the rear brake disc from loose projectiles and road hazards',
         models: ['KTM EXC','KTM XC KTM XC-W','KTM XCF','KTM XCF-W'],
         imgLink: 'http://tinyurl.com/y7khpdcy',
         colors: 'Aluminuim',
@@ -192,7 +192,7 @@ var KTM_Parts = [
     {  
         partNum: 'A08040',
         partName: 'Rear Brake Disc Guard (Shark Fin)',
-        partDesc: 'Manufactured from aliminuim, protects the rear brake disc from loose projectiles and road hazards',
+        partDesc: 'Manufactured from aliminium, protects the rear brake disc from loose projectiles and road hazards',
         models: ['KTM EXC','KTM XC','KTM XC-W','KTM XCF','KTM XCF-W'],
         imgLink: 'http://tinyurl.com/y8yfh5tk',
         colors: 'Orange and Silver',
@@ -205,7 +205,7 @@ var KTM_Parts = [
     {  
         partNum: 'A08045',
         partName: 'Rear Brake Disc Guard (Shark Fin)(Later Vision)',
-        partDesc: 'Manufactured from aliminuim, protects the rear brake disc from loose projectiles and road hazards',
+        partDesc: 'Manufactured from aliminium, protects the rear brake disc from loose projectiles and road hazards',
         models: ['KTM EXC','KTM XC','KTM XC-W','KTM XCF','KTM XCF-W'],
         imgLink: 'http://tinyurl.com/yd77em8o',
         colors: 'Orange and Silver',
@@ -218,7 +218,7 @@ var KTM_Parts = [
     {  
         partNum: 'A08100',
         partName: 'KTM Pillion Wide Fot Peg',
-        partDesc: 'Manufactured of aliminuim safer than the standard as there is more surface for the passengers foot to grip on the pig',
+        partDesc: 'Manufactured of aliminium safer than the standard as there is more surface for the passengers foot to grip on the pig',
         models: ['ALL KTM'],
         imgLink: 'http://tinyurl.com/y8t7wppy',
         colors: 'Black',
