@@ -252,11 +252,13 @@
                 }
 
                 $('#MotCycPartSideNav').bind('click',function(button){
-                    filterParts(button,'#bikeParts',allParts);
+                    filterParts(button,'#bikeParts');
                 });
-
-
-
+                $('#TB_PanPartSideNav').bind('click',function(button){
+                    console.log(button.target.id);
+                    filterParts(button,'#TopBoxPannierParts')
+                });
+                
                 /*
                 $('#MotCycPartSideNav').bind('click',function(button){
                     console.log(allParts)
@@ -520,10 +522,10 @@
             <div id="TopBoxPannier" class="mainSec"> <!--4x4-->
                 <h2>Top Box and Panniers</h2>
                 <div class="row container-fluid">
-                    <div class="col-sm-3 sideNav">
-                        <button class="btn btn-block" type="button">Top Boxes</button>
-                        <button class="btn btn-block" type="button">Panniers</button>
-                        <button class="btn btn-block" type="button">Mounting Brackets</button>
+                    <div class="col-sm-3 sideNav" id="TB_PanPartSideNav">
+                        <button id="TB"  class="btn btn-block" type="button">Top Boxes</button>
+                        <button id="PAN" class="btn btn-block" type="button">Panniers</button>
+                        <button id="TBB" class="btn btn-block" type="button">Mounting Brackets</button>
                     </div>
 
                     <div class="col-sm-9">
