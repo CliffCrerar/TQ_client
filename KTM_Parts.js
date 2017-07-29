@@ -85,6 +85,7 @@ var KTM_Parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 755,
+        cat: 'TBB'
     },
     //Part A08258
     {  
@@ -97,6 +98,7 @@ var KTM_Parts = [
         grnt: '1 year',
         instTime: 30 ,
         price: 1120,
+        cat: 'LR'
     }, 
     //Part A08273
     { 
@@ -122,6 +124,7 @@ var KTM_Parts = [
         grnt: ' 1 year',
         instTime: 60 ,
         price: 2780,
+        cat: 'LR'
     },
     //Part A08200
     {  
@@ -147,6 +150,7 @@ var KTM_Parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 1120,
+        cat: 'LR'
     },
     //Part A08060
     {  
@@ -238,6 +242,7 @@ var KTM_Parts = [
         grnt: '1 Year',
         instTime: 45,
         price:1120,
+        cat: 'LR'
     },
     //Part A8280
     {  

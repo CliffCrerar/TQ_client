@@ -79,6 +79,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime:30,
         price: 995,
+        cat: 'LR'
     },
     //Part A09077
     {  
@@ -364,6 +365,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 995,
+        cat: 'LR'
     },
     //Part A09122
     {  
@@ -376,6 +378,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 995,
+        cat: 'LR'
     },
     //Part A09125
     {  

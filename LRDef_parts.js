@@ -14,6 +14,7 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 120,
         price: 8000,
+        cat: 'BB'
     },
     //Part A22010
     {  
@@ -26,6 +27,7 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 45,
         price: 795,
+        cat: 'FP'
     },
     //Part A22011
     {  
@@ -38,6 +40,7 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 45,
         price: 925,
+        cat: 'FP'
     },
     //Part A22015
     {  
@@ -50,6 +53,7 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 45,
         price: 2495,
+        cat: 'OP'
     },
     //Part A22017
     {  
@@ -62,6 +66,7 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime:30,
         price: 280,
+        cat: 'FFPP'
     },  
     //Part A22016
     {  
@@ -74,6 +79,7 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 280,
+        cat: 'FFPP'
     },
     //Part A22020
     {  
@@ -86,6 +92,7 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 560,
+        cat: 'HLJB'
     },
     //Part A22030
     {  
@@ -98,6 +105,7 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 425,
+        cat: 'CS'
     },
     //Part A22040
     {  
@@ -110,6 +118,7 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 60,
         price:375 ,
+        cat: 'FSE'
     },
     //Part A22050
     {  
@@ -122,6 +131,7 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 60,
         price: 250,
+        cat: 'BT'
     },
     //Part A22060
     {  
@@ -134,6 +144,7 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 90,
         price: 4295,
+        cat: "RAI"
     },
     //Part A22070
     {  
@@ -146,6 +157,7 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 60,
         price: 2490,
+        Cat: 'SG'
     },
     //Part A22080
     {  
@@ -158,6 +170,7 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 90,
         price: 3895,
+        cat: 'SWC'
     },
     //Part A22210
     {  
@@ -170,11 +183,12 @@ var LRDef_parts = [
         grnt: '0',
         instTime: 45,
         price: 690,
+        cat: 'SSK'
     },
     //Part A22250
     {  
         partNum: 'A22250',
-        partName: 'Fuel Tankd Guard',
+        partName: 'Fuel Tank Guard',
         partDesc: 'Manufactured from aluminium secure to the rear under carriage and protects the fuel from loose projectiles in the road as well when going off road',
         models: ['90'],
         imgLink: 'http://tinyurl.com/ycvb7kdy',
@@ -182,6 +196,7 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 60,
         price: 2475,
+        cat: 'FTG'
     },
     //Part A22310
     {  
@@ -194,6 +209,7 @@ var LRDef_parts = [
         grnt: '0',
         instTime: 45,
         price: 855,
+        cat: 'SSK'
     },
     //Part A22315
     {  
@@ -206,6 +222,7 @@ var LRDef_parts = [
         grnt: '0',
         instTime: 45,
         price: 855,
+        cat: 'SSK'
     },
     //Part A22350
     {  
@@ -218,6 +235,7 @@ var LRDef_parts = [
         grnt: '0',
         instTime: 60,
         price: 2875,
+        cat: 'FTG'
     },
     //Part A22410
     {  
@@ -230,6 +248,7 @@ var LRDef_parts = [
         grnt: '0',
         instTime: 45,
         price: 1375,
+        cat: 'SSK'
     },
     //Part A22430
     {  
@@ -242,6 +261,7 @@ var LRDef_parts = [
         grnt: '0',
         instTime: 120,
         price: 6550,
+        cat: 'FT'
     },
     //Part A22440
     {  
@@ -254,6 +274,7 @@ var LRDef_parts = [
         grnt: '0',
         instTime: 45,
         price: 5700,
+        cat: 'SR'
     },
     //Part A22470
     {  
@@ -266,6 +287,7 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 0,
         price: 5900,
+        cat: 'WS'
     },
     //Part A31010
     {  
@@ -278,6 +300,7 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 20,
         price: 7700,
+        cat: 'RR'
     },
     //Part A31050
     {  
@@ -290,6 +313,7 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 20,
         price: 8800,
+        cat: 'RR'
     },
     //Part A31060
     {  
@@ -302,6 +326,7 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 20,
         price: 6885,
+        cat: 'RR'
     },
     //Part A50200
     {  
@@ -314,6 +339,7 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 240,
         price: 8200,
+        cat: 'DU'
     },
     //Part A61000
     {  
@@ -326,6 +352,7 @@ var LRDef_parts = [
         grnt: '0',
         instTime: 0,
         price: 945,
+        cat: 'WS'
     }
 
       

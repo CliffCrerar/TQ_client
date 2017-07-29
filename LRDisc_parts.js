@@ -14,6 +14,7 @@ var LRDisc_parts = [
         grnt: '1 Year',
         instTime: 10,
         price: 2180,
+        cat: 'HDTH'
     },
     //Part A23020
     {  
@@ -26,6 +27,7 @@ var LRDisc_parts = [
         grnt: '1 Year',
         instTime: 120,
         price: 4475,
+        cat: 'SUG'
     },
     //Part A23020
     {  
@@ -38,6 +40,7 @@ var LRDisc_parts = [
         grnt: '1 Year',
         instTime: 120,
         price: 4475,
+        cat: 'SUG'
     },
     //Part A23100
     {  
@@ -50,6 +53,7 @@ var LRDisc_parts = [
         grnt: '1 Year',
         instTime: 420,
         price: 6800,
+        cat: 'BWP'
     },
     //Part A23110
     {  
@@ -62,6 +66,7 @@ var LRDisc_parts = [
         grnt: '1 Year',
         instTime: 420,
         price: 8935,
+        cat: 'SWC'
     },
     //Part A23200
     {  
@@ -74,6 +79,7 @@ var LRDisc_parts = [
         grnt: '1 Year',
         instTime:60 ,
         price: 9300,
+        cat: 'RAI'
     },
     //Part A31350
     {  
@@ -86,6 +92,7 @@ var LRDisc_parts = [
         grnt: '1 Year',
         instTime: 60,
         price: 1025,
+        cat: 'RRM'
     },
     //Part A31355
     {  
@@ -98,5 +105,6 @@ var LRDisc_parts = [
         grnt: '1 year',
         instTime: 30,
         price: 900,
+        cat: 'RDL'
     }
 ]
