@@ -67,7 +67,7 @@
                 });
 
                 $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/TopBox_Panniers.js', function(){
-                    displayParts(TopBoxPannier,'TopBoxPannierParts','all')
+                    displayParts(TopBoxPannier,'TopBoxPannierParts','Tob boxes and Panniers')
                 });
 
                 var allParts = []//create variable for all parts
@@ -147,7 +147,7 @@
                 
                 function displayParts(partsObject, divId, badgeType){
                     
-                    console.log(partsObject.length)
+                    console.log('## '+partsObject.length+' parts for '+badgeType)
                     //console.log(allParts);
                     partsObject.forEach(function(part){
                         //console.log(part);
@@ -170,6 +170,10 @@
                     }
                     
                     for(i=0; i<objLen; i++) {
+                        var partNum = partsData[i].partNum
+                        function partCategory(){var partnum = ''; if (partsData[i].cat == null){return partnum = 'NO-CATEGORY'}else{return partnum = partsData[i].cat}}
+                        var partIdentifier = partCategory()+'_'+partNum;
+                        console.log(partIdentifier)
                         //console.log(partsData[i].partNum+' & '+partsData[i].partName);                
                         $('#'+divId).append('<div class="well" id="'+partsData[i].partNum+'"></div>');
                         $('#'+partsData[i].partNum).append('<div class="partNameDiv"></div>');
@@ -235,11 +239,7 @@
                     var p = 0
                     parts.each(function(div){
                         l = 0
-                        allParts.forEach(function(allPartsObj){
-                            console.log(l)
-                            l++
-                        })
-                        
+                      
                         console.log(partClass)
                         console.log(parts[p].id)
                         console.log(p)
