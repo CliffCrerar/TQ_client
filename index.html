@@ -232,6 +232,36 @@
                     }
                 }
                 //Filter bike Parts according to sidenav
+
+                function filterParts(controls,FilterElements) {
+                    var parts = $(FilterElements).children();
+                    var partClass = controls.target.id
+                    parts.hide();
+                    var p = 0
+                    parts.each(function(div){
+                        var idClass = parts[p].id.substr(0, parts[p].id.indexOf('_'))
+                        if(partClass==idClass){
+                            console.log(parts[p])
+                            $('#'+parts[p].id).fadeIn('slow');
+                        }
+                        console.log('idClass '+idClass)
+                        console.log('PartClass '+partClass)
+                        console.log(parts[p].id)
+                        console.log(p)
+                        p++
+                    });
+                }
+
+                $('#MotCycPartSideNav').bind('click',function(button){
+                    filterParts(button,'#bikeParts');
+                });
+
+                $('#TBPartSideNav').bind('click', function(button){
+                    filterParts(button,'#TopBoxPannierParts')
+                });
+
+
+                /*                
                 $('#MotCycPartSideNav').bind('click',function(button){
                     console.log(allParts)
                     var parts = $('#bikeParts').children();
@@ -251,6 +281,7 @@
                         p++
                     });
                 });
+                */
             });
         </script>
 
@@ -495,10 +526,10 @@
 
             <div id="TopBoxPannier" class="mainSec"> <!--4x4-->
                 <div class="row container-fluid">
-                    <div class="col-sm-3 sideNav">
-                        <button class="btn btn-block" type="button">Top Boxes</button>
-                        <button class="btn btn-block" type="button">Panniers</button>
-                        <button class="btn btn-block" type="button">Mounting Brackets</button>
+                    <div class="col-sm-3 sideNav" id="TBPartSideNav">
+                        <button id="TB" class="btn btn-block" type="button">Top Boxes</button>
+                        <button id="PAN" class="btn btn-block" type="button">Panniers</button>
+                        <button id="TBB" class="btn btn-block" type="button">Mounting Brackets</button>
                     </div>
 
                     <div class="col-sm-9">
@@ -529,7 +560,7 @@
                         <button id="SLB" class="btn btn-block" type="button">Spot Lights and Brackets</button>
                         <button id="CB"  class="btn btn-block" type="button">Crash Bars</button>
                         <button id="HBR" class="btn btn-block" type="button">Handle Bar Raisers</button>
-                        <button id="OA"  class="btn btn-block" type="button">Other Accessories</button>
+                        <button id="OTH"  class="btn btn-block" type="button">Other Accessories</button>
                     </div>
 
                     <!--Part Description demo div--> <!--
