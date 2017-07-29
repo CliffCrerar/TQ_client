@@ -534,7 +534,7 @@ var BMW_parts = [
         grnt: '0',
         instTime: 0,
         price: 795,
-        cat: 'OTH'
+        cat: 'CK'
     },
     //Part A01030
     {  
