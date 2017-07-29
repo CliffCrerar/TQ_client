@@ -276,7 +276,7 @@ var TopBoxPannier = [
         price: 235,
         cat: 'PAN'
     },
-        //Part A190105
+        //Part A190100
     {  
         partNum: 'A190100',
         partName: 'Single Pocket inner Pannier Bag',

@@ -442,31 +442,6 @@ var BMW_parts = [
         price: 490,
         cat: 'SLB'
     },
-    //Part A11550
-    {  
-        partNum: 'A11550',
-        partName: 'Right Side Pannier Aluminium',
-        partDesc: 'Manufactured from aluminium 405X455X285 and can lock',
-        models: ['F650GS','F700GS','F800GS','F800GSA'],
-        imgLink: 'http://tinyurl.com/y882ub4x',
-        colors: 'Silver',
-        grnt: '1 Year',
-        instTime: 30,
-        price: 4370,
-    
-    },
-    //Part A11560
-    {  
-        partNum: 'A11560',
-        partName: 'Left Side Pannier Aluminium',
-        partDesc: 'Manufactured from aluminium 405X455X285 and can lock',
-        models: ['F650GS','F700GS','F800GS','F800GSA'],
-        imgLink: 'http://tinyurl.com/ybhrc8rp',
-        colors: 'Siver',
-        grnt: '1 Year',
-        instTime: 30,
-        price: 4370,
-    },
     //Part A90000
     {  
         partNum: 'A90000',
@@ -869,7 +844,7 @@ var BMW_parts = [
         price: 490,
         cat:'OTH'
     },
-    //Part A190105
+    //Part A190100
     {  
         partNum: 'A190100',
         partName: 'Single Pocket inner Pannier Bag',
@@ -880,19 +855,6 @@ var BMW_parts = [
         grnt: '0',
         instTime: 0,
         price: 540,
-    },
-    //Part A190105
-    {  
-        partNum: 'A190105',
-        partName: 'Multi Pocket Inner Pannier Bag ',
-        partDesc: 'Multi pocket bag to keep items organized, clean and protects the inside of the Pannier',
-        models: ['F650GS','F700GS','F800GS','F800GSA'],
-        imgLink: 'http://tinyurl.com/y7gsxqqo',
-        colors: 'Black and Orange',
-        grnt: '0',
-        instTime: 0,
-        price: 600,
-
     },
     //Part A190110
     {  
