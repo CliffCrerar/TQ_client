@@ -754,18 +754,6 @@ var BMW_parts = [
         price: 32,
         cat:'OTH'
     },
-    //Part A01460
-    {  
-        partNum: 'A01460',
-        partName: 'Pannnier and Top Box Lid Strap Assembly',
-        partDesc: 'Straps to secure Panniers and Top Boxes',
-        models: ['F650GS','F700GS','F800GS','F800GSA'],
-        imgLink: 'http://tinyurl.com/yazs8tw2',
-        colors: 'Black',
-        grnt: '0',
-        instTime: 0,
-        price: 235,
-    },
     //Part NEWPART
     {  
         partNum: 'A01470',
