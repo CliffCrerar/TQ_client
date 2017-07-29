@@ -754,7 +754,7 @@ var BMW_parts = [
         price: 32,
         cat:'OTH'
     },
-    //Part NEWPART
+    //Part A01470
     {  
         partNum: 'A01470',
         partName: 'Ctek Keep Power Small CAnbus(Ctek Battery Charger)',
@@ -767,7 +767,7 @@ var BMW_parts = [
         price: 1680,
         cat:'OTH'
     },
-    //Part NEWPART
+    //Part A01480
     {  
         partNum: 'A01480',
         partName: '5 Litre Adventure Fuel Tank',
