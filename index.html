@@ -231,6 +231,33 @@
                     }
                 }
                 //Filter bike Parts according to sidenav
+                function filterParts(controls,elementsDiv){
+                    console.log(allParts)
+                    var parts = $(elementsDiv).children();
+                    var partClass = controls.target.id
+                    parts.hide();
+                    var p = 0
+                    parts.each(function(div){
+                        var idClass = parts[p].id.substr(0, parts[p].id.indexOf('_'))
+                        if(partClass==idClass){
+                            console.log(parts[p])
+                            $('#'+parts[p].id).show();
+                        }
+                        console.log('idClass '+idClass)
+                        console.log('PartClass '+partClass)
+                        console.log(parts[p].id)
+                        console.log(p)
+                        p++
+                    });
+                }
+
+                $('#MotCycPartSideNav').bind('click',function(button){
+                    filterParts(button,'#bikeParts',allParts);
+                });
+                
+
+
+                /*
                 $('#MotCycPartSideNav').bind('click',function(button){
                     console.log(allParts)
                     var parts = $('#bikeParts').children();
@@ -250,6 +277,7 @@
                         p++
                     });
                 });
+                */
             });
         </script>
 
