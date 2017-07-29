@@ -175,34 +175,34 @@
                         var partIdentifier = partCategory()+'_'+partNum;
                         console.log(partIdentifier)
                         //console.log(partsData[i].partNum+' & '+partsData[i].partName);                
-                        $('#'+divId).append('<div class="well" id="'+partsData[i].partNum+'"></div>');
-                        $('#'+partsData[i].partNum).append('<div class="partNameDiv"></div>');
-                        $('#'+partsData[i].partNum+'>.partNameDiv').append('<img class="manuBadge" src="'+badgeUrl+'" alt="badge">');
-                        $('#'+partsData[i].partNum+'>.partNameDiv').append('<span class="partName">'+partsData[i].partName+'</span>');
-                        $('#'+partsData[i].partNum).append('<div class="Row"></div>');
+                        $('#'+divId).append('<div class="well" id="'+partIdentifier+'"></div>');
+                        $('#'+partIdentifier).append('<div class="partNameDiv"></div>');
+                        $('#'+partIdentifier+'>.partNameDiv').append('<img class="manuBadge" src="'+badgeUrl+'" alt="badge">');
+                        $('#'+partIdentifier+'>.partNameDiv').append('<span class="partName">'+partsData[i].partName+'</span>');
+                        $('#'+partIdentifier).append('<div class="Row"></div>');
                         
-                        $('#'+partsData[i].partNum+'>.row').append(
+                        $('#'+partIdentifier+'>.row').append(
                             '<div class="col-sm-9"></div>',
                             '<div class="col-sm-3"></div>'
                         );
 
-                        $('#'+partsData[i].partNum+'>.row>.col-sm-9').append(
+                        $('#'+partIdentifier+'>.row>.col-sm-9').append(
                             '<blockquote><p>'+partsData[i].partDesc+'</p></blockquote>',
                             '<div class="row">'+
-                                '<div class="col-sm-6" id="'+partsData[i].partNum+'Models"></div>'+
-                                '<div class="col-sm-6" id="'+partsData[i].partNum+'Meta"></div>'+
+                                '<div class="col-sm-6" id="'+partIdentifier+'Models"></div>'+
+                                '<div class="col-sm-6" id="'+partIdentifier+'Meta"></div>'+
                             '</div>'
                         );           
                         
-                        $('#'+partsData[i].partNum+'Models').append('<h4>Fits:</h4>')
+                        $('#'+partIdentifier+'Models').append('<h4>Fits:</h4>')
                         modelCount = partsData[i].models.length;
                         for(l=0; l < modelCount; l++) {
-                            $('#'+partsData[i].partNum+'Models').append(
+                            $('#'+partIdentifier+'Models').append(
                                 '<li>'+partsData[i].models[l]+'</li>'
                             );
                         }
 
-                        $('#'+partsData[i].partNum+'Meta').append(
+                        $('#'+partIdentifier+'Meta').append(
                             '<div class="table">'+
                                 '<table>'+
                                     '<tr>'+
@@ -219,13 +219,13 @@
                                     '</tr>'+
                                     '<tr>'+
                                         '<td class="dataType">Part Number:</td>'+
-                                        '<td>'+partsData[i].partNum+'</td>'+                                    
+                                        '<td>'+partIdentifier+'</td>'+                                    
                                     '</tr>'+                                                                                            
                                 '</table>'+
                             '</div>'
                         )
                         
-                        $('#'+partsData[i].partNum+'>.row>.col-sm-3').append(
+                        $('#'+partIdentifier+'>.row>.col-sm-3').append(
                             '<img class="imgCont partImage img-responsive" src="'+partsData[i].imgLink+'">'
                         )
                     }
@@ -238,9 +238,13 @@
                     parts.hide();
                     var p = 0
                     parts.each(function(div){
-                        l = 0
-                      
-                        console.log(partClass)
+                        var idClass = parts[p].id.substr(0, parts[p].id.indexOf('_'))
+                        if(partClass==idClass){
+                            console.log(parts[p])
+                            $('#'+parts[p].id).show();
+                        }
+                        console.log('idClass '+idClass)
+                        console.log('PartClass '+partClass)
                         console.log(parts[p].id)
                         console.log(p)
                         p++
