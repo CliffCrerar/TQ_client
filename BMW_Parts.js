@@ -7,7 +7,7 @@ var BMW_parts = [
     {  
         partNum: 'A09020',
         partName: 'Bash plate',
-        partDesc: 'Made off aliminium. Protects the engine casing from lose protectiles and road hazards must have for off roading',
+        partDesc: 'Made off aliminuim. Protects the engine casing from lose protectiles and road hazards must have for off roading',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/y86f4qpb',
         colors: 'Silver',
@@ -20,7 +20,7 @@ var BMW_parts = [
     {  
         partNum: 'A090025',
         partName: 'Bash plate',
-        partDesc: 'Made off aliminium. Protects the engine casing from lose protectiles and road hazards must have for off roading',
+        partDesc: 'Made off aliminuim. Protects the engine casing from lose protectiles and road hazards must have for off roading',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/y8ecotqe',
         colors: 'Black',
@@ -45,7 +45,7 @@ var BMW_parts = [
     //Part A09041
     {  
         partNum: 'A09041',
-        partName: 'Spot Lightt Bracket(under Beak fitment)',
+        partName: 'Spot Lihgt Bracket(under Beak fitment)',
         partDesc: 'Manufactured from aluminium and comes with securing kit',
         models: ['F650GS','F700GS','F800GS','F800GSA','Also fits Pre F800GS pre face lift'],
         imgLink: 'http://tinyurl.com/y8q3q4fd',
@@ -79,7 +79,6 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime:30,
         price: 995,
-        cat: 'LR'
     },
     //Part A09077
     {  
@@ -111,7 +110,7 @@ var BMW_parts = [
     {  
         partNum: 'A09080',
         partName: 'Bash Plate',
-        partDesc: 'Made off aliminium. Protects the engine casing from lose protectiles and road hazards must have for off roading',
+        partDesc: 'Made off aliminuim. Protects the engine casing from lose protectiles and road hazards must have for off roading',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/y8mkszs3',
         colors: 'Aliminium',
@@ -124,7 +123,7 @@ var BMW_parts = [
     {  
         partNum: 'A09085',
         partName: 'Bash Plate',
-        partDesc: 'Made off aliminium. Protects the engine casing from lose protectiles and road hazards must have for off roading',
+        partDesc: 'Made off aliminuim. Protects the engine casing from lose protectiles and road hazards must have for off roading',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/yaocnyoy',
         colors: 'Black',
@@ -365,7 +364,6 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 995,
-        cat: 'LR'
     },
     //Part A09122
     {  
@@ -378,7 +376,6 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 995,
-        cat: 'LR'
     },
     //Part A09125
     {  
@@ -445,7 +442,32 @@ var BMW_parts = [
         price: 490,
         cat: 'SLB'
     },
-   //Part A90000
+    //Part A11550
+    {  
+        partNum: 'A11550',
+        partName: 'Right Side Pannier Aluminium',
+        partDesc: 'Manufactured from aluminium 405X455X285 and can lock',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/y882ub4x',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 4370,
+    
+    },
+    //Part A11560
+    {  
+        partNum: 'A11560',
+        partName: 'Left Side Pannier Aluminium',
+        partDesc: 'Manufactured from aluminium 405X455X285 and can lock',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/ybhrc8rp',
+        colors: 'Siver',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 4370,
+    },
+    //Part A90000
     {  
         partNum: 'A90000',
         partName: 'AVANT FGS front fender',
@@ -661,7 +683,7 @@ var BMW_parts = [
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/ydxthvv6',
         colors: 'Grey',
-        grnt: '0',  
+        grnt: '0',
         instTime: 0,
         price: 420,
         cat: 'OTH'
@@ -757,7 +779,19 @@ var BMW_parts = [
         price: 32,
         cat:'OTH'
     },
-    //Part A01470
+    //Part A01460
+    {  
+        partNum: 'A01460',
+        partName: 'Pannnier and Top Box Lid Strap Assembly',
+        partDesc: 'Straps to secure Panniers and Top Boxes',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yazs8tw2',
+        colors: 'Black',
+        grnt: '0',
+        instTime: 0,
+        price: 235,
+    },
+    //Part NEWPART
     {  
         partNum: 'A01470',
         partName: 'Ctek Keep Power Small CAnbus(Ctek Battery Charger)',
@@ -770,7 +804,7 @@ var BMW_parts = [
         price: 1680,
         cat:'OTH'
     },
-    //Part A01480
+    //Part NEWPART
     {  
         partNum: 'A01480',
         partName: '5 Litre Adventure Fuel Tank',
@@ -835,7 +869,91 @@ var BMW_parts = [
         price: 490,
         cat:'OTH'
     },
+    //Part A190105
+    {  
+        partNum: 'A190100',
+        partName: 'Single Pocket inner Pannier Bag',
+        partDesc: 'Inner lining for pannier to protect and keep inside of pannier clean  ',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yb23po6o',
+        colors: 'Black and Orange',
+        grnt: '0',
+        instTime: 0,
+        price: 540,
+    },
+    //Part A190105
+    {  
+        partNum: 'A190105',
+        partName: 'Multi Pocket Inner Pannier Bag ',
+        partDesc: 'Multi pocket bag to keep items organized, clean and protects the inside of the Pannier',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/y7gsxqqo',
+        colors: 'Black and Orange',
+        grnt: '0',
+        instTime: 0,
+        price: 600,
 
+    },
+    //Part A190110
+    {  
+        partNum: 'A190110',
+        partName: 'Pannier Inner Bag Exhaust Side',
+        partDesc: 'Inner lining for pannier to protect and keep inside of pannier clean',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yd7d4bzt',
+        colors: 'Black and Orange',
+        grnt: '0',
+        instTime: 0,
+        price: 540,
+    },
+    //Part A190120
+    {  
+        partNum: 'A190120',
+        partName: 'Top Box Inner Bag Single Pocket',
+        partDesc: 'Single pocket bag to keep inside of top box clean and can be removed for easy excess to items inside bag',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/y7uh522w',
+        colors: 'Black and Orange',
+        grnt: '0',
+        instTime: 0,
+        price: 525,
+    },
+    //Part A190125
+    {  
+        partNum: 'A190125',
+        partName: 'Top Box Multi Pocket Bag',
+        partDesc: 'Bag with multi pockets to items organized, and easy excess to items and keeps top box clean',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yckkykz4',
+        colors: 'Black and Orange',
+        grnt: '0',
+        instTime: 0,
+        price: 600,
+    },
+    //Part A190140
+    {  
+        partNum: 'A190140',
+        partName: 'Top Box Lid Organizer',
+        partDesc: 'To carry smaller items in the lid of top box ETC first aid kit ',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/yckkykz4',
+        colors: 'Black and Orange',
+        grnt: '0',
+        instTime: 0,
+        price: 525,
+    },
+    //Part A190145
+    {  
+        partNum: 'A190145',
+        partName: 'Pannier Lid Organizer',
+        partDesc: 'To carry small items in the lid of the pannier and kept organised',
+        models: ['F650GS','F700GS','F800GS','F800GSA'],
+        imgLink: 'http://tinyurl.com/ycvxcspj',
+        colors: 'Black and Orange',
+        grnt: '0',
+        instTime: 0,
+        price: 525,
+    },
     //Part A9MR10010
     {  
         partNum: 'A9MR10010',
