@@ -74,19 +74,6 @@ var KTM_Parts = [
         price: 365,
         cat: 'WFP'
     },
-    //Part A11155
-    {  
-        partNum: 'A11155',
-        partName: 'Bracket Top Box',
-        partDesc: 'Bracket to secure top box to top of mudguard',
-        models: ['KTM 1290'],
-        imgLink: 'http://tinyurl.com/y86j87c3',
-        colors: 'Stainless steel',
-        grnt: '1 Year',
-        instTime: 30,
-        price: 755,
-        cat: 'TBB'
-    },
     //Part A08258
     {  
         partNum: 'A8258',
