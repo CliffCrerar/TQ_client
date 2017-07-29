@@ -196,7 +196,7 @@ var TopBoxPannier = [
         grnt: '0',
         instTime: 0,
         price: 235,
-        cat: 'PAN', 
+        cat: 'STR', 
     },
     //Part A19010
     {  
@@ -209,7 +209,7 @@ var TopBoxPannier = [
         grnt: '0',
         instTime: 15,
         price: 795,
-        cat: 'BRP', 
+        cat: 'TB', 
     },
     //Part A11150
     {  
@@ -274,7 +274,7 @@ var TopBoxPannier = [
         grnt: '0',
         instTime: 0,
         price: 235,
-        cat: 'PAN'
+        cat: 'STR'
     },
     //Part A190100
     {  

@@ -260,28 +260,6 @@
                     filterParts(button,'#TopBoxPannierParts')
                 });
 
-
-                /*                
-                $('#MotCycPartSideNav').bind('click',function(button){
-                    console.log(allParts)
-                    var parts = $('#bikeParts').children();
-                    var partClass = button.target.id
-                    parts.hide();
-                    var p = 0
-                    parts.each(function(div){
-                        var idClass = parts[p].id.substr(0, parts[p].id.indexOf('_'))
-                        if(partClass==idClass){
-                            console.log(parts[p])
-                            $('#'+parts[p].id).show();
-                        }
-                        console.log('idClass '+idClass)
-                        console.log('PartClass '+partClass)
-                        console.log(parts[p].id)
-                        console.log(p)
-                        p++
-                    });
-                });
-                */
             });
         </script>
 
@@ -530,6 +508,7 @@
                         <button id="TB" class="btn btn-block" type="button">Top Boxes</button>
                         <button id="PAN" class="btn btn-block" type="button">Panniers</button>
                         <button id="TBB" class="btn btn-block" type="button">Mounting Brackets</button>
+                        <button id="STR" class="btn btn-block" type="button">Top Box and Pannier Straps</button>
                     </div>
 
                     <div class="col-sm-9">
@@ -655,32 +634,30 @@
             </div> <!--4x4-->
 
             <div id="contact" class="mainSec">
-                <h2 style="display: none">LET US CONTACT YOU</h2>
-                <form >
-                    
-                    <div style="display: none">
-                    <div class="form-group">
-                        <label for="nameInput">*Name:</label>
-                        <input id="nameInput" class="form-control" placeholder="Enter Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="emailInput">*Your contact:</label>
-                        <input id="emailInput" class="form-control" placeholder="Enter Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="custMessage">Tell us what you are interested in:</label>
-                        <textarea class="form-control" id="custMessage"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <button class="btn btn-default" type="submit">Submit</button>
-                    </div>
+                <h2 style="display: none">LET US CONTACT YOU</h2> <!--NOT DISPLAYED-->
+                <form>               
+                    <div style="display: none"><!--NOT DISPLAYED-->
+                        <div class="form-group">
+                            <label for="nameInput">*Name:</label>
+                            <input id="nameInput" class="form-control" placeholder="Enter Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="emailInput">*Your contact:</label>
+                            <input id="emailInput" class="form-control" placeholder="Enter Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="custMessage">Tell us what you are interested in:</label>
+                            <textarea class="form-control" id="custMessage"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-default" type="submit">Submit</button>
+                        </div>
                     </div>
 
                     <div class="form-group">
                         <h2 class="text-center">CONTACT SALES</h2>
                         <div class="well" style="margin: auto">
-                            <h3>email: sales@tqoffroadparts.co.za</h3>
-                            
+                            <h3>email: sales@tqoffroadparts.co.za</h3>                            
                             <h3>cell: 082 689 0434</h3>
                         </div>
                     </div>
