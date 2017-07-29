@@ -196,7 +196,7 @@ var TopBoxPannier = [
         grnt: '0',
         instTime: 0,
         price: 235,
-        cat: 'TB', 
+        cat: 'PAN', 
     },
     //Part A19010
     {  
@@ -209,7 +209,7 @@ var TopBoxPannier = [
         grnt: '0',
         instTime: 15,
         price: 795,
-        cat: 'TB', 
+        cat: 'BRP', 
     },
     //Part A11150
     {  
@@ -222,7 +222,7 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 30 ,
         price: 755 ,
-        cat:''
+        cat:'TBB'
     },
     //Part A11140
     {  
@@ -235,6 +235,7 @@ var TopBoxPannier = [
         grnt: '!1 Year',
         instTime: 30,
         price: 735,
+        cat: 'TBB',
     },
     //Part A11550
     {  
@@ -247,6 +248,7 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 30,
         price: 4370,
+        cat: 'PAN'
     },
     //Part A11560
     {  
@@ -259,6 +261,7 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 30,
         price: 4370,
+        cat: 'PAN'
     },
     //Part A01460
     {  
@@ -271,6 +274,7 @@ var TopBoxPannier = [
         grnt: '0',
         instTime: 0,
         price: 235,
+        cat: 'PAN'
     },
         //Part A190105
     {  
@@ -283,6 +287,7 @@ var TopBoxPannier = [
         grnt: '0',
         instTime: 0,
         price: 540,
+        cat: 'PAN'
     },
     //Part A190105
     {  
@@ -295,6 +300,7 @@ var TopBoxPannier = [
         grnt: '0',
         instTime: 0,
         price: 600,
+        cat: 'PAN'
 
     },
     //Part A190110
@@ -308,6 +314,7 @@ var TopBoxPannier = [
         grnt: '0',
         instTime: 0,
         price: 540,
+        cat:'PAN'
     },
         //Part A190145
     {  
@@ -320,6 +327,7 @@ var TopBoxPannier = [
         grnt: '0',
         instTime: 0,
         price: 525,
+        cat: 'PAN'
     },
     //Part A11115
     {  
@@ -331,7 +339,8 @@ var TopBoxPannier = [
         colors: 'Silver',
         grnt: '1 Year',
         instTime: 30,
-        price: 735,        
+        price: 735, 
+        cat: 'TBB'       
     },
     //Part A190120
     {  
@@ -344,6 +353,7 @@ var TopBoxPannier = [
         grnt: '0',
         instTime: 0,
         price: 525,
+        cat: 'TB'
     },
     //Part A190125
     {  
@@ -356,6 +366,7 @@ var TopBoxPannier = [
         grnt: '0',
         instTime: 0,
         price: 600,
+        cat: 'TB'
     },
     //Part A190140
     {  
@@ -368,5 +379,6 @@ var TopBoxPannier = [
         grnt: '0',
         instTime: 0,
         price: 525,
+        cat: 'TB'
     },
 ]

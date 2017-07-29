@@ -35,9 +35,9 @@
 
                     function sortItems(container) {
                         var partsList = container
-                        console.log(partsList);
+                        //console.log(partsList);
                         var partListItems = partsList.children().get()
-                        console.log(partListItems);
+                        //console.log(partListItems);
                         partListItems.sort(function(a,b){
                             var compA = $(a).text().toUpperCase();
                             var compB = $(b).text().toUpperCase();
@@ -50,7 +50,7 @@
 
                 /* End of Sorting functions */
                                 
-                $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/KTM_Parts.js', function(){                    
+                $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/KTM_Parts.js', function(){   
                     displayParts(KTM_Parts,'bikeParts','ktm');
                 });
 
@@ -69,6 +69,8 @@
                 $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/TopBox_Panniers.js', function(){
                     displayParts(TopBoxPannier,'TopBoxPannierParts','all')
                 });
+
+                var allParts = []//create variable for all parts
 
                 $('#TopBoxPannier').hide();
                 $('#bikes').hide();
@@ -144,13 +146,22 @@
                 //console.log(KTM_Parts);
                 
                 function displayParts(partsObject, divId, badgeType){
+                    
+                    console.log(partsObject.length)
+                    //console.log(allParts);
+                    partsObject.forEach(function(part){
+                        //console.log(part);
+                        allParts.push(part)
+                        //console.log(allParts)
+                    })
+
                     var partsData = partsObject;
                     var objLen = partsData.length;
                     var modelCount = ''
                     var badgeUrl;
                     //console.log(divId)
                     //console.log(partsData.length);
-                    console.log(badgeType)
+                    //console.log(badgeType)
                     switch (badgeType) {
                         case 'bmw': badgeUrl = 'http://www.carlogos.org/logo/BMW-logo-2000-2048x2048.png'; break;
                         case 'ktm': badgeUrl = 'http://www.chapmotors.com/fckimages/Pages/KTM_Logo.png'; break;
@@ -215,7 +226,26 @@
                         )
                     }
                 }
-                
+                //Filter bike Parts according to sidenav
+                $('#MotCycPartSideNav').bind('click',function(button){
+                    console.log(allParts)
+                    var parts = $('#bikeParts').children();
+                    var partClass = button.target.id
+                    parts.hide();
+                    var p = 0
+                    parts.each(function(div){
+                        l = 0
+                        allParts.forEach(function(allPartsObj){
+                            console.log(l)
+                            l++
+                        })
+                        
+                        console.log(partClass)
+                        console.log(parts[p].id)
+                        console.log(p)
+                        p++
+                    });
+                });
             });
         </script>
 
@@ -477,22 +507,22 @@
             <div id="bikes" class="mainSec"><!--Motor cycle Parts-->
 
                 <div class="container-fluid row"> <!--Right Side-->
+
                     <div class="col-sm-3 sideNav" id="MotCycPartSideNav">
-                        <button class="btn btn-block" type="button">Luggage Rack</button>
-                        <button class="btn btn-block" type="button">Bash Plate</button>
-                        <button class="btn btn-block" type="button">Head Light Guard</button>
-                        <button class="btn btn-block" type="button">Top Box and Brackets</button>
-                        <button class="btn btn-block" type="button">Side Stand Extender</button>
-                        <button class="btn btn-block" type="button">Disc Brake Guard</button>
-                        <button class="btn btn-block" type="button">Wide Foot Pegs</button>
-                        <button class="btn btn-block" type="button">Compressor Kit</button>                        
-                        <button class="btn btn-block" type="button">Brake Lever Extensions</button>
-                        <button class="btn btn-block" type="button">Radiator Protectors</button>
-                        <button class="btn btn-block" type="button">Brake Reservoir Protectors</button>
-                        <button class="btn btn-block" type="button">Spot Lights and Brackets</button>
-                        <button class="btn btn-block" type="button">Crash Bars</button>
-                        <button class="btn btn-block" type="button">Handle Bar Raisers</button>
-                        <button class="btn btn-block" type="button">Other Accessories</button>                 
+                        <button id="LR"  class="btn btn-block" type="button">Luggage Rack</button>
+                        <button id="BP"  class="btn btn-block" type="button">Bash Plate</button>
+                        <button id="HLG" class="btn btn-block" type="button">Head Light Guard</button>
+                        <button id="SSE" class="btn btn-block" type="button">Side Stand Extender</button>
+                        <button id="DBG" class="btn btn-block" type="button">Disc Brake Guard</button>
+                        <button id="WFP" class="btn btn-block" type="button">Wide Foot Pegs</button>
+                        <button id="CK"  class="btn btn-block" type="button">Compressor Kit</button>
+                        <button id="BLE" class="btn btn-block" type="button">Brake Lever Extensions</button>
+                        <button id="RP"  class="btn btn-block" type="button">Radiator Protectors</button>
+                        <button id="BRP" class="btn btn-block" type="button">Brake Reservoir Protectors</button>
+                        <button id="SLB" class="btn btn-block" type="button">Spot Lights and Brackets</button>
+                        <button id="CB"  class="btn btn-block" type="button">Crash Bars</button>
+                        <button id="HBR" class="btn btn-block" type="button">Handle Bar Raisers</button>
+                        <button id="OA"  class="btn btn-block" type="button">Other Accessories</button>
                     </div>
 
                     <!--Part Description demo div--> <!--
