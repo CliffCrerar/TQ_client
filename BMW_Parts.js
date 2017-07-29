@@ -370,7 +370,7 @@ var BMW_parts = [
     //Part A09122
     {  
         partNum: 'A09122',
-        partName: 'Stoft Luggage Tourng Bracket',
+        partName: 'Stoft Luggage Touring Bracket',
         partDesc: 'Stoft Luggage Tourng Bracket for BMW Bag and comes with securing kit',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/y9xzd2qr',
