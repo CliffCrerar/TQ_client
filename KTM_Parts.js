@@ -108,7 +108,7 @@ var KTM_Parts = [
         models: ['KTM 690'],
         imgLink: 'http://tinyurl.com/y89qcx35',
         colors: 'Stainless Steel',
-        grnt: ' 1 year',
+        grnt: '1 year',
         instTime: 60 ,
         price: 2780,
         cat: 'LR'

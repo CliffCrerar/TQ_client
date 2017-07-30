@@ -1,10 +1,12 @@
-<!DOCTYPE 
+<!DOCTYPE
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>TQ Bike & 4x4</title>
+        <title>TQ Motorcycle & 4x4 Accessories</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Retailer of quality offroad motor cycle and 4x4 Accessories"></meta>
+        <meta name="keywords" content="bike, motorcycle, offroad, parts, accessories, top box, topbox, pannier"></meta>
         
         <!--Bootstrap-->
 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -149,7 +151,7 @@
                 
                 function displayParts(partsObject, divId, badgeType){
                     
-                    console.log('## '+partsObject.length+' parts for '+badgeType)
+                    //console.log('## '+partsObject.length+' parts for '+badgeType)
                     //console.log(allParts);
                     partsObject.forEach(function(part){
                         //console.log(part);
@@ -176,7 +178,7 @@
                         var partNum = partsData[i].partNum
                         function partCategory(){var partnum = ''; if (partsData[i].cat == null){return partnum = 'NO-CATEGORY'}else{return partnum = partsData[i].cat}}
                         var partIdentifier = partCategory()+'_'+partNum;
-                        console.log(partIdentifier)
+                        //console.log(partIdentifier)
                         
                         if (badgeSwitch) {
                             switch (partsData[i].make) {
@@ -202,8 +204,8 @@
                         $('#'+partIdentifier+'>.row>.col-sm-9').append(
                             '<blockquote><p>'+partsData[i].partDesc+'</p></blockquote>',
                             '<div class="row">'+
-                                '<div class="col-sm-6" id="'+partIdentifier+'Models"></div>'+
-                                '<div class="col-sm-6" id="'+partIdentifier+'Meta"></div>'+
+                                '<div class="col-sm-5" id="'+partIdentifier+'Models"></div>'+
+                                '<div class="col-sm-7" id="'+partIdentifier+'Meta"></div>'+
                             '</div>'
                         );           
                         
@@ -215,20 +217,42 @@
                             );
                         }
 
+                        var partPrice = Math.round(partsData[i].price - (partsData[i].price*0.12))
+                        //format guarentee
+                        function grnt() {
+                            if (partsData[i].grnt=='0') {
+                                return 'Not Guarenteed'
+                            } else {
+                                return partsData[i].grnt
+                            }
+                        }
+                        console.log(grnt());
+                        //format installation time display
+                        function installTime(){
+                            if(partsData[i].instTime ==0){
+                                return 'Not Required'
+                            } else if (partsData[i].instTime >= 60){
+                                return partsData[i].instTime/60+' Hour(s)'
+                            } else {
+                                return partsData[i].instTime+' Minutes'
+                                }
+                            }
+                        //console.log(installTime())
+
                         $('#'+partIdentifier+'Meta').append(
                             '<div class="table">'+
                                 '<table>'+
                                     '<tr>'+
                                         '<td class="dataType">Price:</td>'+
-                                        '<td> R '+partsData[i].price+'</td>'+
+                                        '<td> R '+partPrice+'</td>'+
                                     '</tr>'+
                                     '<tr>'+
                                         '<td class="dataType">Guarentee:</td>'+
-                                        '<td>'+partsData[i].grnt+'</td>'+                                    
+                                        '<td>'+grnt()+'</td>'+                                    
                                     '</tr>'+
                                     '<tr>'+
                                         '<td class="dataType">Installation Time:</td>'+
-                                        '<td>'+partsData[i].instTime+' Minutes</td>'+                          
+                                        '<td>'+installTime()+'</td>'+                          
                                     '</tr>'+
                                     '<tr>'+
                                         '<td class="dataType">Part Number:</td>'+
@@ -256,10 +280,10 @@
                             console.log(parts[p])
                             $('#'+parts[p].id).fadeIn('slow');
                         }
-                        console.log('idClass '+idClass)
-                        console.log('PartClass '+partClass)
-                        console.log(parts[p].id)
-                        console.log(p)
+                        //console.log('idClass '+idClass)
+                        //console.log('PartClass '+partClass)
+                        //console.log(parts[p].id)
+                        //console.log(p)
                         p++
                     });
                 }
@@ -330,6 +354,15 @@
                 padding: 0px 0% 0% 0%;
                 font-size: calc(5px + 1vw);
                 border-width: 0px;                               
+            }
+            #hpcontent{
+                margin: 2% auto 2% auto;
+                padding: 10px 0px 0px 0px;
+                max-width: 70%;                
+            }
+            .hpclass{
+                font-family: play;
+                font-weight: bold;
             }
             .mainSec {
                 margin: 2% 5% 0% 5%;
@@ -457,7 +490,11 @@
             </div>
 
             <!--Content-->
+
             <div id="home" class="container-fluid">
+                <div class="well" id="hpcontent">
+                    <h2 class="hpclass">Free delivery and installation included for Gauteng and KZN</h2>
+                </div>
                 <style>
                     /* Slideshow container */
                     .slideshow-container {
@@ -506,7 +543,8 @@
                         <img src="http://tinyurl.com/ya7lty7k" alt="Discovery" style="width: 100%">
                     </div>
                 </div>
-                <div class="well">
+                <div style="max-width: 70%; margin: auto" class="well">
+                    <h2 class="hpclass">ABOUT US</h2>
                     <p id="about" class="text-justify"></p>
                     <script>
                         $(document).ready(function(){
@@ -683,8 +721,8 @@
                     <div class="form-group">
                         <h2 class="text-center">CONTACT SALES</h2>
                         <div class="well" style="margin: auto">
-                            <h3>email: sales@tqoffroadparts.co.za</h3>                            
-                            <h3>cell: 082 689 0434</h3>
+                            <h3 class="text-center">sales.tqoffroadparts@gmail.com</h3>                            
+                            <h3 class="text-center">082 689 0434</h3>
                         </div>
                     </div>
                 </form>

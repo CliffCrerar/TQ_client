@@ -249,7 +249,7 @@ var TopBoxPannier = [
         models: ['KTM 950','KTM 990',''],
         imgLink: 'http://tinyurl.com/y7w5o2yo',
         colors: 'Silver',
-        grnt: '!1 Year',
+        grnt: '1 Year',
         instTime: 30,
         price: 735,
         cat: 'TBB',
