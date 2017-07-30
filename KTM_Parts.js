@@ -72,7 +72,7 @@ var KTM_Parts = [
         grnt: '1 Year',
         instTime: 30 ,
         price: 365,
-        cat: 'WFP'
+        cat: 'SSE'
     },
     //Part A08258
     {  
