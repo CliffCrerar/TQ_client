@@ -14,7 +14,7 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 120,
         price: 8000,
-        cat: 'BB'
+        cat: 'FE'
     },
     //Part A22010
     {  
@@ -27,7 +27,7 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 45,
         price: 795,
-        cat: 'FP'
+        cat: 'FE'
     },
     //Part A22011
     {  
@@ -40,7 +40,7 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 45,
         price: 925,
-        cat: 'FP'
+        cat: 'FE'
     },
     //Part A22015
     {  
@@ -53,7 +53,7 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 45,
         price: 2495,
-        cat: 'OP'
+        cat: 'FE'
     },
     //Part A22017
     {  
@@ -66,7 +66,7 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime:30,
         price: 280,
-        cat: 'FFPP'
+        cat: 'FT'
     },  
     //Part A22016
     {  
@@ -79,7 +79,7 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 280,
-        cat: 'FFPP'
+        cat: 'FT'
     },
     //Part A22020
     {  
@@ -144,7 +144,7 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 90,
         price: 4295,
-        cat: "RAI"
+        cat: 'FE'
     },
     //Part A22070
     {  
@@ -157,7 +157,7 @@ var LRDef_parts = [
         grnt: '1 Year',
         instTime: 60,
         price: 2490,
-        Cat: 'SG'
+        Cat: 'FE'
     },
     //Part A22080
     {  
@@ -235,7 +235,7 @@ var LRDef_parts = [
         grnt: '0',
         instTime: 60,
         price: 2875,
-        cat: 'FTG'
+        cat: 'FT'
     },
     //Part A22410
     {  
