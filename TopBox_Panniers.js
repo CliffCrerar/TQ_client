@@ -14,7 +14,8 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 30,
         price: 3930,
-        cat: 'TB'
+        cat: 'TB',
+        make: 'KTM'
     },
     //Part A11110
     {  
@@ -27,7 +28,8 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 30,
         price: 3930,
-        cat: 'TB'
+        cat: 'TB',
+        make: 'BMW',
     },
     //Part A11111
     {  
@@ -40,7 +42,8 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 30,
         price: 4040,
-        cat: 'TB', 
+        cat: 'TB',
+        make: 'BWM'
     },
     //Part A11112
     {  
@@ -53,7 +56,8 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 30,
         price: 4150,
-        cat: 'TB', 
+        cat: 'TB',
+        make: 'BMW'
     },
     //Part A11232
     {  
@@ -66,7 +70,8 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 30,
         price: 3930,
-        cat: 'TB', 
+        cat: 'TB',
+        make: 'YAM'
     },
     //Part A11234
     {  
@@ -79,7 +84,8 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 30,
         price: 4040,
-        cat: 'TB', 
+        cat: 'TB',
+        make: 'YAM'
     },
     //Part A11236
     {  
@@ -92,7 +98,8 @@ var TopBoxPannier = [
         grnt: '1 year',
         instTime: 30,
         price: 4150,
-        cat: 'TB', 
+        cat: 'TB',
+        make: 'YAM'
     },
     //Part A11242
     {  
@@ -105,7 +112,8 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 30,
         price: 3930,
-        cat: 'TB', 
+        cat: 'TB',
+        make: 'YAM'
     },
     //Part A11246
     {  
@@ -118,7 +126,8 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 30,
         price: 4040,
-        cat: 'TB', 
+        cat: 'TB',
+        make: 'YAM'
     },
     //Part A11248
     {  
@@ -131,7 +140,8 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 30,
         price: 4150,
-        cat: 'TB', 
+        cat: 'TB',
+        make: 'YAM'
     },
     //Part A11500
     {  
@@ -144,7 +154,8 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 30,
         price: 4290,
-        cat: 'TB', 
+        cat: 'TB',
+        make: 'BMW'
     },
     //Part A11501
     {  
@@ -158,6 +169,7 @@ var TopBoxPannier = [
         instTime: 10,
         price: 3960,
         cat: 'TB', 
+        make: 'BMW'
     },
     //Part A11502
     {  
@@ -171,6 +183,7 @@ var TopBoxPannier = [
         instTime: 10,
         price: 4350,
         cat: 'TB', 
+        make: 'BMW'
     },
     //Part A11248
     {  
@@ -184,6 +197,7 @@ var TopBoxPannier = [
         instTime: 10,
         price: 4390,
         cat: 'TB', 
+        make: 'BMW'
     },
     //Part A19000
     {  
@@ -197,6 +211,7 @@ var TopBoxPannier = [
         instTime: 0,
         price: 235,
         cat: 'STR', 
+        make: 'BMW'
     },
     //Part A19010
     {  
@@ -209,7 +224,8 @@ var TopBoxPannier = [
         grnt: '0',
         instTime: 15,
         price: 795,
-        cat: 'TB', 
+        cat: 'TB',
+        make: 'BMW' 
     },
     //Part A11150
     {  
@@ -222,7 +238,8 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 30 ,
         price: 755 ,
-        cat:'TBB'
+        cat:'TBB',
+        make: 'KTM'
     },
     //Part A11140
     {  
@@ -236,6 +253,7 @@ var TopBoxPannier = [
         instTime: 30,
         price: 735,
         cat: 'TBB',
+        make: 'KTM'
     },
     //Part A11550
     {  
@@ -248,7 +266,8 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 30,
         price: 4370,
-        cat: 'PAN'
+        cat: 'PAN',
+        make: 'BMW'
     },
     //Part A11560
     {  
@@ -261,7 +280,8 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 30,
         price: 4370,
-        cat: 'PAN'
+        cat: 'PAN',
+        make: 'BMW'
     },
     //Part A01460
     {  
@@ -274,7 +294,8 @@ var TopBoxPannier = [
         grnt: '0',
         instTime: 0,
         price: 235,
-        cat: 'STR'
+        cat: 'STR',
+        make: 'BMW'
     },
     //Part A190100
     {  
@@ -287,7 +308,8 @@ var TopBoxPannier = [
         grnt: '0',
         instTime: 0,
         price: 540,
-        cat: 'PAN'
+        cat: 'PAN',
+        make: 'BMW'
     },
     //Part A190105
     {  
@@ -300,7 +322,8 @@ var TopBoxPannier = [
         grnt: '0',
         instTime: 0,
         price: 600,
-        cat: 'PAN'
+        cat: 'PAN',
+        make: 'BMW'
 
     },
     //Part A190110
@@ -314,7 +337,8 @@ var TopBoxPannier = [
         grnt: '0',
         instTime: 0,
         price: 540,
-        cat:'PAN'
+        cat:'PAN',
+        make: 'BMW'
     },
     //Part A190145
     {  
@@ -327,7 +351,8 @@ var TopBoxPannier = [
         grnt: '0',
         instTime: 0,
         price: 525,
-        cat: 'PAN'
+        cat: 'PAN',
+        make: 'BMW'
     },
     //Part A11115
     {  
@@ -340,7 +365,8 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 30,
         price: 735, 
-        cat: 'TBB'       
+        cat: 'TBB',
+        make: 'BMW'      
     },
     //Part A190120
     {  
@@ -353,7 +379,8 @@ var TopBoxPannier = [
         grnt: '0',
         instTime: 0,
         price: 525,
-        cat: 'TB'
+        cat: 'TB',
+        make: 'BMW'
     },
     //Part A190125
     {  
@@ -366,7 +393,8 @@ var TopBoxPannier = [
         grnt: '0',
         instTime: 0,
         price: 600,
-        cat: 'TB'
+        cat: 'TB',
+        make: 'BMW'
     },
     //Part A190140
     {  
@@ -379,7 +407,8 @@ var TopBoxPannier = [
         grnt: '0',
         instTime: 0,
         price: 525,
-        cat: 'TB'
+        cat: 'TB',
+        make: 'BMW'
     },
     //Part A11155
     {  
@@ -392,6 +421,7 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 30,
         price: 755,
-        cat: 'TBB'
+        cat: 'TBB',
+        make: 'KTM'
     },
 ]

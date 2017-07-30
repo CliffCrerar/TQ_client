@@ -92,7 +92,9 @@
                     remActiveTab();
                     $('.nav-tabs').children()[1].setAttribute('class','active');
                     $('#TopBoxPannier').show();
-                    //sortItems(sortList);
+                    
+                    var sortList = $('#TopBoxPannierParts');
+                    sortItems(sortList);
                 });
 
                 $('a:contains("Bike")').click(function(){
@@ -255,9 +257,11 @@
                 $('#MotCycPartSideNav').bind('click',function(button){
                     filterParts(button,'#bikeParts');
                 });
-
                 $('#TBPartSideNav').bind('click', function(button){
                     filterParts(button,'#TopBoxPannierParts')
+                });
+                $('#sideNav4x4').bind('click',function(button){
+                    filterParts(button,'#Parts4x4')
                 });
 
             });
@@ -543,7 +547,7 @@
                     </div>
 
                     <!--Part Description demo div--> <!--
-                    <div class="col-sm-9" id="KTM">                        
+                    <dis
                         
                         <div class="well" id="#partNum">
                             
@@ -618,9 +622,21 @@
 
             <div id="4x4" class="mainSec"> <!--4x4-->
                 <div class="row container-fluid">
-                    <div class="col-sm-3 sideNav">
-                        <button class="btn btn-block" type="button">Land Rover Defender</button>
-                        <button class="btn btn-block" type="button">Land Rover Discovery</button>
+                    <div class="col-sm-3 sideNav" id="sideNav4x4">
+                        <button id="FE"   class="btn btn-block" type="button">Front End</button>
+                        <button id="FT"   class="btn btn-block" type="button">Fuel Tanks</button>
+                        <button id="HLJB" class="btn btn-block" type="button">Hi Lift Jack Mount Bracket</button>
+                        <button id="CS"   class="btn btn-block" type="button">Console Safe</button>
+                        <button id="FSE"  class="btn btn-block" type="button">Front Seat Extension Rail</button>
+                        <button id="BT"   class="btn btn-block" type="button">Battery Tray</button>
+                        <button id="SWC"  class="btn btn-block" type="button">Swing Away Spare Wheel Carrier</button>
+                        <button id="SSK"  class="btn btn-block" type="button">Side Sill Kit</button>
+                        <button id="SR"   class="btn btn-block" type="button">Side Runner</button>
+                        <button id="WS"   class="btn btn-block" type="button">Wheel Spacer</button>
+                        <button id="RR"   class="btn btn-block" type="button">Roof Rack</button>
+                        <button id="DU"   class="btn btn-block" type="button">Drawer Unit</button>
+                        <button id="HDTH" class="btn btn-block" type="button">Heavey Duty Tow Hitch</button>
+                        <button id="RDL"  class="btn btn-block" type="button">Rear Door Ladder</button>
                     </div>
 
                     <div class="col-sm-9">
