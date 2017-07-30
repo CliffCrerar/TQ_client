@@ -161,6 +161,7 @@
                     var objLen = partsData.length;
                     var modelCount = ''
                     var badgeUrl;
+                    var badgeSwitch = false;
                     //console.log(divId)
                     //console.log(partsData.length);
                     //console.log(badgeType)
@@ -168,7 +169,7 @@
                         case 'bmw': badgeUrl = 'http://www.carlogos.org/logo/BMW-logo-2000-2048x2048.png'; break;
                         case 'ktm': badgeUrl = 'http://www.chapmotors.com/fckimages/Pages/KTM_Logo.png'; break;
                         case 'LandRover': badgeUrl = 'http://tinyurl.com/y6utpp75'; break;
-                        default: badgeUrl = 'http://tinyurl.com/ybjdqlw5'; break;
+                        default: badgeUrl = 'http://tinyurl.com/ybjdqlw5'; badgeSwitch = true; break;
                     }
                     
                     for(i=0; i<objLen; i++) {
@@ -176,6 +177,15 @@
                         function partCategory(){var partnum = ''; if (partsData[i].cat == null){return partnum = 'NO-CATEGORY'}else{return partnum = partsData[i].cat}}
                         var partIdentifier = partCategory()+'_'+partNum;
                         console.log(partIdentifier)
+                        
+                        if (badgeSwitch) {
+                            switch (partsData[i].make) {
+                                case 'BMW': badgeUrl = 'http://www.carlogos.org/logo/BMW-logo-2000-2048x2048.png'; break;
+                                case 'KTM': badgeUrl = 'http://www.chapmotors.com/fckimages/Pages/KTM_Logo.png'; break;
+                                case 'YAM': badgeUrl = 'https://seeklogo.com/images/D/diapason-yamaha-logo-05624DB5BD-seeklogo.com.png'; break;
+                                default: badgeUrl = 'http://tinyurl.com/ybjdqlw5'; break;
+                            }
+                        }
                         
                         //console.log(partsData[i].partNum+' & '+partsData[i].partName);                
                         $('#'+divId).append('<div class="well" id="'+partIdentifier+'"></div>');
