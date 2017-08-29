@@ -267,7 +267,8 @@
                             );
                         }
 
-                        var partPrice = Math.ceil((partsData[i].price * (1-0.09))/10)*10
+                        var partPriceUF = Math.ceil((partsData[i].price * (1-0.09))/10)*10
+                        var partPrice = new Intl.NumberFormat('en-ZA').format(partPriceUF)
                         //format guarentee
                         function grnt() {
                             if (partsData[i].grnt=='0') {
