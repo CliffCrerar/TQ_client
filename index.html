@@ -267,7 +267,7 @@
                             );
                         }
 
-                        var partPrice = Math.round(partsData[i].price - (partsData[i].price*0.12))
+                        var partPrice = Math.ceil((partsData[i].price * (1-0.09))/10)*10
                         //format guarentee
                         function grnt() {
                             if (partsData[i].grnt=='0') {
