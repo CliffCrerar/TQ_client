@@ -416,8 +416,22 @@ var TopBoxPannier = [
         partName: 'Bracket Top Box',
         partDesc: 'Bracket to secure top box to top of mudguard',
         models: ['KTM 1290'],
-        imgLink: '',
+        imgLink: 'http://tinyurl.com/y86j87c3',
         colors: 'Stainless steel',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 755,
+        cat: 'TBB',
+        make: 'KTM'
+    },
+    //Part NewPArt
+    {  
+        partNum: 'AAA_NEWPART',
+        partName: 'AAA_NEWPART',
+        partDesc: 'AAA_NEWPART',
+        models: ['AAA_NEWPART'],
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110800_X06/5996fd5fc59dc_A11232-PIC%20(6).JPG&length=1200',
+        colors: 'AAA_NEWPART',
         grnt: '1 Year',
         instTime: 30,
         price: 755,
