@@ -900,19 +900,5 @@ var BMW_parts = [
         price: 940,
         cat: 'WFP', 
     },
-    //Part A09631
-    {  
-        partNum: 'A09631',
-        partName: 'Wide Foot Pegs Pillion',
-        partDesc: 'Makes riding more comfortable for passenger and less chance of your foot slipping off the pegs when wet',
-        models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
-        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09631/547ed7d00b366_A09630-PIC01.jpg&length=1200',
-        colors: 'Black',
-        grnt: '1 Year',
-        instTime: 30,
-        price: 970,
-        cat: 'WFP', 
-    },
-    
-
+        
 ]
