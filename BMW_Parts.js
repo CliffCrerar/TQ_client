@@ -874,7 +874,7 @@ var BMW_parts = [
         price: 895,
         cat: 'WFP', 
     }, 
-      //Part A09626
+    //Part A09626
     {  
         partNum: 'A09626',
         partName: 'Wide Foot pegs',
@@ -887,7 +887,7 @@ var BMW_parts = [
         price: 940,
         cat: 'WFP', 
     },  
-      //Part A09630
+    //Part A09630
     {  
         partNum: 'A09630',
         partName: 'Wide Pillion Foot Peg',
@@ -900,7 +900,7 @@ var BMW_parts = [
         price: 940,
         cat: 'WFP', 
     },
-      //Part A09631
+    //Part A09631
     {  
         partNum: 'A09631',
         partName: 'Wide Pillion Foot Peg',
@@ -913,7 +913,7 @@ var BMW_parts = [
         price: 970,
         cat: 'WFP', 
     }, 
-       //Part A09635
+    //Part A09635
     {  
         partNum: 'A09635',
         partName: 'Side Stand Extender',
@@ -926,7 +926,7 @@ var BMW_parts = [
         price: 380,
         cat: 'SSE', 
     },
-     //Part A09636
+    //Part A09636
     {  
         partNum: 'A09636',
         partName: 'Side Stand Extender',
@@ -939,7 +939,7 @@ var BMW_parts = [
         price: 380,
         cat: 'SSE', 
     }, 
-      //Part A09637
+    //Part A09637
     {  
         partNum: 'A09637',
         partName: 'Side Stand Extender',
