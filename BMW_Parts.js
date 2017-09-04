@@ -97,7 +97,7 @@ var BMW_parts = [
     //Part A09078
     {  
         partNum: 'A09078',
-        partName: 'Wide Pillion',
+        partName: 'Wide Pillion Foot Pegs',
         partDesc: 'Made from Stainless steel corrosive resist and has more foot surface',
         models:['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/ycv3txso',
@@ -912,7 +912,7 @@ var BMW_parts = [
         instTime: 30,
         price: 970,
         cat: 'WFP', 
-    } 
+    }, 
        //Part A09635
     {  
         partNum: 'A09635',
