@@ -175,8 +175,8 @@ var BMW_parts = [
     //Part A09091
     {  
         partNum: 'A09091',
-        partName: 'Ornge clip on lens',
-        partDesc: 'Ornge lens that clips onto the Head Light guard for day time riding',
+        partName: 'Orange clip on lens',
+        partDesc: 'Orange lens that clips onto the Head Light guard for day time riding',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/ybhgmmta',
         colors: 'Orange',
