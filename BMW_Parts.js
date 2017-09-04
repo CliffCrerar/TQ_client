@@ -919,7 +919,7 @@ var BMW_parts = [
         partName: 'SIDE STAND EXTENDER ',
         partDesc: 'Made from aluminium & stainless steel as a wider foot print which will prevent side stand wedging itself into cracks or between bricks',
         models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
-        imgLink: '',
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09635/546fa0c7a1cfe_A09635-PIC01.jpg&length=1200',
         colors: 'Silver and Black',
         grnt: '1 Year',
         instTime: 20,
