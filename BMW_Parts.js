@@ -918,12 +918,25 @@ var BMW_parts = [
         partNum: 'A09635',
         partName: 'SIDE STAND EXTENDER',
         partDesc: 'Made from aluminium & stainless steel as a wider foot print which will prevent side stand wedging itself into cracks or between bricks and sinking into soft sand',
-        models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
+        models: ['BMW R1200GS/R1200GS Adventure K50'],
         imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09635/546fa0c7a1cfe_A09635-PIC01.jpg&length=1200',
         colors: 'Silver and Black',
         grnt: '1 Year',
         instTime: 20,
         price: 380,
         cat: 'SSE', 
-    }      
+    },
+     //Part NEWPART
+    {  
+        partNum: '',
+        partName: '',
+        partDesc: '',
+        models: [''],
+        imgLink: '',
+        colors: '',
+        grnt: '',
+        instTime: ,
+        price: ,
+        cat: , 
+    }        
 ]
