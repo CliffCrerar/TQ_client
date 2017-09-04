@@ -887,7 +887,7 @@ var BMW_parts = [
         price: 940,
         cat: 'WFP', 
     },  
-     //Part A09630T
+     //Part A09630
     {  
         partNum: 'A09630',
         partName: 'Wide Foot Pegs Pillion',
