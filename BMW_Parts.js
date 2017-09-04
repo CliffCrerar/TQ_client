@@ -1003,6 +1003,58 @@ var BMW_parts = [
         instTime: 30,
         price: 910,
         cat: 'HLG', 
+    },
+    //Part A09654
+    {  
+        partNum: 'A09654',
+        partName: 'Centre Stand Bash Plate Extension',
+        partDesc: 'Manufactured from aluminium helps protection the engine from lose projectiles in the road and a must for off roading',
+        models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09654/5818d4b83e6cb.JPG&length=1200',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 20,
+        price: 785,
+        cat: 'BP', 
+    },
+    //Part A09655
+    {  
+        partNum: 'A09655',
+        partName: 'Engine Bash Plate',
+        partDesc: 'Manufactured from 4.5 mm aluminium helps protection the engine from lose projectiles in the road and a must for off roading',
+        models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09655/5505e25826419_A09655-PIC(5).JPG&length=1200',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 2395,
+        cat: 'BP', 
+    },
+       //Part A09656
+    {  
+        partNum: 'A09656',
+        partName: 'Exhaust Header Guards',
+        partDesc: 'Protects exhaust manifolds from damage caused by stones kicked up by the front wheel or other vehicles ahead.L & R sold as a set',
+        models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
+        imgLink: '',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 60,
+        price: 490,
+        cat: 'OTH', 
+    },
+       //Part NEWPART
+    {  
+        partNum: '',
+        partName: '',
+        partDesc: '',
+        models: [''],
+        imgLink: '',
+        colors: '',
+        grnt: '',
+        instTime: ,
+        price: ,
+        cat: , 
     }   
 
 ]
