@@ -543,7 +543,7 @@ var BMW_parts = [
         partDesc: 'Manufactured of aluminium can be pivoted and rotated',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/ychzclvg',
-        colors: 'Siver',
+        colors: 'Silver',
         grnt: '1 Year',
         instTime: 60,
         price: 1260,
@@ -861,14 +861,14 @@ var BMW_parts = [
         price: 1295,
         cat:'OTH'
     },
-    //Part A09625S
+    //Part A09625
     {  
         partNum: 'A09625',
         partName: 'Wide Foot pegs',
         partDesc: 'Make riding more comfortable and less chance of your foot slipping off the pegs when wet',
         models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
         imgLink: '"thumb.php?path=img/products/A09625/546fa0c786e80_A09625-PIC02.jpg&length=1200',
-        colors: 'Aliminuim',
+        colors: 'Aliminium',
         grnt: '1 Year',
         instTime: 30,
         price: 800,
