@@ -861,4 +861,17 @@ var BMW_parts = [
         price: 1295,
         cat:'OTH'
     }
+    //Part A09625
+    {  
+        partNum: 'A09625',
+        partName: 'Wide Foot pegs',
+        partDesc: 'Make riding more comfortable and less chance of your foot slipping off the pegs when wet',
+        models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
+        imgLink: '"thumb.php?path=img/products/A09625/546fa0c786e80_A09625-PIC02.jpg&length=1200',
+        colors: 'Aliminuim',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 800,
+        cat: WFP, 
+    }   
 ]
