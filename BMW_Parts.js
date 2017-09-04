@@ -942,7 +942,7 @@ var BMW_parts = [
     //Part A09637
     {  
         partNum: 'A09637',
-        partName: 'Side Stand Extender',
+        partName: 'Low Seat Side Stand Extender',
         partDesc: 'Made from aluminium & stainless steel as a wider foot print which will prevent side stand wedging itself into cracks or between bricks and sinking into soft sand',
         models: ['BMW R1200GS/R1200GS Adventure K50'],
         imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09637/5579141013e85_A09637-Pic(0).JPG&length=1200',
@@ -951,5 +951,58 @@ var BMW_parts = [
         instTime: 20,
         price: 380,
         cat: 'SSE', 
-    }        
+    },  
+    //Part A09638
+    {  
+        partNum: 'A09638',
+        partName: 'Low Seat Side Stand Extender',
+        partDesc: 'Made from aluminium & stainless steel as a wider foot print which will prevent side stand wedging itself into cracks or between bricks and sinking into soft sand',
+        models: ['BMW R1200GS/R1200GS Adventure K51'],
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09637/5579141013e85_A09637-Pic(0).JPG&length=1200',
+        colors: 'Silver and Black',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 380,
+        cat: 'SSE', 
+    },        
+    //Part A09640
+    {  
+        partNum: 'A09640',
+        partName: 'Gear lever extendion',
+        partDesc: 'Manufactured from aluminium extends the lever a few mm further and easy the excess when the ride is rough ',
+        models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09640/546fa0c7b19fb_A09640-PIC01.jpg&length=1200',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 15,
+        price: 360,
+        cat: 'OTH', 
+    }, 
+     //Part A09645
+    {  
+        partNum: 'A09645',
+        partName: 'Brake Lver extension',
+        partDesc: 'Manufactured from aluminium easy access to brake lever especially in an emergency',
+        models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09645/546fa0c7b9668_A09645-PIC01.JPG&length=1200',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 15,
+        price: 360,
+        cat: 'BRP', 
+    },
+    //Part A09650
+    {  
+        partNum: 'A09650',
+        partName: 'Head Light Guard',
+        partDesc: 'Manufactured from aluminium grid type protects the head light glass from chips and cracks  ',
+        models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09650/587003dcea779_A09650%20Pic(4).jpg&length=1200',
+        colors: 'Black',
+        grnt: '0',
+        instTime: 30,
+        price: 910,
+        cat: 'HLG', 
+    }   
+
 ]
