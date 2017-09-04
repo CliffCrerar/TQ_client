@@ -1043,18 +1043,5 @@ var BMW_parts = [
         price: 490,
         cat: 'OTH', 
     },
-       //Part NEWPART
-    {  
-        partNum: '',
-        partName: '',
-        partDesc: '',
-        models: [''],
-        imgLink: '',
-        colors: '',
-        grnt: '',
-        instTime: ,
-        price: ,
-        cat: , 
-    }   
-
+     
 ]
