@@ -867,7 +867,7 @@ var BMW_parts = [
         partName: 'Wide Foot pegs',
         partDesc: 'Make riding more comfortable and less chance of your foot slipping off the pegs when wet',
         models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
-        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09625/546fa0c786e80_A09625-PIC02.jpg&length=1200',
+        imgLink: 'http://thumb.php?path=img/products/A09625/546fa0c786e80_A09625-PIC02.jpg&length=1200',
         colors: 'Aliminium',
         grnt: '1 Year',
         instTime: 30,
