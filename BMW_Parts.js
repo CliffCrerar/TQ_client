@@ -989,7 +989,7 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 15,
         price: 360,
-        cat: 'BRP', 
+        cat: 'BLE', 
     },
     //Part A09650
     {  
