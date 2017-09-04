@@ -860,8 +860,8 @@ var BMW_parts = [
         instTime: 10 ,
         price: 1295,
         cat:'OTH'
-    }
-    //Part A09625
+    },
+    //Part A09625S
     {  
         partNum: 'A09625',
         partName: 'Wide Foot pegs',
