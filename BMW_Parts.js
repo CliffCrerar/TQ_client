@@ -539,7 +539,7 @@ var BMW_parts = [
     //Part A01030
     {  
         partNum: 'A01030',
-        partName: 'Handle Bar Raiser(pivotng and Rotational)',
+        partName: 'Handle Bar Raiser(pivoting and Rotational)',
         partDesc: 'Manufactured of aluminium can be pivoted and rotated',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/ychzclvg',
@@ -838,7 +838,7 @@ var BMW_parts = [
     //Part A9MR10010
     {  
         partNum: 'A9MR10010',
-        partName: 'Tubeless Punctuer Repair Kit',
+        partName: 'Tubeless Puncture Repair Kit',
         partDesc: 'Kit to repair tubeless tires',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/y7p948zo',
@@ -864,7 +864,7 @@ var BMW_parts = [
     //Part A09625
     {  
         partNum: 'A09625',
-        partName: 'Wide Foot pegs',
+        partName: 'Wide Foot Pegs',
         partDesc: 'Makes riding more comfortable and less chance of your foot slipping off the pegs when wet',
         models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
         imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09625/546fa0c786e80_A09625-PIC02.jpg&length=1200',
@@ -877,7 +877,7 @@ var BMW_parts = [
     //Part A09626
     {  
         partNum: 'A09626',
-        partName: 'Wide Foot pegs',
+        partName: 'Wide Foot Pegs',
         partDesc: 'Makes riding more comfortable and less chance of your foot slipping off the pegs when wet',
         models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
         imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09626/546fa0c78e2b8_A09626-PIC01.jpg&length=1200',
@@ -968,7 +968,7 @@ var BMW_parts = [
     //Part A09640
     {  
         partNum: 'A09640',
-        partName: 'Gear lever extendion',
+        partName: 'Gear Lever Extendion',
         partDesc: 'Manufactured from aluminium extends the lever a few mm further and easy the excess when the ride is rough ',
         models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
         imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09640/546fa0c7b19fb_A09640-PIC01.jpg&length=1200',
@@ -981,7 +981,7 @@ var BMW_parts = [
      //Part A09645
     {  
         partNum: 'A09645',
-        partName: 'Brake Lver extension',
+        partName: 'Brake Lever Extension',
         partDesc: 'Manufactured from aluminium easy access to brake lever especially in an emergency',
         models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
         imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09645/546fa0c7b9668_A09645-PIC01.JPG&length=1200',
