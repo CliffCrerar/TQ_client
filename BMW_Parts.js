@@ -872,6 +872,6 @@ var BMW_parts = [
         grnt: '1 Year',
         instTime: 30,
         price: 800,
-        cat: WFP, 
+        cat: 'WFP', 
     }   
 ]
