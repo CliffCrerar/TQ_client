@@ -909,7 +909,7 @@ var BMW_parts = [
         imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09631/547ed7d00b366_A09630-PIC01.jpg&length=1200',
         colors: 'Black',
         grnt: '1 Year',
-        instTime:30,
+        instTime: 30,
         price: 970,
         cat: 'WFP', 
     },
