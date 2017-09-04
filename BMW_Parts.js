@@ -871,7 +871,7 @@ var BMW_parts = [
         colors: 'Aliminium',
         grnt: '1 Year',
         instTime: 30,
-        price: 800,
+        price: 895,
         cat: 'WFP', 
     }   
 ]
