@@ -865,7 +865,7 @@ var BMW_parts = [
     {  
         partNum: 'A09625',
         partName: 'Wide Foot pegs',
-        partDesc: 'Make riding more comfortable and less chance of your foot slipping off the pegs when wet',
+        partDesc: 'Makes riding more comfortable and less chance of your foot slipping off the pegs when wet',
         models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
         imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09625/546fa0c786e80_A09625-PIC02.jpg&length=1200',
         colors: 'Aliminium',
@@ -878,7 +878,7 @@ var BMW_parts = [
     {  
         partNum: 'A09626',
         partName: 'Wide Foot pegs',
-        partDesc: 'Make riding more comfortable and less chance of your foot slipping off the pegs when wet',
+        partDesc: 'Makes riding more comfortable and less chance of your foot slipping off the pegs when wet',
         models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
         imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09626/546fa0c78e2b8_A09626-PIC01.jpg&length=1200',
         colors: 'Black',
@@ -887,11 +887,11 @@ var BMW_parts = [
         price: 940,
         cat: 'WFP', 
     },  
-      //Part A09630
+    //Part A09630
     {  
         partNum: 'A09630',
         partName: 'Wide Foot Pegs Pillion',
-        partDesc: 'Make riding more comfortable for passenger and less chance of your foot slipping off the pegs when wet',
+        partDesc: 'Makes riding more comfortable for passenger and less chance of your foot slipping off the pegs when wet',
         models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
         imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09630/547ed67a6d9d8_A09630-PIC0.JPG&length=1200',
         colors: 'Silver',
@@ -900,11 +900,11 @@ var BMW_parts = [
         price: 940,
         cat: 'WFP', 
     },
-      //Part A09631
+    //Part A09631
     {  
         partNum: 'A09631',
         partName: 'Wide Foot Pegs Pillion',
-        partDesc: 'Make riding more comfortable for passenger and less chance of your foot slipping off the pegs when wet',
+        partDesc: 'Makes riding more comfortable for passenger and less chance of your foot slipping off the pegs when wet',
         models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
         imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09631/547ed7d00b366_A09630-PIC01.jpg&length=1200',
         colors: 'Black',
@@ -913,7 +913,7 @@ var BMW_parts = [
         price: 970,
         cat: 'WFP', 
     },
-      //Part NEWPART
+    //Part NEWPART
     {  
         partNum: '',
         partName: '',
