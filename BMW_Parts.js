@@ -916,7 +916,7 @@ var BMW_parts = [
        //Part A09635
     {  
         partNum: 'A09635',
-        partName: 'SIDE STAND EXTENDER',
+        partName: 'Side Stand Extender',
         partDesc: 'Made from aluminium & stainless steel as a wider foot print which will prevent side stand wedging itself into cracks or between bricks and sinking into soft sand',
         models: ['BMW R1200GS/R1200GS Adventure K50'],
         imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09635/546fa0c7a1cfe_A09635-PIC01.jpg&length=1200',
@@ -926,17 +926,30 @@ var BMW_parts = [
         price: 380,
         cat: 'SSE', 
     },
-     //Part NEWPART
+     //Part A09636
     {  
-        partNum: '',
-        partName: '',
-        partDesc: '',
-        models: [''],
-        imgLink: '',
-        colors: '',
-        grnt: '',
-        instTime: ,
-        price: ,
-        cat: , 
+        partNum: 'A09636',
+        partName: 'Side Stand Extender',
+        partDesc: 'Made from aluminium & stainless steel as a wider foot print which will prevent side stand wedging itself into cracks or between bricks and sinking into soft sand',
+        models: ['BMW R1200GS/R1200GS Adventure K51'],
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09636/547dae886f27d_A09636-PIC01.JPG&length=1200',
+        colors: 'Silver and Black',
+        grnt: '1 Year',
+        instTime: 20,
+        price: 380,
+        cat: 'SSE', 
+    }, 
+      //Part A09637
+    {  
+        partNum: 'A09637',
+        partName: 'Side Stand Extender',
+        partDesc: 'Made from aluminium & stainless steel as a wider foot print which will prevent side stand wedging itself into cracks or between bricks and sinking into soft sand',
+        models: ['BMW R1200GS/R1200GS Adventure K50'],
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09637/5579141013e85_A09637-Pic(0).JPG&length=1200',
+        colors: 'Silver and Black',
+        grnt: '1 Year',
+        instTime: 20,
+        price: 380,
+        cat: 'SSE', 
     }        
 ]
