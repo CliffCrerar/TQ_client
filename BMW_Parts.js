@@ -913,18 +913,6 @@ var BMW_parts = [
         price: 970,
         cat: 'WFP', 
     },
-    //Part NEWPART
-    {  
-        partNum: '',
-        partName: '',
-        partDesc: '',
-        models: [''],
-        imgLink: '',
-        colors: '',
-        grnt: '',
-        instTime: ,
-        price: ,
-        cat: , 
-    }    
+    
 
 ]
