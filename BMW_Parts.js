@@ -952,19 +952,7 @@ var BMW_parts = [
         price: 380,
         cat: 'SSE', 
     },  
-    //Part A09638
-    {  
-        partNum: 'A09638',
-        partName: 'Low Seat Side Stand Extender',
-        partDesc: 'Made from aluminium & stainless steel as a wider foot print which will prevent side stand wedging itself into cracks or between bricks and sinking into soft sand',
-        models: ['BMW R1200GS/R1200GS Adventure K51'],
-        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09637/5579141013e85_A09637-Pic(0).JPG&length=1200',
-        colors: 'Silver and Black',
-        grnt: '1 Year',
-        instTime: 30,
-        price: 380,
-        cat: 'SSE', 
-    },        
+           
     //Part A09640
     {  
         partNum: 'A09640',
