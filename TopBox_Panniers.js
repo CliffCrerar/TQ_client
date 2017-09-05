@@ -424,6 +424,46 @@ var TopBoxPannier = [
         cat: 'TBB',
         make: 'KTM'
     },
+    //Part A110900
+    {  
+        partNum: 'A110900',
+        partName: 'Pannier LHS',
+        partDesc: 'Natural Aluminium 405 X 455 X 285',
+        models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110900/599c74232a258_A110900_00.jpg&length=1200',
+        colors: 'Aluminium',
+        grnt: '1 Year',
+        instTime: 20,
+        price: 4670,
+        cat: 'PAN', 
+    }, 
+    //Part A110901
+    {  
+        partNum: 'A110901',
+        partName: 'Pannier LHS',
+        partDesc: 'Powder coated Black 405 X 455 X285',
+        models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110911/599c7423a9647_A110911_00.jpg&length=1200',
+        colors: 'Black',
+        grnt: '1 Year',
+        instTime: 20,
+        price: 4955,
+        cat: 'PAN', 
+    },  
+    //Part A110912
+    {  
+        partNum: 'A110912',
+        partName: 'Pannier LHS',
+        partDesc: 'Powder coated New Silver 405 X 455 X285',
+        models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110912/599c7423c2f8b_A110912_00.jpg&length=1200',
+        colors: 'New Silver',
+        grnt: '1 Year',
+        instTime: 20,
+        price: 5126,
+        cat: 'PAN', 
+    }, 
+  
     //Part NewPArt
     /*
     {  
