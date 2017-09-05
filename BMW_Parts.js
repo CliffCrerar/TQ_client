@@ -1018,7 +1018,7 @@ var BMW_parts = [
         price: 2395,
         cat: 'BP', 
     },
-       //Part A09656
+    //Part A09656
     {  
         partNum: 'A09656',
         partName: 'Exhaust Header Guards',
@@ -1044,9 +1044,9 @@ var BMW_parts = [
         price: 4670,
         cat: 'PAN', 
     }, 
-     //Part NEWPART
+    //Part A110901
     {  
-        partNum: 'A110911',
+        partNum: 'A11091',
         partName: 'Pannier LHS',
         partDesc: 'Powder coated Black 405 X 455 X285',
         models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
@@ -1057,7 +1057,7 @@ var BMW_parts = [
         price: 4955,
         cat: 'PAN', 
     },  
-     //Part A110912
+    //Part A110912
     {  
         partNum: 'A110912',
         partName: 'Pannier LHS',
