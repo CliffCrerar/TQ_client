@@ -1070,18 +1070,4 @@ var BMW_parts = [
         price: 5126,
         cat: 'PAN', 
     },
-    //Part NEWPART
-    /*{  
-        partNum: '',
-        partName: '',
-        partDesc: '',
-        models: [''],
-        imgLink: '',
-        colors: '',
-        grnt: '',
-        instTime: 0,
-        price: 0,
-        cat: 0, 
-    }   */
-     
-]
+   ]
