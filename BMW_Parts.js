@@ -1056,7 +1056,7 @@ var BMW_parts = [
         instTime: 20,
         price: 4955,
         cat: 'PAN', 
-    }  
+    },  
      //Part A110912
     {  
         partNum: 'A110912',
