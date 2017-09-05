@@ -1079,9 +1079,9 @@ var BMW_parts = [
         imgLink: '',
         colors: '',
         grnt: '',
-        instTime: ,
-        price: ,
-        cat: , 
+        instTime: 0,
+        price: 0,
+        cat: 0, 
     }   
      
 ]
