@@ -1024,12 +1024,25 @@ var BMW_parts = [
         partName: 'Exhaust Header Guards',
         partDesc: 'Protects exhaust manifolds from damage caused by stones kicked up by the front wheel or other vehicles ahead.L & R sold as a set',
         models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
-        imgLink: '',
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09656/556d093fb2cf8_A09656-Pic(1).JPG&length=375',
         colors: 'Silver',
         grnt: '1 Year',
         instTime: 60,
         price: 490,
         cat: 'OTH', 
     },
+    //Part A110900
+    {  
+        partNum: 'A110900',
+        partName: 'Aluminium Pannier LHS',
+        partDesc: 'Natural Aluminium 405 X 455 X 285',
+        models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110900/599c74232a258_A110900_00.jpg&length=1200',
+        colors: 'Aluminium',
+        grnt: '1 Year',
+        instTime: 20,
+        price: 4670,
+        cat: 'PAN', 
+    }   
      
 ]
