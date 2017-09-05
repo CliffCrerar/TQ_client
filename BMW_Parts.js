@@ -1071,7 +1071,7 @@ var BMW_parts = [
         cat: 'PAN', 
     },
     //Part NEWPART
-    {  
+    /*{  
         partNum: '',
         partName: '',
         partDesc: '',
@@ -1082,6 +1082,6 @@ var BMW_parts = [
         instTime: 0,
         price: 0,
         cat: 0, 
-    }   
+    }   */
      
 ]
