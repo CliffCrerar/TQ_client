@@ -209,7 +209,7 @@ var KTM_Parts = [
     {  
         partNum: 'A08100',
         partName: 'KTM Pillion Wide Fot Peg',
-        partDesc: 'Manufactured of aliminium safer than the standard as there is more surface for the passengers foot to grip on the pig',
+        partDesc: 'Manufactured of aliminium safer than the standard as there is more surface for the passengers foot to grip on the peg',
         models: ['ALL KTM'],
         imgLink: 'http://tinyurl.com/y8t7wppy',
         colors: 'Black',
