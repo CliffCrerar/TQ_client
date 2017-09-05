@@ -1044,7 +1044,7 @@ var BMW_parts = [
         price: 4670,
         cat: 'PAN', 
     }, 
-      //Part NEWPART
+     //Part NEWPART
     {  
         partNum: 'A110911',
         partName: 'Pannier LHS',
@@ -1069,6 +1069,19 @@ var BMW_parts = [
         instTime: 20,
         price: 5126,
         cat: 'PAN', 
+    },
+    //Part NEWPART
+    {  
+        partNum: '',
+        partName: '',
+        partDesc: '',
+        models: [''],
+        imgLink: '',
+        colors: '',
+        grnt: '',
+        instTime: ,
+        price: ,
+        cat: , 
     }   
      
 ]
