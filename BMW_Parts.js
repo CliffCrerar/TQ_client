@@ -1046,7 +1046,7 @@ var BMW_parts = [
     }, 
     //Part A110901
     {  
-        partNum: 'A11091',
+        partNum: 'A110901',
         partName: 'Pannier LHS',
         partDesc: 'Powder coated Black 405 X 455 X285',
         models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],

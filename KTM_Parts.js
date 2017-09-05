@@ -166,7 +166,7 @@ var KTM_Parts = [
         price: 1890,
         cat: 'DBG'
     },
-     //Part A08020
+    //Part A08020
     {  
         partNum: 'A08020',
         partName: 'Rear Brake Disc Guard',
