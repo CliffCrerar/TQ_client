@@ -70,7 +70,7 @@ var KTM_Parts = [
         imgLink: 'http://tinyurl.com/yaj42fdx',
         colors: 'Silver',
         grnt: '1 Year',
-        instTime: 30 ,
+        instTime: 20,
         price: 365,
         cat: 'SSE'
     },

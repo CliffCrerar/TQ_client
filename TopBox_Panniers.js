@@ -195,7 +195,7 @@ var TopBoxPannier = [
         colors: 'Silver',
         grnt: '1 Year',
         instTime: 10,
-        price: 4390,
+        price: 4894,
         cat: 'TB', 
         make: 'BMW'
     },
@@ -424,4 +424,20 @@ var TopBoxPannier = [
         cat: 'TBB',
         make: 'KTM'
     },
+    //Part NewPArt
+    /*
+    {  
+        partNum: '',
+        partName: '',
+        partDesc: '',
+        models: [''],
+        imgLink: '',
+        colors: 'AAA_NEWPART',
+        grnt: '',
+        instTime: 0,
+        price: 0,
+        cat: '',
+        make: ''
+    },
+    */
 ]
