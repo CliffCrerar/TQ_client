@@ -424,7 +424,7 @@ var TopBoxPannier = [
         cat: 'TBB',
         make: 'KTM'
     },
-    //Part NewPArt    
+    //Part NewPart    
     {  
         partNum: '',
         partName: '',
