@@ -436,6 +436,7 @@ var TopBoxPannier = [
         instTime: 20,
         price: 4670,
         cat: 'PAN', 
+        make: 'BMW'
     }, 
     //Part A110901
     {  
@@ -449,6 +450,7 @@ var TopBoxPannier = [
         instTime: 20,
         price: 4955,
         cat: 'PAN', 
+        make:'BMW'
     },  
     //Part A110912
     {  
@@ -462,6 +464,7 @@ var TopBoxPannier = [
         instTime: 20,
         price: 5126,
         cat: 'PAN', 
+        make: 'BMW'
     },   
     
 ]
