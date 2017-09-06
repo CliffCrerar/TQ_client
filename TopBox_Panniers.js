@@ -423,20 +423,6 @@ var TopBoxPannier = [
         price: 755,
         cat: 'TBB',
         make: 'KTM'
-    },
-    //Part NewPart    
-    {  
-        partNum: '',
-        partName: '',
-        partDesc: '',
-        models: [''],
-        imgLink: '',
-        colors: '',
-        grnt: '',
-        instTime: 0,
-        price: 0,
-        cat: '',
-        make: ''
-    },
-    */
+    },   
+    
 ]
