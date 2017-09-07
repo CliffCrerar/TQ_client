@@ -465,6 +465,20 @@ var TopBoxPannier = [
         price: 5126,
         cat: 'PAN', 
         make: 'BMW'
-    },   
+    },  
+    //Part A110910
+    {
+     partNum: 'A110910',
+        partName: 'Pannier RHS',
+        partDesc: 'Powder coated Natarul Aluminium 405 X 455 X285',
+        models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110910/599c74238708b_A110910_00.jpg&length=1200',
+        colors: 'New Silver',
+        grnt: '1 Year',
+        instTime: 20,
+        price: 5126,
+        cat: 'PAN', 
+        make: 'BMW'
+      
     
 ]
