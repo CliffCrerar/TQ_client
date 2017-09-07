@@ -520,6 +520,6 @@ var TopBoxPannier = [
         instTime: 20,
         price: 4500,
         cat: TB,
-        Make: 'KTM' 
+        make: 'KTM' 
     },   
 ]
