@@ -1069,5 +1069,32 @@ var BMW_parts = [
         instTime: 60,
         price: 980,
         cat: 'CB', 
-    }        
+    },
+    //Part A09670
+    {  
+        partNum: 'A09670',
+        partName: 'Head Light Guard',
+        partDesc: 'Made from Poly Carbonate & Aluminium Frame',
+        models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
+        imgLink: '',
+        colors: 'Black and Silver',
+        grnt: '1 Year',
+        instTime: 20,
+        price: 795,
+        cat: 'HLG', 
+    },  
+    //Part A09675
+    {  
+        partNum: 'A09675',
+        partName: 'Head Light Guard',
+        partDesc: 'Orange Clip-on Lens (only for A09670)',
+        models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09675/546fa0c955cb8_A09675-PIC%20(1).JPG&length=1200',
+        colors: 'Orange',
+        grnt: '1 Year',
+        instTime: 5,
+        price: 595,
+        cat: 'HLG', 
+    }   
+
 ]
