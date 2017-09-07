@@ -485,7 +485,7 @@ var TopBoxPannier = [
         partNum: 'A110911',
         partName: 'Pannier RHS',
         partDesc: 'Powder coated Black 405 X 455 X285',
-        models: ['http://www.motorradical.co.za/thumb.php?path=img/products/A110911/599c7423a9647_A110911_00.jpg&length=1200BMW R1200GS/R1200GS Adventure LC K50 K51'],
+        models: ['http://www.motorradical.co.za/thumb.php?path=img/products/A110911/599c7423a9647_A110911_00.jpg&length=1200'],
         imgLink: '',
         colors: 'Black',
         grnt: '1 Year',
