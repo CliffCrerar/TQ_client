@@ -43,7 +43,7 @@ var TopBoxPannier = [
         instTime: 30,
         price: 4040,
         cat: 'TB',
-        make: 'BWM'
+        make: 'BMW'
     },
     //Part A11112
     {  
