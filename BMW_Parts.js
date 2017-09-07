@@ -1031,4 +1031,43 @@ var BMW_parts = [
         price: 490,
         cat: 'OTH', 
     },
+    //Part A09660
+    {  
+        partNum: 'A09660',
+        partName: 'Lower Crash Bars',
+        partDesc: ' MANUFACTURED FROM STAINLESS STEEL.THE BARS MOUNTS TO 4 POINT ON THE MOTORCYCLE ON EACH SIDE TO ENSURE ADAQUATE PROTECTION',
+        models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09660/596a55220409e_A09660-Pic(5).jpg&length=1200',
+        colors: 'Stainless Steel',
+        grnt: '1 Year',
+        instTime: 60,
+        price: 3395,
+        cat: 'CB', 
+    },
+       //Part A09760
+    {  
+        partNum: 'A09760',
+        partName: 'Crash Bar Support Bracket ',
+        partDesc: 'Crash Bar Support Bracket to reinforcing and support the original crash bars to minimise damage to the cylinder head covers. The support bracket is ergonomically designed to enhance the look and functionality of the OE crash bars.',
+        models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09760/555ce15f4fa6f_A09760-PIC(5).JPG&length=1200',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 60,
+        price: 1386,
+        cat: 'CB', 
+    },
+    //Part A09770
+    {  
+        partNum: 'A09770',
+        partName: 'Upper Crash Bar Support Bracket',
+        partDesc: 'Upper Crash Bar Support Bracket to reinforcet the original upper crash bars. The support bracket is ergonomically designed to enhance the look and functionality of the OE crash bars.',
+        models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09770/55675aa72cd3f_A09770-PIC-05.JPG&length=1200',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 60,
+        price: 980,
+        cat: 'CB', 
+    }        
 ]
