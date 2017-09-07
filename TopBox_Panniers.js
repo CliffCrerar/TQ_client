@@ -507,5 +507,19 @@ var TopBoxPannier = [
         price: 5126,
         cat: 'PAN', 
         make: 'BMW'
-    }    
+    }, 
+       //Part A110801
+    {  
+        partNum: 'A110801',
+        partName: 'Top Box',
+        partDesc: 'KTM & General Motor cycle asseccories',
+        models: ['All KTM'],
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110801/599703f57e61e_A110811-(0).JPG&length=1200',
+        colors: 'Black',
+        grnt: '1 Year',
+        instTime: 20,
+        price: 4500,
+        cat: TB,
+        Make: 'KTM' 
+    },   
 ]
