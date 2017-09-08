@@ -27,7 +27,7 @@ var TopBoxPannier = [
         colors: 'Silver',
         grnt: '1 Year',
         instTime: 30,
-        price: 3930,
+        price: 4894,
         cat: 'TB',
         make: 'BMW',
     },
