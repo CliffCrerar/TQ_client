@@ -157,9 +157,9 @@ var TopBoxPannier = [
         cat: 'TB',
         make: 'BMW'
     },
-    //Part A110800_X05
+    //Part A110800_X03
     {  
-        partNum: 'A110800_X05',
+        partNum: 'A110800_X03',
         partName: 'Top Box',
         partDesc: ' Aluminium Side latch Natural Aluminium (Bracket Required)',
         models: ['BMW R1200GS/R1200GS Adventure'],
