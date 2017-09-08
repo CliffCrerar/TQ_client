@@ -157,17 +157,17 @@ var TopBoxPannier = [
         cat: 'TB',
         make: 'BMW'
     },
-    //Part 
+    //Part A110800_X05
     {  
-        partNum: '',
-        partName: '',
-        partDesc: '',
-        models: [''],
-        imgLink: '',
-        colors: '',
-        grnt: '',
+        partNum: 'A110800_X05',
+        partName: 'Top Box',
+        partDesc: ' Aluminium Side latch Natural Aluminium (Bracket Required)',
+        models: ['BMW R1200GS/R1200GS Adventure'],
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110800_X03/59970322d95d1_A110810-(3).JPG&length=1200',
+        colors: 'Aluminium',
+        grnt: '1 Year',
         instTime: 10,
-        price: ,
+        price: 4395,
         cat: 'TB', 
         make: 'BMW'
     },
