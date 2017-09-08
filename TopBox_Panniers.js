@@ -51,7 +51,7 @@ var TopBoxPannier = [
         partName: 'Top Box',
         partDesc: 'Manufactured from 2 mm aluminium walls with stainless and has 41 litre volumetric capacity',
         models: ['BMW R1200GS/R1200GS Adventure'],
-        imgLink: '',
+        imgLink:'http://www.motorradical.co.za/thumb.php?path=img/products/A110801_X04/599703f5d765d_A110811-(0).JPG&length=1200',
         colors: 'Black',
         grnt: '1 Year',
         instTime: 15,
