@@ -157,17 +157,17 @@ var TopBoxPannier = [
         cat: 'TB',
         make: 'BMW'
     },
-    //Part A11501
+    //Part 
     {  
-        partNum: 'A11501',
-        partName: 'Top Box',
-        partDesc: 'Manufactured from 2 mm aluminium (W)394mm X (B)324mm X (H)228mm (Half loaf 28 Ltr)',
-        models: ['BMW R1200GS'],
-        imgLink: 'http://tinyurl.com/yc7z9b6x',
-        colors: 'Silver',
-        grnt: '1 Year',
+        partNum: '',
+        partName: '',
+        partDesc: '',
+        models: [''],
+        imgLink: '',
+        colors: '',
+        grnt: '',
         instTime: 10,
-        price: 3960,
+        price: ,
         cat: 'TB', 
         make: 'BMW'
     },
