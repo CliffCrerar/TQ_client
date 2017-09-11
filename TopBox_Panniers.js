@@ -492,7 +492,7 @@ var TopBoxPannier = [
         instTime: 20,
         price: 4955,
         cat: 'PAN', 
-        make:'BMW'
+        make: 'BMW'
     },
      //Part A110912
     {  
@@ -534,6 +534,22 @@ var TopBoxPannier = [
         instTime: 30,
         price: 2800,
         cat: 'TBB', 
-        Make:'BMW'
+        Make: 'BMW'
+    }, 
+     //Part A110800_X00
+    {  
+        partNum: 'A110800_X00',
+        partName: 'Top Box',
+        partDesc: 'Aluminium Side latch Natural Aluminium (Bracket Required)',
+        models: [' F650GS/F700GS/F800GS/F800GSA'],
+        imgLink: '',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 20,
+        price: 4395,
+        cat: 'TB', 
+        Make: 'BMW'
+    }   
+    
     }   
 ]
