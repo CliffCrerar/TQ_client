@@ -533,7 +533,7 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 30,
         price: 2800,
-        cat: PAN, 
+        cat: TBB, 
         Make:'BMW'
     }   
 ]
