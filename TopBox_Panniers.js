@@ -549,6 +549,19 @@ var TopBoxPannier = [
         price: 4395,
         cat: 'TB',
         make: 'BMW' 
+    },
+    //Part A110802_x02
+    {  
+        partNum: 'A110802_x02',
+        partName: '',
+        partDesc: '',
+        models: [''],
+        imgLink: '',
+        colors: '',
+        grnt: '',
+        instTime: ,
+        price: ,
+        cat: , 
     }   
 
 ]
