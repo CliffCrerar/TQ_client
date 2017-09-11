@@ -549,7 +549,7 @@ var TopBoxPannier = [
         price: 4395,
         cat: 'TB', 
         Make: 'BMW'
-    }   
+    },   
     
     }   
 ]
