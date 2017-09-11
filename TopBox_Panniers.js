@@ -563,6 +563,35 @@ var TopBoxPannier = [
         price: 4635,
         cat: 'TB',
         make: 'BMW' 
+    },
+      //Part A110801_X01
+    {  
+        partNum: 'A110801_X01',
+        partName: 'Top Box',
+        partDesc: 'Aluminium Side latch Natural Powder Coated Black Aluminium (Bracket Required)',
+        models: ['F650GS/F700GS/F800GS/F800GSA'],
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110801_X01/599703f5aac9c_A110811-(0).JPG&length=1200',
+        colors: 'Black',
+        grnt: '1 Year',
+        instTime: 20,
+        price: 4500,
+        cat: 'TB',
+        make: 'BMW' 
+    },
+    //Part A11080_X12
+    {  
+        partNum: 'A11080_X12',
+        partName: 'Top Box',
+        partDesc: 'Aluminium Natural 41 Litre (Volumetric) Constructed from aluminium and stainless steel (Bracket Required )',
+        models: ['1050/KTM1090/KTM1190/KTM1290'],
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110800_X12/5996fd624ad9c_A110810-(3).JPG&length=1200',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 20,
+        price: 4395,
+        cat: 'TB',
+        make: 'KTM' 
     }   
+     
 
 ]
