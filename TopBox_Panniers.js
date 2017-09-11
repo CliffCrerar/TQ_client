@@ -521,7 +521,6 @@ var TopBoxPannier = [
         price: 4500,
         cat: 'TB',
         make: 'KTM' 
-
     },    
     //Part A12000
     {  
