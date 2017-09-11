@@ -542,7 +542,7 @@ var TopBoxPannier = [
         partName: 'Top Box',
         partDesc: 'Aluminium Side latch Natural Aluminium (Bracket Required)',
         models: ['F650GS/F700GS/F800GS/F800GSA'],
-        imgLink: '',
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110800_X00/599706f0d33bf.JPG&length=1200',
         colors: 'Silver',
         grnt: '1 Year',
         instTime: 20,
