@@ -583,7 +583,7 @@ var TopBoxPannier = [
         partNum: 'A11080_X12',
         partName: 'Top Box',
         partDesc: 'Aluminium Natural 41 Litre (Volumetric) Constructed from aluminium and stainless steel (Bracket Required )',
-        models: ['KTM1050','KTM1090','KTM1190','KTM1290'],
+        models: ['1050','1090','1190','1290'],
         imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110800_X12/5996fd624ad9c_A110810-(3).JPG&length=1200',
         colors: 'Silver',
         grnt: '1 Year',
