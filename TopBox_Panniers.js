@@ -519,7 +519,7 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 20,
         price: 4500,
-        cat: TB,
+        cat: 'TB',
         make: 'KTM' 
     }, 
       //Part A12000
@@ -533,7 +533,7 @@ var TopBoxPannier = [
         grnt: '1 Year',
         instTime: 30,
         price: 2800,
-        cat: TBB, 
+        cat: 'TBB', 
         Make:'BMW'
     }   
 ]
