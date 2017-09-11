@@ -564,7 +564,7 @@ var TopBoxPannier = [
         cat: 'TB',
         make: 'BMW' 
     },
-      //Part A110801_X01
+    //Part A110801_X01
     {  
         partNum: 'A110801_X01',
         partName: 'Top Box',
