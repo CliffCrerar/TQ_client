@@ -536,33 +536,5 @@ var TopBoxPannier = [
         cat: 'TBB', 
         Make: 'BMW'
     }, 
-    //Part A110800_X00
-    {  
-        partNum: 'A110800_X00',
-        partName: 'Top Box',
-        partDesc: 'Aluminium Side latch Natural Aluminium (Bracket Required)',
-        models: ['F650GS/F700GS/F800GS/F800GSA'],
-        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110800_X00/599706f0d33bf.JPG&length=1200',
-        colors: 'Silver',
-        grnt: '1 Year',
-        instTime: 20,
-        price: 4395,
-        cat: 'TB', 
-        Make: 'BMW'
-    },   
-    //Part A110802_X02     
-    {    partNum: 'A110802_X02',
-        partName: 'Top Box',
-        partDesc: 'Aluminium Side latch Natural Powder Coated Black Aluminium (Bracket Required)',
-        models: ['F650GS/F700GS/F800GS/F800GSA'],
-        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110801_X01/599703f5aac9c_A110811-(0).JPG&length=1200',
-        colors: 'Black',
-        grnt: '1 Year',
-        instTime: 20,
-        price: 4500,
-        cat: 'TB', 
-        Make: 'KTM'
-    },
-
-    }   
+    
 ]
