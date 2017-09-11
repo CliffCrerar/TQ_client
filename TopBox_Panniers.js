@@ -553,15 +553,16 @@ var TopBoxPannier = [
     //Part A110802_x02
     {  
         partNum: 'A110802_x02',
-        partName: '',
-        partDesc: '',
-        models: [''],
-        imgLink: '',
-        colors: '',
-        grnt: '',
-        instTime: ,
-        price: ,
-        cat: , 
+        partName: 'Top Box',
+        partDesc: 'Aluminium Side latch Natural Powder Coated Silver Aluminium (Bracket Required)',
+        models: ['F650GS/F700GS/F800GS/F800GSA'],
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110802_X02/599704c1a4862_A110800-01%20(1).JPG&length=1200',
+        colors: 'New Silver',
+        grnt: '1 Year',
+        instTime: 20,
+        price: 4635,
+        cat: 'TB',
+        make: 'BMW' 
     }   
 
 ]
