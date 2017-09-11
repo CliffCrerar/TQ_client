@@ -17,27 +17,27 @@ var TopBoxPannier = [
         cat: 'TB',
         make: 'KTM'
     },
-    //Part A11110
+    //Part A110802_X05
     {  
-        partNum: 'A11110',
+        partNum: 'A110802_X05',
         partName: 'Top Box',
         partDesc: 'Manufactured from 2 mm aluminium walls with stainless and has 41 litre volumetric capacity',
         models: ['BMW R1200GS/R1200GS Adventure'],
-        imgLink: 'http://tinyurl.com/y7fts7tc',
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110802_X05/599704c1d0c78_A110800-01%20(1).JPG&length=1200',
         colors: 'Silver',
         grnt: '1 Year',
         instTime: 30,
-        price: 4894,
+        price: 4635,
         cat: 'TB',
         make: 'BMW',
     },
-    //Part A11111
+    //Part A110812
     {  
-        partNum: 'A11111',
+        partNum: 'A110812',
         partName: 'Top Box',
         partDesc: 'Manufactured from 2 mm aluminium walls with stainless and has 41 litre volumetric capacity',
         models: ['BMW R1200GS/R1200GS Adventure'],
-        imgLink: 'http://tinyurl.com/y8v4rhqe',
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110812/59930480dc246_A110800-01%20(1).JPG&length=1200',
         colors: 'New Silver',
         grnt: '1 Year',
         instTime: 30,
@@ -143,17 +143,17 @@ var TopBoxPannier = [
         cat: 'TB',
         make: 'YAM'
     },
-    //Part A11500
+    //Part A110810
     {  
-        partNum: 'A11500',
+        partNum: 'A110810',
         partName: 'Top Box',
         partDesc: 'Manufactured from 2 mm aluminium with side latch no top plate required',
         models: ['BMW R1200GS Adventuer K51'],
-        imgLink: 'http://tinyurl.com/y8x5s4a8',
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110810/5993047f9d01a_A110810-(10).JPG&length=1200',
         colors: 'Silver',
         grnt: '1 Year',
-        instTime: 30,
-        price: 4290,
+        instTime: 10,
+        price: 4495,
         cat: 'TB',
         make: 'BMW'
     },
@@ -185,17 +185,17 @@ var TopBoxPannier = [
         cat: 'TB', 
         make: 'BMW'
     },
-    //Part A11248
+    //Part A110811
     {  
-        partNum: 'A11505',
+        partNum: 'A110811',
         partName: 'Top Box',
-        partDesc: 'Manufactured from 2 mm aluminium with side latch no top plate required, powder coated new silver, no plate required',
+        partDesc: 'Manufactured from 2 mm aluminium with side latch no top plate required, powder coated black, no plate required',
         models: ['BMW R1200GS Adventuer K51'],
-        imgLink: 'http://tinyurl.com/y8w5p6e5',
-        colors: 'Silver',
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110811/5993048056936_A110811-(0).JPG&length=1200',
+        colors: 'Black',
         grnt: '1 Year',
         instTime: 10,
-        price: 4894,
+        price: 4723,
         cat: 'TB', 
         make: 'BMW'
     },
@@ -521,5 +521,19 @@ var TopBoxPannier = [
         price: 4500,
         cat: TB,
         make: 'KTM' 
-    },   
+    }, 
+      //Part A12000
+    {  
+        partNum: 'A12000',
+        partName: 'Pannier Bracket',
+        partDesc: 'Stainless Steel Pannier frame Set RHS+LHS to fit Panniers A11505 to A11540',
+        models: ['BMW R1200GS Adventure K50 (LC)'],
+        imgLink: '',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 2800,
+        cat: PAN, 
+        Make:'BMW'
+    }   
 ]
