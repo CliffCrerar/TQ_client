@@ -528,7 +528,7 @@ var TopBoxPannier = [
         partName: 'Pannier Bracket',
         partDesc: 'Stainless Steel Pannier frame Set RHS+LHS to fit Panniers A11505 to A11540',
         models: ['BMW R1200GS Adventure K50 (LC)'],
-        imgLink: '',
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A12000/55854aaed5bb7_A12000-PIC(5).JPG&length=1200',
         colors: 'Silver',
         grnt: '1 Year',
         instTime: 30,
