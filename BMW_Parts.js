@@ -1095,6 +1095,19 @@ var BMW_parts = [
         instTime: 5,
         price: 595,
         cat: 'HLG', 
+    },
+     //Part A09800
+    {  
+        partNum: 'A09800',
+        partName: 'Tool Box',
+        partDesc: 'Tool Box (Pannier frame LHS) made from stainless steel and aluminium ideal for tools and tyre repair kit',
+        models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09800/592be4a779c4f_A090790-Pic(0).JPG&length=1200',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 1590,
+        cat: 'OTH', 
     }   
 
 ]
