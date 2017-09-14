@@ -1048,7 +1048,7 @@ var BMW_parts = [
     {  
         partNum: 'A09760',
         partName: 'Crash Bar Support Bracket ',
-        partDesc: 'Crash Bar Support Bracket to reinforcing and support the original crash bars to minimise damage to the cylinder head covers. The support bracket is ergonomically designed to enhance the look and functionality of the OE crash bars.',
+        partDesc: 'Crash Bar Support Bracket to reinforcing and support the original crash bars to minimise damage to the cylinder head covers. The support bracket is ergonomically designed to enhance the look and functionality of the OE crash bars',
         models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
         imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09760/555ce15f4fa6f_A09760-PIC(5).JPG&length=1200',
         colors: 'Silver',
