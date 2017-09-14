@@ -1035,7 +1035,7 @@ var BMW_parts = [
     {  
         partNum: 'A09660',
         partName: 'Lower Crash Bars',
-        partDesc: ' MANUFACTURED FROM STAINLESS STEEL.THE BARS MOUNTS TO 4 POINT ON THE MOTORCYCLE ON EACH SIDE TO ENSURE ADAQUATE PROTECTION',
+        partDesc: 'Manufactured from stainless steel. The bars mount to 4 points on the motorcycle on each side to ensure adequate protection',
         models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
         imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09660/596a55220409e_A09660-Pic(5).jpg&length=1200',
         colors: 'Stainless Steel',
