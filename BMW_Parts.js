@@ -757,19 +757,7 @@ var BMW_parts = [
         price: 32,
         cat:'OTH'
     },
-    //Part A01470
-    {  
-        partNum: 'A01470',
-        partName: 'Ctek Keep Power Small CAnbus(Ctek Battery Charger)',
-        partDesc: 'CTek battery charger tokeep bike batteries charged',
-        models: ['F650GS','F700GS','F800GS','F800GSA'],
-        imgLink: 'http://tinyurl.com/ycrdvp6d',
-        colors: '0',
-        grnt: '0',
-        instTime: 0,
-        price: 1680,
-        cat:'OTH'
-    },
+    
     //Part A01480
     {  
         partNum: 'A01480',
