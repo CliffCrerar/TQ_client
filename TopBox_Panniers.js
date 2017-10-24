@@ -287,7 +287,7 @@ var TopBoxPannier = [
     {  
         partNum: 'A01460',
         partName: 'Pannnier and Top Box Lid Strap Assembly',
-        partDesc: 'Straps to secure Panniers and Top Boxes',
+        partDesc: 'Straps secures to the lid of the Top Box for easy opening of the lid',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/yazs8tw2',
         colors: 'Black',
