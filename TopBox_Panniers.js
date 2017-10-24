@@ -203,7 +203,7 @@ var TopBoxPannier = [
     {  
         partNum: 'A19000',
         partName: 'Pannier and Top Box strap',
-        partDesc: 'Secures the lids of the Top Boxes and Panniers from coming open while riding',
+        partDesc: 'Straps seciure to the lid of the Top Box for easy opening of the lid',
         models: ['BMW KTM and Yamaha'],
         imgLink: 'http://tinyurl.com/y7dtjgwb',
         colors: '0',
@@ -211,7 +211,7 @@ var TopBoxPannier = [
         instTime: 0,
         price: 235,
         cat: 'STR', 
-        make: 'BMW'
+        make: 'KTM'
     },
     //Part A19010
     {  
