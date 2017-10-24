@@ -203,7 +203,7 @@ var TopBoxPannier = [
     {  
         partNum: 'A19000',
         partName: 'Pannier and Top Box strap',
-        partDesc: 'Straps seciure to the lid of the Top Box for easy opening of the lid',
+        partDesc: 'Straps secures to the lid of the Top Box for easy opening of the lid',
         models: ['BMW KTM and Yamaha'],
         imgLink: 'http://tinyurl.com/y7dtjgwb',
         colors: '0',
