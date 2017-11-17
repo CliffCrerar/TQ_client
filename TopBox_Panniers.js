@@ -203,7 +203,7 @@ var TopBoxPannier = [
     {  
         partNum: 'A19000',
         partName: 'Pannier and Top Box strap',
-        partDesc: 'Secures the lids of the Top Boxes and Panniers from coming open while riding',
+        partDesc: 'Straps secures to the lid of the Top Box for easy opening of the lid',
         models: ['BMW KTM and Yamaha'],
         imgLink: 'http://tinyurl.com/y7dtjgwb',
         colors: '0',
@@ -211,7 +211,7 @@ var TopBoxPannier = [
         instTime: 0,
         price: 235,
         cat: 'STR', 
-        make: 'BMW'
+        make: 'KTM'
     },
     //Part A19010
     {  
@@ -287,7 +287,7 @@ var TopBoxPannier = [
     {  
         partNum: 'A01460',
         partName: 'Pannnier and Top Box Lid Strap Assembly',
-        partDesc: 'Straps to secure Panniers and Top Boxes',
+        partDesc: 'Straps secures to the lid of the Top Box or pannier for easy opening of the lid',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/yazs8tw2',
         colors: 'Black',
