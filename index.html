@@ -67,8 +67,8 @@
                 //Sort Bike Parts
 
                 /* End of Sorting functions */
-
-                //Get ktm bike parts data 
+/*
+                //Get ktm bike parts data
                 $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/KTM_Parts.js', function(){   
                     displayParts(KTM_Parts,'bikeParts','ktm');
                 });
@@ -91,6 +91,12 @@
                 //Get top box and pannier parts data
                 $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/TopBox_Panniers.js', function(){
                     displayParts(TopBoxPannier,'TopBoxPannierParts','Tob boxes and Panniers')
+                });
+*/
+
+                //Get honda parts data
+                $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/HND_parts.js', function(){
+                    displayParts(HND_parts,'bikeParts','HND')
                 });
 
                 var allParts = []//create variable for all parts-> not implemented in the front end.
@@ -203,6 +209,7 @@
                                 case 'BMW': badgeUrl = 'http://www.carlogos.org/logo/BMW-logo-2000-2048x2048.png'; break;
                                 case 'KTM': badgeUrl = 'http://www.chapmotors.com/fckimages/Pages/KTM_Logo.png'; break;
                                 case 'YAM': badgeUrl = 'https://seeklogo.com/images/D/diapason-yamaha-logo-05624DB5BD-seeklogo.com.png'; break;
+                                case 'HND': badgeUrl = 'http://www.car-brand-names.com/wp-content/uploads/2015/05/Honda-logotype.png'; break;
                                 default: badgeUrl = 'http://tinyurl.com/ybjdqlw5'; break;
                             }
                         }
