@@ -18,7 +18,7 @@ HND_parts = [
     },
     {  
         partNum: 'A08255',
-        partName: 'Luggage Rack',
+        partName: 'Honda2',
         partDesc: 'Made from lightweight suspect alluminium, '+
                   'used to tie down appropriate luggage with straps included with the luggage rack.'+
                   'Also includes a securing kit.',
