@@ -99,6 +99,16 @@
                     displayParts(HND_parts,'bikeParts','HND')
                 });
 
+                //Get Africa twin parts data
+                $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/TRI_parts.js', function(){
+                    displayParts(TRI_parts,'bikeParts','TRI')
+                });
+                
+                //Get africa twin parts data
+                $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/AT_parts.js', function(){
+                    displayParts(AT_parts,'bikeParts','AT')
+                });
+
                 var allParts = []//create variable for all parts-> not implemented in the front end.
 
                 //Hide HTML part description containers 
@@ -197,6 +207,8 @@
                         case 'ktm': badgeUrl = 'http://www.chapmotors.com/fckimages/Pages/KTM_Logo.png'; break;
                         case 'LandRover': badgeUrl = 'http://tinyurl.com/y6utpp75'; break;
                         case 'HND': badgeUrl = 'http://www.car-brand-names.com/wp-content/uploads/2015/05/Honda-logotype.png'; break;
+                        case 'AT': badgeUrl = 'http://www.africatwin.org/media/africa-twin-logo.13/full'; break;
+                        case 'TRI': badgeUrl = 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Logo_Triumph.svg/2000px-Logo_Triumph.svg.png';break;
                         default: badgeUrl = 'http://tinyurl.com/ybjdqlw5'; badgeSwitch = true; break;
                     }
                     
