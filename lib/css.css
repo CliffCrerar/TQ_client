@@ -1,7 +1,7 @@
 
             body { /* Static */
                 background-color:grey;
-                background: url("http://tinyurl.com/y9svxru2") 100%, 100%;
+                background: url("media/homePage/home.png") 100%, 100%;
                 -webkit-font-smoothing: antialiased;
             }
             #titleDiv {
