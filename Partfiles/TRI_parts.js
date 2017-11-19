@@ -2,7 +2,7 @@
  /*   AFRICA TWIN BIKE PARTS DATA  */
 /**********************************/ 
 
-HND_parts = [
+TRI_parts = [
     //Part **
     {  
         partNum: '',

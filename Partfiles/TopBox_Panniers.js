@@ -2,7 +2,8 @@
  /*  TOP BOXES AND PANNIERS  */
 /****************************/
 
-var TopBoxPannier_1 = [
+
+var TopBoxPannier1 = [
     //Part A08400     
     {
         partNum: 'A08400',
@@ -594,4 +595,4 @@ var TopBoxPannier_1 = [
     }   
      
 
-]
+];

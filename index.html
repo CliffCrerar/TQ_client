@@ -21,13 +21,28 @@
         <!--
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        -->
 
         <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
         <script src="lib/jquery/jquery-3.2.1.min.js"></script>
         <script src="lib/bootstrap/js/bootstrap.js"></script>
 
-       
+        <script src="lib/slides/slides.js"></script>
+        <link rel="stylesheet" href="lib/slides/slides.css">
+        <link rel="stylesheet" href="lib/css.css">
+ 
+        <!--PartFilesData-->
+        <script src="Partfiles/TRI_parts.js"></script>
+        <script src="Partfiles/TopBox_Panniers.js"></script>
+        <script src="Partfiles/LRDisc_parts.js"></script>
+        <script src="Partfiles/LRDef_parts.js"></script>
+        <script src="Partfiles/KTM_parts.js"></script>
+        <script src="Partfiles/HND_parts.js"></script>
+        <script src="Partfiles/BMW_parts.js"></script>
+        <script src="Partfiles/AT_parts.js"></script>
+
+
         <!--Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Play" rel="stylesheet">
 
@@ -45,6 +60,8 @@
         <!--Custom Scripting-->
         <script>
             $(document).ready(function(){
+
+                console.log(TopBoxPannier1)
                 
                 /* Start of Sorting functions */
                 
@@ -75,42 +92,22 @@
                 /* End of Sorting functions */
 
                 //Get ktm bike parts data
-            /*
-                $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/KTM_Parts.js', function(){   
-                    displayParts(KTM_Parts,'bikeParts','ktm');
-                });
+                displayParts(KTM_Parts,'bikeParts','ktm');
                 //get BMW bike parts data
-                $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/BMW_Parts.js', function(){
-                    displayParts(BMW_parts,'bikeParts','bmw');
-                });
+                displayParts(BMW_parts,'bikeParts','bmw');
                 //Get Land rover defender parts data
-                $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/LRDef_parts.js', function(){
-                    displayParts(LRDef_parts,'Parts4x4','LandRover');
-                });               
-                Get Land rover discovery parts data
-                $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/LRDisc_parts.js', function(){ 
-            
-                    displayParts(LRDisc_parts,'Parts4x4','LandRover');
-                });
-            
-                Get top box and pannier parts data
-                $.get('Partfiles/TopBox_Panniers.js', function(){
-            */
-                    //displayParts(TopBoxPannier,'TopBoxPannierParts','Tob boxes and Panniers')
-            /*  //});
+                displayParts(LRDef_parts,'Parts4x4','LandRover');
+                //Get Land rover discovery parts data
+                displayParts(LRDisc_parts,'Parts4x4','LandRover');
+                //Get top box and pannier parts data
+                displayParts(TopBoxPannier1,'TopBoxPannierParts','Tob boxes and Panniers')
                 //Get honda parts data
-                $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/HND_parts.js', function(){
-                    displayParts(HND_parts,'bikeParts','HND')
-                });
+                displayParts(HND_parts,'bikeParts','HND')
                 //Get Africa twin parts data
-                $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/TRI_parts.js', function(){
-                    displayParts(TRI_parts,'bikeParts','TRI')
-                });
+                displayParts(TRI_parts,'bikeParts','TRI')
                 //Get africa twin parts data
-                $.getScript('https://rawgit.com/CliffCrerar/PartSales/Br1/AT_parts.js', function(){
-                    displayParts(AT_parts,'bikeParts','AT')
-                });
-
+                displayParts(AT_parts,'bikeParts','AT')
+            /*
                 var allParts = []//create variable for all parts-> not implemented in the front end.
             */
                 //Hide HTML part description containers 
@@ -118,8 +115,6 @@
                 $('#bikes').hide();
                 $('#4x4').hide();
                 $('#contact').hide();
-
-                console.log(window.TopBoxPannier_1)
                 
                 /* navbar functions */
                 $('.nav-tabs').children().css('color','black');
@@ -193,11 +188,7 @@
             */              
                 function displayParts(partsObject, divId, badgeType){
                     
-                    //Experimental object not implemented on the front end
-                    partsObject.forEach(function(part){
-                        allParts.push(part)
-                    })
-
+                   
                     //Variables used in the operation of this function
                     var partsData = partsObject;
                     var objLen = partsData.length;
@@ -233,7 +224,7 @@
                                       
                         $('#'+divId).append('<div class="well" id="'+partIdentifier+'"></div>');
                         $('#'+partIdentifier).append('<div class="partNameDiv"></div>');
-                        $('#'+partIdentifier+'>.partNameDiv').append('<img class="manuBadge" src="'+badgeUrl+'" alt="badge">');
+                        $('#'+partIdentifier+'>.partNameDiv').append('<img class="menuBadge" src="'+badgeUrl+'" alt="badge">');
                         $('#'+partIdentifier+'>.partNameDiv').append('<span class="partName">'+partsData[i].partName+'</span>');
                         $('#'+partIdentifier).append('<div class="Row"></div>');
                         
@@ -345,169 +336,7 @@
 
         <!--Custom CSS-->
         <style>
-            .bd1 {
-                border: 10px solid black;                
-            }
-            body {
-                background-color:grey;
-                background: url("http://tinyurl.com/y9svxru2") 100%, 100%;
-                -webkit-font-smoothing: antialiased;
-            }
-            #titleDiv {
-                background-image: url("http://tinyurl.com/yctgktf6") ;
-                background-size: contain;                
-            }
-            h1{
-                font-size: calc(15px + 2vw);
-                color: white;
-                margin: 1% 2% 1% 2%;
-                font-family: Black ops one;
-                text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-            }
-            h2{
-                margin: 0px 0px 10px 0px;
-                font-size: calc(20 + 3vw);
-                font-family: black ops one;
-                text-align: center;                
-            }
-            .nav-tabs{
-                background-color: rgba(1,1,1,0.7);
-                               
-            }
-            .nav>li>a {
-                text-decoration: none;
-                color: white;
-                font-family: play
-            }
-            .nav>li>a:hover{
-                color:black;
-                border-radius: 0px
-            }
-            .active{
-                
-                border-radius: 0px
-            }
-            .hDiv {
-                background-color: lightgray;
-                height: 10px;
-            }
-            .navbar{
-                Margin: 0% 0% 0% 0%; 
-                padding: 0px 0% 0% 0%;
-                font-size: calc(5px + 1vw);
-                border-width: 0px;                               
-            }
-            #hpcontent{
-                margin: 2% auto 1% auto;
-                padding: 10px 0px 0px 0px;
-                max-width: 70%;
-                box-shadow: 30px 30px 20px rgba(1,1,1,0.7)              
-            }
-            .hpclass{
-                font-family: play;
-                font-weight: bold;
-            }
-            .mainSec {
-                margin: 2% 5% 0% 5%;
-                background-color: rgba(255, 255, 255, 0.7);
-                border-radius: 5px
-            }
-            #contact.mainSec{
-                width: 50%;
-                margin: 2% auto 0% auto;
-                margin-bottom: 20%;
-                padding-top: 2%
-            }
-            .sideNav{
-                padding: 5px 5px 100% 5px;
-                margin: auto;
-            }
-            .btn.btn-block {
-                font-family: play;
-                font-size: calc(5px + 1vw);
-                border:0px;
-            }
-            .btn:focus{
-                outline: none;
-                background-color: black;
-                color: white
-            }
-            button:hover {
-                color: white; 
-                background-color:slategrey                              
-            }
-            partNameDiv{
-                margin: 1% 0 1% 0;
-            }
-            .partName{
-                font-size: 24px;
-                font-weight: bold;                
-            }
-            div.well>div.row{
-                margin: 10px 0px 0px 0px
-            }
-            .manuBadge{
-               vertical-align: middle;
-               margin-bottom: 0.75em;
-               margin-right: 5px;
-               height: 30px;
-            }
             
-            .imgCont {
-                border: 2px solid black;
-                border-radius: 2%;
-                margin: 0% auto 0% auto;
-                box-shadow: 5px 5px 5px grey
-            }
-            #TopBoxPannierParts{
-                padding: 1% 0 1% 0%;
-            }
-            #bikeParts{
-                padding: 1% 0 1% 0%;
-            }
-            #Parts4x4{
-                padding: 1% 0 1% 0%
-            }
-            .partImage {
-                -webkit-transition: all 1s ease; /* Safari and Chrome */
-                -moz-transition: all 1s ease; /* Firefox */
-                -ms-transition: all 1s ease; /* IE 9 */
-                -o-transition: all 1s ease; /* Opera */
-                transition: all 1s ease;
-            }
-            .partImage:hover{
-                -webkit-transform:scale(2.0); /* Safari and Chrome */
-                -moz-transform:scale(2.0); /* Firefox */
-                -ms-transform:scale(2.0); /* IE 9 */
-                -o-transform:scale(2.0); /* Opera */
-                transform:scale(2.0);
-            }
-            .dataType {
-                font-weight: bold;
-                text-align: right;
-                padding: 2.5px 5px 2.5px 2.5px;            
-            }
-            .table {
-                display: block;
-                padding: 5px;
-                background-color: white;
-                border: 1px solid black;
-                border-radius: 10px
-            }
-            table{
-                margin: 0px auto 0px auto;
-            }
-            .well{
-                margin: 0px 5% 5% 5%;
-                padding: 1% 40px 20px 40px;
-                background-image: url("");
-                border-radius: 10px;                
-            }
-            form{
-                width: 70%;
-                margin: auto;
-                padding-bottom: 3%
-            }
         </style>
     </head>
 
@@ -538,41 +367,7 @@
                 <div class="well" id="hpcontent">
                     <h2 class="hpclass">Top Quality parts for the Global Market</h2>
                 </div>
-                <style>
-                    /* Slideshow container */
-                    .slideshow-container {
-                        max-width: 70%;                        
-                        position: relative;
-                        margin: auto;
-                        height: calc(70% + 10em);
-                                            
-                    }
-                    .mySlides {
-                        display: none;
-                        width: 100%;
-                        margin: 1% auto 1% auto;
-                        position: absolute;                     
-                    }
-                    .mySlides>img{
-                        border-radius: 40px;
-                        border: 7px solid black;
-                        box-shadow: 30px 30px 20px rgba(1,1,1,0.7)
-                    }
-                </style>
-                <script>                    
-                    $(document).ready(function(){
-                        var slideNum = 0
-                        var slideId = $('.mySlides')[slideNum].id
-                        changeSlide();
-                        function changeSlide(){
-                            slideId = $('.mySlides')[slideNum].id;
-                            $('#'+slideId).fadeIn('slow').delay(4000).fadeOut("slow");
-                            slideNum++;
-                            if ((slideNum) == $('.mySlides').length) {slideNum = 0};
-                            setTimeout(changeSlide, 5200);                        
-                        }
-                    });
-                </script>
+
                 <div class="slideshow-container">                    
                     <div class="mySlides" id="slide0">
                         <img class="" src="http://tinyurl.com/y9pbjs3x" alt="KTM" style="width: 100%">
@@ -641,71 +436,7 @@
                         <button id="OTH"  class="btn btn-block" type="button">Other Accessories</button>
                     </div>
 
-                    <!--Part Description demo div--> <!--
-                    <dis
-                        
-                        <div class="well" id="#partNum">
-                            
-                            <div class="partNameDiv">
-                                <img class="manuBadge" src="http://www.carlogos.org/logo/BMW-logo-2000-2048x2048.png" alt="badge">
-                                <img class="manuBadge" src="http://tinyurl.com/y6utpp75" alt="badge">
-                                <img class="manuBadge" src="http://www.chapmotors.com/fckimages/Pages/KTM_Logo.png" alt="badge">
-                                <span class="partName">PartName</span>
-                            </div>
-                            
-                            <div class="row">
-
-                                <div class="col-sm-9">
-                                    <h4>Part description</h4>
-                                    <blockquote>
-                                        <p>This description is of a part, what it is made of, how does it make the ride better or how will it improve my biking experience</p>
-                                    </blockquote>
-                                    <div class="row">
-                                        <div class="col-sm-6 bd1">
-                                            <h4>Part fits on these models</h4>
-                                            <ul>
-                                                <li>This is a model</li>
-                                                <li>This is another model</li>
-                                                <li>Yet another model</li>
-                                                <li>Final model</li>                                        
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-6 bd1">
-                                            <table>
-                                                <tr>
-                                                    <td class="dataType">Price:</td>
-                                                    <td>R1000</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="dataType">Guarentee:</td>
-                                                    <td>5 years</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="dataType">Installation Time:</td>
-                                                    <td>30 Minutes<td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="dataType">Part Number:</td>
-                                                    <td>PART#</td>
-                                                </tr>
-                                            </table>
-                                        
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <img class="imgCont partImage img-responsive" src="http://tinyurl.com/ybjdqlw5">
-                                </div>
-                            </div>
-                        </div>                        
-                        
-                        Test buttons
-                        <button type="button" id="test1">Test1</button>
-                        <button type="button" id="test2">Test2</button>
-                        
-                    </div>-->
-                    <!--end of Part Description demo div--> 
-
+                   
                     <div class="col-sm-9">
 
                         <div id="bikeParts"><!--bikes-->
