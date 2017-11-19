@@ -3,7 +3,7 @@
     max-width: 70%;                        
     position: relative;
     margin: auto;
-    height: calc(70% + 10em);
+    height: 600px;
 }
 .mySlides {
     display: none;
