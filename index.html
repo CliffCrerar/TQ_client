@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>TQ Bike & 4x4 Accessories</title>
+        <title>TQ Bike & 4x4 Accesories</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Retailer of quality offroad motor cycle and 4x4 Accessories"></meta>
@@ -31,6 +31,12 @@
         <script src="lib/slides/slides.js"></script>
         <link rel="stylesheet" href="lib/slides/slides.css">
         <link rel="stylesheet" href="lib/css.css">
+
+
+        <!--Java script files-->
+        <script src="lib/js/m_sort.js" ></script>
+        <script src="lib/js/nav.js" ></script>
+        <script scr="lib/js/sidenav.js"></script>
  
         <!--PartFilesData-->
         <script src="Partfiles/TRI_parts.js"></script>
@@ -41,6 +47,7 @@
         <script src="Partfiles/HND_parts.js"></script>
         <script src="Partfiles/BMW_parts.js"></script>
         <script src="Partfiles/AT_parts.js"></script>
+
 
 
         <!--Google fonts-->
@@ -60,37 +67,7 @@
         <!--Custom Scripting-->
         <script>
             $(document).ready(function(){
-
-                console.log(TopBoxPannier1)
                 
-                /* Start of Sorting functions */
-                
-                //Sort Bike Sidenav Buttons
-
-                    var sideNavList = $('#MotCycPartSideNav');
-                    var listItems = sideNavList.children().get();
-                    listItems.sort(function(a,b){
-                        var compA = $(a).text().toUpperCase();
-                        var compB = $(b).text().toUpperCase();
-                        return(compA < compB) ? -1 : (compA > compB) ? 1 : 0;
-                    })
-                    $.each(listItems, function(idx, itm) {sideNavList.append(itm);});
-
-                    function sortItems(container) {
-                        var partsList = container
-                        var partListItems = partsList.children().get()
-                        partListItems.sort(function(a,b){
-                            var compA = $(a).text().toUpperCase();
-                            var compB = $(b).text().toUpperCase();
-                            return(compA < compB) ? -1 : (compA > compB) ? 1 : 0;
-                        })
-                        $.each(partListItems, function(idx,itm) {partsList.append(itm);});
-                    }
-                
-                //Sort Bike Parts
-
-                /* End of Sorting functions */
-
                 //Get ktm bike parts data
                 displayParts(KTM_Parts,'bikeParts','ktm');
                 //get BMW bike parts data
@@ -107,88 +84,13 @@
                 displayParts(TRI_parts,'bikeParts','TRI')
                 //Get africa twin parts data
                 displayParts(AT_parts,'bikeParts','AT')
-            /*
-                var allParts = []//create variable for all parts-> not implemented in the front end.
-            */
-                //Hide HTML part description containers 
-                $('#TopBoxPannier').hide();
-                $('#bikes').hide();
-                $('#4x4').hide();
-                $('#contact').hide();
-                
-                /* navbar functions */
-                $('.nav-tabs').children().css('color','black');
-
-                //On click event that makes the home page active
-                $('a:contains("Home")').click(function(){
-                    remActiveTab();
-                    $('.nav-tabs').children()[0].setAttribute('class','active');
-                    $('#home').show();
-                });
-
-                //Onclick ever that makest the top box and panniers page active
-                $('a:contains("Top")').click(function(){
-                    remActiveTab();
-                    $('.nav-tabs').children()[1].setAttribute('class','active');
-                    $('#TopBoxPannier').show();
-                    
-                    var sortList = $('#TopBoxPannierParts');
-                    sortItems(sortList);
-                });
-
-                //On click event that makes the bike parts page active
-                $('a:contains("Bike")').click(function(){
-                    remActiveTab();
-                    $('.nav-tabs').children()[2].setAttribute('class','active');
-                    $('#bikes').show();
-                    
-                    var sortList = $('#bikeParts');
-                    sortItems(sortList);
-                });
-
-                //On click event that makes the 4x4 page active
-                $('a:contains("4x4")').click(function(){
-                    remActiveTab();
-                    $('.nav-tabs').children()[3].setAttribute('class','active');
-                    $('#4x4').show();
-
-                    var sortList = $('#Parts4x4');
-                    sortItems(sortList);                    
-                });
-
-                //On click event that makes the contact us page active
-                $('a:contains("Contact")').click(function(){
-                    remActiveTab();
-                    $('.nav-tabs').children()[4].setAttribute("class", "active");
-                    $('#contact').show();
-                });
-                
-                //console.log($('.nav-tabs').children().length);
-
-                //Function that hides all navigation headings, used in on-click events
-                function remActiveTab(){
-                    var i = 0
-                    $('.nav-tabs').children().each(function(li) {
-                        if ($('.nav-tabs').children()[i].className = 'active'){
-                            $('.nav-tabs').children()[i].removeAttribute('class');
-                            switch(i) {
-                                case 0: $('#home').hide(); break;
-                                case 1: $('#TopBoxPannier').hide(); break;
-                                case 2: $('#bikes').hide(); break;
-                                case 3: $('#4x4').hide(); break;
-                                case 4: $('#contact').hide(); break;
-                            }                           
-                        }
-                        i++
-                    });
-                }
 
             /* The function below created the part descriptions using the data from the parts files
                 It is called for each file that must be loaded and handles one part at at time.
-            */              
+            */  
+
+                  
                 function displayParts(partsObject, divId, badgeType){
-                    
-                   
                     //Variables used in the operation of this function
                     var partsData = partsObject;
                     var objLen = partsData.length;
@@ -300,37 +202,7 @@
                         )
                     }
                 }
-                //Filter bike Parts according to sidenav
-
-                function filterParts(controls,FilterElements) {
-                    var parts = $(FilterElements).children();
-                    var partClass = controls.target.id
-                    parts.hide();
-                    var p = 0
-                    parts.each(function(div){
-                        var idClass = parts[p].id.substr(0, parts[p].id.indexOf('_'))
-                        if(partClass==idClass){
-                            console.log(parts[p])
-                            $('#'+parts[p].id).fadeIn('slow');
-                        }
-                        //console.log('idClass '+idClass)
-                        //console.log('PartClass '+partClass)
-                        //console.log(parts[p].id)
-                        //console.log(p)
-                        p++
-                    });
-                }
-
-                $('#MotCycPartSideNav').bind('click',function(button){
-                    filterParts(button,'#bikeParts');
-                });
-                $('#TBPartSideNav').bind('click', function(button){
-                    filterParts(button,'#TopBoxPannierParts')
-                });
-                $('#sideNav4x4').bind('click',function(button){
-                    filterParts(button,'#Parts4x4')
-                });
-
+                
             });
         </script>
 
