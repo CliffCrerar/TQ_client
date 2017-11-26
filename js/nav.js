@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+    //console.log('nav');
     
     //Hide HTML part description containers 
     $('#TopBoxPannier').hide();

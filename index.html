@@ -32,17 +32,17 @@
 
     <!--Load custom CSS-->
     <link rel="stylesheet" href="lib/slides/slides.css">
-    <link rel="stylesheet" href="lib/css.css">
+    <link rel="stylesheet" href="css/css.css">
 
     <!--Java script files-->
-    <script src="lib/js/loadAbout.js"></script>
+    <script src="js/load.js"></script>
     <script src="lib/slides/slides.js"></script>
-    <script src="lib/js/sort.js" ></script>
-    <script src="lib/js/m_sort.js" ></script>
-    <script src="lib/js/nav.js" ></script>
-    <script src="lib/js/sidenav.js"></script>
-    <script src="lib/js/partloader.js"></script>
-    <script src="lib/js/loadInstruction.js"></script>
+    <script src="js/sort.js" ></script>
+    <script src="js/m_sort.js" ></script>
+    <script src="js/nav.js" ></script>
+    <script src="js/sidenav.js"></script>
+    <script src="js/partloader.js"></script>
+    <script src="js/loadInstruction.js"></script>
 
     <!--PartFilesData-->
     <script src="Partfiles/TRI_parts.js"></script>
@@ -53,6 +53,11 @@
     <script src="Partfiles/HND_parts.js"></script>
     <script src="Partfiles/BMW_parts.js"></script>
     <script src="Partfiles/AT_parts.js"></script>
+    <link href='js/loadabout/aboutTQoffroadparts.txt' type="text/plain">
+
+    <script>
+        //console.log(window)
+    </script>
 
     <!--Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Play" rel="stylesheet">
@@ -68,7 +73,7 @@
         ga('send', 'pageview');          
     </script>-->
 
-</head>
+</head> 
 <body>
     <!--Page Title-->
     <div class="row container-fluid" id="titleDiv">
@@ -76,7 +81,7 @@
         <h1>TQ Bike & 4x4 Accessories</h1>
         <div class="hDiv"></div>
     </div>
-    
+
     <!--Navbar-->
     <div class="navbar container-fluid" class="">
         <ul class="nav nav-tabs nav-justified" role="tablist">
@@ -114,7 +119,9 @@
 
         <div style="max-width: 70%; margin: auto" class="well">
             <h2 class="hpclass">ABOUT US</h2>
-            <p id="about" class="text-justify"></p>
+            <p id="about" class="text-justify">
+                
+            </p>
         </div>
     </div>
 
@@ -133,7 +140,7 @@
             <!--Static empty part section-->
             <div class="col-sm-9"><!--Left Side-->
                 <div id="TopBoxPannierParts">
-
+                    
                 </div>
             </div><!--Left Side-->
 

@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
     $('#MotCycPartSideNav').bind('click',function(button){
-        console.log(button);
-        console.log($('#bikeParts').children());
+        //console.log(button);
+        //console.log($('#bikeParts').children());
         filterParts(button,'#bikeParts');
     });
 
