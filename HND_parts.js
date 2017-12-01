@@ -7,7 +7,7 @@ HND_parts = [
     {  
         partNum: 'A040360',
         partName: 'Bash Plate Alumiunim',
-        partDesc: 'Made from Aluminium and Stainless Steel Anodized Natural Aluminium ',
+        partDesc: 'Made from Aluminium and Stainless Steel Anodized Natural Aluminium',
         models: ['Honda CRF1000L Africa Twin'],
         imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A040360/5964be2875356_MA-A040360-01.JPG&length=600',
         colors: 'Natural Aluminium',
@@ -16,7 +16,7 @@ HND_parts = [
         price: 1900,
         cat: 'BP'
     },      
-         //Part A040361
+    //Part A040361
     {  
         partNum: 'A040361',
         partName: 'Bash Plate Black',
