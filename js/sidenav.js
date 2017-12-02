@@ -1,16 +1,16 @@
 $(document).ready(function(){
 
-    $('#MotCycPartSideNav').bind('click',function(button){
+    $('#MotCycPartSideNav>button').bind('click',function(button){
         //console.log(button);
         //console.log($('#bikeParts').children());
         filterParts(button,'#bikeParts');
     });
 
-    $('#TBPartSideNav').bind('click', function(button){
+    $('#TBPartSideNav>button').bind('click', function(button){
         filterParts(button,'#TopBoxPannierParts');
     });
 
-    $('#sideNav4x4').bind('click',function(button){
+    $('#sideNav4x4>button').bind('click',function(button){
         filterParts(button,'#Parts4x4');
     });
 
