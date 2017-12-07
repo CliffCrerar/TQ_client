@@ -1101,7 +1101,7 @@ var BMW_parts = [
     {  
         partNum: 'A09638',
         partName: 'Side Stand Extender',
-        partDesc: ' Low Seat Side Stand Extender - Aluminium & Stainless Steel',
+        partDesc: 'Low Seat Side Stand Extender - Aluminium & Stainless Steel',
         models: ['BMW R1200GS K50 LC LOW SEAT'],
         imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A09638/59b6b86fe99ef.JPG&length=600',
         colors: 'Silver',
