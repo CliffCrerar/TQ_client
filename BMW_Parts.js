@@ -954,9 +954,9 @@ var BMW_parts = [
         price: 360,
         cat: 'OTH', 
     }, 
-     //Part A09645
+     //Part A09646
     {  
-        partNum: 'A09645',
+        partNum: 'A09646',
         partName: 'Brake Lever Extension',
         partDesc: 'Manufactured from aluminium easy access to brake lever especially in an emergency',
         models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
