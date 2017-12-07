@@ -203,7 +203,7 @@ var BMW_parts = [
         partNum: 'A09095',
         partName: 'Front Brake reservoir protector',
         partDesc: 'Manufactured from aluminium, protects the reservoir from damage due to loose projectiles and road hazards',
-        models: ['F650GS','F700GS','F800GS','F800GS(pre 2012'],
+        models: ['F650GS','F700GS','F800GS','F800GS(pre 2012)'],
         imgLink: 'http://tinyurl.com/yc62zpdj',
         colors: 'Black or Silver',
         grnt: '1 Year',
