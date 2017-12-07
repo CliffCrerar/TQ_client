@@ -1064,7 +1064,7 @@ var BMW_parts = [
         partName: 'Head Light Guard',
         partDesc: 'Made from Poly Carbonate & Aluminium Frame',
         models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
-        imgLink: '',
+        imgLink: 'img_cache_noeffect_600_4d910de32abf180e4fdcc5d9cc486c7d-54818f1d9818a_A09670-PIC01',
         colors: 'Black and Silver',
         grnt: '1 Year',
         instTime: 20,
