@@ -1096,6 +1096,18 @@ var BMW_parts = [
         instTime: 30,
         price: 1590,
         cat: 'OTH', 
+    },  
+//Part A09638
+    {  
+        partNum: 'A09638',
+        partName: 'Side Stand Extender',
+        partDesc: ' Low Seat Side Stand Extender - Aluminium & Stainless Steel',
+        models: ['BMW R1200GS K50 LC LOW SEAT'],
+        imgLink: 'thumb.php?path=img/products/A090646/59d510960a150_A090646-PIC0.jpg&length=250',
+        colors: 'Silver',
+        grnt: '1 Year',
+        instTime: 30,
+        price: 340,
+        cat: SSE, 
     }   
-
 ]
