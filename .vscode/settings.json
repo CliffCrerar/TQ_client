@@ -1,0 +1,112 @@
+{
+    "files.autoSave": "onFocusChange",
+    "jsDocCompletion.enabled": true,
+    "json.format.enable": true,
+    "javascript.nameSuggestions": true,
+    "codemetrics.basics.EnabledForJS": true,
+    "codemetrics.basics.EnabledForJSX": true,
+    "jshint.enable": true,
+    "editor.codeLens": true,
+    "editor.colorDecorators": true,
+    "editor.links": true,
+    "editor.minimap.enabled": true,
+    "editor.matchBrackets": true,
+    "editor.minimap.showSlider": "always",
+    "editor.occurrencesHighlight": true,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
+    "editor.quickSuggestionsDelay": 3,
+    "workbench.activityBar.visible": true,
+    "html.autoClosingTags": true,
+    "html.format.enable": true,
+    "html.suggest.html5": true,
+    "html.suggest.ionic": true,
+    "html.validate.scripts": true,
+    "html.validate.styles": true,
+    "css.lint.duplicateProperties": "warning",
+    "css.lint.compatibleVendorPrefixes": "warning",
+    "css.lint.emptyRules": "warning",
+    "css.lint.float": "warning",
+    "css.validate": true,
+    "css.trace.server": "messages",
+    "css-auto-prefix.prefixes": {
+        "transform": [
+            "webkit",
+            "moz",
+            "ms",
+            "o"
+        ],
+        "transition": [
+            "webkit",
+            "moz",
+            "ms",
+            "o"
+        ],
+        "border-radius": [
+            "webkit",
+            "moz",
+            "ms",
+            "o"
+        ],
+        "animation": [
+            "webkit"
+        ],
+        "box-reflect": [
+            "webkit"
+        ],
+        "filter": [
+            "webkit"
+        ],
+        "font-feature-settings": [
+            "webkit",
+            "moz"
+        ],
+        "backface-visibility": [
+            "webkit"
+        ],
+        "box-decoration-break": [
+            "webkit"
+        ],
+        "hyphens": [
+            "webkit",
+            "moz",
+            "ms"
+        ],
+        "marquee-direction": [
+            "webkit"
+        ],
+        "marquee-play-count": [
+            "webkit"
+        ],
+        "marquee-speed": [
+            "webkit"
+        ],
+        "marquee-style": [
+            "webkit"
+        ],
+        "text-combine-upright": [
+            "webkit",
+            "moz",
+            "ms"
+        ],
+        "text-decoration-color": [
+            "moz"
+        ],
+        "text-decoration-line": [
+            "moz"
+        ],
+        "text-decoration-style": [
+            "moz"
+        ],
+        "text-orientation": [
+            "webkit"
+        ],
+        "writing-mode": [
+            "webkit",
+            "ms"
+        ]
+    }
+}
