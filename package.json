@@ -1,29 +1,29 @@
 {
-  "name": "tqoffroadparts",
-  "version": "2.0.0",
-  "description": "Generate sales of after market offroad parts",
-  "main": "index.html",
-  "directories": {
-    "lib": "lib"
-  },
-  "dependencies": {
-    "bootstrap": "^4.0.0-alpha.6",
-    "brew": "0.0.8",
-    "grunt-cli": "^1.2.0",
-    "popper": "^1.0.1"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "testWhat"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CliffCrerar/PartSales.git"
-  },
-  "author": "Cliff Crerar",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/CliffCrerar/PartSales/issues"
-  },
-  "homepage": "https://github.com/CliffCrerar/PartSales#readme"
+    "name": "tqoffroadparts",
+    "version": "2.0.0",
+    "description": "Generate sales of after market offroad parts",
+    "main": "index.html",
+    "directories": {
+        "lib": "lib"
+    },
+    "dependencies": {
+        "bootstrap": "^4.0.0-alpha.6",
+        "brew": "0.0.8",
+        "grunt-cli": "^1.2.0",
+        "popper": "^1.0.1"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "testWhat"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CliffCrerar/PartSales.git"
+    },
+    "author": "Cliff Crerar",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/CliffCrerar/PartSales/issues"
+    },
+    "homepage": "https://github.com/CliffCrerar/PartSales#readme"
 }
