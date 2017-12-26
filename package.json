@@ -6,10 +6,14 @@
     "directories": {
         "lib": "lib"
     },
-    "dependencies": {},
+    "dependencies": {
+        "bootstrap": "^4.0.0-alpha.6",
+        "grunt": "^1.0.1",
+        "grunt-cli": "^1.2.0"
+    },
     "devDependencies": {},
     "scripts": {
-        "test": "testWhat",
+        "test": "testWhat"
     },
     "repository": {
         "type": "git",
