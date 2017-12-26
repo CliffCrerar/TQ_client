@@ -21,7 +21,7 @@ $(function () {
 
   QUnit.test('should provide no conflict', function (assert) {
     assert.expect(1)
-    assert.strictEqual($.fn.button, undefined, 'button was set back to undefined (org value)')
+    assert.strictEqual(typeof $.fn.button, 'undefined', 'button was set back to undefined (org value)')
   })
 
   QUnit.test('should return jquery collection containing the element', function (assert) {
@@ -136,6 +136,41 @@ $(function () {
     assert.ok(!$btn1.find('input').prop('checked'), 'btn1 is not checked')
     assert.ok($btn2.hasClass('active'), 'btn2 has active class')
     assert.ok($btn2.find('input').prop('checked'), 'btn2 is checked')
+  })
+
+  QUnit.test('should not add aria-pressed on labels for radio/checkbox inputs in a data-toggle="buttons" group', function (assert) {
+    assert.expect(2)
+    var groupHTML = '<div class="btn-group" data-toggle="buttons">'
+      + '<label class="btn btn-primary"><input type="checkbox" autocomplete="off"> Checkbox</label>'
+      + '<label class="btn btn-primary"><input type="radio" name="options" autocomplete="off"> Radio</label>'
+      + '</div>'
+    var $group = $(groupHTML).appendTo('#qunit-fixture')
+
+    var $btn1 = $group.children().eq(0)
+    var $btn2 = $group.children().eq(1)
+
+    $btn1.find('input').trigger('click')
+    assert.ok($btn1.is(':not([aria-pressed])'), 'label for nested checkbox input has not been given an aria-pressed attribute')
+
+    $btn2.find('input').trigger('click')
+    assert.ok($btn2.is(':not([aria-pressed])'), 'label for nested radio input has not been given an aria-pressed attribute')
+  })
+
+  QUnit.test('should handle disabled attribute on non-button elements', function (assert) {
+    assert.expect(2)
+    var groupHTML = '  <div class="btn-group disabled" data-toggle="buttons" aria-disabled="true" disabled>'
+      + '<label class="btn btn-danger disabled" aria-disabled="true" disabled>'
+      + '<input type="checkbox" aria-disabled="true" autocomplete="off" disabled class="disabled"/>'
+      + '</label>'
+      + '</div>'
+    var $group = $(groupHTML).appendTo('#qunit-fixture')
+
+    var $btn = $group.children().eq(0)
+    var $input = $btn.children().eq(0)
+
+    $btn.trigger('click')
+    assert.ok($btn.is(':not(.active)'), 'button did not become active')
+    assert.ok(!$input.is(':checked'), 'checkbox did not get checked')
   })
 
 })
