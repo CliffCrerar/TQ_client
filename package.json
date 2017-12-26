@@ -6,17 +6,10 @@
     "directories": {
         "lib": "lib"
     },
-    "dependencies": {
-        "babel-core": "^6.26.0",
-        "bootstrap": "^4.0.0-alpha.6",
-        "brew": "0.0.8",
-        "grunt-cli": "^1.2.0",
-        "popper": "^1.0.1",
-        "popper.js": "^1.12.9"
-    },
+    "dependencies": {},
     "devDependencies": {},
     "scripts": {
-        "test": "testWhat"
+        "test": "testWhat",
     },
     "repository": {
         "type": "git",
