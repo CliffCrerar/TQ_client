@@ -2,6 +2,7 @@ var http = require('http');
 var fs = require('fs');
 
 var html = fs.readFileSync('index.html');
+var bootstrap = require('bootstrap');
 
 http
     .createServer(function(req, res) {
