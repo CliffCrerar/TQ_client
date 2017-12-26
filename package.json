@@ -10,7 +10,8 @@
         "bootstrap": "^4.0.0-alpha.6",
         "brew": "0.0.8",
         "grunt-cli": "^1.2.0",
-        "popper": "^1.0.1"
+        "popper": "^1.0.1",
+        "popper.js": "^1.12.9"
     },
     "devDependencies": {},
     "scripts": {
