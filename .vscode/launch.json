@@ -5,27 +5,26 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch index.html",
+            "name": "Launch Firefox index.html",
             "type": "firefox",
             "request": "launch",
             "reAttach": true,
             "file": "${workspaceFolder}/index.html"
         },
         {
-            "name": "Launch localhost",
+            "name": "Launch FireFox Localhost",
             "type": "firefox",
             "request": "launch",
-            "reAttach": true,
             "url": "http://localhost:5500/index.html",
             "webRoot": "${workspaceFolder}"
         },
         {
-            "name": "Attach",
+            "name": "FireFox Attach",
             "type": "firefox",
             "request": "attach"
         },
         {
-            "name": "Launch addon",
+            "name": "FireFox Launch addon",
             "type": "firefox",
             "request": "launch",
             "reAttach": true,
