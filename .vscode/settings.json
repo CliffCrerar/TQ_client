@@ -120,5 +120,21 @@
     "eslint.validate": [
         "javascript",
         "javascriptreact"
-    ]
+    ],
+    "editor.parameterHints": true,
+    "typescript.tsserver.log": "normal",
+    "typescript.validate.enable": true,
+    "typescript.tsserver.trace": "messages",
+    "htmlhint.documentSelector": [
+        "html",
+        "htm"
+    ],
+    "prettier.typescriptEnable": [
+        "typescript",
+        "typescriptreact"
+    ],
+    "jslint.enable": true,
+    "jslint.exclude": {
+        "index.html"
+    }
 }

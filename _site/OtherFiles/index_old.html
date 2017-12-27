@@ -1,0 +1,249 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>TQ Bike & 4x4 Accesories</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Retailer of quality offroad motor cycle and 4x4 Accessories">
+        <meta name="keywords" content="bike, motorcycle, offroad, parts, accessories, top box, topbox, 
+            Bash Plate, Top Box, Top Box Bracket,Top Box Back Rest Pad,
+            Pannier,Pannier Inner Bags,Spot Light,Spot Light Brakes,Wiring Harness,
+            LED Spot Lights,Head Light Mesh,Exhaust,Brackets,Brake Lever,Guard,Touring Plate,
+            Foot Pegs,Raditor Guard,Light Guard,Brake Reservior,Brake Lever Extension,Wide Side Stander Extension,
+            Crash Bars,Handle Bar Raisers,Two Finger Brake Lever,Front Fender,Tow Strap,
+            Compressor,Fuel tank, Fuel Tank bracket,Switch,Foot Pegs,Springs,Side Stand Enlarger,Front Disc Brake Guard,
+            Rear Disc Brake Guard,Bull Bar,Fender Plates,Side Sill Kits,Bonnet Plate,Fuel Filler Protection Plate,
+            Hi Lift Jack Bracket,Safe,Seat sliders,Battery Bracket,Raised Air Intake,Under body protection,
+            Swing away spare wheel carrier,Fuel Tank,Side Runners,Roof Rack,Sliding Draw System,Wheel Spacers,
+            pannier,BMW,Bike,ktm,Truimph,parts,accessories,brackets,yamaha">
+        
+        <!--
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        -->
+
+        <!--Load Bootstrap-->
+        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+        <script src="lib/jquery/jquery-3.2.1.min.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.js"></script>
+
+        <!--Load custom CSS-->
+        <link rel="stylesheet" href="lib/slides/slides.css">
+        <link rel="stylesheet" href="lib/css.css">
+
+        <!--Java script files-->
+        <script src="lib/slides/slides.js"></script>
+        <script src="lib/js/sort.js" ></script>
+        <script src="lib/js/m_sort.js" ></script>
+        <script src="lib/js/nav.js" ></script>
+        <script src="lib/js/sidenav.js"></script>
+        <script src="lib/js/partloader.js"></script>
+        <script src="lib/js/loadInstruction.js"></script>
+ 
+        <!--PartFilesData-->
+        <script src="Partfiles/TRI_parts.js"></script>
+        <script src="Partfiles/TopBox_Panniers.js"></script>
+        <script src="Partfiles/LRDisc_parts.js"></script>
+        <script src="Partfiles/LRDef_parts.js"></script>
+        <script src="Partfiles/KTM_parts.js"></script>
+        <script src="Partfiles/HND_parts.js"></script>
+        <script src="Partfiles/BMW_parts.js"></script>
+        <script src="Partfiles/AT_parts.js"></script>
+
+        <!--Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Play" rel="stylesheet">
+
+        <!--Google Analytics Tracking script-->
+        <!--<script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          
+            ga('create', 'UA-103798021-1', 'auto');
+            ga('send', 'pageview');          
+        </script>-->
+    </head>
+    
+    <body>
+        <!--Page Title-->
+        <div class="row container-fluid" id="titleDiv">
+            <div class="hDiv"></div>
+            <h1>TQ Bike & 4x4 Accessories</h1>
+            <div class="hDiv"></div>
+        </div>
+        
+        <!--Navbar-->
+        <div class="navbar container-fluid" class="">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Top Box and Panniers</a></li>
+                <li><a href="#">Bike Parts</a></li>
+                <li><a href="#">4x4 Parts</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!--Content-->
+
+        <div id="home" class="container-fluid">
+            <div class="well" id="hpcontent">
+                <h2 class="hpclass">Top Quality parts for the Global Market</h2>
+            </div>
+            
+            <div class="slideshow-container">                    
+                <div class="mySlides" id="slide0">
+                    <img class="" src="http://tinyurl.com/y9pbjs3x" alt="KTM" style="width: 100%">
+                </div>
+
+                <div class="mySlides" id="slide1">
+                    <img src="http://tinyurl.com/yaee2un2" alt="BMW" style="width: 100%">
+                </div>
+
+                <div class="mySlides" id="slide2">
+                    <img src="http://tinyurl.com/y8jcgccg" alt="Defender" style="width: 100%">
+                </div>
+
+                <div class="mySlides" id="slide3">
+                    <img src="http://tinyurl.com/ya7lty7k" alt="Discovery" style="width: 100%">
+                </div>
+            </div>
+
+            <div style="max-width: 70%; margin: auto" class="well">
+                <h2 class="hpclass">ABOUT US</h2>
+                <p id="about" class="text-justify"></p>
+                <script>
+                    $(document).ready(function(){
+                        $('#about').load('https://cdn.rawgit.com/CliffCrerar/PartSales/Br1/aboutTQoffroadparts.txt')                            
+                    })
+                </script>
+            </div>
+        </div>
+
+        <div id="TopBoxPannier" class="mainSec"> <!--Top boxes and panniers-->
+            <div class="row container-fluid">
+                <div class="col-sm-3 sideNav" id="TBPartSideNav">
+                    <button id="TB" class="btn btn-block" type="button">Top Boxes</button>
+                    <button id="PAN" class="btn btn-block" type="button">Panniers</button>
+                    <button id="TBB" class="btn btn-block" type="button">Mounting Brackets</button>
+                    <button id="STR" class="btn btn-block" type="button">Top Box and Pannier Straps</button>
+                </div>
+
+                <div class="col-sm-9">
+
+                    <div id="TopBoxPannierParts"> <!--Top Boxes and Panniers-->
+                    </div>
+
+                </div>
+
+            </div>
+        </div> <!--4x4-->
+        
+        <div id="bikes" class="mainSec"><!--Motor cycle Parts-->
+
+            <div class="container-fluid row"> <!--Right Side-->
+
+                <div class="col-sm-3 sideNav" id="MotCycPartSideNav">
+                    <button id="LR"  class="btn btn-block" type="button">Luggage Rack</button>
+                    <button id="BP"  class="btn btn-block" type="button">Bash Plate</button>
+                    <button id="HLG" class="btn btn-block" type="button">Head Light Guard</button>
+                    <button id="SSE" class="btn btn-block" type="button">Side Stand Extender</button>
+                    <button id="DBG" class="btn btn-block" type="button">Disc Brake Guard</button>
+                    <button id="WFP" class="btn btn-block" type="button">Wide Foot Pegs</button>
+                    <button id="CK"  class="btn btn-block" type="button">Compressor Kit</button>
+                    <button id="BLE" class="btn btn-block" type="button">Brake Lever Extensions</button>
+                    <button id="RP"  class="btn btn-block" type="button">Radiator Protectors</button>
+                    <button id="BRP" class="btn btn-block" type="button">Brake Reservoir Protectors</button>
+                    <button id="SLB" class="btn btn-block" type="button">Spot Lights and Brackets</button>
+                    <button id="CB"  class="btn btn-block" type="button">Crash Bars</button>
+                    <button id="HBR" class="btn btn-block" type="button">Handle Bar Raisers</button>
+                    <button id="OTH"  class="btn btn-block" type="button">Other Accessories</button>
+                </div>
+
+                
+                <div class="col-sm-9">
+
+                    <div id="bikeParts"><!--bikes-->
+                    </div>
+
+                </div>
+            </div><!--Right Side-->
+        </div> <!--Motor cycle Parts-->
+
+        <div id="4x4" class="mainSec"> <!--4x4-->
+            <div class="row container-fluid">
+                <div class="col-sm-3 sideNav" id="sideNav4x4">
+                    <button id="FE"   class="btn btn-block" type="button">Front End</button>
+                    <button id="FT"   class="btn btn-block" type="button">Fuel Tanks</button>
+                    <button id="HLJB" class="btn btn-block" type="button">Hi Lift Jack Mount Bracket</button>
+                    <button id="CS"   class="btn btn-block" type="button">Console Safe</button>
+                    <button id="FSE"  class="btn btn-block" type="button">Front Seat Extension Rail</button>
+                    <button id="BT"   class="btn btn-block" type="button">Battery Tray</button>
+                    <button id="SWC"  class="btn btn-block" type="button">Swing Away Spare Wheel Carrier</button>
+                    <button id="SSK"  class="btn btn-block" type="button">Side Sill Kit</button>
+                    <button id="SR"   class="btn btn-block" type="button">Side Runner</button>
+                    <button id="WS"   class="btn btn-block" type="button">Wheel Spacer</button>
+                    <button id="RR"   class="btn btn-block" type="button">Roof Rack</button>
+                    <button id="DU"   class="btn btn-block" type="button">Drawer Unit</button>
+                    <button id="HDTH" class="btn btn-block" type="button">Heavey Duty Tow Hitch</button>
+                    <button id="RDL"  class="btn btn-block" type="button">Rear Door Ladder</button>
+                </div>
+
+                <div class="col-sm-9">
+
+                    <div id="Parts4x4"> <!--Land Rover Parts-->
+                    </div>
+
+                </div>
+
+            </div>
+        </div> <!--4x4-->
+
+        <div id="contact" class="mainSec">
+            <h2 style="display: none">LET US CONTACT YOU</h2> <!--NOT DISPLAYED-->
+            <form>               
+                <div style="display: none"><!--NOT DISPLAYED-->
+                    <div class="form-group">
+                        <label for="nameInput">*Name:</label>
+                        <input id="nameInput" class="form-control" placeholder="Enter Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="emailInput">*Your contact:</label>
+                        <input id="emailInput" class="form-control" placeholder="Enter Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="custMessage">Tell us what you are interested in:</label>
+                        <textarea class="form-control" id="custMessage"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-default" type="submit">Submit</button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <h2 class="text-center">CONTACT SALES</h2>
+                    <div class="well" style="margin: auto">
+                        <h3 class="text-center">sales.tqoffroadparts@gmail.com</h3>                            
+                        <h3 class="text-center">Clive Crerar<br>082 689 0434</h3>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!--Footer-->
+        <div class="row" id="titleDiv">
+            <div class="hDiv"></div>
+            <div style="height: 120px"></div>
+            <div class="hDiv"></div>
+        </div>
+        
+    </body>
+
+</html>
+
+
