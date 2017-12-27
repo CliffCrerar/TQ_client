@@ -147,5 +147,6 @@
         "**/node_modules",
         "**/bower_components"
     ],
-    "npm.useRootDirectory": true
+    "npm.useRootDirectory": true,
+    "search-node-modules.path": "node_modules"
 }

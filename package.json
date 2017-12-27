@@ -7,22 +7,20 @@
         "lib": "lib"
     },
     "dependencies": {
-
         "eslint": "^4.14.0",
         "ftpd": "^0.2.15",
         "grunt": "^1.0.1",
         "grunt-cli": "^1.2.0",
         "http-server": "^0.10.0",
-        "jslint": "^0.11.0",
         "node.js": "0.0.0"
     },
     "devDependencies": {
-        "nodemon": "^1.14.3"
+        "nodemon": "^1.14.3",
+        "jslint": "^0.11.0"
     },
     "scripts": {
         "start": "node index.js",
-        "devstart": "nodemon index.js",
-        "sf": "jekyll serve /node_modules/bootstrap/"
+        "devstart": "nodemon index.js"
     },
     "repository": {
         "type": "git",
