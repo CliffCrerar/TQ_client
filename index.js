@@ -1,6 +1,6 @@
 console.log('Starting web server');
 
-var hostIP = '127.0.0.1';
+var hostIP = newFunction();
 var port = '8080';
 
 var http = require('http');
@@ -28,3 +28,7 @@ http.createServer(function(req, res) {
 }).listen(bootstrapDocs, hostIP);;
 
 console.log('Hosting Bootstrap docs on socket ' + hostIP + ':' + port);
+
+function newFunction() {
+    return '127.0.0.1';
+}
