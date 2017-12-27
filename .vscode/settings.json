@@ -140,7 +140,7 @@
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true,
-        "index.js": true
+        
     },
     "scss.scannerExclude": [
         "**/.git",

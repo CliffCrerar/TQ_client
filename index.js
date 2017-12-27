@@ -11,6 +11,7 @@ var html = fs.readFileSync('index.html');
 http.createServer(function(req, res) {
     res.writeHeader(200, { 'Content-Type': 'text/html' });
     res.end(html);
+
 }).listen(port, hostIP);
 
 console.log('Node server running on socket ' + hostIP + ':' + port);
