@@ -2,7 +2,7 @@
     "name": "tqoffroadparts",
     "version": "2.0.0",
     "description": "Generate sales of after market offroad parts",
-    "main": "index.html",
+    "main": "index.js",
     "directories": {
         "lib": "lib"
     },
@@ -21,7 +21,8 @@
     },
     "scripts": {
         "start": "node index.js",
-        "devstart": "nodemon index.js"
+        "devstart": "nodemon index.js",
+        "sf": "jekyll serve /node_modules/bootstrap/"
     },
     "repository": {
         "type": "git",

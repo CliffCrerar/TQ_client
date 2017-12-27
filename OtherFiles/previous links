@@ -1,0 +1,27 @@
+    <!--Load Bootstrap
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <script src="lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>-->
+
+    <!--Load custom CSS
+    <link rel="stylesheet" href="lib/slides/slides.css">
+    <link rel="stylesheet" href="lib/css.css">-->
+
+    <!--Java script files
+    <script src="lib/slides/slides.js"></script>
+    <script src="lib/js/sort.js"></script>
+    <script src="lib/js/m_sort.js"></script>
+    <script src="lib/js/nav.js"></script>
+    <script src="lib/js/sidenav.js"></script>
+    <script src="lib/js/partloader.js"></script>
+    <script src="lib/js/loadInstruction.js"></script>-->
+
+    <!--PartFilesData
+    <script src="Partfiles/TRI_parts.js"></script>
+    <script src="Partfiles/TopBox_Panniers.js"></script>
+    <script src="Partfiles/LRDisc_parts.js"></script>
+    <script src="Partfiles/LRDef_parts.js"></script>
+    <script src="Partfiles/KTM_parts.js"></script>
+    <script src="Partfiles/HND_parts.js"></script>
+    <script src="Partfiles/BMW_parts.js"></script>
+    <script src="Partfiles/AT_parts.js"></script>-->
