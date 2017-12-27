@@ -133,7 +133,6 @@
         "typescript",
         "typescriptreact"
     ],
-    "jslint.enable": false,
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
@@ -148,5 +147,7 @@
         "**/bower_components"
     ],
     "npm.useRootDirectory": true,
-    "search-node-modules.path": "node_modules"
+    "search-node-modules.path": "node_modules",
+    "workbench.tips.enabled": true,
+    "workbench.editor.showIcons": true
 }
