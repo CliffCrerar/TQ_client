@@ -7,7 +7,7 @@
         "lib": "lib"
     },
     "dependencies": {
-        "bootstrap": "^4.0.0-alpha.6",
+
         "eslint": "^4.14.0",
         "ftpd": "^0.2.15",
         "grunt": "^1.0.1",
