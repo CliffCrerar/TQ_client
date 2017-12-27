@@ -9,6 +9,7 @@
     "dependencies": {
         "bootstrap": "^4.0.0-alpha.6",
         "eslint": "^4.14.0",
+        "ftpd": "^0.2.15",
         "grunt": "^1.0.1",
         "grunt-cli": "^1.2.0",
         "http-server": "^0.10.0",

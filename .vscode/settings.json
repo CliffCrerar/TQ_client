@@ -133,8 +133,18 @@
         "typescript",
         "typescriptreact"
     ],
-    "jslint.enable": true,
-    "jslint.exclude": {
-        "index.html"
-    }
+    "jslint.enable": false,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "index.js": true
+    },
+    "scss.scannerExclude": [
+        "**/.git",
+        "**/node_modules",
+        "**/bower_components"
+    ]
 }
