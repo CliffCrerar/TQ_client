@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/CliffCrerar/PartSales#readme",
   "dependencies": {
-    "node.js": "0.0.0"
+    "node.js": "0.0.0",
+    "webpack": "^3.10.0"
   }
 }
