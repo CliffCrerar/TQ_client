@@ -146,12 +146,17 @@
         "**/bower_components"
     ],
     "npm.useRootDirectory": true,
-    "search-node-modules.path": "node_modules",
+    "search-node-modules.path": "node_modules/",
     "workbench.tips.enabled": true,
     "workbench.editor.showIcons": true,
     "eslint.autoFixOnSave": true,
     "eslint.options": {
         "configFile": ".eslintrc.json"
     },
-    "eslint._legacyModuleResolve": true
+    "eslint._legacyModuleResolve": true,
+    "explorer.decorations.badges": true,
+    "explorer.decorations.colors": true,
+    "problems.decorations.enabled": true,
+    "git.decorations.enabled": true,
+    "importCost.bundleSizeDecoration": "both"
 }

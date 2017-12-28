@@ -17,6 +17,8 @@
     },
     "homepage": "https://github.com/CliffCrerar/PartSales#readme",
     "dependencies": {
+        "babel": "^6.23.0",
+        "babel-eslint": "^8.1.2",
         "lodash": "^4.17.4",
         "node.js": "0.0.0"
     },
