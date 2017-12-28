@@ -1,0 +1,27 @@
+.boxBlue {
+    border: solid 5px blue;
+    background-color: rgba(0, 0, 255, 0.507);
+    min-width: 100%;
+    height: 10%;
+}
+
+.boxRed {
+    border: solid 5px red;
+    background-color: rgba(255, 0, 0, 0.514);
+    min-width: 100%;
+    height: 60%;
+}
+
+.boxGreen {
+    border: solid 5px green;
+    background-color: rgba(0, 128, 0, 0.507);
+    min-width: 100%;
+    height: 20%;
+}
+
+.boxYellow {
+    border: solid 5px yellow;
+    background-color: rgba(255, 255, 0, 0.507);
+    min-width: 100%;
+    height: 10%;
+}

@@ -28,5 +28,8 @@ module.exports = {
             Popper: ['popper.js', 'default']
         })
 
-    ]
+    ],
+    node: {
+        fs: 'empty'
+    }
 };
