@@ -1,5 +1,8 @@
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const webpack = require('webpack');
+const $ = require('jquery');
+const popper = require('popper.js');
 
 module.exports = {
     entry: './src/index.js',
@@ -7,15 +10,23 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
+    module: {
+        rules: [{
+            test: /\.css$/,
+            use: [
+                'style-loader',
+                'css-loader'
+            ]
+
+        }]
+    },
     plugins: [
 
-        new CopyWebpackPlugin({
+        new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
-            'window.jQuery': 'jquery',
             Popper: ['popper.js', 'default']
         })
 
     ]
-
 };
