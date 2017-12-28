@@ -112,8 +112,7 @@
     "liveServer.settings.CustomBrowser": "firefox",
     "liveServer.settings.port": 5500,
     "eslint.alwaysShowStatus": true,
-    "eslint.enable": false,
-    "eslint.nodePath": "/node_modules/eslint/bin/",
+    "eslint.enable": true,
     "eslint.packageManager": "npm",
     "eslint.run": "onSave",
     "eslint.trace.server": "messages",
@@ -149,5 +148,10 @@
     "npm.useRootDirectory": true,
     "search-node-modules.path": "node_modules",
     "workbench.tips.enabled": true,
-    "workbench.editor.showIcons": true
+    "workbench.editor.showIcons": true,
+    "eslint.autoFixOnSave": true,
+    "eslint.options": {
+        "configFile": ".eslintrc.json"
+    },
+    "eslint._legacyModuleResolve": true
 }

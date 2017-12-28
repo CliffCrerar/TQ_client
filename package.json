@@ -1,23 +1,27 @@
 {
-  "name": "tqoffroadparts",
-  "version": "2.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CliffCrerar/PartSales.git"
-  },
-  "author": "Cliff Crerar",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/CliffCrerar/PartSales/issues"
-  },
-  "homepage": "https://github.com/CliffCrerar/PartSales#readme",
-  "dependencies": {
-    "node.js": "0.0.0",
-    "webpack": "^3.10.0"
-  }
+    "name": "tqoffroadparts",
+    "version": "2.0.0",
+    "description": "Sale of aftermarket offroad parts",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CliffCrerar/PartSales.git"
+    },
+    "author": "Cliff Crerar",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/CliffCrerar/PartSales/issues"
+    },
+    "homepage": "https://github.com/CliffCrerar/PartSales#readme",
+    "dependencies": {
+        "lodash": "^4.17.4",
+        "node.js": "0.0.0"
+    },
+    "devDependencies": {
+        "eslint": "^4.14.0",
+        "webpack": "^3.10.0"
+    }
 }
