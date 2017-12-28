@@ -5,9 +5,11 @@ import _ from 'lodash';
 //Load CSS
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import './css/landing.css';
+import './css/nav.css';
 
 //Custom JS
 import './js/landing.js';
+import './js/nav.js';
 
 //libs & nodes
 import 'bootstrap';
