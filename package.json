@@ -4,7 +4,8 @@
     "description": "Sale of aftermarket offroad parts",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack"
     },
     "repository": {
         "type": "git",
@@ -17,14 +18,18 @@
     },
     "homepage": "https://github.com/CliffCrerar/PartSales#readme",
     "dependencies": {
-        "babel": "^6.23.0",
-        "babel-eslint": "^8.1.2",
         "lodash": "^4.17.4",
         "node.js": "0.0.0"
     },
     "devDependencies": {
+        "babel": "^6.23.0",
+        "babel-eslint": "^8.1.2",
         "eslint": "^4.14.0",
         "jshint": "^2.9.5",
         "webpack": "^3.10.0"
+    },
+    "jshintConfig": {
+        "expr": true,
+        "esversion": 6
     }
 }

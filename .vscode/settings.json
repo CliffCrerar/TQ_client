@@ -159,5 +159,9 @@
     "problems.decorations.enabled": true,
     "git.decorations.enabled": true,
     "importCost.bundleSizeDecoration": "both",
-    "prettier.parser": "babylon"
+    "prettier.parser": "babylon",
+    "editor.cursorBlinking": "phase",
+    "editor.dragAndDrop": true,
+    "editor.glyphMargin": true,
+    "editor.lightbulb.enabled": true
 }
