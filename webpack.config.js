@@ -1,8 +1,7 @@
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
-const $ = require('jquery');
-const popper = require('popper.js');
+
 
 module.exports = {
     entry: './src/index.js',
@@ -12,13 +11,17 @@ module.exports = {
     },
     module: {
         rules: [{
-            test: /\.css$/,
-            use: [
-                'style-loader',
-                'css-loader'
-            ]
-
-        }]
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ]
+            },
+            {
+                test: /\.exec\.js$/,
+                use: ['script-loader']
+            }
+        ]
     },
     plugins: [
 

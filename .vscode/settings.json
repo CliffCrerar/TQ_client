@@ -1,4 +1,5 @@
-{
+
+{   
     "files.autoSave": "onFocusChange",
     "jsDocCompletion.enabled": true,
     "json.format.enable": true,
@@ -163,5 +164,7 @@
     "editor.cursorBlinking": "phase",
     "editor.dragAndDrop": true,
     "editor.glyphMargin": true,
-    "editor.lightbulb.enabled": true
+    "editor.lightbulb.enabled": true,
+    "liveServer.settings.host": "127.0.0.1",
+    "liveServer.settings.root": "/dist/"
 }
