@@ -158,5 +158,6 @@
     "explorer.decorations.colors": true,
     "problems.decorations.enabled": true,
     "git.decorations.enabled": true,
-    "importCost.bundleSizeDecoration": "both"
+    "importCost.bundleSizeDecoration": "both",
+    "prettier.parser": "babylon"
 }
