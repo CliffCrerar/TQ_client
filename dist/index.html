@@ -10,35 +10,35 @@
 </head>
 
 <body>
-    <!--buffer2-->
-    <div class="buffer"></div>
 
     <!--Navigation bar-->
-    <nav id="navTop" class="nav nav-pills nav-fill navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <a class="nav-item nav-link active" href="#">Active</a>
-        <a class="nav-item nav-link" href="#">Link</a>
-        <a class="nav-item nav-link" href="#">Link</a>
-        <a class="nav-item nav-link disabled" href="#">Disabled</a>
+    <nav id="navTop" class="nav nav-pills nav-fill boxRed">
+        <!--brand section of navbar-->
+        <a class="navbar-brand" href="#">*Brand goes here*</a>
+        <!--/brand section of navbar-->
+        <a id="N_0" class="align-middle nav-item nav-link active" href="#">Active</a>
+        <a id="N_1" class="nav-item nav-link" href="#">Link</a>
+        <a id="N_2" class="nav-item nav-link" href="#">Link</a>
+        <a id="N_3" class="nav-item nav-link disabled" href="#">Disabled</a>
     </nav>
 
     <!--Landing Page-->
-    <div class="lpContent">
+    <div id="P_0" class="lp">
 
-        <!--buffer2-->
-        <div class="buffer"></div>
+        <!--buffer2
+        <div class="buffer"></div>-->
 
 
         <!--Carousell-->
-        <div class="boxBlue ">
+        <div id="carousellID" class="boxBlue">
             <h1 class="">Carousel</h1>
         </div>
 
-        <!--buffer3-->
-        <div class="buffer"></div>
+        <!--buffer3
+        <div class="buffer"></div>-->
 
         <!--Adds-->
-        <div class="boxYellow container">
+        <div id="addsRailID" class="boxYellow container">
             <!--Main adds rail-->
             <div class="addsRail row">
                 <div class="boxTrans row">
@@ -69,15 +69,37 @@
         </div>
         <!--/Adds-->
 
-
         <!--About/Social-->
-        <div class="boxGreen">
+        <div id="abSocID" class="boxGreen">
             <div>
                 <h1 class="">About/Social</h1>
             </div>
         </div>
+
     </div>
     <!--/Landing Page-->
+
+    <!--Parts tab1-->
+    <div id="P_1" class="h-100 container-fluid" style="display:none">
+        <div class="row h-100">
+            <div class="col-2 h-100 sideNav boxPurple">
+                SideNav
+            </div>
+            <div class="col-10 h-100 cat boxOrange">
+                Main catelogue section
+            </div>
+        </div>
+    </div>
+
+    <!--Parts tab2-->
+    <div id="P_2" style="display:none; background-color:rgb(151, 151, 255); height:100%">
+        <h1 style="padding: 5%">part tab2</h1>
+    </div>
+
+    <!--Parts tab1-->
+    <div id="P_3" style="display:none; background-color:rgb(151, 151, 255); height:100%">
+        <h1 style="padding: 5%">part tab3</h1>
+    </div>
 
 
 </body>

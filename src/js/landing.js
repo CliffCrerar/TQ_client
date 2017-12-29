@@ -1,36 +1,52 @@
 let correctDimension = () => {
-    //Correction of image viewhight
-    var vph;
-    var vpw;
+    //Correction of image viewhight    
     var agentCheck = window.navigator.userAgent; //Get window data to determine browser
     //Define viewport for browser compatibility
 
     //Determine browser by looking at the DOM
     if (agentCheck.indexOf('Chrome') > 0) {
         agent = 'Chrome';
-        vph = window.visualViewport.height;
-        vpw = window.visualViewport.width;
+        window.vph = window.visualViewport.height;
+        window.vpw = window.visualViewport.width;
     } else if (agentCheck.indexOf('Firefox') > 0) {
         agent = 'Firefox';
-        vph = window.innerHeight;
-        vpw = window.innerWidth;
+        window.vph = window.innerHeight;
+        window.vpw = window.innerWidth;
+        //window.scrollbars = false;
     } else if (agentCheck.indexOf('Safari') > 0) {
         agent = 'Safari';
-        vph = window.innerHeight;
-        vpw = window.innerWidth;
+        window.vph = window.innerHeight;
+        window.vpw = window.innerWidth;
     }
-    console.log(agent, 'VPH:', vph, 'VPW:', vpw);
-    console.log($('body'));
+
+    //console.log(agent, 'VPH:', vph, 'VPW:', vpw);
+    //console.log($('body'));
     $(document).ready(() => {
         if (vpw <= 320) {
             $('body').css("height", 800);
+            $('#carousellID').css("height", "44%");
+            $('#addsRailID').css("height", "44%");
+            $('.sideNav').remove();
+            $('.cat').removeClass('col-10').css('width', "100%");
         } else {
-            $('body').css("height", vph, (i, c) => {
-                console.log(i);
-                console.log(c);
-            });
+            $('body').css("height", window.vph);
+            /*
+            let spaceToFill = () => {
+                var accumulator;
+                var nav = Math.ceil($('#navTop').height());
+                var car = Math.ceil($('#carousellID').height());
+                var soc = Math.ceil($('#abSocID').height());
+                accumulator = nav + car + soc;
+                $('.buffer').each((i, el) => {
+                    accumulator += Math.ceil($(el).height());
+                });
+                return (vph - accumulator)
+            };
+            console.log(spaceToFill());
+            $('#addsRailID').css("height", spaceToFill());*/
         }
     });
+
 };
 
 correctDimension();
