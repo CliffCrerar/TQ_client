@@ -1,28 +1,24 @@
 /* Framework css*/
 
-.boxRed {
-    border: solid 5px red;
-    background-color: rgba(255, 0, 0, 0.514);
-}
-
 .boxBlue {
     background-color: rgba(0, 0, 255, 0.507);
-    border: solid 5px blue;
-    height: 60%;
+    height: 58%;
     min-width: 100%;
+    margin-top: 1%;
 }
 
 .boxYellow {
     background-color: rgba(255, 255, 0, 0.507);
     min-width: 100%;
-    height: 30%
+    height: 28%;
+    margin-top: 1%;
 }
 
 .boxGreen {
-    border: solid 5px green;
     background-color: rgba(0, 128, 0, 0.507);
     min-width: 100%;
-    height: 10%;
+    height: 8%;
+    margin-top: 1%;
 }
 
 .boxGrey {
@@ -47,7 +43,7 @@
 
 .buffer {
     height: 1%;
-    color: silver;
+    background-color: silver;
 }
 
 
@@ -68,19 +64,9 @@
 /*--------------------------*/
 
 
-/*NAV BAR*/
-
-#navTop {
-    height: auto;
-}
-
-
 /* MAIN DISPLAY SECTION */
 
-.lp {
-    position: absolute;
-    min-width: 100%;
-}
+.lp {}
 
 
 /*--------------------------*/

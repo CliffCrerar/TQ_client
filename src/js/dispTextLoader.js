@@ -7,7 +7,7 @@ var navlinkNames = ['link11', 'link21', 'link31', 'link41']
 //text Loader for Jquery
 $(document).ready(() => {
     // 1.load navbar text
-    $('.navbar-brand').html(navBarBrand);
+    //$('.navbar-brand').html(navBarBrand);
     $('.nav-link').each((i, el) => {
         $(el).html(navlinkNames[i]);
     });

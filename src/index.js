@@ -1,11 +1,13 @@
 /* App root file */
-console.log('Loading files')
+console.log('Loading files');
 import _ from 'lodash';
 
 //Load CSS
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import './css/landing.css';
 import './css/nav.css';
+require('font-awesome-webpack');
+
 
 //Custom JS
 import './js/landing.js';
@@ -25,4 +27,4 @@ http.createServer((req, res) => {
     console.log(req.socket());
 });
 */
-console.log('Index.loaded')
+console.log('Index.loaded');

@@ -1,3 +1,11 @@
-.nav-pills {
-    min-width: 100%;
+/*NAV BAR*/
+
+#navTop {
+    background-color: rgba(255, 0, 0, 0.514);
+    margin-top: 1%;
+}
+
+.logo {
+    position: relative;
+    min-width: 100%
 }
