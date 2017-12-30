@@ -7,6 +7,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import './css/landing.css';
 import './css/nav.css';
 require('font-awesome-webpack');
+import './css/font.css';
 
 
 //Custom JS
