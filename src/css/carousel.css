@@ -1,0 +1,10 @@
+.carousel {
+    height: 58%;
+    margin-top: 1%;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.carousel-inner {
+    overflow: hidden;
+}

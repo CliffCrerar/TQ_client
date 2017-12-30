@@ -19,12 +19,12 @@ let correctDimension = function(vph, vpw) {
             $('.cat').removeClass('col-10').css('width', "100%");
             $('body').removeClass('container-fluid');
             $('#P_0').removeClass('container-fluid');
+            $('.c1.carousel-inner').css('border-radius', '24px');
         } else {
             $('body').css("height", vph);
 
             navH = ($('#navTop').height());
             navM = parseInt($('#navTop').css('margin-top'), 10);
-
 
             console.log('vph', vph);
             console.log('navH', navH);

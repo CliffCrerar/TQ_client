@@ -1,12 +1,5 @@
 /* Framework css*/
 
-.boxBlue {
-    background-color: rgba(0, 0, 255, 0.507);
-    height: 58%;
-    min-width: 100%;
-    margin-top: 1%;
-}
-
 .boxYellow {
     background-color: rgba(255, 255, 0, 0.507);
     min-width: 100%;
