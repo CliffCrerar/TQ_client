@@ -43,7 +43,8 @@ let correctDimension = () => {
                 return (vph - accumulator)
             };
             console.log(spaceToFill());
-            $('#addsRailID').css("height", spaceToFill());*/
+            $('#addsRailID').css("height", spaceToFill());
+            */
         }
     });
 

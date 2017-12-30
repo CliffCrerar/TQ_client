@@ -1,7 +1,10 @@
 $(document).ready(() => {
     console.log('nav.loaded')
     $('#navTop').on('click', (ev) => {
-        navBarOperation(ev.currentTarget, ev.target);
+        var brandName = $(ev.target).hasClass('navbar-brand')
+        if (brandName) {
+            navBarOperation(ev.currentTarget, ev.target);
+        }
     });
 
     let navBarOperation = (container, targetEl) => {
