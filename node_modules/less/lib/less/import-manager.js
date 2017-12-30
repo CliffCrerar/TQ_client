@@ -1,5 +1,6 @@
 var contexts = require("./contexts"),
-    Parser = require('./parser/parser');
+    Parser = require('./parser/parser'),
+    FunctionImporter = require('./plugins/function-importer');
 
 module.exports = function(environment) {
 
@@ -41,12 +42,12 @@ module.exports = function(environment) {
 
             var importedEqualsRoot = fullPath === importManager.rootFilename;
             if (importOptions.optional && e) {
-            callback(null, {rules:[]}, false, null);
+                callback(null, {rules:[]}, false, null);
             }
             else {
-            importManager.files[fullPath] = root;
-            if (e && !importManager.error) { importManager.error = e; }
-            callback(e, root, importedEqualsRoot, fullPath);
+                importManager.files[fullPath] = root;
+                if (e && !importManager.error) { importManager.error = e; }
+                callback(e, root, importedEqualsRoot, fullPath);
             }
         };
 
@@ -65,7 +66,7 @@ module.exports = function(environment) {
         }
 
         if (tryAppendLessExtension) {
-            path = fileManager.tryAppendLessExtension(path);
+            path = fileManager.tryAppendExtension(path, importOptions.plugin ? ".js" : ".less");
         }
 
         var loadFileCallback = function(loadedFile) {
@@ -81,7 +82,7 @@ module.exports = function(environment) {
             // - If path of imported file is '../mixins.less' and rootpath is 'less/',
             //   then rootpath should become 'less/../'
             newFileInfo.currentDirectory = fileManager.getPath(resolvedFilename);
-            if(newFileInfo.relativeUrls) {
+            if (newFileInfo.relativeUrls) {
                 newFileInfo.rootpath = fileManager.join(
                     (importManager.context.rootpath || ""),
                     fileManager.pathDiff(newFileInfo.currentDirectory, newFileInfo.entryPath));
@@ -101,7 +102,11 @@ module.exports = function(environment) {
                 newFileInfo.reference = true;
             }
 
-            if (importOptions.inline) {
+            if (importOptions.plugin) {
+                new FunctionImporter(newEnv, newFileInfo).eval(contents, function (e, root) {
+                    fileParsedFunc(e, root, resolvedFilename);
+                });
+            } else if (importOptions.inline) {
                 fileParsedFunc(null, contents, resolvedFilename);
             } else {
                 new Parser(newEnv, importManager, newFileInfo).parse(contents, function (e, root) {

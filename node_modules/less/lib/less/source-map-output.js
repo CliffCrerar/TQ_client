@@ -34,7 +34,7 @@ module.exports = function (environment) {
         if (this._sourceMapBasepath && filename.indexOf(this._sourceMapBasepath) === 0) {
             filename = filename.substring(this._sourceMapBasepath.length);
             if (filename.charAt(0) === '\\' || filename.charAt(0) === '/') {
-               filename = filename.substring(1);
+                filename = filename.substring(1);
             }
         }
         return (this._sourceMapRootpath || "") + filename;
@@ -78,7 +78,7 @@ module.exports = function (environment) {
                     original: { line: sourceLines.length, column: sourceColumns.length},
                     source: this.normalizeFilename(fileInfo.filename)});
             } else {
-                for(i = 0; i < lines.length; i++) {
+                for (i = 0; i < lines.length; i++) {
                     this._sourceMapGenerator.addMapping({ generated: { line: this._lineNumber + i + 1, column: i === 0 ? this._column : 0},
                         original: { line: sourceLines.length + i, column: i === 0 ? sourceColumns.length : 0},
                         source: this.normalizeFilename(fileInfo.filename)});
@@ -104,9 +104,8 @@ module.exports = function (environment) {
         this._sourceMapGenerator = new this._sourceMapGeneratorConstructor({ file: this._outputFilename, sourceRoot: null });
 
         if (this._outputSourceFiles) {
-            for(var filename in this._contentsMap) {
-                if (this._contentsMap.hasOwnProperty(filename))
-                {
+            for (var filename in this._contentsMap) {
+                if (this._contentsMap.hasOwnProperty(filename)) {
                     var source = this._contentsMap[filename];
                     if (this._contentsIgnoredCharsMap[filename]) {
                         source = source.slice(this._contentsIgnoredCharsMap[filename]);
