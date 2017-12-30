@@ -166,5 +166,25 @@
     "editor.glyphMargin": true,
     "editor.lightbulb.enabled": true,
     "liveServer.settings.host": "127.0.0.1",
-    "liveServer.settings.root": "/dist/"
+    "liveServer.settings.root": "/dist/",
+    "codemetrics.basics.CodeLensEnabled": true,
+    "codemetrics.basics.DecorationModeEnabled": true,
+    "codemetrics.basics.DiagnosticsEnabled": true,
+    "codemetrics.basics.EnabledForHTML": true,
+    "codemetrics.basics.MetricsForFunctionDeclarationsToggled": true,
+    "codemetrics.basics.MetricsForFunctionExpressionsToggled": true,
+    "[javascript]": {
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": true,
+            "strings": true
+        }
+    },
+    "[json]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        }
+    },
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "block"
 }

@@ -1,4 +1,7 @@
 $(document).ready(() => {
+
+    var navBarBrand = '*BrandName*';
+
     console.log('nav.loaded')
     $('#navTop').on('click', (ev) => {
         var brandName = $(ev.target).hasClass('navbar-brand')
@@ -11,7 +14,7 @@ $(document).ready(() => {
         if (!($(targetEl).hasClass('active'))) {
             $(container).children().each((i, el) => {
                 if ($(el).hasClass('active')) {
-                    var pageOut = $('#P_' + el.id.split('_')[1])
+                    var pageOut = $('#P_' + el.id.split('_')[1]);
                     pageOut.fadeOut();
                     $(el).removeClass('active');
                 }

@@ -10,6 +10,7 @@ import './css/nav.css';
 //Custom JS
 import './js/landing.js';
 import './js/nav.js';
+import './js/dispTextLoader.js';
 
 //libs & nodes
 import 'bootstrap';

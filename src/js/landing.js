@@ -6,8 +6,8 @@ let correctDimension = () => {
     //Determine browser by looking at the DOM
     if (agentCheck.indexOf('Chrome') > 0) {
         agent = 'Chrome';
-        window.vph = window.visualViewport.height;
-        window.vpw = window.visualViewport.width;
+        window.vph = window.innerHeight;
+        window.vpw = window.innerWidth;
     } else if (agentCheck.indexOf('Firefox') > 0) {
         agent = 'Firefox';
         window.vph = window.innerHeight;
