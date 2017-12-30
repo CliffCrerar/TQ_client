@@ -1,11 +1,9 @@
 $(document).ready(() => {
 
-    var navBarBrand = '*BrandName*';
-
     console.log('nav.loaded')
     $('#navTop').on('click', (ev) => {
         var brandName = $(ev.target).hasClass('navbar-brand')
-        if (brandName) {
+        if (!brandName) {
             navBarOperation(ev.currentTarget, ev.target);
         }
     });

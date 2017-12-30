@@ -1,14 +1,16 @@
-//This file keeps all data about html display text
+/*  This file keeps all data about html display text  */
 
-console.log('')
-
+// 1.define display text for navbar
 var navBarBrand = '*NavbarBrand*';
-var link1 = 'link';
-var link2 = 'link';
-var link3 = 'link';
-var link4 = 'link';
+var navlinkNames = ['link11', 'link21', 'link31', 'link41']
 
 //text Loader for Jquery
-window.load(() => {
-    $('#N_0').innerHTML(navBarBrand);
+$(document).ready(() => {
+    // 1.load navbar text
+    $('.navbar-brand').html(navBarBrand);
+    $('.nav-link').each((i, el) => {
+        $(el).html(navlinkNames[i]);
+    });
 });
+
+console.log('displaytext.load')

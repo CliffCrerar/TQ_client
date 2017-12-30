@@ -24,27 +24,19 @@ let correctDimension = () => {
     $(document).ready(() => {
         if (vpw <= 320) {
             $('body').css("height", 800);
+            var subract = $('#navTop').height();
+            var newHeight = 800 - subract;
+            $('#P_0').css('height', newHeight);
             $('#carousellID').css("height", "44%");
             $('#addsRailID').css("height", "44%");
             $('.sideNav').remove();
             $('.cat').removeClass('col-10').css('width', "100%");
         } else {
             $('body').css("height", window.vph);
-            /*
-            let spaceToFill = () => {
-                var accumulator;
-                var nav = Math.ceil($('#navTop').height());
-                var car = Math.ceil($('#carousellID').height());
-                var soc = Math.ceil($('#abSocID').height());
-                accumulator = nav + car + soc;
-                $('.buffer').each((i, el) => {
-                    accumulator += Math.ceil($(el).height());
-                });
-                return (vph - accumulator)
-            };
-            console.log(spaceToFill());
-            $('#addsRailID').css("height", spaceToFill());
-            */
+            console.log(subract);
+            var subract = $('#navTop').height();
+            var newHeight = window.vph - subract;
+            $('#P_0').css('height', newHeight);
         }
     });
 
