@@ -1,7 +1,6 @@
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
@@ -38,13 +37,8 @@ module.exports = {
             Popper: ['popper.js', 'default']
         }),
 
-        new HtmlWebpackPlugin({
-            title: 'Output Management'
-        })
-
     ],
     node: {
         fs: 'empty'
     }
 };
-[]

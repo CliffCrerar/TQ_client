@@ -1,10 +1,15 @@
-.carousel {
+.slickCarousel {
     height: 58%;
     margin-top: 1%;
     overflow: hidden;
     border-radius: 50px;
 }
 
-.carousel-inner {
-    overflow: hidden;
+.slickSlide {
+    height: 100%
+}
+
+.slickSlide>img {
+    width: 100%;
+    height: auto;
 }
