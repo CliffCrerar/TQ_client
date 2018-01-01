@@ -3,13 +3,22 @@
     margin-top: 1%;
     overflow: hidden;
     border-radius: 50px;
+    background-color: chocolate;
 }
 
 .slickSlide {
-    height: 100%
+    display: block;
+    min-height: 100%;
+    background-color: aquamarine;
 }
 
 .slickSlide>img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
+}
+
+h3 {
+    position: relative;
+    top: 50%;
+    left: 50%;
 }

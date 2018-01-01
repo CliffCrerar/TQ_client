@@ -13,6 +13,7 @@ import './css/carousel.css';
 //slick.carousel
 import '../node_modules/slick-carousel/slick/slick.css';
 import '../node_modules/slick-carousel/slick/slick.js';
+import '../node_modules/slick-carousel/slick/slick-theme.css';
 
 //Custom JS
 import './js/landing.js';
@@ -34,8 +35,12 @@ import carimage4 from './image/car_image4.jpg';
 $(document).ready(() => {
     $('#slide1>img').attr('src', carimage1);
     $('#slide2>img').attr('src', carimage2);
-    //$('#carouselSlide3>img').attr('src', carimage3);
-    //$('#carouselSlide4>img').attr('src', carimage4);
+    $('#slide3>img').attr('src', carimage3);
+    $('#slide4>img').attr('src', carimage4);
+
+    $('.slickCarousel').slick({
+        arrows: true,
+    });
 });
 
 console.log('Index.loaded');

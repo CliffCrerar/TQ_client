@@ -1,5 +1,9 @@
 /* Framework css*/
 
+body {
+    background-color: rgba(128, 128, 128, 0.589)
+}
+
 .boxYellow {
     background-color: rgba(255, 255, 0, 0.507);
     min-width: 100%;
@@ -59,8 +63,6 @@
 
 /* MAIN DISPLAY SECTION */
 
-.lp {}
-
 
 /*--------------------------*/
 
@@ -72,7 +74,3 @@
 
 
 /* catelogue */
-
-@media (max-width: 576px) {
-    .sideNav {}
-}
