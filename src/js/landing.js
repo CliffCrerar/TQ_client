@@ -5,7 +5,7 @@ let correctDimension = function(vph, vpw) {
     //console.log($('body'));
     $(document).ready(() => {
         var navH = 0;
-        var navM = 0
+        var navM = 0;
         var newHeight = 0;
         if (vpw <= 320) {
             $('body').css("height", 800);
