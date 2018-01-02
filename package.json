@@ -7,7 +7,8 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "watch": "webpack --config webpack.config.js --display-modules --watch",
         "build": "webpack --config webpack.config.js --display-modules",
-        "builda": "npx webpack --config webpack.config.js --display-modules"
+        "builda": "npx webpack --config webpack.config.js --display-modules",
+        "start": "webpack-dev-server --open"
     },
     "repository": {
         "type": "git",
@@ -46,7 +47,8 @@
         "jshint": "^2.9.5",
         "style-loader": "^0.19.1",
         "url-loader": "^0.6.2",
-        "webpack": "^3.10.0"
+        "webpack": "^3.10.0",
+        "webpack-dev-server": "^2.9.7"
     },
     "jshintConfig": {
         "expr": true,

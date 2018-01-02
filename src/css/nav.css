@@ -38,3 +38,15 @@
     display: inline-block;
     margin: 0px;
 }
+
+.nav>.form-inline>.form-control {
+    border: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.nav>.form-inline>.input-group-append>.btn {
+    border: 0px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+}

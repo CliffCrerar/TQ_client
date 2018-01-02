@@ -12,7 +12,7 @@
 <body class="container-fluid">
 
     <!--Navigation bar-->
-    <nav id="navTop" class="nav nav-pills nav-fill bg-dark navbar-dark">
+    <nav id="navTop" class="nav nav-pills nav-fill bg-dark navbar-dark form-inline">
 
         <!--brand section of navbar-->
         <div class="navbar-brand">
@@ -22,73 +22,133 @@
         <a id="N_0" class="nav-item nav-link disabled active" href="#">Active</a>
         <a id="N_1" class="nav-item nav-link disabled" href="#">Link</a>
         <a id="N_2" class="nav-item nav-link disabled" href="#">Link</a>
-        <a id="N_3" class="nav-item nav-link disabled" href="#">Disabled</a>
+        <div class="form-inline input-group" href="#">
+            <input class="form-control" type="search" placeholder="Search">
+            <div class="input-group-append">
+                <button class="btn btn-outline-success" type="submit"><span class="fa fa-search"></span>Search</button>
+            </div>
+        </div>
     </nav>
 
     <!--Landing Page-->
     <div id="P_0" class="lp">
 
-
-        <!--Carousel-->
+        <!--Carousel Container-->
         <div class="lpCarousel">
-            <div class="slider slickCarousel">
+            <!--Moto band-->
+            <div class="moto">
+                <h2 id="moto" class="text-center"></h2>
+            </div>
+            <!--Moto band-->
 
-                <div class="slickSlide">
-
+            <!--Carousel Slides-->
+            <div class="slickCarousel">
+                <div id="slide1" class="slickSlide">
                     <img alt="Slide 1">
                 </div>
-                <div class="slickSlide">
-
+                <div id="slide2" class="slickSlide">
                     <img alt="Slide 2">
                 </div>
-                <div class="slickSlide">
-
+                <div id="slide3" class="slickSlide">
                     <img alt="Slide 3">
                 </div>
-                <div class="slickSlide">
-
+                <div id="slide4" class="slickSlide">
                     <img alt="Slide 4">
                 </div>
-                <div class="slickSlide">
-
+                <div id="slide5" class="slickSlide">
                     <img alt="Slide 5">
                 </div>
-                <div class="slickSlide">
-
+                <div id="slide51" class="slickSlide">
+                    <img alt="Slide 5.1">
+                </div>
+                <div id="slide6" class="slickSlide">
                     <img alt="Slide 6">
+                </div>
+                <div id="slide61" class="slickSlide">
+                    <img alt="Slide 6.1">
+                </div>
+                <div id="slide7" class="slickSlide">
+                    <img alt="Slide 7">
+                </div>
+                <div id="slide71" class="slickSlide">
+                    <img alt="Slide 6.1">
+                </div>
+                <div id="slide8" class="slickSlide">
+                    <img alt="Slide 8">
+                </div>
+                <div id="slide81" class="slickSlide">
+                    <img alt="Slide 8.1">
+                </div>
+                <div id="slide9" class="slickSlide">
+                    <img alt="Slide 9">
                 </div>
 
             </div>
+            <!--/Carousel Slides-->
         </div>
+        <!--/Carousel Container-->
 
         <!--Adds-->
-        <div id="addsRailID" class="boxYellow container">
+        <div id="addsRailID" class="container">
 
             <!--Main adds rail-->
             <div class="addsRail row">
-                <div class="boxTrans row">
-                    <div class="boxGrey col">
-                        <h2>add</h2>
+
+                <div class="subRail boxTrans row">
+
+                    <div class="addContainer col-md-4">
+                        <div id="add1" class="addFade">
+                            <div class="add add1_1">add1</div>
+                            <div class="add add1_2">add2</div>
+                            <div class="add add1_3">add3</div>
+                        </div>
+                        <p class="addTitle"></p>
                     </div>
-                    <div class="boxGrey col">
-                        <h2>add</h2>
+
+                    <div class="addContainer col-md-4">
+                        <div id="add2" class="addFade">
+                            <div class="add add2_1">add1</div>
+                            <div class="add add2_2">add2</div>
+                            <div class="add add2_3">add3</div>
+                        </div>
                     </div>
-                    <div class="boxGrey col">
-                        <h2>add</h2>
+
+                    <div class="addContainer col-md-4">
+                        <div id="add3" class="addFade">
+                            <div class="add add3_1">add1</div>
+                            <div class="add add3_2">add2</div>
+                            <div class="add add3_3">add3</div>
+                            <p class="addTitle"></p>
+                        </div>
                     </div>
+
                 </div>
 
-                <div class="boxTrans row">
-                    <div class="boxGrey col">
-                        <h2>add</h2>
+                <div class="subRail boxTrans row">
+
+                    <div id="add4" class="col-md-4 addFade">
+                        <div class="add add4_1">add1</div>
+                        <div class="add add4_2">add2</div>
+                        <div class="add add4_4">add3</div>
+                        <p class="addTitle"></p>
                     </div>
-                    <div class="boxGrey col">
-                        <h2>add</h2>
+
+                    <div id="add5" class="col-md-4 addFade">
+                        <div class="add add5_1">add1</div>
+                        <div class="add add5_2">add2</div>
+                        <div class="add add5_3">add3</div>
+                        <p class="addTitle"></p>
                     </div>
-                    <div class="boxGrey col">
-                        <h2>add</h2>
+
+                    <div id="add6" class="col-md-4 addFade">
+                        <div class="add add6_1">add1</div>
+                        <div class="add add6_2">add2</div>
+                        <div class="add add6_3">add3</div>
+                        <p class="addTitle"></p>
                     </div>
+
                 </div>
+
             </div>
             <!--/Main add rail-->
 

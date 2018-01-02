@@ -185,5 +185,6 @@
         }
     },
     "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.cursorStyle": "block"
+    "terminal.integrated.cursorStyle": "block",
+
 }

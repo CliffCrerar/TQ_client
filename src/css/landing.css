@@ -4,11 +4,8 @@ body {
     background-color: rgba(128, 128, 128, 0.589)
 }
 
-.boxYellow {
-    background-color: rgba(255, 255, 0, 0.507);
-    min-width: 100%;
-    height: 28%;
-    margin-top: 1%;
+span.fa {
+    border: 2px solid transparent
 }
 
 .boxGreen {
@@ -16,11 +13,6 @@ body {
     min-width: 100%;
     height: 8%;
     margin-top: 1%;
-}
-
-.boxGrey {
-    border: solid 1px grey;
-    background-color: rgba(128, 128, 128, 0.452);
 }
 
 .boxOrange {
@@ -31,11 +23,6 @@ body {
 .boxPurple {
     background-color: rgba(128, 0, 128, 0.486);
     border: solid 5px purple;
-}
-
-.boxTrans {
-    width: 50%;
-    height: 100%;
 }
 
 .buffer {

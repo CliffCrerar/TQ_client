@@ -8,9 +8,9 @@ let correctDimension = function(vph, vpw) {
         var navM = 0;
         var newHeight = 0;
         if (vpw <= 320) {
-            $('body').css("height", 800);
+
             subract = $('#navTop').height();
-            newHeight = 800 - subract;
+            newHeight = 690 - subract;
             $('#P_0').css('height', newHeight);
             $('#carousellID').css("height", "44%");
             $('#addsRailID').css("height", "44%");
@@ -59,7 +59,7 @@ if (agentCheck.indexOf('Chrome') > 0) {
 correctDimension(window.vph, window.vpw);
 
 $(document).ready(() => {
-    $(window).resize(() => { correctDimension(); });
+    $(window).resize(() => { correctDimension(window.vph, window.vpw); });
 });
 
 console.log('landing.loaded');

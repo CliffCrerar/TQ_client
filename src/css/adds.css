@@ -1,0 +1,38 @@
+#addsRailID {
+    border-radius: 24px;
+    background-color: yellow;
+    height: 28%;
+    margin-top: 1%;
+    min-width: 100%;
+    overflow: hidden;
+}
+
+.subRail {
+    background-color: aquamarine;
+    border-radius: 24px;
+    height: 100%;
+    width: 50%;
+    z-index: 0;
+}
+
+.addContainer {
+    border: 0px transparent;
+    padding: 0px;
+}
+
+.addFade {
+    background-color: grey;
+    overflow: hidden;
+}
+
+.add {
+    background-color: azure;
+    width: 100%;
+    height: auto;
+}
+
+.addImg {
+    height: 100%;
+}
+
+.addTitle {}
