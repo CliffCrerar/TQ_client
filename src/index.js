@@ -30,13 +30,17 @@ import carimage1 from './image/car_image1.jpg';
 import carimage2 from './image/car_image2.jpg';
 import carimage3 from './image/car_image3.jpg';
 import carimage4 from './image/car_image4.jpg';
+import carimage5 from './image/car_image5.jpg';
+import carimage6 from './image/car_image6.jpg';
 //Load images into html
 
 $(document).ready(() => {
-    $('#slide1>img').attr('src', carimage1);
-    $('#slide2>img').attr('src', carimage2);
-    $('#slide3>img').attr('src', carimage3);
-    $('#slide4>img').attr('src', carimage4);
+    $('#slide1').attr('src', carimage1);
+    $('#slide2').attr('src', carimage2);
+    $('#slide3').attr('src', carimage3);
+    $('#slide4').attr('src', carimage4);
+    $('#slide5').attr('src', carimage5);
+    $('#slide6').attr('src', carimage6);
 
     $('.slickCarousel').slick({
         arrows: true,

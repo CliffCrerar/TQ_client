@@ -1,4 +1,4 @@
-.slickCarousel {
+.lpCarousel {
     height: 58%;
     margin-top: 1%;
     overflow: hidden;
@@ -6,15 +6,25 @@
     background-color: chocolate;
 }
 
+.slickCarousel {
+    background-color: blue;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 70% !important;
+    transform: translate(-50%, -50%);
+}
+
 .slickSlide {
-    display: block;
-    min-height: 100%;
     background-color: aquamarine;
+    width: 100%;
+    height: auto;
 }
 
 .slickSlide>img {
-    width: auto;
     height: 100%;
+    width: auto;
 }
 
 h3 {
