@@ -1,0 +1,9 @@
+#navBottom {
+    border-radius: 24px !important;
+}
+
+#navBottom>.social {
+    text-align: right;
+}
+
+.social>a {}

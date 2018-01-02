@@ -17,7 +17,7 @@
 
 .addContainer {
     border: 0px transparent;
-    padding: 0px;
+    padding: 0px !important;
 }
 
 .addFade {
@@ -26,13 +26,35 @@
 }
 
 .add {
-    background-color: azure;
+    background-color: black;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .addImg {
     height: 100%;
+    width: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.addTitle {}
+.addTitle {
+    background-color: #343A40;
+    color: white;
+    font-family: Orbitron;
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    text-decoration-line: none !important;
+    text-decoration-color: none !important;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+}
+
+.addTitle:hover {
+    background-color: #F10032 !important;
+    opacity: 1;
+}

@@ -6,7 +6,13 @@ var navlinkNames = ['link11', 'link21', 'link31'];
 var carMoto = 'This is some  text';
 
 //2. Variables for adds
-var add1Title = 'Title1 Text';
+var add1Title = 'Top Boxes';
+var add2Title = 'Panniers';
+var add3Title = 'Brackets';
+var add4Title = 'Bash plates';
+var add5Title = 'Combos';
+var add6Title = 'Roof racks';
+
 
 //text Loader for Jquery
 $(document).ready(() => {
@@ -19,6 +25,11 @@ $(document).ready(() => {
 
     //2. Assigned the variables
     $('#add1Title').text(add1Title);
+    $('#add2Title').text(add2Title);
+    $('#add3Title').text(add3Title);
+    $('#add4Title').text(add4Title);
+    $('#add5Title').text(add5Title);
+    $('#add6Title').text(add6Title);
 });
 
 console.log('displaytext.load');

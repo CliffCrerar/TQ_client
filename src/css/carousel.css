@@ -21,7 +21,8 @@
 }
 
 .moto {
-    background-color: black;
+    background-color: #343a40;
+    opacity: 0.9;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
