@@ -1,5 +1,6 @@
 /* App root file */
 console.log('Loading files');
+
 import _ from 'lodash';
 
 //Load CSS
@@ -8,7 +9,8 @@ import './css/nav.css';
 import './css/font.css';
 import './css/carousel.css';
 import './css/adds.css';
-import './css/makeSocial.css';
+import './css/socialMake.css';
+import './css/bg.css';
 
 //Custom JS
 import './js/landing.js';
@@ -16,6 +18,7 @@ import './js/nav.js';
 import './js/dispTextLoader.js';
 import './js/carousel.js';
 import './js/adds.js';
+import './js/socialMake.js';
 
 //Bootstrap
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
@@ -30,7 +33,5 @@ import '../node_modules/slick-carousel/slick/slick.js';
 import '../node_modules/slick-carousel/slick/slick-theme.css';
 
 //Add rail image import
-
-
 
 console.log('Index.loaded');

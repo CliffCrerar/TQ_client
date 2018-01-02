@@ -2,8 +2,8 @@
 
 // 1.define display text for navbar
 var navBarBrand = 'TQ Bike & 4x4 Accessories';
-var navlinkNames = ['link11', 'link21', 'link31'];
-var carMoto = 'This is some  text';
+var navlinkNames = ['Main', 'Parts Catalogue', 'Contact'];
+var carMoto = 'Top Quality offroad parts for the global market';
 
 //2. Variables for adds
 var add1Title = 'Top Boxes';

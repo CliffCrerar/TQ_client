@@ -37,7 +37,8 @@ $(document).ready(() => {
         autoplay: true,
         autoplaySpeed: 2000,
         centerMode: true,
-        variableWidth: true
+        variableWidth: true,
+        pauseOnHover: false
     });
 
     //Other dimension adjustments

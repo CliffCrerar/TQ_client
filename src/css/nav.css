@@ -6,6 +6,18 @@
     border-radius: 24px;
 }
 
+#navTop>.nav-item.active {
+    font-weight: bold;
+    border-radius: 0px !important;
+}
+
+#navTop>.nav-item:hover {
+    background-color: #F10032;
+    color: white;
+    font-weight: bold;
+    border-radius: 0px !important;
+}
+
 .navbar-brand {
     font-family: black ops one;
     margin-left: 1% !important;

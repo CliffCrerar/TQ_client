@@ -1,4 +1,9 @@
 //function that corrects dimensions for elements to fit accordingly
+console.log('loading Started')
+    //getElementByName(window).onLoad(function() {
+    //  console.log("SCREEN LOADED")
+    //$(".se-pre-con").fadeOut("slow");
+    //});
 let correctDimension = function(vph, vpw) {
     //Correction of image viewhight   
     //console.log(agent, 'VPH:', vph, 'VPW:', vpw);
@@ -7,6 +12,7 @@ let correctDimension = function(vph, vpw) {
         var navH = 0;
         var navM = 0;
         var newHeight = 0;
+        $('body').css('background-Size', vph + 'px auto');
         if (vpw <= 320) {
 
             subract = $('#navTop').height();
@@ -20,6 +26,7 @@ let correctDimension = function(vph, vpw) {
             $('body').removeClass('container-fluid');
             $('#P_0').removeClass('container-fluid');
             $('.c1.carousel-inner').css('border-radius', '24px');
+
         } else {
             $('body').css("height", vph);
 
