@@ -18,10 +18,10 @@ let correctDimension = function(vph, vpw) {
             subract = $('#navTop').height();
             newHeight = 690 - subract;
             $('#P_0').css('height', newHeight);
-            $('#carousellID').css("height", "44%");
-            $('#addsRailID').css("height", "44%");
+
+            $('.lpCarousel').hide();
+            $('#addsRailID').css("height", "88%");
             $('.sideNav').remove();
-            $('.buffer').remove();
             $('.cat').removeClass('col-10').css('width', "100%");
             $('body').removeClass('container-fluid');
             $('#P_0').removeClass('container-fluid');

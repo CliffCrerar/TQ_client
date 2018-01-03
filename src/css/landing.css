@@ -5,6 +5,7 @@ body {
 }
 
 .se-pre-con {
+    display: block;
     position: fixed;
     left: 0px;
     top: 0px;

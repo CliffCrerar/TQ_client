@@ -29,35 +29,43 @@ import add62 from '../image/add6.2.jpg';
 import add63 from '../image/add6.3.jpg';
 
 $(document).ready(() => {
+    /*
+        //Include add 1 in html
+        $('.add1_1').html('<img class="addImg" src="' + add11 + '">');
+        $('.add1_2').html('<img class="addImg" src="' + add12 + '">');
+        $('.add1_3').html('<img class="addImg" src="' + add13 + '">');
+        //Include add 2 in html
+        $('.add2_1').html('<img class="addImg" src="' + add21 + '">');
+        $('.add2_2').html('<img class="addImg" src="' + add22 + '">');
+        $('.add2_3').html('<img class="addImg" src="' + add23 + '">');
+        //Include add 3 in html
+        $('.add3_1').html('<img class="addImg" src="' + add31 + '">');
+        $('.add3_2').html('<img class="addImg" src="' + add32 + '">');
+        $('.add3_3').html('<img class="addImg" src="' + add33 + '">');
+        //Include add 4 in html
+        $('.add4_1').html('<img class="addImg" src="' + add41 + '">');
+        $('.add4_2').html('<img class="addImg" src="' + add42 + '">');
+        $('.add4_3').html('<img class="addImg" src="' + add43 + '">');
+        //Include add 5 in html
+        $('.add5_1').html('<img class="addImg" src="' + add51 + '">');
+        $('.add5_2').html('<img class="addImg" src="' + add52 + '">');
+        $('.add5_3').html('<img class="addImg" src="' + add53 + '">');
+        //Include add 6 in html
+        $('.add6_1').html('<img class="addImg" src="' + add61 + '">');
+        $('.add6_2').html('<img class="addImg" src="' + add62 + '">');
+        $('.add6_3').html('<img class="addImg" src="' + add63 + '">');
+    */
+    //Adjust image height
+    if (window.vph <= 320) {
+        var addWidth = $('.addFade').width();
+        $('.add').css('width', addWidth);
+        $('.add').css('height', auto);
+    } else {
+        var addHeight = $('.addsRail').height();
+        $('.add').css('height', addHeight);
+    }
 
-    //Include add 1 in html
-    $('.add1_1').html('<img class="addImg" src="' + add11 + '">');
-    $('.add1_2').html('<img class="addImg" src="' + add12 + '">');
-    $('.add1_3').html('<img class="addImg" src="' + add13 + '">');
-    //Include add 2 in html
-    $('.add2_1').html('<img class="addImg" src="' + add21 + '">');
-    $('.add2_2').html('<img class="addImg" src="' + add22 + '">');
-    $('.add2_3').html('<img class="addImg" src="' + add23 + '">');
-    //Include add 3 in html
-    $('.add3_1').html('<img class="addImg" src="' + add31 + '">');
-    $('.add3_2').html('<img class="addImg" src="' + add32 + '">');
-    $('.add3_3').html('<img class="addImg" src="' + add33 + '">');
-    //Include add 4 in html
-    $('.add4_1').html('<img class="addImg" src="' + add41 + '">');
-    $('.add4_2').html('<img class="addImg" src="' + add42 + '">');
-    $('.add4_3').html('<img class="addImg" src="' + add43 + '">');
-    //Include add 5 in html
-    $('.add5_1').html('<img class="addImg" src="' + add51 + '">');
-    $('.add5_2').html('<img class="addImg" src="' + add52 + '">');
-    $('.add5_3').html('<img class="addImg" src="' + add53 + '">');
-    //Include add 6 in html
-    $('.add6_1').html('<img class="addImg" src="' + add61 + '">');
-    $('.add6_2').html('<img class="addImg" src="' + add62 + '">');
-    $('.add6_3').html('<img class="addImg" src="' + add63 + '">');
 
-    var addHeight = $('.addsRail').height();
-
-    $('.add').css('height', addHeight);
 
     //Add rail options
     $('.addFade').slick({
