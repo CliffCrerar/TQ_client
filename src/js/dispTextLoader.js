@@ -13,7 +13,6 @@ var add4Title = 'Bash plates';
 var add5Title = 'Combos';
 var add6Title = 'Roof racks';
 
-
 //text Loader for Jquery
 $(document).ready(() => {
     // 1.load navbar text
