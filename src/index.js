@@ -1,6 +1,9 @@
 /* App root file */
 console.log('Loading files');
 
+$('head').append('<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">');
+$('body').append('<div class="se-pre-con"></div>');
+
 import _ from 'lodash';
 
 //Load CSS
@@ -19,7 +22,6 @@ import './js/dispTextLoader.js';
 import './js/carousel.js';
 import './js/adds.js';
 import './js/socialMake.js';
-import './js/htmlLoad.js';
 
 //Bootstrap
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
@@ -32,20 +34,24 @@ import 'font-awesome-webpack';
 import '../node_modules/slick-carousel/slick/slick.css';
 import '../node_modules/slick-carousel/slick/slick.js';
 import '../node_modules/slick-carousel/slick/slick-theme.css';
+import { setTimeout } from 'timers';
 
-//jQuery modules
-import 'jquery/src/ajax';
-import 'jquery/src/ajax/xhr';
+//Load HTML into application
+var navTop = require('./HTML/navBarTop.html');
+var land = require('./HTML/landing.html');
 
-$.ajax({
-    url: './js/testJQLoad.html',
-    cache: false,
-    complete: function(jqXHR, textStatus) {
-        console.log(textStatus);
-        console.log(jqXHR);
-    }
-});
+//Insert landing page HTML
+$('body').addClass('container-fluid');
+$('body').append(navTop);
+$('body').append(land);
 
 
+
+//Finish Window loading
+window.onload = () => {
+    setTimeout(() => {
+        $('.se-pre-con').fadeOut();
+    }, 500);
+};
 
 console.log('Index.loaded');

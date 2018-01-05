@@ -1,6 +1,8 @@
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
@@ -28,7 +30,18 @@ module.exports = {
                     loader: "sass-loader" // compiles Sass to CSS
                 }]
             },
-            { test: /\.(png|svg|jpg|gif)$/, use: ['file-loader'] }
+            { test: /\.(png|svg|jpg|gif)$/, use: ['file-loader'] },
+            {
+                test: /\.html$/,
+                use: [{
+                    loader: 'html-loader',
+                    options: {
+                        minimize: true,
+                        removeComments: true,
+                        collapseWhitespace: true
+                    }
+                }],
+            }
         ]
 
     },
@@ -40,8 +53,11 @@ module.exports = {
             Popper: ['popper.js', 'default']
         }),
 
+        new HTMLWebpackPlugin({
+            title: 'New Site',
+            meta: 'charset="UTF-8"'
+        }),
+
+        new CleanWebpackPlugin(['dist'])
     ],
-    node: {
-        fs: 'empty'
-    }
 };
