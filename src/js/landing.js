@@ -9,9 +9,9 @@ let correctDimension = function(vph, vpw) {
     //console.log(agent, 'VPH:', vph, 'VPW:', vpw);
     //console.log($('body'));
     $(document).ready(() => {
-        var navH = 0;
-        var navM = 0;
-        var newHeight = 0;
+        //var navH = 0;
+        //var navM = 0;
+        //var newHeight = 0;
         $('body').css('background-Size', vph + 'px auto');
         if (vpw <= 320) {
 
@@ -33,10 +33,10 @@ let correctDimension = function(vph, vpw) {
             navH = ($('#navTop').height());
             navM = parseInt($('#navTop').css('margin-top'), 10);
 
-            console.log('vph', vph);
-            console.log('navH', navH);
-            console.log('navM', navM);
-            console.log('newHeight', newHeight);
+            //console.log('vph', vph);
+            //console.log('navH', navH);
+            //console.log('navM', navM);
+            //console.log('newHeight', newHeight);
 
             newHeight = vph - navH - navM;
             $('#P_0').css('height', newHeight);
@@ -50,17 +50,17 @@ var agentCheck = window.navigator.userAgent; //Get window data to determine brow
 //Determine browser by looking at the DOM
 if (agentCheck.indexOf('Chrome') > 0) {
     agent = 'Chrome';
-    window.vph = window.innerHeight;
-    window.vpw = window.innerWidth;
+    window.vph = window.top.innerHeight;
+    window.vpw = window.top.innerWidth;
 } else if (agentCheck.indexOf('Firefox') > 0) {
     agent = 'Firefox';
-    window.vph = window.innerHeight;
-    window.vpw = window.innerWidth;
+    window.vph = window.top.innerHeight;
+    window.vpw = window.top.innerWidth;
     //window.scrollbars = false;
 } else if (agentCheck.indexOf('Safari') > 0) {
     agent = 'Safari';
-    window.vph = window.innerHeight;
-    window.vpw = window.innerWidth;
+    window.vph = window.top.innerHeight;
+    window.vpw = window.top.innerWidth;
 }
 
 correctDimension(window.vph, window.vpw);
