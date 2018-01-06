@@ -4,7 +4,7 @@ console.log('loading Started')
     //  console.log("SCREEN LOADED")
     //$(".se-pre-con").fadeOut("slow");
     //});
-window.correctDimension = function(vph, vpw) {
+let correctDimension = function(vph, vpw) {
     //Correction of image viewhight   
     console.log(agent, 'VPH:', vph, 'VPW:', vpw);
     //console.log($('body'));
@@ -15,7 +15,7 @@ window.correctDimension = function(vph, vpw) {
 
         var newHeight;
         $('body').css('background-Size', vph + 'px auto');
-        if (vpw <= 414) {
+        if (window.vpw <= 414) {
 
             subract = $('#navTop').height();
             newHeight = 690 - subract;
@@ -24,9 +24,9 @@ window.correctDimension = function(vph, vpw) {
             $('.lpCarousel').hide();
             $('.c1.carousel-inner').css('border-radius', '24px');
 
-            newHeight = $('.addsRail').height() + 20;
+            newHeight = $('.addsRail').height() + 5;
 
-            $('#addsRailID').css("height", "88%");
+            $('#addsRailID').css("height", "85%");
             $('.addContainer').css('height', newHeight);
             $('.addFade').css('height', newHeight);
             $('.add').css('height', newHeight);
@@ -40,8 +40,8 @@ window.correctDimension = function(vph, vpw) {
 
             $('.makes').css('width', '100%');
 
-
         } else {
+
             $('body').css("height", vph);
 
             var navH = ($('#navTop').height());
@@ -76,10 +76,10 @@ if (agentCheck.indexOf('Chrome') > 0) {
     window.vpw = window.top.innerWidth;
 }
 
-window.correctDimension(window.vph, window.vpw);
+correctDimension(window.vph, window.vpw);
 
 $(document).ready(() => {
-    $(window).resize(() => { window.correctDimension(window.vph, window.vpw); });
+    $(window).resize(() => { correctDimension(window.vph, window.vpw); });
 });
 
 console.log('landing.loaded');

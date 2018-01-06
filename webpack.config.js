@@ -1,15 +1,12 @@
 const path = require('path');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
-    output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist')
-    },
+
     devtool: 'inline-source-map',
     devServer: {
         contentBase: './dist'
@@ -60,4 +57,8 @@ module.exports = {
 
         new CleanWebpackPlugin(['dist'])
     ],
+    output: {
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'dist')
+    },
 };

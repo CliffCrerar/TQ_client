@@ -56,21 +56,20 @@ $(document).ready(() => {
     $('.add6_3').html('<img class="addImg" src="' + add63 + '">');
 
     //Add rail options
-    /*
-        $('.addFade').slick({
-            arrows: false,
-            autoplay: true,
-            infinite: true,
-            speed: 500,
-            fade: true,
-            cssEase: 'linear',
-            //adaptiveHeight: true
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
+    $('.addFade').slick({
+        arrows: false,
+        autoplay: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        //adaptiveHeight: true
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
 
-        });
-    */
+    });
+
 });
 
 console.log('adds.loaded');
