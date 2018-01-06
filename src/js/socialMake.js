@@ -17,16 +17,17 @@ $(document).ready(() => {
     $('.makes').append('<img class="navBadge" src="' + yamahaBadge + '">');
     $('.makes').append('<img class="navBadge" src="' + triumphBadge + '">');
     $('.makes').append('<img class="navBadge" src="' + twinAfricaBadge + '">');
-
+    /*
     if (vpw <= 414) {
         var nblen = $('.makes').children().length;
         console.log(nblen);
         var wid = $('.navBottom').width() / nblen;
         $('.makes').addClass('d-flex').addClass('justify-content-center');
-
         $('.navBadge').height(navBottomHeight - 5);
     } else {
         $('.navBadge').height(navBottomHeight);
     }
+    */
+    correctDimension(window.vph, window.vpw);
 
 });

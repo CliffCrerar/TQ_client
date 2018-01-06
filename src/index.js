@@ -37,12 +37,14 @@ import '../node_modules/slick-carousel/slick/slick-theme.css';
 import { setTimeout } from 'timers';
 
 //Load HTML into application
-var navTop = require('./HTML/navBarTop.html');
+var navTopD = require('./HTML/navBarTopD.html');
 var land = require('./HTML/landing.html');
 
 //Insert landing page HTML
 
-$('body').append(navTop);
+$('body').append(navTopD);
+
+
 $('body').append(land);
 
 

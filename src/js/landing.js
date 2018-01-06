@@ -12,6 +12,7 @@ let correctDimension = function(vph, vpw) {
         //var navH = 0;
         //var navM = 0;
         //var newHeight = 0;
+        var navBottomHeight = $('#navBottom').height();
         var newHeight;
         $('body').css('background-Size', vph + 'px auto');
         if (vpw <= 414) {
@@ -37,8 +38,15 @@ let correctDimension = function(vph, vpw) {
 
             $('.social').remove();
 
-
             $('.makes').css('width', '100%');
+
+
+            var nblen = $('.makes').children().length;
+            console.log(nblen);
+            var wid = $('.navBottom').width() / nblen;
+            $('.makes').addClass('d-flex').addClass('justify-content-center');
+            $('.navBadge').height(navBottomHeight - 5);
+
 
         } else {
             $('body').css("height", vph);
@@ -51,6 +59,9 @@ let correctDimension = function(vph, vpw) {
 
             var addHeight = $('.addsRail').height();
             $('.add').css('height', addHeight);
+
+
+            $('.navBadge').height(navBottomHeight);
         }
     });
 };
