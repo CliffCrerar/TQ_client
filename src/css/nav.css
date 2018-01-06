@@ -28,29 +28,6 @@
     border-radius: 24px;
 }
 
-.logoOuter {
-    padding: auto 0px auto 0px;
-    background-color: red;
-    border: solid 2px black;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-.logoInner {
-    position: relative;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    margin: 0px;
-    color: white;
-}
-
-.brandName {
-    display: inline-block;
-    margin: 0px;
-}
-
 .nav>.form-inline>.form-control {
     border: 0px;
     border-top-left-radius: 0px;
@@ -61,4 +38,21 @@
     border: 0px;
     border-top-right-radius: 24px;
     border-bottom-right-radius: 24px;
+}
+
+.dropdown-item {
+    color: white !important;
+    font-family: Play;
+    font-size: 25px;
+}
+
+navbarSupportedContent {
+    color: white;
+}
+
+.dropdown>.dropdown-item:hover {
+    background-color: #F10032;
+    color: white;
+    font-weight: bold;
+    border-radius: 24px !important;
 }

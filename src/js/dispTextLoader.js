@@ -17,9 +17,18 @@ var add6Title = 'Roof racks';
 $(document).ready(() => {
     // 1.load navbar text
     $('.navbar-brand').html(navBarBrand);
-    $('.nav-link').each((i, el) => {
-        $(el).html(navlinkNames[i]);
-    });
+
+    if (window.vpw <= 414) {
+        $('a.dropdown-item').each((i, el) => {
+            $(el).html(navlinkNames[i]);
+        });
+    } else {
+        $('.nav-link').each((i, el) => {
+            $(el).html(navlinkNames[i]);
+        });
+    }
+
+
     $('#moto').html(carMoto);
 
     //2. Assigned the variables

@@ -3,14 +3,17 @@ $(document).ready(() => {
     console.log('nav.loaded');
     $('#navTop').on('click', (ev) => {
         var brandName = $(ev.target).hasClass('navbar-brand');
+        if (window.vpw <= 414) {
+            navBarOperationM(ev);
+        }
         if (!brandName) {
-            navBarOperation(ev.currentTarget, ev.target);
+            navBarOperationD(ev.currentTarget, ev.target);
         }
     });
 
-    let navBarOperation = (container, targetEl) => {
+    let navBarOperationD = (container, targetEl) => {
         if (!($(targetEl).hasClass('active'))) {
-            $(container).children().each((i, el) => {
+            $(container).children('a').each((i, el) => {
                 if ($(el).hasClass('active')) {
                     var pageOut = $('#P_' + el.id.split('_')[1]);
                     pageOut.fadeOut();
@@ -23,4 +26,11 @@ $(document).ready(() => {
             pageIn.fadeIn();
         }
     };
+    let navBarOperationM = ((ev) => {
+        console.log(ev.target.id);
+
+        if ($(ev.target).hasClass('dropdown-item') && (ev.target.id != 'srchM')) {
+            console.log('true');
+        }
+    });
 });

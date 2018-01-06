@@ -43,7 +43,7 @@ var land = require('./HTML/landing.html');
 
 
 if (window.vpw <= 414) {
-    $('body').append(navTopD); //If screen size smaller than 414 then load mobile top nav
+    $('body').append(navTopM); //If screen size smaller than 414 then load mobile top nav
 } else {
     $('body').append(navTopD); //else load normal nav html
 }
