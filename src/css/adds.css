@@ -27,13 +27,13 @@
 
 .add {
     background-color: black;
-    width: 100%;
+    width: auto;
     height: 100%;
 }
 
 .addImg {
-    height: 100%;
-    width: auto;
+    height: 100% !important;
+    width: auto !important;
     position: relative;
     left: 50%;
     transform: translateX(-50%);

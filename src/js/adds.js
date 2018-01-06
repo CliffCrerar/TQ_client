@@ -55,20 +55,8 @@ $(document).ready(() => {
     $('.add6_2').html('<img class="addImg" src="' + add62 + '">');
     $('.add6_3').html('<img class="addImg" src="' + add63 + '">');
 
-    //Adjust image height
-    var addHeight;
-    if (window.vpw <= 320) {
-        addHeight = 160;
-        console.log(addHeight)
-        $('.addFade').css('height', addHeight);
-        $('.add>img').css('height', addHeight);
-        $('.add').css('width', 'auto');
-    } else {
-        addHeight = $('.addsRail').height();
-        $('.add').css('height', addHeight);
-    }
-
     //Add rail options
+
     $('.addFade').slick({
         arrows: false,
         autoplay: true,
@@ -76,6 +64,7 @@ $(document).ready(() => {
         speed: 500,
         fade: true,
         cssEase: 'linear',
+        //adaptiveHeight: true
         // You can unslick at a given breakpoint now by adding:
         // settings: "unslick"
         // instead of a settings object

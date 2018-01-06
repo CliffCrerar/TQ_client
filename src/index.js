@@ -41,7 +41,7 @@ var navTop = require('./HTML/navBarTop.html');
 var land = require('./HTML/landing.html');
 
 //Insert landing page HTML
-$('body').addClass('container-fluid');
+
 $('body').append(navTop);
 $('body').append(land);
 

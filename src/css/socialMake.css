@@ -18,8 +18,8 @@
     width: 50%;
 }
 
-.makes>.navBadge {
-    height: 100%;
+.navBadge {
+    height: 80%;
     margin-right: 2%;
     display: inline-flex;
 }
