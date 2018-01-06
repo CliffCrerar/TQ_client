@@ -40,18 +40,27 @@
     border-bottom-right-radius: 24px;
 }
 
-.dropdown-item {
+.dropdown {
     color: white !important;
     font-family: Play;
     font-size: 25px;
+    width: 100%;
+    text-align: center;
 }
 
 navbarSupportedContent {
     color: white;
 }
 
-.dropdown>.dropdown-item:hover {
+.nav-item.dropdown:hover {
     background-color: #F10032;
+    color: white;
+    font-weight: bold;
+    border-radius: 24px !important;
+}
+
+.nav-item.dropdown.active {
+    background-color: blue !important;
     color: white;
     font-weight: bold;
     border-radius: 24px !important;

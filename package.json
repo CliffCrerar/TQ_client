@@ -5,7 +5,7 @@
     "main": "src/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "watch": "webpack --config webpack.config.js --display-modules --watch",
+        "watch": "webpack --watch",
         "build": "webpack --config webpack.config.js --display-modules",
         "builda": "npx webpack --config webpack.config.js --display-modules",
         "start": "webpack-dev-server --open"
@@ -44,7 +44,6 @@
         "css-loader": "^0.28.8",
         "eslint": "^4.14.0",
         "file-loader": "^1.1.6",
-        "grunt": "^1.0.1",
         "html-webpack-plugin": "^2.30.1",
         "image-webpack-loader": "^3.4.2",
         "jshint": "^2.9.5",

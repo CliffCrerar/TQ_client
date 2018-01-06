@@ -3,11 +3,13 @@ $(document).ready(() => {
     console.log('nav.loaded');
     $('#navTop').on('click', (ev) => {
         var brandName = $(ev.target).hasClass('navbar-brand');
-        if (window.vpw <= 414) {
-            navBarOperationM(ev);
-        }
-        if (!brandName) {
+        console.log(brandName);
+        if (window.vpw <= 414 && !brandName) {
+            navBarOperationM(ev.currentTarget, ev.target);
+            console.log('mobileNav');
+        } else if (!brandName) {
             navBarOperationD(ev.currentTarget, ev.target);
+            console.log('NotMobile');
         }
     });
 
@@ -26,11 +28,29 @@ $(document).ready(() => {
             pageIn.fadeIn();
         }
     };
-    let navBarOperationM = ((ev) => {
-        console.log(ev.target.id);
+    let navBarOperationM = ((container, targetEl) => {
+        console.log('Check 4');
 
-        if ($(ev.target).hasClass('dropdown-item') && (ev.target.id != 'srchM')) {
-            console.log('true');
+        //console.log(container);
+        //console.log(targetEl);
+
+        //console.log($('li.nav-item.dropdown'));
+
+        if ($(targetEl).is('li')) {
+            $('li.nav-item.dropdown').each((i, el) => {
+                console.log(el);
+                console.log(i);
+                if (el.id !== 'navSearch') {
+                    $(el).removeClass('active');
+                }
+
+            });
+            if (targetEl.id !== 'navSearch') {
+                $(targetEl).addClass('active');
+            }
         }
+
     });
+
+
 });

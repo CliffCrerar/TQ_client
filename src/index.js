@@ -37,9 +37,9 @@ import '../node_modules/slick-carousel/slick/slick-theme.css';
 import { setTimeout } from 'timers';
 
 //Load HTML into application
-var navTopD = require('./HTML/navBarTopD.html');
-var navTopM = require('./HTML/navBarTopM.html');
-var land = require('./HTML/landing.html');
+import navTopD from './HTML/navBarTopD.html';
+import navTopM from './HTML/navBarTopM.html';
+import land from './HTML/landing.html';
 
 
 if (window.vpw <= 414) {

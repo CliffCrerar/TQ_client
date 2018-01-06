@@ -2,7 +2,7 @@
 
 // 1.define display text for navbar
 var navBarBrand = 'TQ Bike & 4x4 Accessories';
-var navlinkNames = ['Main', 'Parts Catalogue', 'Contact'];
+var navlinkNames = ['Main', 'Parts Catalogue', 'Contact', 'Search'];
 var carMoto = 'Top Quality offroad parts for the global market';
 
 //2. Variables for adds
@@ -19,7 +19,7 @@ $(document).ready(() => {
     $('.navbar-brand').html(navBarBrand);
 
     if (window.vpw <= 414) {
-        $('a.dropdown-item').each((i, el) => {
+        $('.nav-item.dropdown').each((i, el) => {
             $(el).html(navlinkNames[i]);
         });
     } else {
