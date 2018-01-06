@@ -50,6 +50,7 @@
     color: white;
     font-family: Orbitron;
     font-size: calc(20px + 0.5vh);
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     position: absolute;
     width: 100%;
     text-align: center;
