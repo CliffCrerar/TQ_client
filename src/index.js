@@ -38,11 +38,17 @@ import { setTimeout } from 'timers';
 
 //Load HTML into application
 var navTopD = require('./HTML/navBarTopD.html');
+var navTopM = require('./HTML/navBarTopM.html');
 var land = require('./HTML/landing.html');
 
 //Insert landing page HTML
-
 $('body').append(navTopD);
+
+if (window.vpw <= 414) {
+    //If screen size smaller than 414 then load mobile top nav
+} else {
+    $('body').append(navTopD); //else load normal nav html
+}
 
 
 $('body').append(land);

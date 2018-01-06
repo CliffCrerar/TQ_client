@@ -4,7 +4,7 @@ console.log('loading Started')
     //  console.log("SCREEN LOADED")
     //$(".se-pre-con").fadeOut("slow");
     //});
-let correctDimension = function(vph, vpw) {
+window.correctDimension = function(vph, vpw) {
     //Correction of image viewhight   
     console.log(agent, 'VPH:', vph, 'VPW:', vpw);
     //console.log($('body'));
@@ -12,7 +12,7 @@ let correctDimension = function(vph, vpw) {
         //var navH = 0;
         //var navM = 0;
         //var newHeight = 0;
-        var navBottomHeight = $('#navBottom').height();
+
         var newHeight;
         $('body').css('background-Size', vph + 'px auto');
         if (vpw <= 414) {
@@ -28,7 +28,7 @@ let correctDimension = function(vph, vpw) {
 
             $('#addsRailID').css("height", "88%");
             $('.addContainer').css('height', newHeight);
-            //$('.addFade').css('height', newHeight);
+            $('.addFade').css('height', newHeight);
             $('.add').css('height', newHeight);
             $('.addImg').css('height', newHeight);
 
@@ -39,13 +39,6 @@ let correctDimension = function(vph, vpw) {
             $('.social').remove();
 
             $('.makes').css('width', '100%');
-
-
-            var nblen = $('.makes').children().length;
-            console.log(nblen);
-            var wid = $('.navBottom').width() / nblen;
-            $('.makes').addClass('d-flex').addClass('justify-content-center');
-            $('.navBadge').height(navBottomHeight - 5);
 
 
         } else {
@@ -60,8 +53,6 @@ let correctDimension = function(vph, vpw) {
             var addHeight = $('.addsRail').height();
             $('.add').css('height', addHeight);
 
-
-            $('.navBadge').height(navBottomHeight);
         }
     });
 };
@@ -85,10 +76,10 @@ if (agentCheck.indexOf('Chrome') > 0) {
     window.vpw = window.top.innerWidth;
 }
 
-correctDimension(window.vph, window.vpw);
+window.correctDimension(window.vph, window.vpw);
 
 $(document).ready(() => {
-    $(window).resize(() => { correctDimension(window.vph, window.vpw); });
+    $(window).resize(() => { window.correctDimension(window.vph, window.vpw); });
 });
 
 console.log('landing.loaded');

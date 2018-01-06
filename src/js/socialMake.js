@@ -17,8 +17,8 @@ $(document).ready(() => {
     $('.makes').append('<img class="navBadge" src="' + yamahaBadge + '">');
     $('.makes').append('<img class="navBadge" src="' + triumphBadge + '">');
     $('.makes').append('<img class="navBadge" src="' + twinAfricaBadge + '">');
-    /*
-    if (vpw <= 414) {
+
+    if (window.vpw <= 414) {
         var nblen = $('.makes').children().length;
         console.log(nblen);
         var wid = $('.navBottom').width() / nblen;
@@ -27,7 +27,5 @@ $(document).ready(() => {
     } else {
         $('.navBadge').height(navBottomHeight);
     }
-    */
-    correctDimension(window.vph, window.vpw);
 
 });
