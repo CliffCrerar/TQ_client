@@ -20,7 +20,12 @@ $(document).ready(() => {
 
     if (window.vpw <= 414) {
         $('.nav-item.dropdown').each((i, el) => {
-            $(el).html(navlinkNames[i]);
+            if (navlinkNames[i] == 'Search') {
+                console.log($('#searchInput'));
+                $('#searchInput').attr('placeholder', navlinkNames[i]);
+            } else {
+                $(el).html(navlinkNames[i]);
+            }
         });
     } else {
         $('.nav-link').each((i, el) => {

@@ -29,28 +29,30 @@ $(document).ready(() => {
         }
     };
     let navBarOperationM = ((container, targetEl) => {
-        console.log('Check 4');
+        console.log('Check 5');
 
         //console.log(container);
         //console.log(targetEl);
-
         //console.log($('li.nav-item.dropdown'));
 
         if ($(targetEl).is('li')) {
             $('li.nav-item.dropdown').each((i, el) => {
-                console.log(el);
-                console.log(i);
+                //console.log(el);
+                //console.log(i);
                 if (el.id !== 'navSearch') {
                     $(el).removeClass('active');
                 }
+                //console.log(el)
+                var pageOut = $('#P_' + el.id.split('_')[1]);
+                pageOut.fadeOut();
 
             });
             if (targetEl.id !== 'navSearch') {
                 $(targetEl).addClass('active');
             }
         }
-
+        console.log(targetEl.id.split('_')[1]);
+        var pageIn = $('#P_' + targetEl.id.split('_')[1]);
+        pageIn.fadeIn();
     });
-
-
 });
