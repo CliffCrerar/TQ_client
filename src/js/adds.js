@@ -2,34 +2,27 @@
 import add11 from '../image/add1.1.jpg';
 import add12 from '../image/add1.2.jpg';
 import add13 from '../image/add1.3.jpg';
-
 //Add2 panniers
 import add21 from '../image/add2.1.jpg';
 import add22 from '../image/add2.2.jpg';
 import add23 from '../image/add2.3.jpg';
-
 //Add3 brackets
 import add31 from '../image/add3.1.jpg';
 import add32 from '../image/add3.2.jpg';
 import add33 from '../image/add3.3.jpg';
-
 //Add4 bash plates
 import add41 from '../image/add4.1.jpg';
 import add42 from '../image/add4.2.jpg';
 import add43 from '../image/add4.3.jpg';
-
 //Add5 Top box pannier combos
 import add51 from '../image/add5.1.jpg';
 import add52 from '../image/add5.2.jpg';
 import add53 from '../image/add5.3.jpg';
-
 //Add6
 import add61 from '../image/add6.1.jpg';
 import add62 from '../image/add6.2.jpg';
 import add63 from '../image/add6.3.jpg';
-
 $(document).ready(() => {
-
     //Include add 1 in html
     $('.add1_1').html('<img class="addImg" src="' + add11 + '">');
     $('.add1_2').html('<img class="addImg" src="' + add12 + '">');
@@ -54,7 +47,6 @@ $(document).ready(() => {
     $('.add6_1').html('<img class="addImg" src="' + add61 + '">');
     $('.add6_2').html('<img class="addImg" src="' + add62 + '">');
     $('.add6_3').html('<img class="addImg" src="' + add63 + '">');
-
     //Add rail options
     $('.addFade').slick({
         arrows: false,
@@ -67,9 +59,6 @@ $(document).ready(() => {
         // You can unslick at a given breakpoint now by adding:
         // settings: "unslick"
         // instead of a settings object
-
     });
-
 });
-
 console.log('adds.loaded');
