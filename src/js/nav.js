@@ -10,9 +10,9 @@ $(document).ready(() => {
             navBarOperationD(ev.currentTarget, ev.target);
             console.log('NotMobile');
         }
+        if (ev.target.id == 'N_1') {}
     });
-
-    var navBarOperationD = (container, targetEl) => {
+    const navBarOperationD = (container, targetEl) => {
         if (!($(targetEl).hasClass('active'))) {
             $(container).children('a').each((i, el) => {
                 if ($(el).hasClass('active')) {
@@ -27,7 +27,7 @@ $(document).ready(() => {
             pageIn.fadeIn();
         }
     };
-    var navBarOperationM = ((container, targetEl) => {
+    const navBarOperationM = (container, targetEl) => {
         if ($(targetEl).is('li')) {
             $('li.nav-item.dropdown').each((i, el) => {
                 if (el.id !== 'navSearch') {
@@ -43,5 +43,5 @@ $(document).ready(() => {
                 pageIn.fadeIn();
             }
         }
-    });
+    };
 });

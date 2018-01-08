@@ -1,12 +1,3 @@
-//Import badges
-import bmwBadge from '../image/badge/bmw.png';
-import landRoverBadge from '../image/badge/landrover.png';
-import ktmBadge from '../image/badge/ktm.png';
-import hondaBadge from '../image/badge/honda.png';
-import yamahaBadge from '../image/badge/yamaha.png';
-import triumphBadge from '../image/badge/triumph1.jpg';
-import twinAfricaBadge from '../image/badge/africatwin1.png';
-
 $(document).ready(() => {
     var navBottomHeight = $('#navBottom').height();
     $('.makes').append('<img class="navBadge" src="' + bmwBadge + '">');

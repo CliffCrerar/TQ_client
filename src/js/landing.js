@@ -19,7 +19,7 @@ let correctDimension = function(vph, vpw) {
             $('.add').css('height', newHeight);
             $('.addImg').css('height', newHeight);
             $('.navbar-brand').css('width', '100%').addClass('text-center');
-            var social = $('.social').clone();
+
             $('.social').remove();
             $('.makes').css('width', '100%');
         } else {
