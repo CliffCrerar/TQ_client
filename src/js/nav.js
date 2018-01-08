@@ -31,8 +31,8 @@ $(document).ready(() => {
     var navBarOperationM = ((container, targetEl) => {
         if ($(targetEl).is('li')) {
             $('li.nav-item.dropdown').each((i, el) => {
-                console.log(el);
-                console.log(i);
+                //console.log(el);
+                //console.log(i);
                 if (el.id !== 'navSearch') {
                     $(el).removeClass('active');
                 }
