@@ -18,7 +18,6 @@ import './css/bg.css';
 //Custom JS
 import './js/landing.js';
 import './js/nav.js';
-import './js/dispTextLoader.js';
 import './js/carousel.js';
 import './js/adds.js';
 import './js/socialMake.js';

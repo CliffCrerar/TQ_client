@@ -61,7 +61,7 @@ navbarSupportedContent {
 
 .nav-item.dropdown.active {
     background-color: blue !important;
+    border-radius: 24px !important;
     color: white;
     font-weight: bold;
-    border-radius: 24px !important;
 }

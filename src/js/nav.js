@@ -13,7 +13,7 @@ $(document).ready(() => {
         }
     });
 
-    let navBarOperationD = (container, targetEl) => {
+    var navBarOperationD = (container, targetEl) => {
         if (!($(targetEl).hasClass('active'))) {
             $(container).children('a').each((i, el) => {
                 if ($(el).hasClass('active')) {
@@ -28,14 +28,7 @@ $(document).ready(() => {
             pageIn.fadeIn();
         }
     };
-    let navBarOperationM = ((container, targetEl) => {
-        console.log('Check 4');
-
-        //console.log(container);
-        //console.log(targetEl);
-
-        //console.log($('li.nav-item.dropdown'));
-
+    var navBarOperationM = ((container, targetEl) => {
         if ($(targetEl).is('li')) {
             $('li.nav-item.dropdown').each((i, el) => {
                 console.log(el);
@@ -43,14 +36,10 @@ $(document).ready(() => {
                 if (el.id !== 'navSearch') {
                     $(el).removeClass('active');
                 }
-
             });
             if (targetEl.id !== 'navSearch') {
                 $(targetEl).addClass('active');
             }
         }
-
     });
-
-
 });

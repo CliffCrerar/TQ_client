@@ -1,9 +1,5 @@
 //function that corrects dimensions for elements to fit accordingly
 console.log('loading Started')
-    //getElementByName(window).onLoad(function() {
-    //  console.log("SCREEN LOADED")
-    //$(".se-pre-con").fadeOut("slow");
-    //});
 let correctDimension = function(vph, vpw) {
     //Correction of image viewhight   
     console.log(agent, 'VPH:', vph, 'VPW:', vpw);
@@ -58,22 +54,23 @@ let correctDimension = function(vph, vpw) {
 };
 
 var agentCheck = window.navigator.userAgent; //Get window data to determine browser
+var agent;
 //Define viewport for browser compatibility
 
 //Determine browser by looking at the DOM
 if (agentCheck.indexOf('Chrome') > 0) {
     agent = 'Chrome';
-    window.vph = window.top.innerHeight;
-    window.vpw = window.top.innerWidth;
+    window.vph = window.innerHeight;
+    window.vpw = window.innerWidth;
 } else if (agentCheck.indexOf('Firefox') > 0) {
     agent = 'Firefox';
-    window.vph = window.top.innerHeight;
-    window.vpw = window.top.innerWidth;
+    window.vph = window.innerHeight;
+    window.vpw = window.innerWidth;
     //window.scrollbars = false;
 } else if (agentCheck.indexOf('Safari') > 0) {
     agent = 'Safari';
-    window.vph = window.top.innerHeight;
-    window.vpw = window.top.innerWidth;
+    window.vph = window.innerHeight;
+    window.vpw = window.innerWidth;
 }
 
 correctDimension(window.vph, window.vpw);
