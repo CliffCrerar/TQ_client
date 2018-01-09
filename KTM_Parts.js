@@ -117,10 +117,10 @@ var KTM_Parts = [
     {  
         partNum: 'A08200',
         partName: 'Bash Plate',
-        partDesc: 'Made off aliminuim. Protects the engine casing from lose protectiles and road hazards must have for off roading',
+        partDesc: 'Made off aliminium. Protects the engine casing from lose protectiles and road hazards must have for off roading',
         models: ['KTM960','KTM 990'],
         imgLink: 'http://tinyurl.com/ybdwkblj',
-        colors: 'Naturel Anodized',
+        colors: 'Naturel Anodized',s
         grnt: '1 year',
         instTime: 60,
         price: 2395,
