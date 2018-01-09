@@ -1,5 +1,5 @@
 //function that corrects dimensions for elements to fit accordingly
-console.log('loading Started');
+
 let correctDimension = function(vph, vpw) {
     //Correction of image viewhight   
     console.log(agent, 'VPH:', vph, 'VPW:', vpw);
@@ -60,4 +60,4 @@ $(document).ready(() => {
     $(window).resize(() => { correctDimension(window.vph, window.vpw); });
 });
 
-console.log('landing.loaded');
+console.log('01_start.loaded');

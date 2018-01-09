@@ -57,8 +57,3 @@ $(document).ready(() => {
     console.log('carousel.loaded');
 
 });
-/*
-$(window).ondload(function() {
-    $('.se-pre-con').fadeOut('slow');
-})
-*/
