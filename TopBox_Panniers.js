@@ -245,7 +245,7 @@ var TopBoxPannier = [
     {  
         partNum: 'A11140',
         partName: 'Top Box Bracket Adventure',
-        partDesc: 'Manufactured from aliminuim, secures the top even off roading',
+        partDesc: 'Manufactured from aliminium, secures the top even off roading',
         models: ['KTM 950','KTM 990',''],
         imgLink: 'http://tinyurl.com/y7w5o2yo',
         colors: 'Silver',
