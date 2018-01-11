@@ -4,6 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const $ = require('jquery');
+const template = require('handlebars');
 
 module.exports = {
     entry: './src/index.js',
@@ -39,7 +40,8 @@ module.exports = {
                         collapseWhitespace: true
                     }
                 }],
-            }
+            },
+            { test: /\.handlebars$/, loader: "handlebars-loader" }
         ]
 
     },

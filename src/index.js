@@ -1,61 +1,57 @@
 /* App root file */
 console.log('Loading files');
-
 $('head').append('<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">');
-$('body').append('<div class="se-pre-con"></div>');
-
+//Lodash
 import _ from 'lodash';
+//handleBars
 
 //Load CSS
 import './css/landing.css';
-import './css/nav.css';
+import './css/navT.css';
 import './css/font.css';
 import './css/carousel.css';
 import './css/adds.css';
-import './css/socialMake.css';
+import './css/navB.css';
 import './css/bg.css';
+import './css/catFrontPage.css';
 
 //Custom JS
-import './js/landing.js';
-import './js/nav.js';
+import './js/01_start.js';
+import './js/02_functions.js';
+import './js/03_events.js';
+import './js/04_docReady.js';
 import './js/carousel.js';
 import './js/adds.js';
-import './js/socialMake.js';
-
+import './html/LoadHTML.js';
 //Bootstrap
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import 'bootstrap';
-
 //Font Awesome
 import 'font-awesome-webpack';
-
 //Slick.carousel
 import '../node_modules/slick-carousel/slick/slick.css';
 import '../node_modules/slick-carousel/slick/slick.js';
 import '../node_modules/slick-carousel/slick/slick-theme.css';
 import { setTimeout } from 'timers';
 
-//Load HTML into application
-import navTopD from './HTML/navBarTopD.html';
-import navTopM from './HTML/navBarTopM.html';
-import land from './HTML/landing.html';
-
-
-if (window.vpw <= 414) {
-    $('body').append(navTopM); //If screen size smaller than 414 then load mobile top nav
-} else {
-    $('body').append(navTopD); //else load normal nav html
-}
-
-$('body').append(land);
-
-//Insert landing page HTML
-
-//Finish Window loading
-window.onload = () => {
-    setTimeout(() => {
-        $('.se-pre-con').fadeOut();
-    }, 500);
-};
-
+//Nav bar click
+var n = require('./js/02_functions.js');
+var navOps = new n();
+var html = require('./html/LoadHTML.js');
+var load = new html();
+$('#navTop').on('click', (ev) => {
+    console.log('click');
+    //Navbar click function
+    var brandName = $(ev.target).hasClass('navbar-brand');
+    if (window.vpw <= 414 && !brandName) {
+        navOps.navBarOperationM(ev.currentTarget, ev.target);
+    } else if (!brandName) {
+        navOps.navBarOperationD(ev.currentTarget, ev.target);
+    }
+    if (ev.target.id == 'N_1') {
+        load.catFpBadge();
+    } else {
+        $('#catFP').fadeOut();
+    }
+});
 console.log('Index.loaded');

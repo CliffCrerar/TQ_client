@@ -186,5 +186,10 @@
     },
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "block",
+    "codemetrics.basics.MetricsForMethodDeclarationsToggled": true,
+    "codemetrics.basics.Exclude": [
+        "dist/bundle.js",
+        "node_modules/"
+    ],
 
 }
