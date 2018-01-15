@@ -32,9 +32,7 @@ module.exports = class {
 };
 module.exports = class {
     partsViewShow(event) {
-        console.log(event.target.id);
-        console.log($('body').find('#partsView').length);
-        if (event.target.id == "N_1" && $('body').find('#partsView').length == 0) {
+        if (event.target.id == "N_1" && $('body').find('#P_1').length == 0) {
             $('body').append(partsView);
         }
         //$('body').append(partsView);
