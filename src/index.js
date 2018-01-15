@@ -14,11 +14,12 @@ import './css/adds.css';
 import './css/navB.css';
 import './css/bg.css';
 import './css/catFrontPage.css';
+import './css/partsView.css';
 
 //Custom JS
 import './js/01_start.js';
 import './js/02_functions.js';
-import './js/03_events.js';
+//import './js/03_events.js';
 import './js/04_docReady.js';
 import './js/carousel.js';
 import './js/adds.js';
@@ -39,6 +40,8 @@ var n = require('./js/02_functions.js');
 var navOps = new n();
 var html = require('./html/LoadHTML.js');
 var load = new html();
+
+/* Events */
 $('#navTop').on('click', (ev) => {
     console.log('click');
     //Navbar click function
@@ -48,10 +51,14 @@ $('#navTop').on('click', (ev) => {
     } else if (!brandName) {
         navOps.navBarOperationD(ev.currentTarget, ev.target);
     }
+
+    load.partsViewShow();
+    /* Load catFrontPage
     if (ev.target.id == 'N_1') {
         load.catFpBadge();
     } else {
         $('#catFP').fadeOut();
     }
+    */
 });
 console.log('Index.loaded');

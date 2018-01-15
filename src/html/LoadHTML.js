@@ -3,6 +3,7 @@ const navTopD = require('./navBarTopD.html');
 const navTopM = require('./navBarTopM.html');
 const land = require('./landing.html');
 const catFrontPage = require('./catFrontPage.html');
+const partsView = require('./partsView.html');
 
 $('body').append('<div class="se-pre-con"></div>');
 //Insert landing page HTML
@@ -15,10 +16,10 @@ if (window.vpw <= 414) {
 $('body').append(land);
 
 //event html load
-module.exports = class html {
+module.exports = class {
     //Load category front page
     catFpBadge() {
-        if (!$.contains(document.body, document.body.children.catFP)) {;
+        if (!$.contains(document.body, document.body.children.catFP)) {
             $('body').append(catFrontPage).fadeIn();
             $.each(badge, (name, link) => {
                 $('.imgCatFp[alt="' + name + '"]').attr('src', link);
@@ -28,8 +29,14 @@ module.exports = class html {
             $('#catFP').fadeIn();
         }
     }
-};
 
+};
+module.exports = class {
+    partsViewShow() {
+        $('body').append(partsView);
+    }
+
+};
 //Finish Window loading
 window.onload = () => {
     setTimeout(() => {

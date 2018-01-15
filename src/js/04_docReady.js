@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    //Import events
 
     //Load badge sources into images from badge object
     var badge = require('./badges.js');
@@ -14,5 +15,8 @@ $(document).ready(function() {
     } else {
         $('.navBadge').height(navBottomHeight);
     }
+
+
+
 });
 console.log('04_docReady.load');

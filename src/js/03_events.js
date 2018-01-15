@@ -1,1 +1,0 @@
-console.log('03_events.loaded');
