@@ -33,6 +33,9 @@ import '../node_modules/slick-carousel/slick/slick.css';
 import '../node_modules/slick-carousel/slick/slick.js';
 import '../node_modules/slick-carousel/slick/slick-theme.css';
 import { setTimeout } from 'timers';
+//PartData
+import BMW from './data/BMW_Parts.json';
+console.log(BMW);
 
 //Nav bar click
 var n = require('./js/02_functions.js');
@@ -52,8 +55,6 @@ $('#navTop').on('click', (ev) => {
     }
 
     load.partsViewShow(ev);
-
-
     /* Load catFrontPage
     if (ev.target.id == 'N_1') {
         load.catFpBadge();

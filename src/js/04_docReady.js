@@ -17,6 +17,5 @@ $(document).ready(function() {
     }
 
 
-
 });
 console.log('04_docReady.load');

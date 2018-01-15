@@ -5,3 +5,8 @@
 .partsViewRow {
     height: 100%
 }
+
+a.list-group-item:hover {
+    background-color: #464A4E !important;
+    color: white !important;
+}
