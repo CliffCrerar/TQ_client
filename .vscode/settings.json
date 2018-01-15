@@ -191,5 +191,11 @@
         "dist/bundle.js",
         "node_modules/"
     ],
+    "gitlens.advanced.caching.enabled": true,
+    "gitlens.gitExplorer.commitFormat": "${message}  •  ${authorAgo}   (${id})",
+    "gitlens.gitExplorer.gravatars": true,
+    "gitlens.gitExplorer.view": "auto",
+    "git.enableSmartCommit": true,
+    "gitblame.statusBarMessageNoCommit": "Not Committed Yet",
 
 }

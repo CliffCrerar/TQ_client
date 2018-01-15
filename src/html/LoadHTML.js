@@ -24,7 +24,6 @@ module.exports = class {
             $.each(badge, (name, link) => {
                 $('.imgCatFp[alt="' + name + '"]').attr('src', link);
             });
-
         } else {
             $('#catFP').fadeIn();
         }
@@ -32,8 +31,13 @@ module.exports = class {
 
 };
 module.exports = class {
-    partsViewShow() {
-        $('body').append(partsView);
+    partsViewShow(event) {
+        console.log(event.target.id);
+        console.log($('body').find('#partsView').length);
+        if (event.target.id == "N_1" && $('body').find('#partsView').length == 0) {
+            $('body').append(partsView);
+        }
+        //$('body').append(partsView);
     }
 
 };

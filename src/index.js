@@ -15,7 +15,6 @@ import './css/navB.css';
 import './css/bg.css';
 import './css/catFrontPage.css';
 import './css/partsView.css';
-
 //Custom JS
 import './js/01_start.js';
 import './js/02_functions.js';
@@ -52,7 +51,9 @@ $('#navTop').on('click', (ev) => {
         navOps.navBarOperationD(ev.currentTarget, ev.target);
     }
 
-    load.partsViewShow();
+    load.partsViewShow(ev);
+
+
     /* Load catFrontPage
     if (ev.target.id == 'N_1') {
         load.catFpBadge();
