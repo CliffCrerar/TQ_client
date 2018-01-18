@@ -48,11 +48,8 @@ http.createServer(function(req, res) {
     res.setHeader('Content-Type', 'text/plain');
     res.write(JSON.stringify(partsData));
     res.end();
-}).listen(PORT, IP, function(err) {
-    if (err) {
-        return console.log('There was a error ' + err);
-    }
-    console.log('--------------------------------------');
-    console.log('# Server running at ' + IP + ':' + PORT);
-    console.log('--------------------------------------');
-});
+}).listen(PORT, IP);
+
+console.log('--------------------------------------');
+console.log('# Server running at ' + IP + ':' + PORT);
+console.log('--------------------------------------');
