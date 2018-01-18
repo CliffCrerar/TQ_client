@@ -28,7 +28,6 @@ module.exports = class {
             $('#catFP').fadeIn();
         }
     }
-
 };
 module.exports = class {
     partsViewShow(event) {
@@ -37,7 +36,6 @@ module.exports = class {
         }
         //$('body').append(partsView);
     }
-
 };
 //Finish Window loading
 window.onload = () => {
