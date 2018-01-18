@@ -42,10 +42,9 @@ var PORT = 8000;
 
 http.createServer(function(req, res) {
     //var content = req.getHeader();
-    //console.log(req);
     console.log(req);
     res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
+    res.setHeader('Content-Type', 'text/plain; charset=utf-8');
     res.write(JSON.stringify(partsData));
     res.end();
 }).listen(PORT, IP);

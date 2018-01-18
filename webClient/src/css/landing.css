@@ -70,6 +70,12 @@ span.fa {
 
 /* MAIN DISPLAY SECTION */
 
+.lp {
+    position: absolute;
+    height: 90%;
+    width: 100%;
+}
+
 
 /*--------------------------*/
 

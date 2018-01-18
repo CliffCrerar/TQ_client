@@ -4,6 +4,7 @@ const navTopM = require('./navBarTopM.html');
 const land = require('./landing.html');
 const catFrontPage = require('./catFrontPage.html');
 const partsView = require('./partsView.html');
+const contactView = require('./contactView.html');
 
 $('body').append('<div class="se-pre-con"></div>');
 //Insert landing page HTML
@@ -34,7 +35,12 @@ module.exports = class {
         if (event.target.id == "N_1" && $('body').find('#P_1').length == 0) {
             $('body').append(partsView);
         }
-        //$('body').append(partsView);
+    }
+
+    contactViewShow(event) {
+        if (event.target.id == "N_2" && $('body').find('#P_2').length == 0) {
+            $('body').append(contactView);
+        }
     }
 };
 //Finish Window loading
