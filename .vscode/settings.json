@@ -1,0 +1,60 @@
+
+{   
+    "jsDocCompletion.enabled": true,
+    "javascript.nameSuggestions": true,
+    "editor.codeLens": true,
+    "editor.colorDecorators": true,
+    "editor.links": true,
+    "editor.minimap.enabled": true,
+    "editor.matchBrackets": true,
+    "editor.minimap.showSlider": "always",
+    "editor.occurrencesHighlight": true,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
+    "editor.quickSuggestionsDelay": 3,
+    "html.autoClosingTags": true,
+    "html.suggest.html5": true,
+    "html.suggest.ionic": true,
+    "html.validate.scripts": true,
+    "html.validate.styles": true,
+    "css.lint.duplicateProperties": "warning",
+    "css.lint.compatibleVendorPrefixes": "warning",
+    "css.lint.emptyRules": "warning",
+    "css.lint.float": "warning",
+    "css.validate": true,
+    "eslint.enable": true,
+    "eslint.packageManager": "npm",
+    "eslint.run": "onSave",
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact"
+    ],
+    "editor.parameterHints": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        
+    },
+    "npm.useRootDirectory": true,
+    "eslint.autoFixOnSave": true,
+    "eslint.options": {
+        "configFile": ".eslintrc.json"
+    },
+    "eslint._legacyModuleResolve": true,
+    "editor.cursorBlinking": "phase",
+    "editor.dragAndDrop": true,
+    "editor.lightbulb.enabled": true,
+    "[javascript]": {
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": true,
+            "strings": true
+        }
+    },
+}

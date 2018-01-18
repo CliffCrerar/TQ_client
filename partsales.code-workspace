@@ -1,0 +1,142 @@
+{
+	"folders": [
+		{
+			"path": ".",
+			"webclient": "./webClient",
+			"webServer": "./webServer"
+		}
+	],
+	"settings": {
+		"files.autoSave": "onFocusChange",
+		"json.format.enable": true,
+		"workbench.activityBar.visible": true,
+		"html.format.enable": true,
+		"css.trace.server": "messages",
+		"typescript.tsserver.log": "normal",
+		"typescript.validate.enable": true,
+		"typescript.tsserver.trace": "messages",
+		"workbench.tips.enabled": true,
+		"workbench.editor.showIcons": true,
+		"explorer.decorations.badges": true,
+		"explorer.decorations.colors": true,
+		"problems.decorations.enabled": true,
+		"git.decorations.enabled": true,
+		"[json]": {
+			"editor.quickSuggestions": {
+				"strings": true
+			}
+		},
+		"terminal.integrated.cursorBlinking": true,
+		"terminal.integrated.cursorStyle": "block",
+		"git.enableSmartCommit": true,
+		"codemetrics.basics.EnabledForJS": true,
+    	"codemetrics.basics.EnabledForJSX": true,
+		"jshint.enable": true,
+    	"css-auto-prefix.prefixes": {
+			"transform": [
+				"webkit",
+				"moz",
+				"ms",
+				"o"
+			],
+			"transition": [
+				"webkit",
+				"moz",
+				"ms",
+				"o"
+			],
+			"border-radius": [
+				"webkit",
+				"moz",
+				"ms",
+				"o"
+			],
+			"animation": [
+				"webkit"
+			],
+			"box-reflect": [
+				"webkit"
+			],
+			"filter": [
+				"webkit"
+			],
+			"font-feature-settings": [
+				"webkit",
+				"moz"
+			],
+			"backface-visibility": [
+				"webkit"
+			],
+			"box-decoration-break": [
+				"webkit"
+			],
+			"hyphens": [
+				"webkit",
+				"moz",
+				"ms"
+			],
+			"marquee-direction": [
+				"webkit"
+			],
+			"marquee-play-count": [
+				"webkit"
+			],
+			"marquee-speed": [
+				"webkit"
+			],
+			"marquee-style": [
+				"webkit"
+			],
+			"text-combine-upright": [
+				"webkit",
+				"moz",
+				"ms"
+			],
+			"text-decoration-color": [
+				"moz"
+			],
+			"text-decoration-line": [
+				"moz"
+			],
+			"text-decoration-style": [
+				"moz"
+			],
+			"text-orientation": [
+				"webkit"
+			],
+			"writing-mode": [
+				"webkit",
+				"ms"
+			]
+		},
+    	"liveServer.settings.CustomBrowser": "firefox",
+    	"liveServer.settings.port": 5500,
+		"eslint.alwaysShowStatus": true,
+		"eslint.trace.server": "messages",
+		"htmlhint.documentSelector": [
+			"html",
+			"htm"
+		],
+		"prettier.typescriptEnable": [
+			"typescript",
+			"typescriptreact"
+		],
+		"scss.scannerExclude": [
+			"**/.git",
+			"**/node_modules",
+			"**/bower_components"
+		],
+		"search-node-modules.path": "/webClientnode_modules/",
+		"importCost.bundleSizeDecoration": "both",
+		"prettier.parser": "babylon",
+		"liveServer.settings.host": "127.0.0.1",
+		"liveServer.settings.root": "webClient/dist/",
+		"codemetrics.basics.CodeLensEnabled": true,
+		"codemetrics.basics.DecorationModeEnabled": true,
+		"codemetrics.basics.DiagnosticsEnabled": true,
+		"codemetrics.basics.EnabledForHTML": true,
+		"codemetrics.basics.MetricsForFunctionDeclarationsToggled": true,
+		"codemetrics.basics.MetricsForFunctionExpressionsToggled": true,
+		
+	}
+}
