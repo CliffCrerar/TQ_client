@@ -62,4 +62,6 @@ $('#navTop').on('click', (ev) => {
     */
 });
 
+console.log('This is a change');
+
 console.log('Index.loaded');
