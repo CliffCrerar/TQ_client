@@ -1,5 +1,4 @@
 /* App root file */
-import $ from 'jquery';
 // Lodash
 import _ from 'lodash';
 // handleBars
@@ -35,11 +34,11 @@ import '../node_modules/slick-carousel/slick/slick-theme.css';
 import { setTimeout } from 'timers';
 // PartData
 
-//Nav bar click
-var n = require('./js/02_functions.js');
-var navOps = new n();
-var html = require('./html/LoadHTML.js');
-var load = new html();
+// Nav bar click
+var N = require('./js/02_functions.js');
+var navOps = new N();
+var Html = require('./html/LoadHTML.js');
+var load = new Html();
 console.log(load);
 /* Events */
 $('#navTop').on('click', (ev) => {
@@ -62,14 +61,5 @@ $('#navTop').on('click', (ev) => {
     }
     */
 });
-
-//<Testing data request>
-
-$('#reqButton').on('click', function(ev) {
-    console.log('request click')
-    $('.tempResp').append('<p>Click</p>');
-});
-
-//</Testing data request>
 
 console.log('Index.loaded');

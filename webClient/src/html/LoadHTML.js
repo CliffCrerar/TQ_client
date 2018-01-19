@@ -40,9 +40,22 @@ module.exports = class {
     contactViewShow(event) {
         if (event.target.id == "N_2" && $('body').find('#P_2').length == 0) {
             $('body').append(contactView);
+
+            $('#reqButton').on('click', (ev) => {
+                console.log('request click');
+                $('.tempResp').append('<p>Click</p>');
+                $.ajax({
+                    url: 'http://172.16.0.152:8000/',
+                    success: function(response) {
+                        console.log(response);
+                    }
+                });
+
+            });
         }
     }
 };
+
 //Finish Window loading
 window.onload = () => {
     setTimeout(() => {

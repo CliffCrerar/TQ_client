@@ -44,7 +44,8 @@ http.createServer(function(req, res) {
     //var content = req.getHeader();
     console.log(req);
     res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+    res.setHeader('Content-Type', 'text/plain; charset=utf-8', 'Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Origin', '*');
     res.write(JSON.stringify(partsData));
     res.end();
 }).listen(PORT, IP);
