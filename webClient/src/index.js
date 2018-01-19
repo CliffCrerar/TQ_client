@@ -11,9 +11,9 @@ import './css/carousel.css';
 import './css/adds.css';
 import './css/navB.css';
 import './css/bg.css';
-import './css/catFrontPage.css';
+import './css/partsViewFP.css';
 import './css/partsView.css';
-import './css/contactView.css'
+import './css/contactView.css';
 // Custom JS
 import './js/01_start.js';
 import './js/02_functions.js';
@@ -51,17 +51,16 @@ $('#navTop').on('click', (ev) => {
         navOps.navBarOperationD(ev.currentTarget, ev.target);
     }
 
-    load.partsViewShow(ev);
-    load.contactViewShow(ev);
-    /* Load catFrontPage
     if (ev.target.id == 'N_1') {
         load.catFpBadge();
     } else {
         $('#catFP').fadeOut();
     }
-    */
-});
 
-console.log('This is a change');
+    //load.partsViewShow(ev);
+    load.contactViewShow(ev);
+    //Load catFrontPage
+
+});
 
 console.log('Index.loaded');

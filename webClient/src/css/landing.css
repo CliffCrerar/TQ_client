@@ -39,17 +39,6 @@ span.fa {
     background-color: rgba(0, 128, 128, 0.5)
 }
 
-.boxBlack {
-    border: 1px solid white;
-    background-color: rgba(4, 0, 255, 0.5);
-    color: white;
-    position: absolute;
-    height: 50%;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%)
-}
-
 
 /*--------------------------*/
 

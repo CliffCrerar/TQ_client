@@ -3,8 +3,12 @@ var BMW = require('./data/BMW_Parts.json');
 var KTM = require('./data/KTM_Parts.json');
 //var $ = require('jquery');
 
-//Combine parts data into 1 object
+// procedure varialbes
 let partsData = {};
+let part;
+let retPartData = {};
+
+//Combine parts data into 1 object
 var BMWcount = 0;
 for (var key in BMW) {
     BMWcount++;
@@ -25,28 +29,31 @@ for (var key in partsData) {
 }
 console.log('totCount: ', totCount);
 
-for (var key1 in partsData) {
-    var part = partsData[key1];
-    console.log(part);
-    for (var key2 in part) {
-
-        console.log(part[key2]);
-    }
-}
-//console.log(partsData);
-//var IP = '127.0.0.1';
-
-
 var IP = '172.16.0.152';
+//var IP = '172.20.10.3';
 var PORT = 8000;
 
 http.createServer(function(req, res) {
     //var content = req.getHeader();
-    console.log(req);
+    console.log(req.url.substr(2));
+    var catFilter = req.url.substr(2);
+    console.log('--------------------------------------');
+    for (var i in partsData) {
+
+        if (catFilter == partsData[i].make) {
+            retPartData[i] = partsData[i];
+        }
+    }
+    console.log('--------------------------------------');
+    console.log('--------------------------------------');
+    console.log('--------------------------------------');
+    console.log('--------------------------------------');
+    console.log('--------------------------------------');
+
     res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain; charset=utf-8', 'Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Origin', '*');
-    res.write(JSON.stringify(partsData));
+    res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.write(JSON.stringify(retPartData));
     res.end();
 }).listen(PORT, IP);
 

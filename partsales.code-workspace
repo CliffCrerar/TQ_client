@@ -126,11 +126,11 @@
 			"**/node_modules",
 			"**/bower_components"
 		],
-		"search-node-modules.path": "/webClientnode_modules/",
+		"search-node-modules.path": "./node_modules/",
 		"importCost.bundleSizeDecoration": "both",
 		"prettier.parser": "babylon",
 		"liveServer.settings.host": "127.0.0.1",
-		"liveServer.settings.root": "webClient/dist/",
+		"liveServer.settings.root": "./webClient/dist/",
 		"codemetrics.basics.CodeLensEnabled": true,
 		"codemetrics.basics.DecorationModeEnabled": true,
 		"codemetrics.basics.DiagnosticsEnabled": true,
