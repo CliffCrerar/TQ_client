@@ -1,6 +1,6 @@
 //Navigation bar operation class
 module.exports = class {
-    //for desktop nav
+    // for desktop nav
     navBarOperationD(container, targetEl) {
             if (!($(targetEl).hasClass('active'))) {
                 $(container).children('a').each((i, el) => {
@@ -16,7 +16,7 @@ module.exports = class {
                 pageIn.fadeIn('slow');
             }
         }
-        //for mobile nav
+        // for mobile nav
     navBarOperationM(container, targetEl) {
         if ($(targetEl).is('li')) {
             $('li.nav-item.dropdown').each((i, el) => {

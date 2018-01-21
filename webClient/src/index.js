@@ -17,11 +17,12 @@ import './css/contactView.css';
 // Custom JS
 import './js/01_start.js';
 import './js/02_functions.js';
-//  import './js/03_events.js';
+// import './js/03_events.js';
 import './js/04_docReady.js';
 import './js/carousel.js';
 import './js/adds.js';
 import './html/LoadHTML.js';
+import './js/getParts.js';
 // Bootstrap
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import 'bootstrap';
@@ -52,15 +53,12 @@ $('#navTop').on('click', (ev) => {
     }
 
     if (ev.target.id == 'N_1') {
-        load.catFpBadge();
+        load.partsViewFP();
     } else {
-        $('#catFP').fadeOut();
+        $('#partsViewFP').fadeOut();
     }
-
-    //load.partsViewShow(ev);
     load.contactViewShow(ev);
-    //Load catFrontPage
-
+    console.log(partsData);
 });
 
 console.log('Index.loaded');

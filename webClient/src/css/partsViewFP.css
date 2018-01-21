@@ -1,22 +1,37 @@
 .badgeBtnCont {
-    border: 1px solid white;
-    background-color: rgba(4, 0, 255, 0.5);
     color: white;
     position: absolute;
-    height: 50%;
+    height: 70%;
     width: 100%;
     top: 50%;
     transform: translateY(-50%)
 }
 
+.badgeBtnCont>h1 {
+    font-family: Orbitron;
+    text-shadow: -5px 0 2px black, 0 5px 2px black, 5px 0 5px black, 0 -5px 2px black;
+}
+
 .btnCol {
     height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vh 0px 2vh 0px !important;
 }
 
 .badgeBtn {
-    height: 100%
+    height: 100%;
+    background-color: transparent;
+    border: 0px transparent;
+    transition: all .2s ease-in-out;
+}
+
+.badgeBtn:hover {
+    transform: scale(1.2)
 }
 
 .badgeImg {
-    height: 100%
+    height: 100%;
+    border-radius: 5px;
 }

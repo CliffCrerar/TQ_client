@@ -16,15 +16,24 @@ if (window.vpw <= 414) {
 }
 $('body').append(land);
 
+// functions class for loading page sections
 module.exports = class {
-    catFpBadge() {
-        if (!$.contains(document.body, document.body.children.catFP)) {
-            $('body').append(partsViewFP).fadeIn();
+    partsViewFP() { // function that loads partsview front page and its attached event handlers
+
+        if (!$.contains(document.body, document.body.children.partsViewFP)) { //if partsview frontpage not loaded
+            $('body').append(partsViewFP).fadeIn(); //append html to body
+            // get badge pics and load
             $.each(badge, (name, link) => {
-                $('.badgeImg[alt="' + name + '"]').attr('src', link);
+                $('.badgeImg[alt="' + name + '"]').attr('src', link); // load badges into partsViewFP
             });
-        } else {
-            $('#catFP').fadeIn();
+            // badge click event
+            $('#partsViewFP').on('click', (ev) => {
+                console.log(ev.target.id);
+
+            });
+
+        } else { // else if partsfront page already loaded
+            $('#partsViewFP').fadeIn();
         }
     }
     partsViewShow(event) {
@@ -36,11 +45,14 @@ module.exports = class {
         if (event.target.id == "N_2" && $('body').find('#P_2').length == 0) {
             $('body').append(contactView);
 
+            var url1 = 'http://172.20.10.3:8000';
+            var url2 = 'http://172.16.0.152:8000';
+            // TEMP CODE START
             $('#reqButton').on('click', (ev) => {
                 console.log('request click');
                 $('.tempResp').append('<p>Click</p>');
                 $.ajax({
-                    url: 'http://172.16.0.152:8000',
+                    url: url1,
                     type: 'GET',
                     data: 'KTM',
                     success: function(response) {
@@ -55,13 +67,14 @@ module.exports = class {
                     }
                 });
             });
+            // TEMP CODE END
         }
     }
 };
-//Finish Window loading
+// Finish Window loading
 window.onload = () => {
     setTimeout(() => {
         $('.se-pre-con').fadeOut();
     }, 500);
 };
-console.log('LoadHTML.loaded')
+console.log('LoadHTML.loaded');
