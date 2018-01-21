@@ -1,5 +1,4 @@
 //function that corrects dimensions for elements to fit accordingly
-
 let correctDimension = function(vph, vpw) {
     //Correction of image viewhight   
     console.log(agent, 'VPH:', vph, 'VPW:', vpw);
@@ -57,6 +56,31 @@ correctDimension(window.vph, window.vpw);
 
 $(document).ready(() => {
     $(window).resize(() => { correctDimension(window.vph, window.vpw); });
+    //Load badge sources into images from badge object
+    var badge = require('./05_badges.js');
+    $.each(badge, (name, link) => {
+        $('.makes>[alt="' + name + '"]').attr('src', link);
+    });
+
+    //adjust height for navbottom
+    var navBottomHeight = $('#navBottom').height();
+    if (window.vpw <= 414) {
+        $('.navBadge').height(navBottomHeight - 5);
+    } else {
+        $('.navBadge').height(navBottomHeight);
+    }
 });
+
+// load starting/home/landing page html
+const navTopD = require('../html/navBarTopD.html');
+const navTopM = require('../html/navBarTopM.html');
+const land = require('../html/landing.html');
+if (window.vpw <= 414) {
+    $('body').append(navTopM); //If screen size smaller than 414 then load mobile top nav
+} else {
+    //console.log(window.vpw);
+    $('body').append(navTopD); //else load normal nav html
+}
+$('body').append(land);
 
 console.log('01_start.loaded');

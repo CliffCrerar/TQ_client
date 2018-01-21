@@ -15,6 +15,7 @@ http.createServer(function(req, res) {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.write(JSON.stringify(partsData));
     res.end();
+    console.log('request sent');
 }).listen(PORT1, IP);
 
 console.log('--------------------------------------');

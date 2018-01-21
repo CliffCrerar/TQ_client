@@ -14,15 +14,12 @@ import './css/bg.css';
 import './css/partsViewFP.css';
 import './css/partsView.css';
 import './css/contactView.css';
-// Custom JS
+// Custom JS for starting/landing/home page
+import './js/00_getParts.js';
 import './js/01_start.js';
-import './js/02_functions.js';
-// import './js/03_events.js';
-import './js/04_docReady.js';
-import './js/carousel.js';
-import './js/adds.js';
-import './html/LoadHTML.js';
-import './js/getParts.js';
+import './js/02_navbar.js';
+import './js/03_carousel.js';
+import './js/04_adds.js';
 // Bootstrap
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import 'bootstrap';
@@ -35,30 +32,21 @@ import '../node_modules/slick-carousel/slick/slick-theme.css';
 import { setTimeout } from 'timers';
 // PartData
 
-// Nav bar click
-var N = require('./js/02_functions.js');
-var navOps = new N();
-var Html = require('./html/LoadHTML.js');
-var load = new Html();
-console.log(load);
-/* Events */
-$('#navTop').on('click', (ev) => {
-    console.log('click');
-    //Navbar click function
-    var brandName = $(ev.target).hasClass('navbar-brand');
-    if (window.vpw <= 414 && !brandName) {
-        navOps.navBarOperationM(ev.currentTarget, ev.target);
-    } else if (!brandName) {
-        navOps.navBarOperationD(ev.currentTarget, ev.target);
-    }
-
-    if (ev.target.id == 'N_1') {
-        load.partsViewFP();
-    } else {
-        $('#partsViewFP').fadeOut();
-    }
-    load.contactViewShow(ev);
-    console.log(partsData);
-});
-
+// landing homepage HTML
+$('body').append('<div class="se-pre-con"></div>');
 console.log('Index.loaded');
+
+
+
+// Nav bar click
+// var N = require('./js/02_navbar.js');
+// var navOps = new N();
+// var Html = require('./html/LoadHTML.js');
+// var load = new Html();
+/* Events */
+
+window.onload = () => {
+    setTimeout(() => {
+        $('.se-pre-con').fadeOut();
+    }, 500);
+};
