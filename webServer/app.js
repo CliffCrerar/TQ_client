@@ -2,8 +2,9 @@ var http = require('http');
 var partsData = require('./combineParts.js');
 
 
-var IP = '172.16.0.152';
+//var IP = '172.16.0.152';
 //var IP = '172.20.10.3';
+var IP = '172.16.0.103';
 var PORT1 = 8000;
 //var PORT2 = 8001;
 
