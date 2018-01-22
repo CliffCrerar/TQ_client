@@ -1,23 +1,23 @@
 {
-  "name": "webserver",
-  "version": "1.0.0",
-  "description": "This is the web/application server for tqoffroadparts",
-  "main": "app.js",
-  "scripts": {
-    "test": "start"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CliffCrerar/PartSales.git"
-  },
-  "author": "Cliff",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/CliffCrerar/PartSales/issues"
-  },
-  "homepage": "https://github.com/CliffCrerar/PartSales#readme",
-  "dependencies": {
-    "node": "^9.4.0",
-    "update": "^0.7.4"
-  }
+    "name": "webserver",
+    "version": "1.0.0",
+    "description": "This is the web/application server for tqoffroadparts",
+    "main": "app.js",
+    "scripts": {
+        "test": "start"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CliffCrerar/PartSales.git"
+    },
+    "author": "Cliff",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/CliffCrerar/PartSales/issues"
+    },
+    "homepage": "https://github.com/CliffCrerar/PartSales#readme",
+    "dependencies": {
+        "node": "^9.4.0",
+        "update": "^0.7.4"
+    }
 }

@@ -61,4 +61,4 @@ $(document).ready(() => {
         // instead of a settings object
     });
 });
-console.log('adds.loaded');
+console.log('04_adds.loaded');

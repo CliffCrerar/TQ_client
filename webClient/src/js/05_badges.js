@@ -1,5 +1,4 @@
 //Import badges
-console.log('badges.load');
 var bmwBadge = require('../image/badge/bmw.png');
 var landRoverBadge = require('../image/badge/landrover.png');
 var ktmBadge = require('../image/badge/ktm.png');
@@ -18,3 +17,4 @@ module.exports = badge = {
     "triumph": triumphBadge,
     "twinAfrica": twinAfricaBadge
 };
+console.log('05_badges.loaded');

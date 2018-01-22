@@ -43,6 +43,11 @@ let partsViewFPOps = () => { // function that loads partsview front page and its
         $.each(badge, (name, link) => {
             $('.badgeImg[alt="' + name + '"]').attr('src', link); // load badges into partsViewFP
         });
+        var partwViewFPClick = require('./06_partsViewFPClick.js');
+        $('#partsViewFP').on('click', (ev) => {
+            //console.log('click', ev);
+            partsViewFPClick(ev);
+        });
     } else { // else if partsfront page already loaded
         $('#partsViewFP').fadeIn(); // fade in partsview frontpage
     }
@@ -74,4 +79,4 @@ $('#navTop').on('click', (ev) => {
     contactViewShow(ev);
 
 });
-console.log('02_functions.loaded');
+console.log('02_navbar.loaded');

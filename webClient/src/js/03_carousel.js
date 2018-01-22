@@ -53,7 +53,5 @@ $(document).ready(() => {
     $(window).resize(function() {
         carDim();
     });
-
-    console.log('carousel.loaded');
-
 });
+console.log('03_carousel.loaded');
