@@ -9,8 +9,14 @@
 
 .badgeBtnCont>h1 {
     font-family: Orbitron;
-    margin-bottom: 3%;
     text-shadow: -5px 0 2px black, 0 5px 2px black, 5px 0 5px black, 0 -5px 2px black;
+    margin: 0px 2% 3% 2%;
+}
+
+@media screen and (max-width: 414px) {
+    .badgeBtnCont>h1 {
+        font-size: 80%;
+    }
 }
 
 .btnCol {

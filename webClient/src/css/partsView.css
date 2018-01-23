@@ -1,6 +1,22 @@
+.boxOrange {
+    background-color: rgba(255, 166, 0, 0.5);
+}
+
+.boxPurple {
+    background-color: rgba(128, 0, 128, 0.5);
+}
+
+.boxTeal {
+    background-color: rgba(0, 128, 128, 0.5)
+}
+
 .partsView {
     position: absolute;
     height: 90%;
+}
+
+.pvContainer {
+    height: 100%;
 }
 
 .partsViewRow {

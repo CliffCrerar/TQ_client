@@ -50,6 +50,7 @@ let partsViewFPOps = () => { // function that loads partsview front page and its
         });
     } else { // else if partsfront page already loaded
         $('#partsViewFP').fadeIn(); // fade in partsview frontpage
+        $('#partsViewContainer').fadeOut();
     }
 };
 

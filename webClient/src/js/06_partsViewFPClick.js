@@ -23,21 +23,19 @@ module.exports = partsViewFPClick = (ev) => {
     var showPartsViewContainer = (parts) => {
         //console.log($.contains(document.))
         $('#partsViewFP').fadeOut();
-        var hasContainer = $('#P_1').has('#partsViewContainer'); // checks if the partsview container exist
+        var hasContainer = $.contains(document.body, document.body.children.P_1.children.partsViewContainer); // checks if the partsview container exist
         console.log(hasContainer);
-        /*
         if (hasContainer) {
-            alert('has element');
-            $('#partsViewContainter').fadeIn();
+            $('#partsViewContainer').fadeIn();
         } else {
             alert('do not have element');
             var partsViewContainer = require('../html/partsView.html');
             console.log(partsViewContainer);
             $('#P_1').append(partsViewContainer);
-        };
-        */
+        }
+
         return parts;
     };
     return showPartsViewContainer(filterParts(ev));
 };
-console.log('06_partsviewFPclick.loaded');
+console.log('06_partsviewFPclick.loaded')
