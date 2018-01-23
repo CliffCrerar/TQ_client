@@ -43,7 +43,7 @@ let partsViewFPOps = () => { // function that loads partsview front page and its
         $.each(badge, (name, link) => {
             $('.badgeImg[alt="' + name + '"]').attr('src', link); // load badges into partsViewFP
         });
-        var partwViewFPClick = require('./06_partsViewFPClick.js');
+        var partwViewFPClick = require('./06_loadPVMain.js');
         $('#partsViewFP').on('click', (ev) => {
             //console.log('click', ev);
             partsViewFPClick(ev);

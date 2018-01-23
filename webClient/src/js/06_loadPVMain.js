@@ -24,9 +24,13 @@ module.exports = partsViewFPClick = (ev) => {
         //console.log($.contains(document.))
         $('#partsViewFP').fadeOut();
         var hasContainer = $.contains(document.body, document.body.children.P_1.children.partsViewContainer); // checks if the partsview container exist
-        console.log(hasContainer);
+        //console.log(hasContainer);
         if (hasContainer) {
-            $('#partsViewContainer').fadeIn();
+            $('#middle').empty(); // remove all previous elements from main parts view
+            var pfHeader = $(require('../html/partsView.html')).find('#pvHeaderCont'); // find parts view main header
+            console.log(pfHeader); // add partsview main header
+            $("#middle").append(pfHeader); // load main partsview header into main partsview
+            $('#partsViewContainer').fadeIn(); // fade in parts view
         } else {
             alert('do not have element');
             var partsViewContainer = require('../html/partsView.html');
@@ -38,13 +42,13 @@ module.exports = partsViewFPClick = (ev) => {
 
     var loadPartsIntoContainer = (filteredPartsData) => {
         for (var key in filteredPartsData) {
-            console.log(key);
+            //console.log(key);
             var partHtml = require('../html/part.html');
             //console.log($(partHtml));
             var partsAddKey = $(partHtml).attr('id', key);
             //console.log(partsAddKey);
             $('#middle').append(partsAddKey);
-            console.log(filteredPartsData[key]);
+            //console.log(filteredPartsData[key]);
             $('#' + key + '>button>.row>#pName').html(filteredPartsData[key].partName);
             $('#' + key + '>button>.row>#pRandPrice').html(filteredPartsData[key].price);
             $('#' + key + '>button>.row>#pDollarPrice').html(filteredPartsData[key].price);

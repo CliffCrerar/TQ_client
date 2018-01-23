@@ -5,6 +5,8 @@
 .boxPurple {
     background-color: rgba(128, 0, 128, 0.5);
     overflow: scroll;
+    overflow: -moz-scroll;
+    overflow: -webkit-scroll;
 }
 
 .boxTeal {
@@ -24,11 +26,17 @@
     height: 100%
 }
 
-a.list-group-item:hover {
+button.list-group-item:hover {
     background-color: #464A4E !important;
     color: white !important;
 }
 
 .pvHeader {
     font-weight: bold
+}
+
+.pvHeaderCont {
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
 }
