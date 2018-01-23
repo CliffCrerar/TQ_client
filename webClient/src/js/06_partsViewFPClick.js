@@ -20,7 +20,7 @@ module.exports = partsViewFPClick = (ev) => {
         }
         return filteredPartsData;
     };
-    var showPartsViewContainer = (parts) => {
+    var showPartsViewContainer = (filteredPartsData) => { //Controlls the view behavior of the parts container
         //console.log($.contains(document.))
         $('#partsViewFP').fadeOut();
         var hasContainer = $.contains(document.body, document.body.children.P_1.children.partsViewContainer); // checks if the partsview container exist
@@ -30,12 +30,28 @@ module.exports = partsViewFPClick = (ev) => {
         } else {
             alert('do not have element');
             var partsViewContainer = require('../html/partsView.html');
-            console.log(partsViewContainer);
+            //console.log(partsViewContainer);
             $('#P_1').append(partsViewContainer);
         }
-
-        return parts;
+        return filteredPartsData;
     };
-    return showPartsViewContainer(filterParts(ev));
+
+    var loadPartsIntoContainer = (filteredPartsData) => {
+        for (var key in filteredPartsData) {
+            console.log(key);
+            var partHtml = require('../html/part.html');
+            //console.log($(partHtml));
+            var partsAddKey = $(partHtml).attr('id', key);
+            //console.log(partsAddKey);
+            $('#middle').append(partsAddKey);
+            console.log(filteredPartsData[key]);
+            $('#' + key + '>button>.row>#pName').html(filteredPartsData[key].partName);
+            $('#' + key + '>button>.row>#pRandPrice').html(filteredPartsData[key].price);
+            $('#' + key + '>button>.row>#pDollarPrice').html(filteredPartsData[key].price);
+
+        }
+    };
+
+    return loadPartsIntoContainer(showPartsViewContainer(filterParts(ev)));
 };
 console.log('06_partsviewFPclick.loaded')
