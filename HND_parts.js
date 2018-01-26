@@ -46,7 +46,7 @@
    {  
     partNum: ' A040360',
     partName: 'Bash Plate',
-    partDesc: 'Protects the under side of the engine from loose projectiles and is made of Aluminium, stainless steel and anodized silver',
+    partDesc: 'Protects the under side of the engine from loose projectiles and is made of Aluminium, stainless steel and anodized Silver',
     models: ['Honda CRF1000L'],
     imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A040360/59f9f682ec6a1.jpg&length=600',  
     colors: 'Silver',
@@ -55,5 +55,31 @@
     price: 1910,
     cat: 'BP'
    }, 
-   
+   //Part A040361
+   {  
+    partNum: 'A040361',
+    partName: 'Bash Plate Black',
+    partDesc: 'Protects the under side of the engine from loose projectiles and is made of Aluminium, stainless steel and anodized Black',
+    models: ['Honda CRF1000L'],
+    imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A040361/5964be288e694_MA-A040360-03.JPG&length=600',
+    colors: 'Black',
+    grnt: '1 Year',
+    instTime: 30,
+    price: 2030,
+    cat: 'BP'
+},
+//Part A040400
+{  
+    partNum: 'A040400',
+    partName: ' Luggage Rack',
+    partDesc: 'Rack where soft luggae can be strapped down with elastic tir down straps',
+    models: ['Honda CRF1000L'],
+    imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A040400/5932e4f595e66.jpg&length=300',
+    colors: 'Silver',
+    grnt: '1 Year',
+    instTime: 20,
+    price: 880,
+    cat: 'FR', 
+},
+
     ]
