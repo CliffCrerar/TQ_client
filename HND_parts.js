@@ -20,13 +20,14 @@
     {  
         partNum: 'A040350',
         partName: 'Honda CRF1000L Africa TwinSide Stand Extention',
-        partDesc: 'Honda CRF1000L Africa TwinSide Stand Extention (Made from Stainless steel and aluminium)',
+        partDesc: 'Stand Extention (Made from Stainless steel and aluminium)',
         models: ['Honda CRF1000L'],
         imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A040350/586d0d1613e45_A040350%20Pic(0).jpg&length=600',
         colors: 'Silver',
         grnt: '1 Year',
         instTime: 30,
-        price:330,
+        price: 330,
         cat: 'SSE'
+    }
 
     ]
