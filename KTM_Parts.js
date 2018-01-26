@@ -76,7 +76,7 @@ var KTM_Parts = [
     },
     //Part A08258
     {  
-        partNum: 'A8258',
+        partNum: 'A08258',
         partName: 'Luggage Rack',
         partDesc: 'Made from lightweight suspect aluminium, used to secure appropiate luggage with straps included in luggage rack, also includes a securing kit',
         models: ['KTM 1050','KTM 1090','KTM 1190','KTM 1290'],
