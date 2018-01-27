@@ -44,7 +44,7 @@
     },   
    //Part  A040360
    {  
-    partNum: ' A040360',
+    partNum: 'A040360',
     partName: 'Bash Plate',
     partDesc: 'Protects the under side of the engine from loose projectiles and is made of Aluminium, stainless steel and anodized Silver',
     models: ['Honda CRF1000L'],
