@@ -71,7 +71,7 @@
 //Part A040400
 {  
     partNum: 'A040400',
-    partName: ' Luggage Rack',
+    partName: 'Luggage Rack',
     partDesc: 'Rack where soft luggae can be strapped down with elastic tie down straps',
     models: ['Honda CRF1000L'],
     imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A040400/5932e4f595e66.jpg&length=300',
