@@ -72,7 +72,7 @@
 {  
     partNum: 'A040400',
     partName: ' Luggage Rack',
-    partDesc: 'Rack where soft luggae can be strapped down with elastic tir down straps',
+    partDesc: 'Rack where soft luggae can be strapped down with elastic tie down straps',
     models: ['Honda CRF1000L'],
     imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A040400/5932e4f595e66.jpg&length=300',
     colors: 'Silver',
@@ -81,5 +81,19 @@
     price: 880,
     cat: 'FR', 
 },
+//Part A040410
+{  
+    partNum: 'A040410',
+    partName: 'Wide Foot Pegs',
+    partDesc: 'Made from Stainless steel corrosive resist foot pegs 53 mm wide x 92 mm long and 3 mm thick is kind to your boots and offers the perfect combination of grip and comfort for adventure riding and has more foot surface',
+    models: ['Honda CRF1000L'],
+    imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A040410/582aa772dd457_Africa%20Twin%20Wide%20Foot%20Peg%20(3).JPG&length=300',
+    colors: 'Silver',
+    grnt: '1 Year',
+    instTime: 30,
+    price: 715,
+    cat: 'WFP', 
+},
+
 
     ]
