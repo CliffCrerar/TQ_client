@@ -617,6 +617,7 @@ var TopBoxPannier = [
         instTime: 10,
         price: 4050,
         cat: 'TB', 
+        Make: 'Honda'
     },
    
      
