@@ -452,21 +452,7 @@
           cat: 'PAN',
           make: 'BMW'
       },
-      //Part A110912
-      {
-          partNum: 'A110902',
-          partName: 'Pannier LHS',
-          partDesc: 'Powder coated New Silver 405 X 455 X285',
-          models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
-          imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110912/599c7423c2f8b_A110912_00.jpg&length=1200',
-          colors: 'New Silver',
-          grnt: '1 Year',
-          instTime: 20,
-          price: 5126,
-          cat: 'PAN',
-          make: 'BMW'
-      },
-      //Part A110910
+         //Part A110910
       {
           partNum: 'A110910',
           partName: 'Pannier RHS',
@@ -619,52 +605,8 @@
           price: 4050,
           cat: 'TB',
           Make: 'HND'
-      },  
-
-    //Part A190145
-    {  
-        partNum: 'A190145',
-        partName: 'Pannier Lid Organizer',
-        partDesc: 'To carry small items in the lid of the pannier and kept organised',
-        models: ['F650GS','F700GS','F800GS','F800GSA'],
-        imgLink: 'http://tinyurl.com/ycvxcspj',
-        colors: 'Black and Orange',
-        grnt: '0',
-        instTime: 0,
-        price: 525,
-        cat: 'PAN',
-        make: 'BMW'
-    },
-          //Part A190125
-    {  
-        partNum: 'A190125',
-        partName: 'Top Box Multi Pocket Bag',
-        partDesc: 'Bag with multi pockets to items organized, and easy excess to items and keeps top box clean',
-        models: ['F650GS','F700GS','F800GS','F800GSA'],
-        imgLink: 'http://tinyurl.com/yckkykz4',
-        colors: 'Black and Orange',
-        grnt: '0',
-        instTime: 0,
-        price: 600,
-        cat: 'TB',
-        make: 'BMW'
-    },
-    
-    //Part A110901
-    {  
-        partNum: 'A110901',
-        partName: 'Pannier LHS',
-        partDesc: 'Powder coated Black 405 X 455 X285',
-        models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
-        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110911/599c7423a9647_A110911_00.jpg&length=1200',
-        colors: 'Black',
-        grnt: '1 Year',
-        instTime: 20,
-        price: 4955,
-        cat: 'PAN', 
-        make:'BMW'
-    },  
-    //Part A110912
+      },    
+       //Part A110902
     {  
         partNum: 'A110902',
         partName: 'Pannier LHS',
@@ -678,161 +620,9 @@
         cat: 'PAN', 
         make: 'BMW'
     },  
-    //Part A110910
-    {
-     partNum: 'A110910',
-        partName: 'Pannier RHS',
-        partDesc: 'Powder coated Natarul Aluminium 405 X 455 X285',
-        models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
-        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110910/599c74238708b_A110910_00.jpg&length=1200',
-        colors: 'New Silver',
-        grnt: '1 Year',
-        instTime: 20,
-        price: 5126,
-        cat: 'PAN', 
-        make: 'BMW'
-    },  
-    //Part A110911
-    {  
-        partNum: 'A110911',
-        partName: 'Pannier RHS',
-        partDesc: 'Powder coated Black 405 X 455 X285',
-        models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
-        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110911/599c7423a9647_A110911_00.jpg&length=1200',
-        colors: 'Black',
-        grnt: '1 Year',
-        instTime: 20,
-        price: 4955,
-        cat: 'PAN', 
-        make: 'BMW'
-    },
-     //Part A110912
-    {  
-        partNum: 'A110912',
-        partName: 'Pannier RHS',
-        partDesc: 'Powder coated New Silver 405 X 455 X285',
-        models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
-        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110912/599c7423c2f8b_A110912_00.jpg&length=1200',
-        colors: 'New Silver',
-        grnt: '1 Year',
-        instTime: 20,
-        price: 5126,
-        cat: 'PAN', 
-        make: 'BMW'
-    }, 
-       //Part A110801
-    {  
-        partNum: 'A110801',
-        partName: 'Top Box',
-        partDesc: 'KTM & General Motor cycle asseccories',
-        models: ['All KTM'],
-        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110801/599703f57e61e_A110811-(0).JPG&length=1200',
-        colors: 'Black',
-        grnt: '1 Year',
-        instTime: 20,
-        price: 4500,
-        cat: 'TB',
-        make: 'KTM' 
-    },    
-    //Part A12000
-    {  
-        partNum: 'A12000',
-        partName: 'Pannier Bracket',
-        partDesc: 'Stainless Steel Pannier frame Set RHS+LHS to fit Panniers A11505 to A11540',
-        models: ['BMW R1200GS Adventure K50 (LC)'],
-        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A12000/55854aaed5bb7_A12000-PIC(5).JPG&length=1200',
-        colors: 'Silver',
-        grnt: '1 Year',
-        instTime: 30,
-        price: 2800,
-        cat: 'TBB', 
-        make: 'BMW'         
-    }, 
-    //Part A110800_X00
-    {  
-        partNum: 'A110800_X00',
-        partName: 'Top Box',
-        partDesc: 'Aluminium Side latch Natural Aluminium (Bracket Required)',
-        models: ['F650GS','F700GS','F800GS','F800GSA'],
-        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110800_X00/599706f0d33bf.JPG&length=1200',
-        colors: 'Silver',
-        grnt: '1 Year',
-        instTime: 20,
-        price: 3960,
-        cat: 'TB',
-        make: 'BMW' 
-    },
-    //Part A110802_x02
-    {  
-        partNum: 'A110802_X02',
-        partName: 'Top Box',
-        partDesc: 'Aluminium Side latch Natural Powder Coated New Silver Aluminium (Bracket Required)',
-        models: ['F650GS','F700GS','F800GS','F800GSA'],
-        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110802_X02/599704c1a4862_A110800-01%20(1).JPG&length=1200',
-        colors: 'New Silver',
-        grnt: '1 Year',
-        instTime: 20,
-        price: 4635,
-        cat: 'TB',
-        make: 'BMW' 
-    },
-    //Part A110801_X01
-    {  
-        partNum: 'A110801_X01',
-        partName: 'Top Box',
-        partDesc: 'Aluminium Side latch Natural Powder Coated Black Aluminium (Bracket Required)',
-        models: ['F650GS','F700GS','F800GS','F800GSA'],
-        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110801_X01/599703f5aac9c_A110811-(0).JPG&length=1200',
-        colors: 'Black',
-        grnt: '1 Year',
-        instTime: 20,
-        price: 4500,
-        cat: 'TB',
-        make: 'BMW' 
-    },
-    //Part A11080_X12
-    {  
-        partNum: 'A11080_X12',
-        partName: 'Top Box',
-        partDesc: 'Aluminium Natural 41 Litre (Volumetric) Constructed from aluminium and stainless steel (Bracket Required )',
-        models: ['1050','1090','1190','1290'],
-        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110800_X12/5996fd624ad9c_A110810-(3).JPG&length=1200',
-        colors: 'Silver',
-        grnt: '1 Year',
-        instTime: 20,
-        price: 3960,
-        cat: 'TB',
-        make: 'KTM' 
-    },
-    //Part A110800_X15
-{  
-    partNum: 'A110800_X15',
-    partName: 'Top Box',
-    partDesc: 'Aluminium Natural 41 Litre (Volumetric) Constructed from aluminium and stainless steel',
-    models: ['Honda CRF1000L'],
-    imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110800_X15/59c16e77d13ae_Honda%20Africa%20Twin%20Top%20Box%20and%20panniers.jpg&length=600',
-    colors: 'Naturap Aluminium',
-    grnt: '! Year',
-    instTime: 10,
-    price: 3960,
-    cat: 'TB', 
-    Make: 'HND'
-    },           
-    //Part A110801_X16
-    {  
-        partNum: 'A110801_X16',
-        partName: 'Top Box Black',
-        partDesc: 'Aluminium Side latch Natural Powder Coated Black Aluminium',
-        models: ['Honda CRF1000L'],
-        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110801_X16/59c16e7804440_Honda%20Africa%20Twin%20Top%20Box%20and%20panniers-2.jpg&length=350',
-        colors: 'Black',
-        grnt: '1 Year',
-        instTime: 10,
-        price: 4050,
-        cat: 'TB', 
-        Make: 'HND'
-    },
-   
-     
+       
+        
+         
+       
 
   ]
