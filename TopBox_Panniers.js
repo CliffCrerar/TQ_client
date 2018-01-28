@@ -218,7 +218,7 @@
           partNum: 'A19010',
           partName: 'Top Box Back Rest Pad',
           partDesc: 'Pad secured to the top box so passenger can sit comfortable',
-          models: ['BMW KTM and Yamaha'],
+          models: ['BMW, KTM, Yamaha, Honda & Triumph'],
           imgLink: 'http://tinyurl.com/ybool5ll',
           colors: 'Black',
           grnt: '0',
