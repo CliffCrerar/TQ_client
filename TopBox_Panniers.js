@@ -620,20 +620,7 @@
           cat: 'TB',
           Make: 'HND'
       },  
-    //Part A190110
-    {  
-        partNum: 'A190110',
-        partName: 'Pannier Inner Bag Exhaust Side',
-        partDesc: 'Inner lining for pannier to protect and keep inside of pannier clean',
-        models: ['F650GS','F700GS','F800GS','F800GSA'],
-        imgLink: 'http://tinyurl.com/yd7d4bzt',
-        colors: 'Black and Orange',
-        grnt: '0',
-        instTime: 0,
-        price: 540,
-        cat:'PAN',
-        make: 'BMW'
-    },
+
     //Part A190145
     {  
         partNum: 'A190145',
@@ -648,35 +635,7 @@
         cat: 'PAN',
         make: 'BMW'
     },
-    //Part A11115
-    {  
-        partNum: 'A11115',
-        partName: 'Top Box Bracket',
-        partDesc: 'Manufactured from aluminium, secure the top box to top of rear mudguard even in off road conditions',
-        models: ['F650GS','F700GS','F800GS','F800GSA'],
-        imgLink: 'http://tinyurl.com/y9xvbggc',
-        colors: 'Silver',
-        grnt: '1 Year',
-        instTime: 30,
-        price: 735, 
-        cat: 'TBB',
-        make: 'BMW'      
-    },
-    //Part A190120
-    {  
-        partNum: 'A190120',
-        partName: 'Top Box Inner Bag Single Pocket',
-        partDesc: 'Single pocket bag to keep inside of top box clean and can be removed for easy excess to items inside bag',
-        models: ['F650GS','F700GS','F800GS','F800GSA'],
-        imgLink: 'http://tinyurl.com/y7uh522w',
-        colors: 'Black and Orange',
-        grnt: '0',
-        instTime: 0,
-        price: 525,
-        cat: 'TB',
-        make: 'BMW'
-    },
-    //Part A190125
+          //Part A190125
     {  
         partNum: 'A190125',
         partName: 'Top Box Multi Pocket Bag',
@@ -690,48 +649,7 @@
         cat: 'TB',
         make: 'BMW'
     },
-    //Part A190140
-    {  
-        partNum: 'A190140',
-        partName: 'Top Box Lid Organizer',
-        partDesc: 'To carry smaller items in the lid of top box ETC first aid kit ',
-        models: ['F650GS','F700GS','F800GS','F800GSA'],
-        imgLink: 'http://tinyurl.com/yckkykz4',
-        colors: 'Black and Orange',
-        grnt: '0',
-        instTime: 0,
-        price: 525,
-        cat: 'TB',
-        make: 'BMW'
-    },
-    //Part A11155
-    {  
-        partNum: 'A11155',
-        partName: 'Bracket Top Box',
-        partDesc: 'Bracket to secure top box to top of mudguard',
-        models: ['KTM 1290'],
-        imgLink: 'http://tinyurl.com/y86j87c3',
-        colors: 'Stainless steel',
-        grnt: '1 Year',
-        instTime: 30,
-        price: 755,
-        cat: 'TBB',
-        make: 'KTM'
-    },
-        //Part A110900
-    {  
-        partNum: 'A110900',
-        partName: 'Pannier LHS',
-        partDesc: 'Natural Aluminium 405 X 455 X 285',
-        models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
-        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110900/599c74232a258_A110900_00.jpg&length=1200',
-        colors: 'Aluminium',
-        grnt: '1 Year',
-        instTime: 20,
-        price: 4670,
-        cat: 'PAN', 
-        make: 'BMW'
-    }, 
+    
     //Part A110901
     {  
         partNum: 'A110901',
