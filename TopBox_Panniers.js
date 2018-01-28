@@ -604,7 +604,7 @@ var TopBoxPannier = [
     instTime: 10,
     price: 3960,
     cat: 'TB', 
-    Make: 'Honda'
+    Make: 'HND'
     },           
     //Part A110801_X16
     {  
@@ -618,7 +618,7 @@ var TopBoxPannier = [
         instTime: 10,
         price: 4050,
         cat: 'TB', 
-        Make: 'Honda'
+        Make: 'HND'
     },
    
      
