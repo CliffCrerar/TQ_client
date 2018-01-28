@@ -161,13 +161,13 @@ var TopBoxPannier = [
     {  
         partNum: 'A110800_X03',
         partName: 'Top Box',
-        partDesc: ' Aluminium Side latch Natural Aluminium (Bracket Required)',
+        partDesc: 'Aluminium Side latch Natural Aluminium (Bracket Required)',
         models: ['BMW R1200GS/R1200GS Adventure'],
         imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110800_X03/59970322d95d1_A110810-(3).JPG&length=1200',
         colors: 'Aluminium',
         grnt: '1 Year',
         instTime: 10,
-        price: 4395,
+        price: 3960,
         cat: 'TB', 
         make: 'BMW'
     },
@@ -546,7 +546,7 @@ var TopBoxPannier = [
         colors: 'Silver',
         grnt: '1 Year',
         instTime: 20,
-        price: 4395,
+        price: 3960,
         cat: 'TB',
         make: 'BMW' 
     },
@@ -554,7 +554,7 @@ var TopBoxPannier = [
     {  
         partNum: 'A110802_X02',
         partName: 'Top Box',
-        partDesc: 'Aluminium Side latch Natural Powder Coated Silver Aluminium (Bracket Required)',
+        partDesc: 'Aluminium Side latch Natural Powder Coated New Silver Aluminium (Bracket Required)',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110802_X02/599704c1a4862_A110800-01%20(1).JPG&length=1200',
         colors: 'New Silver',
@@ -588,10 +588,37 @@ var TopBoxPannier = [
         colors: 'Silver',
         grnt: '1 Year',
         instTime: 20,
-        price: 4395,
+        price: 3960,
         cat: 'TB',
         make: 'KTM' 
-    }   
+    },
+    //Part A110800_X15
+{  
+    partNum: 'A110800_X15',
+    partName: 'Top Box',
+    partDesc: 'Aluminium Natural 41 Litre (Volumetric) Constructed from aluminium and stainless steel',
+    models: ['Honda CRF1000L'],
+    imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110800_X15/59c16e77d13ae_Honda%20Africa%20Twin%20Top%20Box%20and%20panniers.jpg&length=600',
+    colors: 'Naturap Aluminium',
+    grnt: '! Year',
+    instTime: 10,
+    price: 3960,
+    cat: 'TB', 
+    },           
+    //Part A110801_X16
+    {  
+        partNum: 'A110801_X16',
+        partName: 'Top Box Black',
+        partDesc: 'Aluminium Side latch Natural Powder Coated Black Aluminium',
+        models: ['Honda CRF1000L'],
+        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110801_X16/59c16e7804440_Honda%20Africa%20Twin%20Top%20Box%20and%20panniers-2.jpg&length=350',
+        colors: 'Black',
+        grnt: '1 Year',
+        instTime: 10,
+        price: 4050,
+        cat: 'TB', 
+    },
+   
      
 
 ]
