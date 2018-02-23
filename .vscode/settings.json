@@ -57,4 +57,7 @@
             "strings": true
         }
     },
+    "liveServer.settings.CustomBrowser": "firefox",
+    "liveServer.settings.fullReload": true,
+    "liveServer.settings.root": "/dist",
 }
