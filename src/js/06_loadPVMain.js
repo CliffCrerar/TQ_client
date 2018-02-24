@@ -1,3 +1,4 @@
+/*
 module.exports = partsViewFPClick = (ev) => {
 
     var filterParts = (ev) => {
@@ -8,7 +9,7 @@ module.exports = partsViewFPClick = (ev) => {
         } else if ($(ev.target).is('button')) {
             targetID = ev.target.id; // if target element is button get target id - *firefox
         }
-        /* NOTE TO SELF: remember to test in other browsers */
+        // /* NOTE TO SELF: remember to test in other browsers
 
         let filteredPartsData = {}; // declare object to store selected parts
         for (var key in partsData) {
@@ -58,4 +59,4 @@ module.exports = partsViewFPClick = (ev) => {
 
     return loadPartsIntoContainer(showPartsViewContainer(filterParts(ev)));
 };
-console.log('06_partsviewFPclick.loaded')
+console.log('06_partsviewFPclick.loaded') */

@@ -3,15 +3,6 @@
 import _ from 'lodash';
 // handleBars
 
-import printMe from './print.js';
-
-if (module.hot) {
-    module.hot.accept('./print.js', function() {
-        console.log('Accepting the updated printMe module!');
-        printMe();
-    });
-}
-
 // Load CSS
 import './css/landing.css';
 import './css/navT.css';
@@ -24,10 +15,10 @@ import './css/partsViewFP.css';
 import './css/partsView.css';
 import './css/contactView.css';
 // Custom JS for starting/landing/home page
-import './js/00_getParts.js';
+//import './js/00_getParts.js';
 import './js/01_start.js';
 import './js/02_navbar.js';
-import './js/03_carousel.js';
+///import './js/03_carousel.js';
 import './js/04_adds.js';
 // Bootstrap
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
@@ -61,3 +52,10 @@ window.onload = () => {
         $('.se-pre-con').fadeOut();
     }, 500);
 };
+
+if (module.hot) {
+    module.hot.accept('./index.js', function() {
+        console.log('Accepting the updated Index module!');
+        printMe();
+    });
+}
