@@ -12,28 +12,20 @@ import carimage71 from '../image/car_image7_1.jpg';
 import carimage8 from '../image/car_image8.jpg';
 import carimage81 from '../image/car_image8_1.jpg';
 import carimage9 from '../image/car_image9.jpg';
-
-const landingMainCarOptions = {
-    arrows: false,
-    infinite: true,
-    speed: 2000,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    centerMode: true,
-    variableWidth: true,
-    pauseOnHover: false
-};
-
-//Landing Page Carousel Settings
-$('.slickCarousel').slick(landingMainCarOptions);
-
-//slick bug workaround
-$(window).on('resize', function(ev) {
-    console.log("TEST RESIZE");
-    $('.slickCarousel').slick('unslick');
-    $('.slickCarousel').slick(landingMainCarOptions);
-});
 $(document).ready(() => {
+    const landingMainCarOptions = {
+        arrows: false,
+        infinite: true,
+        speed: 2000,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        centerMode: true,
+        variableWidth: true,
+        pauseOnHover: false
+    };
+
+    //Landing Page Carousel Settings
+    $('.slickCarousel').slick(landingMainCarOptions);
     //Load images
     $('#slide1>img').attr('src', carimage1);
     $('#slide2>img').attr('src', carimage2);
@@ -48,8 +40,6 @@ $(document).ready(() => {
     $('#slide8>img').attr('src', carimage8);
     $('#slide81>img').attr('src', carimage81);
     $('#slide9>img').attr('src', carimage9);
-
-
     //Other dimension adjustments
     var lpCarHeight = ($('.lpCarousel').height());
     var lpCarWidth = ($('.lpCarousel').width());
@@ -62,6 +52,5 @@ $(document).ready(() => {
     $(window).resize(function() {
         carDim();
     });
-
 });
 console.log('03_carousel.loaded');

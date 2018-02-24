@@ -23,44 +23,43 @@ import add61 from '../image/add6.1.jpg';
 import add62 from '../image/add6.2.jpg';
 import add63 from '../image/add6.3.jpg';
 
-//Add rail options
-$('.addFade').slick({
-    arrows: false,
-    autoplay: true,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    cssEase: 'linear',
-    //adaptiveHeight: true
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-});
-
 $(document).ready(() => {
+    //Add rail options
+    $('.addFade').slick({
+        arrows: false,
+        autoplay: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        //adaptiveHeight: true
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    });
     //Include add 1 in html
-    $('.add1_1').html('<img class="addImg" src="' + add11 + '">');
-    $('.add1_2').html('<img class="addImg" src="' + add12 + '">');
-    $('.add1_3').html('<img class="addImg" src="' + add13 + '">');
+    $('.add1_1').html('<img class="addImg img-fluid" src="' + add11 + '">');
+    $('.add1_2').html('<img class="addImg img-fluid" src="' + add12 + '">');
+    $('.add1_3').html('<img class="addImg img-fluid" src="' + add13 + '">');
     //Include add 2 in html
-    $('.add2_1').html('<img class="addImg" src="' + add21 + '">');
-    $('.add2_2').html('<img class="addImg" src="' + add22 + '">');
-    $('.add2_3').html('<img class="addImg" src="' + add23 + '">');
+    $('.add2_1').html('<img class="addImg img-fluid" src="' + add21 + '">');
+    $('.add2_2').html('<img class="addImg img-fluid" src="' + add22 + '">');
+    $('.add2_3').html('<img class="addImg img-fluid" src="' + add23 + '">');
     //Include add 3 in html
-    $('.add3_1').html('<img class="addImg" src="' + add31 + '">');
-    $('.add3_2').html('<img class="addImg" src="' + add32 + '">');
-    $('.add3_3').html('<img class="addImg" src="' + add33 + '">');
+    $('.add3_1').html('<img class="addImg img-fluid" src="' + add31 + '">');
+    $('.add3_2').html('<img class="addImg img-fluid" src="' + add32 + '">');
+    $('.add3_3').html('<img class="addImg img-fluid" src="' + add33 + '">');
     //Include add 4 in html
-    $('.add4_1').html('<img class="addImg" src="' + add41 + '">');
-    $('.add4_2').html('<img class="addImg" src="' + add42 + '">');
-    $('.add4_3').html('<img class="addImg" src="' + add43 + '">');
+    $('.add4_1').html('<img class="addImg img-fluid" src="' + add41 + '">');
+    $('.add4_2').html('<img class="addImg img-fluid" src="' + add42 + '">');
+    $('.add4_3').html('<img class="addImg img-fluid" src="' + add43 + '">');
     //Include add 5 in html
-    $('.add5_1').html('<img class="addImg" src="' + add51 + '">');
-    $('.add5_2').html('<img class="addImg" src="' + add52 + '">');
-    $('.add5_3').html('<img class="addImg" src="' + add53 + '">');
+    $('.add5_1').html('<img class="addImg img-fluid" src="' + add51 + '">');
+    $('.add5_2').html('<img class="addImg img-fluid" src="' + add52 + '">');
+    $('.add5_3').html('<img class="addImg img-fluid" src="' + add53 + '">');
     //Include add 6 in html
-    $('.add6_1').html('<img class="addImg" src="' + add61 + '">');
-    $('.add6_2').html('<img class="addImg" src="' + add62 + '">');
-    $('.add6_3').html('<img class="addImg" src="' + add63 + '">');
+    $('.add6_1').html('<img class="addImg img-fluid" src="' + add61 + '">');
+    $('.add6_2').html('<img class="addImg img-fluid" src="' + add62 + '">');
+    $('.add6_3').html('<img class="addImg img-fluid" src="' + add63 + '">');
 });
 console.log('04_adds.loaded');

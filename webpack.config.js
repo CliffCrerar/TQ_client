@@ -4,18 +4,17 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const $ = require('jquery');
 const webpack = require('webpack');
-var ManifestPlugin = require('webpack-manifest-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin');
+const IP = '172.16.0.104';
+//const IP = '127.0.0.1';
+const PORT = 5500;
 
 module.exports = {
+    context: __dirname,
     entry: {
-        main: './src/index.js',
+        main: './src/index.js'
     },
-
     devtool: 'inline-source-map',
-    devServer: {
-        contentBase: './dist',
-        hot: true
-    },
     module: {
         rules: [
             { test: /\.css$/, use: ['style-loader', 'css-loader'] },
@@ -61,18 +60,13 @@ module.exports = {
         new HTMLWebpackPlugin({
             template: './src/html/index.html',
         }),
-
         new CleanWebpackPlugin(['dist']),
-
         new ManifestPlugin(),
-        new webpack.NamedModulesPlugin(),
-        new webpack.HotModuleReplacementPlugin()
 
     ],
     output: {
         //filename: 'bundle.js',
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
-        publicPath: '/'
     },
 };

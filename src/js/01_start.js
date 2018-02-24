@@ -1,32 +1,37 @@
 //function that corrects dimensions for elements to fit accordingly
+window.vph = window.innerHeight;
+window.vpw = screen.width;
+console.log("SCR_W: ", vph, "SCR_H: ", vpw);
 let correctDimension = function(vph, vpw) {
     //Correction of image viewhight   
-    console.log(agent, 'VPH:', vph, 'VPW:', vpw);
+    console.log('VPH:', vph, 'VPW:', vpw);
     $(document).ready(() => {
         var newHeight;
+        var addHeight;
         $('body').css('background-Size', vph + 'px auto');
-        if (window.vpw <= 414) {
+        if (vpw <= 414) {
             subract = $('#navTop').height();
-            newHeight = 690 - subract;
-            $('#P_0').css('height', newHeight);
-            $('.lpCarousel').remove();
+            newHeight = (vph * 0.86) / 100;
+            //$('.lpCarousel').remove();
             $('.c1.carousel-inner').css('border-radius', '24px');
             newHeight = $('.addsRail').height() + 5;
-            $('#addsRailID').css("height", "85%");
-            $('.addContainer').css('height', newHeight);
-            $('.addFade').css('height', newHeight);
+            addHeight = (vph * 0.85);
+            $('#P_0').css("height", addHeight);
+            $('#addsRailID').css("min-height", addHeight);
+            $('.subRails').css('min-height', addHeight);
+            $('.addContainer').css('height', addHeight / 3);
             $('.add').css('height', newHeight);
             $('.addImg').css('height', newHeight);
             $('.navbar-brand').css('width', '100%').addClass('text-center');
-            $('.social').remove();
             $('.makes').css('width', '100%');
+            $('#navBottom').css('min-height', '1%');
         } else {
             $('body').css("height", vph);
             var navH = ($('#navTop').height());
             var navM = parseInt($('#navTop').css('margin-top'));
             newHeight = vph - navH - navM;
-            $('#P_0').css('height', newHeight);
-            var addHeight = $('.addsRail').height();
+            //$('#P_0').css('height', newHeight);
+            addHeight = $('.addsRail').height();
             $('.add').css('height', addHeight);
         }
     });
@@ -34,28 +39,10 @@ let correctDimension = function(vph, vpw) {
 
 var agentCheck = window.navigator.userAgent; //Get window data to determine browser
 var agent;
-//Define viewport for browser compatibility
 
-/*
-//Determine browser by looking at the DOM
-if (agentCheck.indexOf('Chrome') > 0) {
-    agent = 'Chrome';
-    window.vph = window.innerHeight;
-    window.vpw = window.innerWidth;
-} else if (agentCheck.indexOf('Firefox') > 0) {
-    agent = 'Firefox';
-    window.vph = window.innerHeight;
-    window.vpw = window.innerWidth;
-    //window.scrollbars = false;
-} else if (agentCheck.indexOf('Safari') > 0) {
-    agent = 'Safari';
-    window.vph = window.innerHeight;
-    window.vpw = window.innerWidth;
-}
-*/
-correctDimension(window.vph, window.vpw);
+correctDimension(vph, vpw);
 
-console.log(agent, 'VPH:', vph, 'VPW:', vpw);
+console.log('VPH:', vph, 'VPW:', vpw);
 
 $(document).ready(() => {
     $(window).resize(() => { correctDimension(window.vph, window.vpw); });
@@ -73,15 +60,5 @@ $(document).ready(() => {
         $('.navBadge').height(navBottomHeight);
     }
 });
-
-// load starting/home/landing page html
-//const navTopD = require('../html/navBarTopD.html');
-//const navTopM = require('../html/navBarTopM.html');
-//const land = require('../html/landing.html');
-if (window.vpw <= 414) {
-    $('#navTop').remove(); // remove current navbar
-    $('body').append(navTopM); //If screen size smaller than 414 then load mobile top nav
-}
-//$('body').append(land);
 
 console.log('01_start.loaded');

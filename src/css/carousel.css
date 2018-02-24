@@ -1,8 +1,9 @@
 .lpCarousel {
-    height: 58%;
+    height: 69%;
     margin-top: 1%;
     overflow: hidden;
     border-radius: 50px;
+    position: relative;
 }
 
 .slickCarousel {
