@@ -22,6 +22,21 @@ import add53 from '../image/add5.3.jpg';
 import add61 from '../image/add6.1.jpg';
 import add62 from '../image/add6.2.jpg';
 import add63 from '../image/add6.3.jpg';
+
+//Add rail options
+$('.addFade').slick({
+    arrows: false,
+    autoplay: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    //adaptiveHeight: true
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+});
+
 $(document).ready(() => {
     //Include add 1 in html
     $('.add1_1').html('<img class="addImg" src="' + add11 + '">');
@@ -47,18 +62,5 @@ $(document).ready(() => {
     $('.add6_1').html('<img class="addImg" src="' + add61 + '">');
     $('.add6_2').html('<img class="addImg" src="' + add62 + '">');
     $('.add6_3').html('<img class="addImg" src="' + add63 + '">');
-    //Add rail options
-    $('.addFade').slick({
-        arrows: false,
-        autoplay: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear',
-        //adaptiveHeight: true
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-    });
 });
 console.log('04_adds.loaded');

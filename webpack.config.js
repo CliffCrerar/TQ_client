@@ -9,6 +9,7 @@ var ManifestPlugin = require('webpack-manifest-plugin');
 module.exports = {
     entry: {
         app: './src/index.js',
+        gvar: './src/gvar.js',
         //print: './src/print.js'
     },
 
@@ -54,11 +55,12 @@ module.exports = {
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
-            Popper: ['popper.js', 'default']
+            Popper: ['popper.js', 'default'],
+            bootstrap: 'bootstrap'
         }),
 
         new HTMLWebpackPlugin({
-            template: './src/html/index.html',
+            template: './src/index.html',
         }),
 
         new CleanWebpackPlugin(['dist']),

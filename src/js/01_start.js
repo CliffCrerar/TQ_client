@@ -53,8 +53,6 @@ if (agentCheck.indexOf('Chrome') > 0) {
     window.vpw = window.innerWidth;
 }
 */
-window.vpw = screen.availWidth;
-window.vph = screen.availHeight;
 correctDimension(window.vph, window.vpw);
 
 console.log(agent, 'VPH:', vph, 'VPW:', vpw);
