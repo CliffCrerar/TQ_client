@@ -24,7 +24,6 @@ let correctDimension = function(vph, vpw) {
             $('.addImg').css('height', newHeight);
             $('.navbar-brand').css('width', '100%').addClass('text-center');
             $('.makes').css('width', '100%');
-            $('#navBottom').css('min-height', '1%');
         } else {
             $('body').css("height", vph);
             var navH = ($('#navTop').height());
@@ -54,7 +53,7 @@ $(document).ready(() => {
 
     //adjust height for navbottom
     var navBottomHeight = $('#navBottom').height();
-    if (window.vpw <= 414) {
+    if (vpw <= 414) {
         $('.navBadge').height(navBottomHeight - 5);
     } else {
         $('.navBadge').height(navBottomHeight);

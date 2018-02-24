@@ -1,3 +1,7 @@
+/*------------------------*/
+/*       HOME PAGE        */
+/*----------------------- */
+
 /* App root file */
 // Lodash
 import _ from 'lodash';
@@ -6,13 +10,6 @@ import _ from 'lodash';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import './css/landing.css';
 import './css/font.css';
-
-//import './css/partsViewFP.css';
-//import './css/partsView.css';
-//import './css/contactView.css';
-// Bootstrap
-
-
 // Font Awesome
 import 'font-awesome-webpack';
 /* SLICK CAROUSEL API */
@@ -20,10 +17,8 @@ import '../node_modules/slick-carousel/slick/slick.css';
 import '../node_modules/slick-carousel/slick/slick.js';
 import '../node_modules/slick-carousel/slick/slick-theme.css';
 
-
-// Custom JS for starting/landing/home page
+/* GET PARTS DATA FROM WEB SERVER */
 //import './js/00_getParts.js';
-
 
 /*------------------------*/
 /*  LOAD HOME PAGE HTML   */
@@ -33,10 +28,9 @@ import '../node_modules/slick-carousel/slick/slick-theme.css';
 import './css/bg.css'; // defin backgrouns
 import './js/01_start.js'; // adjust user view
 
-/*  NAVIATION BAR  */
+/* LOAD NAVIATION BAR  */
 import './css/navT.css'; // CSS
 import './js/02_navbar.js'; // JS
-// LOAD HTML
 const loadNav = (screenw) => {
     if (screenw <= 414) {
         return require('./html/navBarTopM.html');
@@ -45,9 +39,23 @@ const loadNav = (screenw) => {
     }
 };
 $('body').append(loadNav(vpw));
-$('body').append('<div id="P_0" style="position:relative" class="lp"></div>');
+$('body').append('<div id="pageCont" style="position:relative" class="pageCont"></div>')
+$('#pageCont').append('<div id="P_0" class="lp"></div>');
 
-/*  MAIN CAROUSEL  */
+/* IMPLEMENT NAV BAR OPERATION */
+$('#navTop').on('click', (ev) => {
+    console.log(ev);
+    var navop = require('./js/02_navbar');
+    console.log(navop);
+    var navclick;
+    if (vph <= 414) {
+        navop.navBarOperationM(ev.currentTarget, ev.target);
+    } else {
+        navop.navBarOperationD(ev.currentTarget, ev.target);
+    }
+});
+
+/* LOAD MAIN CAROUSEL  */
 import './css/carousel.css'; // CSS
 import './js/03_carousel.js'; // JS
 const loadCarousel = function(screenw) {
@@ -57,7 +65,7 @@ const loadCarousel = function(screenw) {
 };
 $('#P_0').append(loadCarousel(vpw));
 
-/* ADDS RAIL */
+/* LOAD ADDS RAIL */
 import './css/adds.css'; // CSS
 import './js/04_adds.js'; // Load images and set carousel options
 $('#P_0').append(require('./html/adds.html'));
@@ -67,7 +75,7 @@ import './css/navB.css'; // CSS
 $('body').append(require('./html/navBarBottom.html'));
 if (vpw <= 414) { $('.social').remove(); }
 
-/*  LAODING SCREEN  */
+/* LOAD LAODING SCREEN  */
 window.onload = () => {
     setTimeout(() => {
         $('.se-pre-con').fadeOut();

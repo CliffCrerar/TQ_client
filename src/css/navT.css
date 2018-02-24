@@ -2,7 +2,6 @@
 
 #navTop {
     background-color: rgba(255, 0, 0, 0.514);
-    margin-top: 1%;
     height: 5%;
     border-radius: 24px;
 }
@@ -23,6 +22,7 @@
     color: white;
     font-weight: bold;
     border-radius: 0px !important;
+    height: 100%;
 }
 
 .navbar-brand {

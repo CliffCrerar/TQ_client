@@ -1,9 +1,13 @@
 .lpCarousel {
     height: 69%;
-    margin-top: 1%;
-    overflow: hidden;
     border-radius: 50px;
     position: relative;
+    overflow: hidden;
+}
+
+.slick-track {
+    position: relative !important;
+    overflow: hidden !important;
 }
 
 .slickCarousel {

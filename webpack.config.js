@@ -12,7 +12,9 @@ const PORT = 5500;
 module.exports = {
     context: __dirname,
     entry: {
-        main: './src/index.js'
+        main: './src/index.js',
+        partscat: './src/partscat.js',
+        contact: './src/contact.js'
     },
     devtool: 'inline-source-map',
     module: {

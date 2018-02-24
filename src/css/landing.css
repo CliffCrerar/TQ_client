@@ -1,7 +1,9 @@
 /* Framework css*/
 
 body {
-    background-color: rgba(128, 128, 128, 0.589)
+    background-color: rgba(128, 128, 128, 0.589);
+    width: 100%;
+    padding-top: 1%;
 }
 
 .se-pre-con {
@@ -45,11 +47,15 @@ span.fa {
 
 /* MAIN DISPLAY SECTION */
 
-.lp {
-    position: relative;
-    display: block;
-    margin-top: 1%;
+.pageCont {
     height: 80%;
+    margin-top: 1%
+}
+
+.lp {
+    position: absolute;
+    display: block;
+    height: 100%;
     width: 100%;
 }
 

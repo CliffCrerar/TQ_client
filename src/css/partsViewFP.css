@@ -1,10 +1,13 @@
+.partsView {
+    position: absolute;
+    max-width: 100%;
+    display: none;
+}
+
 .badgeBtnCont {
     color: white;
-    position: absolute;
     height: 90%;
     width: 100%;
-    top: 50%;
-    transform: translateY(-50%)
 }
 
 .badgeBtnCont>h1 {

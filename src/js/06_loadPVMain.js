@@ -1,4 +1,3 @@
-/*
 module.exports = partsViewFPClick = (ev) => {
 
     var filterParts = (ev) => {
@@ -56,7 +55,6 @@ module.exports = partsViewFPClick = (ev) => {
 
         }
     };
-
     return loadPartsIntoContainer(showPartsViewContainer(filterParts(ev)));
 };
-console.log('06_partsviewFPclick.loaded') */
+console.log('06_partsviewFPclick.loaded')

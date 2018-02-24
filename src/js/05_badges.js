@@ -7,8 +7,7 @@ var yamahaBadge = require('../image/badge/yamaha.png');
 var triumphBadge = require('../image/badge/triumph1.jpg');
 var twinAfricaBadge = require('../image/badge/africatwin1.png');
 
-
-module.exports = badge = {
+module.exports = {
     "bmw": bmwBadge,
     "landRover": landRoverBadge,
     "ktm": ktmBadge,
