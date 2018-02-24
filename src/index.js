@@ -3,6 +3,15 @@
 import _ from 'lodash';
 // handleBars
 
+import printMe from './print.js';
+
+if (module.hot) {
+    module.hot.accept('./print.js', function() {
+        console.log('Accepting the updated printMe module!');
+        printMe();
+    });
+}
+
 // Load CSS
 import './css/landing.css';
 import './css/navT.css';
@@ -22,6 +31,7 @@ import './js/03_carousel.js';
 import './js/04_adds.js';
 // Bootstrap
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
+//import 'jquery';
 import 'bootstrap';
 // Font Awesome
 import 'font-awesome-webpack';
@@ -33,7 +43,7 @@ import { setTimeout } from 'timers';
 // PartData
 
 // landing homepage HTML
-$('body').append('<div class="se-pre-con"></div>');
+//$('body').append('<div class="se-pre-con"></div>');
 console.log('Index.loaded');
 
 
@@ -45,6 +55,7 @@ console.log('Index.loaded');
 // var load = new Html();
 /* Events */
 
+// Loading screen scripts
 window.onload = () => {
     setTimeout(() => {
         $('.se-pre-con').fadeOut();

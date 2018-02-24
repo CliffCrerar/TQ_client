@@ -1,17 +1,22 @@
 const path = require('path');
-const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const $ = require('jquery');
-const template = require('handlebars');
+const webpack = require('webpack');
+var ManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: {
+        app: '/src/ index.js',
+        print: '/src/ index.js'
+    },
 
     devtool: 'inline-source-map',
     devServer: {
-        contentBase: './dist'
+        contentBase: './dist',
+        hot: true
+
     },
     module: {
         rules: [
@@ -54,14 +59,20 @@ module.exports = {
         }),
 
         new HTMLWebpackPlugin({
-            title: 'New Site',
-            meta: 'charset="UTF-8"'
+            template: './src/html/index.html',
         }),
 
-        new CleanWebpackPlugin(['dist'])
+        new CleanWebpackPlugin(['dist']),
+
+        new ManifestPlugin(),
+        new webpack.NamedModulesPlugin(),
+        new webpack.HotModuleReplacementPlugin()
+
     ],
     output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist')
+        //filename: 'bundle.js',
+        filename: '[name].bundle.js',
+        path: path.resolve(__dirname, 'dist'),
+        publicPath: '/'
     },
 };

@@ -35,7 +35,7 @@ let navBarOperationM = (container, targetEl) => {
     }
 };
 
-const partsViewFP = require('../html/partsViewFP.html'); // get parts view front page html
+//const partsViewFP = require('../html/partsViewFP.html'); // get parts view front page html
 let partsViewFPOps = () => { // function that loads partsview front page and its attached event handlers
     if (!$.contains(document.body, document.body.children.P_1)) { //if partsview frontpage not loaded
         $('body').append(partsViewFP).fadeIn(); //append html to body
@@ -54,7 +54,6 @@ let partsViewFPOps = () => { // function that loads partsview front page and its
     }
 };
 
-const contactView = require('../html/contactView.html');
 let contactViewShow = (event) => {
     if (event.target.id == "N_2" && $('body').find('#P_2').length == 0) {
         $('body').append(contactView);

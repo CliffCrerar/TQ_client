@@ -23,7 +23,7 @@ let correctDimension = function(vph, vpw) {
         } else {
             $('body').css("height", vph);
             var navH = ($('#navTop').height());
-            var navM = parseInt($('#navTop').css('margin-top'), 10);
+            var navM = parseInt($('#navTop').css('margin-top'));
             newHeight = vph - navH - navM;
             $('#P_0').css('height', newHeight);
             var addHeight = $('.addsRail').height();
@@ -36,6 +36,7 @@ var agentCheck = window.navigator.userAgent; //Get window data to determine brow
 var agent;
 //Define viewport for browser compatibility
 
+/*
 //Determine browser by looking at the DOM
 if (agentCheck.indexOf('Chrome') > 0) {
     agent = 'Chrome';
@@ -51,8 +52,12 @@ if (agentCheck.indexOf('Chrome') > 0) {
     window.vph = window.innerHeight;
     window.vpw = window.innerWidth;
 }
-
+*/
+window.vpw = screen.availWidth;
+window.vph = screen.availHeight;
 correctDimension(window.vph, window.vpw);
+
+console.log(agent, 'VPH:', vph, 'VPW:', vpw);
 
 $(document).ready(() => {
     $(window).resize(() => { correctDimension(window.vph, window.vpw); });
@@ -72,15 +77,13 @@ $(document).ready(() => {
 });
 
 // load starting/home/landing page html
-const navTopD = require('../html/navBarTopD.html');
-const navTopM = require('../html/navBarTopM.html');
-const land = require('../html/landing.html');
+//const navTopD = require('../html/navBarTopD.html');
+//const navTopM = require('../html/navBarTopM.html');
+//const land = require('../html/landing.html');
 if (window.vpw <= 414) {
+    $('#navTop').remove(); // remove current navbar
     $('body').append(navTopM); //If screen size smaller than 414 then load mobile top nav
-} else {
-    //console.log(window.vpw);
-    $('body').append(navTopD); //else load normal nav html
 }
-$('body').append(land);
+//$('body').append(land);
 
 console.log('01_start.loaded');

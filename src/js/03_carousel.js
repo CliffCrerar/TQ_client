@@ -41,6 +41,7 @@ $(document).ready(() => {
         pauseOnHover: false
     });
 
+    /*
     //Other dimension adjustments
     var lpCarHeight = ($('.lpCarousel').height());
     var lpCarWidth = ($('.lpCarousel').width());
@@ -53,5 +54,6 @@ $(document).ready(() => {
     $(window).resize(function() {
         carDim();
     });
+    */
 });
 console.log('03_carousel.loaded');

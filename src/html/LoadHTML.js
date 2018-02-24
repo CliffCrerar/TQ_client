@@ -1,7 +1,7 @@
 //Load HTML into application
 
-const partsView = require('./partsView.html');
-
+//const partsView = require('./partsView.html');
+/*
 // functions class for loading page sections
 module.exports = class {
     partsViewShow(event) {
@@ -11,5 +11,6 @@ module.exports = class {
     }
 };
 // Finish Window loading
+*/
 
 console.log('LoadHTML.loaded');

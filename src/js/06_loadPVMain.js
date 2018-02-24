@@ -27,7 +27,7 @@ module.exports = partsViewFPClick = (ev) => {
         //console.log(hasContainer);
         if (hasContainer) {
             $('#middle').empty(); // remove all previous elements from main parts view
-            var pfHeader = $(require('../html/partsView.html')).find('#pvHeaderCont'); // find parts view main header
+            //var pfHeader = $(require('../html/partsView.html')).find('#pvHeaderCont'); // find parts view main header
             console.log(pfHeader); // add partsview main header
             $("#middle").append(pfHeader); // load main partsview header into main partsview
             $('#partsViewContainer').fadeIn(); // fade in parts view

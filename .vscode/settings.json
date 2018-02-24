@@ -60,4 +60,9 @@
     "liveServer.settings.CustomBrowser": "firefox",
     "liveServer.settings.fullReload": true,
     "liveServer.settings.root": "/dist",
+    "liveServer.settings.host": "172.16.0.104",
+    "liveServer.settings.port": 5500,
+    "liveServer.settings.wait": 1000,
+    "liveServer.settings.donotVerifyTags": true,
+    
 }
