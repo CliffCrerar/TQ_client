@@ -8,9 +8,7 @@ var ManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
     entry: {
-        app: './src/index.js',
-        gvar: './src/gvar.js',
-        //print: './src/print.js'
+        main: './src/index.js',
     },
 
     devtool: 'inline-source-map',
@@ -56,11 +54,12 @@ module.exports = {
             $: 'jquery',
             jQuery: 'jquery',
             Popper: ['popper.js', 'default'],
-            bootstrap: 'bootstrap'
+            bootstrap: 'bootstrap',
+            slick: 'slick'
         }),
 
         new HTMLWebpackPlugin({
-            template: './src/index.html',
+            template: './src/html/index.html',
         }),
 
         new CleanWebpackPlugin(['dist']),

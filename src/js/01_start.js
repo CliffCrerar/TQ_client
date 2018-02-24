@@ -9,7 +9,7 @@ let correctDimension = function(vph, vpw) {
             subract = $('#navTop').height();
             newHeight = 690 - subract;
             $('#P_0').css('height', newHeight);
-            $('.lpCarousel').hide();
+            $('.lpCarousel').remove();
             $('.c1.carousel-inner').css('border-radius', '24px');
             newHeight = $('.addsRail').height() + 5;
             $('#addsRailID').css("height", "85%");
