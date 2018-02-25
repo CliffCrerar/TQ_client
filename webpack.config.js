@@ -13,8 +13,8 @@ module.exports = {
     context: __dirname,
     entry: {
         main: './src/index.js',
-        partscat: './src/partscat.js',
-        contact: './src/contact.js'
+        partscat: './src/partsView.js',
+        contact: './src/contactView.js'
     },
     devtool: 'inline-source-map',
     module: {

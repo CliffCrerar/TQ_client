@@ -18,7 +18,7 @@ import '../node_modules/slick-carousel/slick/slick-theme.css';
 import './css/landing.css';
 import './css/font.css';
 /* GET PARTS DATA FROM WEB SERVER */
-//import './js/00_getParts.js';
+import './js/00_getParts.js';
 
 /*------------------------*/
 /*  LOAD HOME PAGE HTML   */
@@ -39,7 +39,7 @@ const loadNav = (screenw) => {
 };
 $('body').append(loadNav(vpw));
 $('body').append('<div id="pageCont" style="position:relative" class="pageCont"></div>');
-$('#pageCont').append('<div id="P_0" class="lp container-fluid"></div>');
+$('#pageCont').append('<div id="P_0" class="lp"></div>');
 /*  IMPLEMENT NAV BAR OPERATION  */
 $('#navTop').on('click', (ev) => {
     var navop = require('./js/02_navbar');
@@ -55,7 +55,7 @@ $('#navTop').on('click', (ev) => {
 import './css/carousel.css'; // CSS
 import './js/03_carousel.js'; // JS
 const loadCarousel = function(screenw) {
-    if (screenw >= 414) {
+    if (screenw > 414) {
         return $('#P_0').append(require('./html/carousel.html'));
     }
 };

@@ -1,7 +1,7 @@
 //Navigation bar operation class
 module.exports = {
     navBarOperationD(container, targetEl) {
-        console.log('NAV_D');
+        //console.log('NAV_D');
         if (!($(targetEl).hasClass('active'))) {
             $(container).children('a').each((i, el) => {
                 if ($(el).hasClass('active')) {
@@ -13,12 +13,12 @@ module.exports = {
             $(targetEl).addClass('active');
             $('body').css("height", window.vph);
             var pageIn = $('#P_' + targetEl.id.split('_')[1]);
-            pageIn.fadeIn('slow');
+            pageIn.fadeIn('slow').css('height', $('#pageCont').height());
         }
     },
     // for mobile nav
     navBarOperationM(container, targetEl) {
-        console.log('NAV_M');
+        //console.log('NAV_M');
         if ($(targetEl).is('li')) {
             $('li.nav-item.dropdown').each((i, el) => {
                 if (el.id !== 'navSearch') {
@@ -31,9 +31,10 @@ module.exports = {
                 $(targetEl).addClass('active');
                 $('body').css("height", window.vph);
                 var pageIn = $('#P_' + targetEl.id.split('_')[1]);
-                pageIn.fadeIn();
+                pageIn.fadeIn().css('height', $('#pageCont').height());
             }
         }
+        $('.navbar-collapse').collapse('toggle');
         $('#pageCont').css('height', $('#P_' + targetEl.id.split('_')[1]).height());
     },
 };

@@ -1,7 +1,7 @@
 var partsData;
 console.log('00.1_Parts request started');
-//var URL = 'http://172.16.0.103:8000';
-var URL = 'http://172.16.0.152:8000';
+var URL = 'http://172.16.0.104:8000';
+//var URL = 'http://172.16.0.152:8000';
 //var URL = 'http://172.20.10.3:8000';
 $.ajax({
     url: URL,

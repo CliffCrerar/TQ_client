@@ -37,10 +37,6 @@ span.fa {
     padding: 0px !important;
 }
 
-.container-fluid {
-    padding: 0px !important;
-}
-
 .row {
     margin: 0px !important;
 }
@@ -55,7 +51,13 @@ span.fa {
     position: relative;
     width: 100%;
     min-height: 80%;
-    margin-top: 1%
+    margin-top: 1%;
+}
+
+@media screen and (max-width: 414px) {
+    .pageCont {
+        overflow: scroll;
+    }
 }
 
 .lp {
