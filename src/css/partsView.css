@@ -1,3 +1,5 @@
+/* Middle section */
+
 .pvContainer {
     position: absolute;
     height: 100%;
@@ -5,20 +7,12 @@
     left: 0;
 }
 
-.boxOrange {
-    background-color: rgba(255, 166, 0, 0.5);
-    position: unset;
-}
-
 .pvMiddleSection {
-    background-color: rgba(128, 0, 128, 0.5);
     position: relative;
     max-height: 100%;
-    /*overflow: scroll;
-    overflow: -moz-scroll;
-    overflow: -webkit-scroll;*/
     overflow-y: scroll;
     overflow-x: hidden;
+    border-radius: 4px;
 }
 
 .list-group-item {
@@ -38,3 +32,36 @@
     top: 0px;
     z-index: 1000;
 }
+
+
+/* left section */
+
+.filterButtonCont {
+    /* background-color: rgba(255, 166, 0, 0.5); */
+    position: sticky;
+    max-height: 100%;
+    overflow: scroll;
+}
+
+.backBtn {
+    position: sticky !important;
+    top: 184px;
+    margin-bottom: 10px;
+}
+
+.defFilter {
+    position: sticky !important;
+    top: 0px;
+    z-index: 1000;
+}
+
+.filterOptions {
+    width: 100%;
+}
+
+.btn-group-vertical {
+    width: 100%;
+}
+
+
+/* Right section */
