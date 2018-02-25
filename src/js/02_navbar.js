@@ -34,9 +34,7 @@ module.exports = {
                 pageIn.fadeIn();
             }
         }
+        $('#pageCont').css('height', $('#P_' + targetEl.id.split('_')[1]).height());
     },
 };
-// for desktop nav
-
-
 console.log('02_navbar.loaded');

@@ -11,20 +11,17 @@ import 'bootstrap';
 /* LOAD HTML */
 $('#pageCont').append(require('./html/partsViewFP.html'));
 $('#P_1').append(require('./html/partsView.html'));
-
 /* LOAD BADGE SRC ATTRIBUTES INTO HTML */
 const badge = require('./js/05_badges');
 $.each(badge, (make, img) => {
     $('#' + make.toUpperCase() + '>img').attr('src', img);
 });
-
 /* !!!! yet to do */
 //console.log($('.badgeBtn'));
 $('.badgeBtn').on('click', (ev) => {
     console.log(ev);
     $('#partsViewFP').fadeOut();
-    $('#partsViewContainer').show()
-
+    $('#partsViewContainer').fadeIn();
+    console.log(ev.target.id);
 });
-
 console.log('Partscat.loaded');

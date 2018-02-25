@@ -1,6 +1,6 @@
 /*------------------------*/
 /*       HOME PAGE        */
-/*----------------------- */
+/*------------------------*/
 
 /* App root file */
 /* LODASH */
@@ -22,14 +22,13 @@ import './css/font.css';
 
 /*------------------------*/
 /*  LOAD HOME PAGE HTML   */
-/*----------------------- */
+/*------------------------*/
 
-/* START */
+/*  LOAD CSS  */
 import './css/bg.css'; // define backgrounds
-import './js/01_start.js'; // adjust user view
-
-/* LOAD NAVIATION BAR  */
 import './css/navT.css'; // CSS
+/*  LOAD NAVIATION BAR  */
+import './js/01_start.js'; // adjust user view
 import './js/02_navbar.js'; // JS
 const loadNav = (screenw) => {
     if (screenw <= 414) {
@@ -39,9 +38,9 @@ const loadNav = (screenw) => {
     }
 };
 $('body').append(loadNav(vpw));
-$('body').append('<div id="pageCont" style="position:relative" class="pageCont container-fluid"></div>');
-$('#pageCont').append('<div id="P_0" class="lp"></div>');
-/* IMPLEMENT NAV BAR OPERATION */
+$('body').append('<div id="pageCont" style="position:relative" class="pageCont"></div>');
+$('#pageCont').append('<div id="P_0" class="lp container-fluid"></div>');
+/*  IMPLEMENT NAV BAR OPERATION  */
 $('#navTop').on('click', (ev) => {
     var navop = require('./js/02_navbar');
     var navclick;
@@ -61,7 +60,7 @@ const loadCarousel = function(screenw) {
     }
 };
 loadCarousel(vpw);
-/* LOAD ADDS RAIL */
+/*  LOAD ADDS RAIL  */
 import './css/adds.css'; // CSS
 import './js/04_adds.js'; // Load images and set carousel options
 $('#P_0').append(require('./html/adds.html'));
@@ -69,7 +68,6 @@ $('#P_0').append(require('./html/adds.html'));
 import './css/navB.css'; // CSS
 $('body').append(require('./html/navBarBottom.html'));
 if (vpw <= 414) { $('.social').remove(); }
-
 /* LOAD LOADING SCREEN  */
 window.onload = () => {
     setTimeout(() => {

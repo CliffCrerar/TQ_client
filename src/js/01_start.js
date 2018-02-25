@@ -7,26 +7,22 @@ let correctDimension = function(vph, vpw) {
     console.log('VPH:', vph, 'VPW:', vpw);
     $(document).ready(() => {
         var newHeight;
-        var addHeight;
         $('body').css('background-Size', vph + 'px auto');
         if (vpw <= 414) {
             subract = $('#navTop').height();
-            newHeight = (vph * 0.86)
-                // $('.lpCarousel').remove();
             $('.c1.carousel-inner').css('border-radius', '24px');
-            //newHeight = $('.addsRail').height() + 5;
-            //$('.pageCont').css('height', newHeight);
-            addHeight = (vph * 0.85);
-            $('#P_0').css("height", addHeight);
-            $('#addsRailID').css("min-height", addHeight);
-            $('.subRails').css('min-height', addHeight);
-            $('.addContainer').css('height', addHeight / 3);
+            newHeight = (vph * 0.85);
+            $('.pageCont').css('height', newHeight);
+            $('#P_0').css('height', newHeight);
+            $('#addsRailID').css('min-height', newHeight);
+            $('.subRails').css('min-height', newHeight);
+            $('.addContainer').css('height', newHeight / 3);
             $('.add').css('height', $('.addContainer').height());
             $('.addImg').css('height', $('.addContainer').height());
             $('.navbar-brand').css('width', '100%').addClass('text-center');
             $('.makes').css('width', '100%');
         } else {
-            $('body').css("height", vph);
+            $('body').css('height', vph);
             var navH = ($('#navTop').height());
             var navM = parseInt($('#navTop').css('margin-top'));
             newHeight = vph - navH - navM;
@@ -36,14 +32,8 @@ let correctDimension = function(vph, vpw) {
         }
     });
 };
-
-var agentCheck = window.navigator.userAgent; //Get window data to determine browser
-var agent;
-
 correctDimension(vph, vpw);
-
 console.log('VPH:', vph, 'VPW:', vpw);
-
 $(document).ready(() => {
     $(window).resize(() => { correctDimension(window.vph, window.vpw); });
     //Load badge sources into images from badge object
@@ -51,7 +41,6 @@ $(document).ready(() => {
     $.each(badge, (name, link) => {
         $('.makes>[alt="' + name + '"]').attr('src', link);
     });
-
     //adjust height for navbottom
     var navBottomHeight = $('#navBottom').height();
     if (vpw <= 414) {
@@ -60,5 +49,4 @@ $(document).ready(() => {
         $('.navBadge').height(navBottomHeight);
     }
 });
-
 console.log('01_start.loaded');
