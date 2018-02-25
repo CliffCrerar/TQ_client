@@ -52,7 +52,10 @@ span.fa {
 /* MAIN DISPLAY SECTION */
 
 .pageCont {
+    position: relative;
     height: 80%;
+    width: 100%;
+    min-height: 80%;
     margin-top: 1%
 }
 

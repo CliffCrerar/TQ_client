@@ -2,7 +2,6 @@
 
 #navTop {
     background-color: rgba(255, 0, 0, 0.514);
-    height: 5%;
     border-radius: 24px;
 }
 
@@ -55,7 +54,7 @@
     text-align: center;
 }
 
-navbarSupportedContent {
+.navbarSupportedContent {
     color: white;
 }
 

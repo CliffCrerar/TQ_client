@@ -11,17 +11,18 @@ let correctDimension = function(vph, vpw) {
         $('body').css('background-Size', vph + 'px auto');
         if (vpw <= 414) {
             subract = $('#navTop').height();
-            newHeight = (vph * 0.86) / 100;
-            //$('.lpCarousel').remove();
+            newHeight = (vph * 0.86)
+                // $('.lpCarousel').remove();
             $('.c1.carousel-inner').css('border-radius', '24px');
-            newHeight = $('.addsRail').height() + 5;
+            //newHeight = $('.addsRail').height() + 5;
+            //$('.pageCont').css('height', newHeight);
             addHeight = (vph * 0.85);
             $('#P_0').css("height", addHeight);
             $('#addsRailID').css("min-height", addHeight);
             $('.subRails').css('min-height', addHeight);
             $('.addContainer').css('height', addHeight / 3);
-            $('.add').css('height', newHeight);
-            $('.addImg').css('height', newHeight);
+            $('.add').css('height', $('.addContainer').height());
+            $('.addImg').css('height', $('.addContainer').height());
             $('.navbar-brand').css('width', '100%').addClass('text-center');
             $('.makes').css('width', '100%');
         } else {

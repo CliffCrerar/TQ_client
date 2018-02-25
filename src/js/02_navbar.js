@@ -1,6 +1,7 @@
 //Navigation bar operation class
 module.exports = {
     navBarOperationD(container, targetEl) {
+        console.log('NAV_D');
         if (!($(targetEl).hasClass('active'))) {
             $(container).children('a').each((i, el) => {
                 if ($(el).hasClass('active')) {
@@ -17,6 +18,7 @@ module.exports = {
     },
     // for mobile nav
     navBarOperationM(container, targetEl) {
+        console.log('NAV_M');
         if ($(targetEl).is('li')) {
             $('li.nav-item.dropdown').each((i, el) => {
                 if (el.id !== 'navSearch') {

@@ -39,41 +39,38 @@ const loadNav = (screenw) => {
     }
 };
 $('body').append(loadNav(vpw));
-$('body').append('<div id="pageCont" style="position:relative" class="pageCont"></div>');
+$('body').append('<div id="pageCont" style="position:relative" class="pageCont container-fluid"></div>');
 $('#pageCont').append('<div id="P_0" class="lp"></div>');
-
 /* IMPLEMENT NAV BAR OPERATION */
 $('#navTop').on('click', (ev) => {
     var navop = require('./js/02_navbar');
     var navclick;
-    if (vph <= 414) {
+    console.log(vpw);
+    if (vpw <= 414) {
         navop.navBarOperationM(ev.currentTarget, ev.target);
     } else {
         navop.navBarOperationD(ev.currentTarget, ev.target);
     }
 });
-
-/* LOAD MAIN CAROUSEL  */
+/*  LOAD MAIN CAROUSEL  */
 import './css/carousel.css'; // CSS
 import './js/03_carousel.js'; // JS
 const loadCarousel = function(screenw) {
     if (screenw >= 414) {
-        return require('./html/carousel.html');
+        return $('#P_0').append(require('./html/carousel.html'));
     }
 };
-$('#P_0').append(loadCarousel(vpw));
-
+loadCarousel(vpw);
 /* LOAD ADDS RAIL */
 import './css/adds.css'; // CSS
 import './js/04_adds.js'; // Load images and set carousel options
 $('#P_0').append(require('./html/adds.html'));
-
 /*  NAV BOTTOM  */
 import './css/navB.css'; // CSS
 $('body').append(require('./html/navBarBottom.html'));
 if (vpw <= 414) { $('.social').remove(); }
 
-/* LOAD LAODING SCREEN  */
+/* LOAD LOADING SCREEN  */
 window.onload = () => {
     setTimeout(() => {
         $('.se-pre-con').fadeOut();
