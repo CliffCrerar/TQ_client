@@ -3,20 +3,20 @@
 /*----------------------- */
 
 /* App root file */
-// Lodash
+/* LODASH */
 import _ from 'lodash';
-
-/* START CSS */
+/* BOOSTRAP 4 */
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
-import './css/landing.css';
-import './css/font.css';
-// Font Awesome
+import 'bootstrap';
+/* FONT AWESOME FOR WEB PACK */
 import 'font-awesome-webpack';
 /* SLICK CAROUSEL API */
 import '../node_modules/slick-carousel/slick/slick.css';
 import '../node_modules/slick-carousel/slick/slick.js';
 import '../node_modules/slick-carousel/slick/slick-theme.css';
-
+/* CUSTOM CSS CSS */
+import './css/landing.css';
+import './css/font.css';
 /* GET PARTS DATA FROM WEB SERVER */
 //import './js/00_getParts.js';
 
@@ -25,7 +25,7 @@ import '../node_modules/slick-carousel/slick/slick-theme.css';
 /*----------------------- */
 
 /* START */
-import './css/bg.css'; // defin backgrouns
+import './css/bg.css'; // define backgrounds
 import './js/01_start.js'; // adjust user view
 
 /* LOAD NAVIATION BAR  */
@@ -39,14 +39,12 @@ const loadNav = (screenw) => {
     }
 };
 $('body').append(loadNav(vpw));
-$('body').append('<div id="pageCont" style="position:relative" class="pageCont"></div>')
+$('body').append('<div id="pageCont" style="position:relative" class="pageCont"></div>');
 $('#pageCont').append('<div id="P_0" class="lp"></div>');
 
 /* IMPLEMENT NAV BAR OPERATION */
 $('#navTop').on('click', (ev) => {
-    console.log(ev);
     var navop = require('./js/02_navbar');
-    console.log(navop);
     var navclick;
     if (vph <= 414) {
         navop.navBarOperationM(ev.currentTarget, ev.target);

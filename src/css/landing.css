@@ -37,6 +37,10 @@ span.fa {
     padding: 0px !important;
 }
 
+.container-fluid {
+    padding: 0px !important;
+}
+
 .row {
     margin: 0px !important;
 }

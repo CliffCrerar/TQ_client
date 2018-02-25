@@ -28,9 +28,21 @@ module.exports = {
                 use: [{
                     loader: "style-loader" // creates style nodes from JS strings
                 }, {
-                    loader: "css-loader" // translates CSS into CommonJS
+                    loader: "css-loader", // translates CSS into CommonJS
+                    options: {
+                        sourceMap: true
+                    }
                 }, {
-                    loader: "sass-loader" // compiles Sass to CSS
+                    loader: "sass-loader", // compiles Sass to CSS
+                    options: {
+                        includePaths: [
+                            './node_modules/bootstrap/scss/',
+                            './node_modules/bootstrap/scss/mixins',
+                            './node_modules/bootstrap/scss/utilities',
+                        ],
+                        sourceMap: true
+
+                    },
                 }]
             },
             { test: /\.(png|svg|jpg|gif)$/, use: ['file-loader'] },
@@ -45,8 +57,9 @@ module.exports = {
                     }
                 }],
             },
-            { test: /\.handlebars$/, loader: "handlebars-loader" }
-        ]
+            { test: /\.handlebars$/, loader: "handlebars-loader" },
+            { test: /\.txt$/, use: 'raw-loader' }
+        ],
 
     },
     plugins: [
@@ -55,8 +68,6 @@ module.exports = {
             $: 'jquery',
             jQuery: 'jquery',
             Popper: ['popper.js', 'default'],
-            bootstrap: 'bootstrap',
-            slick: 'slick'
         }),
 
         new HTMLWebpackPlugin({

@@ -1,30 +1,33 @@
+.pvContainer {
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    left: 0;
+}
+
 .boxOrange {
     background-color: rgba(255, 166, 0, 0.5);
+    position: unset;
+    padding: 0 !important;
 }
 
 .boxPurple {
     background-color: rgba(128, 0, 128, 0.5);
-    overflow: scroll;
+    /*overflow: scroll;
     overflow: -moz-scroll;
-    overflow: -webkit-scroll;
+    overflow: -webkit-scroll;*/
+    padding: 0 !important;
 }
 
 .boxTeal {
-    background-color: rgba(0, 128, 128, 0.5)
+    background-color: rgba(0, 128, 128, 0.5);
+    padding: 0 !important;
 }
 
-.partsView {
-    position: absolute;
-    height: 90%;
-}
+.partsView {}
 
-.pvContainer {
-    height: 100%;
-}
-
-.partsViewRow {
-    height: 100%
-}
+.partsViewRow {}
 
 button.list-group-item:hover {
     background-color: #464A4E !important;
@@ -36,7 +39,7 @@ button.list-group-item:hover {
 }
 
 .pvHeaderCont {
-    position: sticky;
+    /*position: sticky;
     top: 0px;
-    z-index: 1000;
+    z-index: 1000;*/
 }
