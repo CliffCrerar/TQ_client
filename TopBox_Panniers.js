@@ -324,7 +324,6 @@
           price: 600,
           cat: 'PAN',
           make: 'BMW'
-
       },
       //Part A190110
       {
@@ -452,7 +451,7 @@
           cat: 'PAN',
           make: 'BMW'
       },
-         //Part A110910
+      //Part A110910
       {
           partNum: 'A110910',
           partName: 'Pannier RHS',
@@ -590,7 +589,7 @@
           instTime: 10,
           price: 3960,
           cat: 'TB',
-          Make: 'HND'
+          make: 'HND'
       },
       //Part A110801_X16
       {
@@ -604,25 +603,20 @@
           instTime: 10,
           price: 4050,
           cat: 'TB',
-          Make: 'HND'
-      },    
-       //Part A110902
-    {  
-        partNum: 'A110902',
-        partName: 'Pannier LHS',
-        partDesc: 'Powder coated New Silver 405 X 455 X285',
-        models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
-        imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110912/599c7423c2f8b_A110912_00.jpg&length=1200',
-        colors: 'New Silver',
-        grnt: '1 Year',
-        instTime: 20,
-        price: 5126,
-        cat: 'PAN', 
-        make: 'BMW'
-    },  
-       
-        
-         
-       
-
+          make: 'HND'
+      },
+      //Part A110902
+      {
+          partNum: 'A110902',
+          partName: 'Pannier LHS',
+          partDesc: 'Powder coated New Silver 405 X 455 X285',
+          models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
+          imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110912/599c7423c2f8b_A110912_00.jpg&length=1200',
+          colors: 'New Silver',
+          grnt: '1 Year',
+          instTime: 20,
+          price: 5126,
+          cat: 'PAN',
+          make: 'BMW'
+      }
   ]
