@@ -619,4 +619,4 @@
           cat: 'PAN',
           make: 'BMW'
       }
-  ]
+  ];
