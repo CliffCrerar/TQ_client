@@ -2,8 +2,8 @@ module.exports = function(event) {
 
     const filterByMake = require('./00_filteringPartsData');
     //$('#selectInd').html('MAKE: ' + event.target.id);
-    $('#left').append(require('../html/partFilters.html'));
-    $('.defFilter').html('<span class="fa fa-filter"></span>' + event.target.id);
+    $('#left').append(require('../html/partFilControls.html'));
+    $('.defFilter').html('<div class="p2">' + event.target.id + '</div><div class="filterIcon ml-auto p-2 fa fa-filter"></div>');
     let parts = filterByMake(event);
     let categories = require('../json/categories.json');
     console.log(categories);

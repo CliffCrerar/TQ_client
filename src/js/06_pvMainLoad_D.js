@@ -1,4 +1,4 @@
-module.exports = partsViewFPClickD = (ev) => {
+module.exports = (ev) => {
 
     const filterParts = require('./00_filteringPartsData');
 
