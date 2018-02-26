@@ -10,6 +10,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import 'bootstrap';
 /* FONT AWESOME FOR WEB PACK */
 import 'font-awesome-webpack';
+import { resolve } from 'path';
 /* CALL PART VIEW POPULATE FUNCTION */
 const loadPartList = require('./js/06_pvMainLoad_D');
 const loadButtons = require('./js/08_pvMainFilter_D');
@@ -22,24 +23,39 @@ const badge = require('./js/05_badges');
 $.each(badge, (make, img) => {
     $('#' + make.toUpperCase() + '>img').attr('src', img);
 });
-/* LOAD PARTS VIEW CONTAINTER */
-let loadParts;
-let loadFilBtns;
+/* LOAD HTML INTO PARTS VIEW CONTAINTER */
 $('#P_1').append(require('./html/partsViewCont.html'));
 /* CLICK FUNCTION FOR PARTSVIEW FRONT PAGE */
 $('.badgeBtn').on('click', (ev) => {
     //console.log(ev);
-    $('#partsViewFP').hide();
+    $('#partsViewFP').fadeOut();
     $('#partsViewContainer').fadeIn();
     //console.log(ev.target.id);
-    loadParts = new Promise(function(resolve, reject) {
-        resolve(loadPartList(ev));
-    });
-    loadParts.then(function(event) {
-        console.log(event);
-        //sortFilter.sortItems()
-    });
-    loadFilBtns = new Promise(loadButtons(ev));
+    Promise.resolve(loadPartList(ev))
+        .then(() => {
+            sortFilter.sortItems($('#pvHeaderCont'));
+        });
+    Promise.resolve(loadButtons(ev))
+        .then(() => {
+            sortFilter.sortItems($('#btnCont'));
+            $('#backBtn').on('click', () => {
+                $('#pvHeaderCont').empty();
+                $('#left').empty();
+                $('#partsViewFP').fadeIn();
+                $('#partsViewContainer').fadeOut();
+            });
+            $('#btnCont').on('click', (ev) => {
+                var filtCriteria = ev.target.id;
+                //console.log(ev.currentTarget);
+                $(ev.currentTarget).children().each(function(i, el) {
+                    $(el).removeClass('active');
+                });
+                $(ev.target).addClass('active');
+                //console.log(filtCriteria);
+                sortFilter.filter(filtCriteria, $('#pvHeaderCont'));
+
+            });
+        });
 });
 
 /* LOAD PART FILTER BUTTONS */
@@ -52,6 +68,7 @@ $('.badgeBtn').on('click', (ev) => {
 /*------------------------*/
 
 /* LEFT MIDDLE RIGHT SECTIONS ON LOAD */
+
 
 
 
@@ -72,4 +89,3 @@ $(document).on({
 
 /********************************/
 console.log('Partscat.loaded');
-c

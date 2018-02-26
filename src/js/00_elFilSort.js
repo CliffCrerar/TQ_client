@@ -11,22 +11,28 @@ module.exports = {
             list.append(itm);
         });
     },
-    filter(controls, FilterElements) {
-        var parts = $(FilterElements).children();
-        var partClass = controls.target.id;
+    filter(criteria, elementsTofilter) {
+        let parts = $(elementsTofilter).children();
+        //console.log(parts);
+        let partClass = criteria;
+        //console.log(partClass)
         parts.hide();
-        var p = 0;
-        parts.each(function(div) {
-            var idClass = parts[p].id //.substr(0, parts[p].id.indexOf('_'));
-            if (partClass == idClass) {
-                // console.log(parts[p])
-                $('#' + parts[p].id).fadeIn('slow');
+        $('.partslistheader').fadeIn('slow');
+        parts.each(function(p, part) {
+            //console.log('p: ' + p);
+            //console.log(partClass);
+            //console.log(part);
+            //console.log(part.getAttribute('cat'));
+            //console.log(part.id);
+            if (part.getAttribute('cat') == partClass) {
+                $('#' + part.id).fadeIn('slow');
             }
-            //console.log('idClass '+idClass)
-            //console.log('PartClass '+partClass)
-            //console.log(parts[p].id)
-            //console.log(p)
-            p++;
+
+            //var id = parts[p].id; //.substr(0, parts[p].id.indexOf('_'));
+            //if (partClass == idClass) {
+
+            //$('#' + id).fadeIn('slow');
+            //}
         });
     }
 }

@@ -2,12 +2,14 @@ module.exports = (ev) => {
 
     const filterParts = require('./00_filteringPartsData');
 
+    $('#pvHeaderCont').append(require('../html/partListingHdng.html'));
+
     var loadPartsIntoContainer = (filteredPartsData) => {
         for (var key in filteredPartsData) {
             //console.log(key);
             var partHtml = require('../html/partListing_D.html');
             //console.log($(partHtml));
-            var partsAddKey = $(partHtml).attr('id', key);
+            var partsAddKey = $(partHtml).attr('id', key).attr('cat', filteredPartsData[key].cat);
             //console.log(partsAddKey);
             $('#pvHeaderCont').append(partsAddKey);
             //console.log(filteredPartsData[key]);

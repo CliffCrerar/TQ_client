@@ -26,7 +26,7 @@ module.exports = function(event) {
                 btnCaption = categories[key2];
             }
         }
-        $('#btnCont').append('<button id = "' + filterList[i] + '" type="button" class="btn btn-block btn-outline-success">' + btnCaption + '</button>');
+        $('#btnCont').append('<button id = "' + filterList[i] + '" type="button" class="btn btn-block btn-outline-success text-left">' + btnCaption + '</button>');
     }
 
     return $('.defFilter').on('click', () => {
@@ -34,8 +34,13 @@ module.exports = function(event) {
         //console.log($('#filterOptions').hasClass('disp'));
         if ($('#filterOptions').hasClass('show')) {
             $('#filterOptions').slideUp('2000').removeClass('show');
+            $('#openFilt').removeClass('active');
+            $('#pvHeaderCont').children().each((i, el) => {
+                $(el).fadeIn('slow');
+            });
         } else {
             $('#filterOptions').slideDown('2000').addClass('show');
+            $('#openFilt').addClass('active');
         }
     });
 
