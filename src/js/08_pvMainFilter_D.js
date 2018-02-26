@@ -1,15 +1,12 @@
 module.exports = function(event) {
 
     const filterByMake = require('./00_filteringPartsData');
-
-    let buttonFrame = require('../html/partFilters.html');
-    //console.log($(buttonFrame));
-    $('#left').append(buttonFrame);
-    $('#selectInd').html('MAKE: ' + event.target.id);
-    //console.log(partsData);
-
+    //$('#selectInd').html('MAKE: ' + event.target.id);
+    $('#left').append(require('../html/partFilters.html'));
+    $('.defFilter').html('<span class="fa fa-filter"></span>' + event.target.id);
     let parts = filterByMake(event);
-
+    let categories = require('../json/categories.json');
+    console.log(categories);
     let filterList = [];
     var evalElement = '';
     for (var key in parts) {
@@ -21,17 +18,24 @@ module.exports = function(event) {
     }
     //console.log(filterList);
     var arrLen = filterList.length;
+    var btnCaption = '';
     for (var i = 0; i < arrLen; i++) {
-        $('#btnCont').append('<button type="button" class="btn btn-block btn-secondary">' + filterList[i] + '</button>');
+        btnCaption = filterList[i];
+        for (var key2 in categories) {
+            if (btnCaption == key2) {
+                btnCaption = categories[key2];
+            }
+        }
+        $('#btnCont').append('<button id = "' + filterList[i] + '" type="button" class="btn btn-block btn-outline-success">' + btnCaption + '</button>');
     }
 
     return $('.defFilter').on('click', () => {
-        console.log('click');
-        console.log($('#filterOptions').hasClass('show'));
+        //console.log('click');
+        //console.log($('#filterOptions').hasClass('disp'));
         if ($('#filterOptions').hasClass('show')) {
-            $('#filterOptions').removeClass('show');
+            $('#filterOptions').slideUp('2000').removeClass('show');
         } else {
-            $('#filterOptions').addClass('show');
+            $('#filterOptions').slideDown('2000').addClass('show');
         }
     });
 

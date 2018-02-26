@@ -137,15 +137,6 @@
 		"codemetrics.basics.EnabledForHTML": true,
 		"codemetrics.basics.MetricsForFunctionDeclarationsToggled": true,
 		"codemetrics.basics.MetricsForFunctionExpressionsToggled": true,
-		"standard._legacyModuleResolve": true,
-		"standard.run": "onSave",
-		"standard.semistandard": true,
-		"standard.usePackageJson": true,
-		"standard.validate": [
-			"javascript",
-			"javascriptreact"
-		],
-		"standard.autoFixOnSave": true,
 		
 	}
 }

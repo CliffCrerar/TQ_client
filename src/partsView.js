@@ -16,6 +16,7 @@ const loadButtons = require('./js/08_pvMainFilter_D');
 
 /* LOAD PARTS VIEW FRONT PAGE */
 $('#pageCont').append(require('./html/partsViewFP.html'));
+
 /* POPULATE BADGE BUTTONS ATTRIBUTES INTO HTML */
 const badge = require('./js/05_badges');
 $.each(badge, (make, img) => {

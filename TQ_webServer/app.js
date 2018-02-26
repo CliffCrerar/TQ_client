@@ -1,8 +1,8 @@
 var http = require('http');
 var partsData = require('./combineParts.js');
 
-
-var IP = '172.16.0.104';
+var IP = '172.31.30.78';
+//var IP = '172.16.0.104';
 //var IP = '172.20.10.3';
 //var IP = '172.16.0.103';
 //var IP = '172.17.20.16';
