@@ -62,4 +62,4 @@ $(document).ready(() => {
     $('.add6_2').html('<img class="addImg img-fluid" src="' + add62 + '">');
     $('.add6_3').html('<img class="addImg img-fluid" src="' + add63 + '">');
 });
-console.log('04_adds.loaded');
+//console.log('04_adds.loaded');

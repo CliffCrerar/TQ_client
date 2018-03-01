@@ -53,4 +53,4 @@ $(document).ready(() => {
         carDim();
     });
 });
-console.log('03_carousel.loaded');
+//console.log('03_carousel.loaded');

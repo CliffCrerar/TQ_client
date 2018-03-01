@@ -1,10 +1,10 @@
 //function that corrects dimensions for elements to fit accordingly
 window.vph = window.innerHeight;
 window.vpw = screen.width;
-console.log("SCR_W: ", vph, "SCR_H: ", vpw);
+//console.log("SCR_W: ", vph, "SCR_H: ", vpw);
 let correctDimension = function(vph, vpw) {
     //Correction of image viewhight   
-    console.log('VPH:', vph, 'VPW:', vpw);
+    //console.log('VPH:', vph, 'VPW:', vpw);
     $(document).ready(() => {
         var newHeight;
         $('body').css('background-Size', vph + 'px auto');
@@ -33,7 +33,7 @@ let correctDimension = function(vph, vpw) {
     });
 };
 correctDimension(vph, vpw);
-console.log('VPH:', vph, 'VPW:', vpw);
+//console.log('VPH:', vph, 'VPW:', vpw);
 $(document).ready(() => {
     $(window).resize(() => { correctDimension(window.vph, window.vpw); });
     //Load badge sources into images from badge object
@@ -49,4 +49,4 @@ $(document).ready(() => {
         $('.navBadge').height(navBottomHeight);
     }
 });
-console.log('01_start.loaded');
+//console.log('01_start.loaded');

@@ -38,4 +38,4 @@ module.exports = {
         $('#pageCont').css('height', $('#P_' + targetEl.id.split('_')[1]).height());
     },
 };
-console.log('02_navbar.loaded');
+//console.log('02_navbar.loaded');

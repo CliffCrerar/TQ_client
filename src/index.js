@@ -20,6 +20,11 @@ import './css/font.css';
 /* GET PARTS DATA FROM WEB SERVER */
 import './js/00_getParts.js';
 
+/* GET VENDOR */
+if (window.navigator.vendor != "") {
+    console.log(window.navigator.vendor);
+}
+
 /*------------------------*/
 /*  LOAD HOME PAGE HTML   */
 /*------------------------*/
@@ -38,8 +43,6 @@ const loadNav = (screenw) => {
     }
 };
 $('body').append(loadNav(vpw));
-$('body').append('<div id="pageCont" style="position:relative" class="pageCont"></div>');
-$('#pageCont').append('<div id="P_0" class="lp"></div>');
 /*  IMPLEMENT NAV BAR OPERATION  */
 $('#navTop').on('click', (ev) => {
     var navop = require('./js/02_navbar');
@@ -51,6 +54,9 @@ $('#navTop').on('click', (ev) => {
         navop.navBarOperationD(ev.currentTarget, ev.target);
     }
 });
+/* APPEND PAGE VIEW SECTION */
+$('body').append('<div id="pageCont" style="position:relative" class="pageCont"></div>');
+$('#pageCont').append('<div id="P_0" class="lp"></div>');
 /*  LOAD MAIN CAROUSEL  */
 import './css/carousel.css'; // CSS
 import './js/03_carousel.js'; // JS
@@ -74,4 +80,4 @@ window.onload = () => {
         $('.se-pre-con').fadeOut();
     }, 2000);
 };
-console.log('Index.loaded');
+//console.log('Index.loaded');

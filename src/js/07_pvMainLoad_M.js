@@ -19,4 +19,4 @@ module.exports = (ev) => {
     };
     return loadPartsIntoContainer(filterParts(ev));
 };
-console.log('06_partsviewFPclick.loaded');
+//console.log('06_partsviewFPclick.loaded');

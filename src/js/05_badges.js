@@ -16,4 +16,4 @@ module.exports = {
     "triumph": triumphBadge,
     "twinAfrica": twinAfricaBadge
 };
-console.log('05_badges.loaded');
+//console.log('05_badges.loaded');
