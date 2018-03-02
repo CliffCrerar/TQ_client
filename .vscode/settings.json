@@ -65,6 +65,9 @@
     "liveServer.settings.port": 5500,
     "liveServer.settings.wait": 500,
     "liveServer.settings.donotVerifyTags": true,
+    "git.enabled": true,
+    "git.ignoreLegacyWarning": true,
+    "git.ignoreLimitWarning": true
     //"liveServer.settings.ChromeDebuggingAttachment": true,
     
 }
