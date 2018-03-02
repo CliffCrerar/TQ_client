@@ -47,7 +47,7 @@ $('.badgeBtn').on('click', (ev) => {
                             psExpander.clickLike(event);
                         });
                         $('.quote').on('click', (event) => {
-                            console.log('Quote')
+                            console.log('Quote');
                             psExpander.clickQuote(event);
                         });
 

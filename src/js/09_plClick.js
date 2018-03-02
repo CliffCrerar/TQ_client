@@ -20,7 +20,8 @@ module.exports = {
                 })
                 .then(() => {
                     var modReqQteHtml = require('../html/mod_requestQuote.html');
-                    modReqQteHtml = $(modReqQteHtml).attr('id', 'modal-' + partID); //.attr();
+                    modReqQteHtml = $(modReqQteHtml).attr('id', 'modal-' + partID).attr('aria-labelledby', 'modalMail-' + partID);
+                    modReqQteHtml = $(modReqQteHtml).find('.modal-title').attr('id', 'modalMail-' + partID); //.attr();
                     //modReqQteHtml = $(modReqQteHtml).find('.modal-title').attr('aria-labelledby', 'modal-mail-' + partID);
                     //modReqQteHtml = $(modReqQteHtml).find('.modal-title').html('Request for Quotation(' + partID + ')');
                     $('#Q-' + partID).parent().append($(modReqQteHtml));
@@ -44,3 +45,4 @@ module.exports = {
 
     }
 };
+q
