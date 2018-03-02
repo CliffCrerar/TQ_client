@@ -1,6 +1,7 @@
 /* IMPORT CSS */
 import './css/partsViewFP.css';
 import './css/partsView.css';
+import './css/mod_requestQuote.css';
 /* BOOSTRAP 4 */
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import 'bootstrap';
@@ -38,10 +39,23 @@ $('.badgeBtn').on('click', (ev) => {
             // On click event for expanding parts listing
             $('.partListing').on('click', (ev) => {
                 //console.log(ev.currentTarget.id);
-                psExpander.loadCollapsed(ev.currentTarget.id);
+                Promise.resolve(psExpander.loadCollapsed(ev.currentTarget.id))
+                    .then(() => {
+
+                        $('.like').on('click', (event) => {
+                            console.log('like');
+                            psExpander.clickLike(event);
+                        });
+                        $('.quote').on('click', (event) => {
+                            console.log('Quote')
+                            psExpander.clickQuote(event);
+                        });
+
+                    });
             });
 
         });
+
     Promise.resolve(loadButtons(ev, 'cat'))
         .then(() => {
             sortFilter.sortItems($('#btnCont'));

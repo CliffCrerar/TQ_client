@@ -16,6 +16,7 @@ module.exports = {
         catalog: './src/catView.js',
         contact: './src/contactView.js',
         adds: './src/addView.js'
+            //fpView: './src/fullpartView.js'
     },
     devtool: 'inline-source-map',
     module: {

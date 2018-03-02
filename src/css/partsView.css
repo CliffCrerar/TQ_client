@@ -26,7 +26,7 @@
 .partsListHeader {
     position: sticky !important;
     top: 0px;
-    z-index: 2006;
+    z-index: 600;
 }
 
 .accordian {
@@ -41,17 +41,18 @@
 /* --PART COLLAPSING LOADING OVERLAY--*/
 
 .card-header {
-    z-index: 2005;
+    z-index: 500;
 }
 
 .se-pre-con-1 {
-    position: absolute;
+    position: none;
+    /*
     left: 0px;
     top: 0px;
     width: 100%;
     height: 100%;
-    z-index: 2000;
-    background: url('../image/Preloader_4.gif') center no-repeat #fff;
+    z-index: 1000;
+    background: url('../image/Preloader_4.gif') center no-repeat #fff;*/
 }
 
 .imgCont {
@@ -64,16 +65,7 @@
     height: auto;
     top: 50%;
     transform: translateY(-50%);
-    -webkit-transition: all 1s ease;
-    /* Safari and Chrome */
-    -moz-transition: all 1s ease;
-    /* Firefox */
-    -ms-transition: all 1s ease;
-    /* IE 9 */
-    -o-transition: all 1s ease;
-    /* Opera */
-    transition: all 1s ease;
-    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25), -2px -2px 1px rgba(0, 0, 0, 0.22), -2px 2px 1px rgba(0, 0, 0, 0.22), 2px -2px 1px rgba(0, 0, 0, 0.25);
+    border: 2px solid black;
 }
 
 .partImg:hover {
@@ -81,17 +73,6 @@
     width: 100%;
     height: auto;
     top: 50%;
-    -webkit-transform: scale(1.5) translateY(-50%);
-    /* Safari and Chrome */
-    -moz-transform: scale(1.5) translateY(-50%);
-    /* Firefox */
-    -ms-transform: scale(1.5) translateY(-50%);
-    /* IE 9 */
-    -o-transform: scale(1.5) translateY(-50%);
-    /* Opera */
-    transform: scale(1.5) translateY(-50%);
-    ;
-    z-index: 2010;
 }
 
 .moreOptions {
@@ -130,7 +111,7 @@
 .defFilter {
     position: sticky !important;
     top: 0px;
-    z-index: 2005;
+    z-index: 700;
 }
 
 .filterIcon {
@@ -151,5 +132,4 @@
 
 .boxTeal {
     background-color: rgba(0, 128, 128, 0.5);
-    z-index: 500;
 }
