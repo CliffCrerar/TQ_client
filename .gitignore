@@ -1,2 +1,2 @@
-!/TQ_webServer/*
-!/dist/*
+!TQ_webServer/
+!dist/
