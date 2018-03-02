@@ -6,6 +6,15 @@
     padding: 0px;
 }
 
+@media screen and (max-width: 414px) {
+    .partsView {
+        max-width: 100%;
+    }
+    .badgeBtnCont {
+        max-width: 100%;
+    }
+}
+
 .badgeBtnCont {
     position: absolute;
     color: white;

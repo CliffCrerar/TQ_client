@@ -58,6 +58,9 @@ span.fa {
     .pageCont {
         overflow: scroll;
     }
+    .container-fluid {
+        padding: 0px !important;
+    }
 }
 
 .lp {

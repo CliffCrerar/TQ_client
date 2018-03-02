@@ -1,5 +1,3 @@
-import { request } from 'https';
-
 /*------------------------*/
 /*  PARTS CATELOGUE PAGE  */
 /*------------------------*/
@@ -8,7 +6,7 @@ import { request } from 'https';
 const loadPartsList = require('./js/06_pvMainLoad_D');
 const loadButtons = require('./js/08_pvMainFilter_D');
 const sortFilter = require('./js/00_elFilSort');
-const psExpander = require('./js/09_plClick');
+const psExpander = require('./js/10_plClick');
 
 
 $('.addTitle').on('click', (ev) => {

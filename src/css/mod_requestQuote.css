@@ -5,7 +5,3 @@
 .exampleModal {
     z-index: 4500 !important;
 }
-
-.input-group-prepend {
-    min-width: -10px;
-}

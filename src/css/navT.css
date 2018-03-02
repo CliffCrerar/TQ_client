@@ -5,6 +5,12 @@
     border-radius: 24px;
 }
 
+@media screen and (max-width:414px) {
+    #navTop {
+        border-radius: 0px !important;
+    }
+}
+
 #navTop>.nav-item {
     color: rgb(146, 146, 146);
 }

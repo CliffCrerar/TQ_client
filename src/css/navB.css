@@ -8,6 +8,10 @@
 @media screen and (max-width: 414px) {
     #navBottom {
         overflow: scroll;
+        border-radius: 0px !important;
+    }
+    .social {
+        font-size: math(1.5vw + 5);
     }
 }
 
@@ -17,7 +21,7 @@
 
 .social {
     width: 50%;
-    font-size: 2.5vh
+    font-size: 1.5vw;
 }
 
 .social>a {

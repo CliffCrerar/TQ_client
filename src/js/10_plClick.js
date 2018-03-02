@@ -20,10 +20,10 @@ module.exports = {
                 })
                 .then(() => {
                     var modReqQteHtml = require('../html/mod_requestQuote.html');
-                    modReqQteHtml = $(modReqQteHtml).attr('id', 'modal-' + partID).attr('aria-labelledby', 'modalMail-' + partID);
-                    modReqQteHtml = $(modReqQteHtml).find('.modal-title').attr('id', 'modalMail-' + partID); //.attr();
-                    //modReqQteHtml = $(modReqQteHtml).find('.modal-title').attr('aria-labelledby', 'modal-mail-' + partID);
-                    //modReqQteHtml = $(modReqQteHtml).find('.modal-title').html('Request for Quotation(' + partID + ')');
+                    modReqQteHtml = $(modReqQteHtml).attr('id', 'modal-' + partID) //.attr('aria-labelledby', 'modalMail-' + partID);
+                        //modReqQteHtml = $(modReqQteHtml).find('.modal-title').attr('id', 'modalMail-' + partID); //.attr();
+                        //modReqQteHtml = $(modReqQteHtml).find('.modal-title').attr('aria-labelledby', 'modal-mail-' + partID);
+                        //modReqQteHtml = $(modReqQteHtml).find('.modal-title').html('Request for Quotation(' + partID + ')');
                     $('#Q-' + partID).parent().append($(modReqQteHtml));
                     //console.log(modReqQteHtmlID);
                 })
@@ -42,7 +42,16 @@ module.exports = {
     clickQuote(ev) {
         //console.log('QUOTE: ', ev);
         console.log($(ev.target));
+        var partID = ev.target.id.split('-')[1];
+        var cardEntry =
+            '<p class="lead partQteEntry">Part Name : ' + partsData[partID].partName + '</p><br>' +
+            '<p class="partEntry">Part Number: ' + partID + '</p>' +
+            '<p >For: ' + partsData[partID].make + ' ' + partsData[partID].models + '</p>' +
+            '<p class="lead partQteEntry">Priced(ZAR): ' + partsData[partID].price + '</p>' +
+            '<p class="lead partQteEntry">Priced(USD): ' + partsData[partID].price + '</p>'
+
+        $('#modal-' + partID).find('.card-body').append(cardEntry);
+
 
     }
 };
-q

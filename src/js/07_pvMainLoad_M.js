@@ -1,22 +1,38 @@
 /* LOAD PARTS ONTO MAIN VIEW MIDDLE SECTION ACCORDING TO USER SELECTION */
-module.exports = (ev) => {
+module.exports = (ev, fType) => {
 
-    const filterParts = require('./00_filteringPartsData');
-
-    var loadPartsIntoContainer = (filteredPartsData) => {
+    console.log(ev.currentTarget.id);
+    const fp = require('./00_filteringPartsData'); // fp.byMake return the filteredPartsData data object
+    console.log(fType);
+    var loadPartsIntoMobileContainer = (filteredPartsData) => {
         for (var key in filteredPartsData) {
-            //console.log(key);
-            var partHtml = require('../html/part.html');
-            //console.log($(partHtml));
-            var partsAddKey = $(partHtml).attr('id', key);
-            //console.log(partsAddKey);
-            $('#pvHeaderCont').append(partsAddKey);
-            //console.log(filteredPartsData[key]);
-            $('#' + key + '>button>.row>#pName').html(filteredPartsData[key].partName);
-            $('#' + key + '>button>.row>#pRandPrice').html(filteredPartsData[key].price);
-            $('#' + key + '>button>.row>#pDollarPrice').html(filteredPartsData[key].price);
+            var partsMobileHtml = require('../html/partListing_M.html');
+            console.log(filteredPartsData[key]);
+            partsMobileHtml = $(partsMobileHtml).attr('id', key).attr('cat', filteredPartsData[key].make).attr('make', filteredPartsData[key].make);
+            $(partsMobileHtml).find('img').attr('src', filteredPartsData[key].imgLink);
+            $(partsMobileHtml).find('.pNameM').html(filteredPartsData[key].partName);
+            $(partsMobileHtml).find('.pPriceM_ZAR').html(filteredPartsData[key].price);
+            $(partsMobileHtml).find('.pPriceM_USD').html(filteredPartsData[key].price);
+            $(partsMobileHtml).find('.pNumM').html('Part #: <b>' + filteredPartsData[key].partNum + '</b>');
+            $(partsMobileHtml).find('.pDescM').html(filteredPartsData[key].partDesc);
+
+            //console.log(partsMobileHtml);
+            $('#partsViewContainerM').append(partsMobileHtml);
+            //console.log($('#' + key + '>img'));
+            //$('#' + key + '>img').attr('src', filteredPartsData[key].imgLink);
+            console.log($('#' + key + '>img'));
         }
     };
-    return loadPartsIntoContainer(filterParts(ev));
+    let filteredPartsData;
+    switch (fType) {
+        case 'make':
+            filteredPartsData = loadPartsIntoMobileContainer(fp.byMake(ev));
+            break;
+        case 'cat':
+            filteredPartsData = loadPartsIntoMobileContainer(fp.byCat(ev));
+            break;
+    }
+    return filteredPartsData;
+
 };
 //console.log('06_partsviewFPclick.loaded');
