@@ -11,7 +11,8 @@ import { resolve } from 'path';
 /* CALL PART VIEW POPULATE FUNCTION */
 const loadPartListD = require('./js/06_pvMainLoad_D');
 const loadPartListM = require('./js/07_pvMainLoad_M');
-const loadButtons = require('./js/08_pvMainFilter_D');
+const loadButtonsD = require('./js/08_pvMainFilter_D');
+const loadButtonsM = require('./js/09_pvMainFilter_M');
 const psExpander = require('./js/10_plClick');
 /* SORTING AND FILTERING */
 const sortFilter = require('./js/00_elFilSort');
@@ -59,7 +60,7 @@ $('.badgeBtn').on('click', (ev) => {
 
             });
 
-        Promise.resolve(loadButtons(ev, 'cat'))
+        Promise.resolve(loadButtonsD(ev, 'cat'))
             .then(() => {
                 sortFilter.sortItems($('#btnCont'));
                 // On click event for parts view back button
@@ -92,8 +93,13 @@ $('.badgeBtn').on('click', (ev) => {
 
         Promise.resolve(loadPartListM(ev, 'make'))
             .then(() => {
-                console.log('MOB Promise resolved');
+                console.log('MOB PARTLIST Promise resolved');
                 sortFilter.sortItems($('#partsViewContainerM'));
+            });
+        Promise.resolve(loadButtonsM(ev, 'make'))
+            .then(() => {
+                console.log('MOB Promise resolved');
+                //sortFilter.sortItems($('#partsViewContainerM'));
             });
 
         /* END OF PARTS LOADING FOR MOBILE */

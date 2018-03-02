@@ -42,9 +42,10 @@ const loadNav = (screenw) => {
         return require('./html/navBarTopD.html');
     }
 };
+/* PAGE NAVIGATION ACTIONS */
 Promise.resolve($('body').append(loadNav(vpw)))
     .then(() => {
-        // THIS IS FOR SPECIAL NAVBAR OPERATIONS
+        // THIS IS FOR SPECIAL NAVBAR OPERATIONS DESKTOP & MOBILE
         $('#N_0').on('click', (ev) => {
             console.log('HOME BUTTON');
             if ($('#N_1').hasClass('active')) {
@@ -56,17 +57,18 @@ Promise.resolve($('body').append(loadNav(vpw)))
             $('#P_0').fadeIn();
             $('#accordion').empty();
             $('#left').empty();
+            $('#partsViewContainerM').empty();
             $('#partsViewContainer').css('display', 'none');
+            $('#partsViewContainerM').css('display', 'none');
             $('#partsViewFP').css('display', 'none');
         });
         $('#N_1').on('click', (ev) => {
             console.log('PARTS CAT BUTTON');
             //require('./js/00_resetViews');
-            $('#accordion').empty();
-            $('#left').empty();
             $('#P_1').fadeIn();
             $('#partsViewFP').css('display', 'inherit');
             $('#partsViewContainer').css('display', 'none');
+            $('#partsViewContainerM').css('display', 'none');
             if ($('#N_0').hasClass('active')) {
                 $('#P_0').fadeOut();
             }
@@ -75,6 +77,7 @@ Promise.resolve($('body').append(loadNav(vpw)))
             }
             $('#accordion').empty();
             $('#left').empty();
+            $('#partsViewContainerM').empty();
         });
         $('#N_2').on('click', (ev) => {
             console.log('CONTACTS BUTTON');
@@ -87,12 +90,18 @@ Promise.resolve($('body').append(loadNav(vpw)))
             }
             $('#accordion').empty();
             $('#left').empty();
+            $('#partsViewContainerM').empty();
             $('#P_2').fadeIn();
             $('#partsViewContainer').css('display', 'none');
+            $('#partsViewContainerM').css('display', 'none');
             $('#partsViewFP').css('display', 'none');
-
         });
-
+        // FOR MOBILE
+        $('.navbar-toggler').click((ev) => {
+            if ($('#navbarSupportedContent').hasClass('show')) {
+                $('#navbarSupportedContent').removeClass('show');
+            }
+        });
     });
 /*  IMPLEMENT NAV BAR OPERATION  */
 $('#navTop').on('click', (ev) => {

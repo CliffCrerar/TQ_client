@@ -1,4 +1,6 @@
-/* LOAD PARTS ONTO MAIN VIEW MIDDLE SECTION ACCORDING TO USER SELECTION */
+/*--------------------------*/
+/*  LOAD PARTS FOR MOBILE   */
+/*--------------------------*/
 module.exports = (ev, fType) => {
 
     console.log(ev.currentTarget.id);
@@ -7,7 +9,7 @@ module.exports = (ev, fType) => {
     var loadPartsIntoMobileContainer = (filteredPartsData) => {
         for (var key in filteredPartsData) {
             var partsMobileHtml = require('../html/partListing_M.html');
-            console.log(filteredPartsData[key]);
+            //console.log(filteredPartsData[key]);
             partsMobileHtml = $(partsMobileHtml).attr('id', key).attr('cat', filteredPartsData[key].make).attr('make', filteredPartsData[key].make);
             $(partsMobileHtml).find('img').attr('src', filteredPartsData[key].imgLink);
             $(partsMobileHtml).find('.pNameM').html(filteredPartsData[key].partName);
@@ -20,7 +22,7 @@ module.exports = (ev, fType) => {
             $('#partsViewContainerM').append(partsMobileHtml);
             //console.log($('#' + key + '>img'));
             //$('#' + key + '>img').attr('src', filteredPartsData[key].imgLink);
-            console.log($('#' + key + '>img'));
+            //console.log($('#' + key + '>img'));
         }
     };
     let filteredPartsData;

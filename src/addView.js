@@ -2,12 +2,10 @@
 /*  PARTS CATELOGUE PAGE  */
 /*------------------------*/
 
-
-const loadPartsList = require('./js/06_pvMainLoad_D');
-const loadButtons = require('./js/08_pvMainFilter_D');
+const loadPartsListD = require('./js/06_pvMainLoad_D');
+const loadButtonsD = require('./js/08_pvMainFilter_D');
 const sortFilter = require('./js/00_elFilSort');
 const psExpander = require('./js/10_plClick');
-
 
 $('.addTitle').on('click', (ev) => {
     $('#N_0').removeClass('active');
@@ -18,7 +16,7 @@ $('.addTitle').on('click', (ev) => {
     $('#partsViewFP').hide();
     $('#partsViewContainer').fadeIn('slow').css('height', $('#pageCont').height());
 
-    Promise.resolve(loadPartsList(ev, 'cat'))
+    Promise.resolve(loadPartsListD(ev, 'cat'))
         .then(() => {
             sortFilter.sortItems($('#accordion'));
             $('.partListing').on('click', (ev) => {
@@ -26,7 +24,7 @@ $('.addTitle').on('click', (ev) => {
                 psExpander.loadCollapsed(ev.currentTarget.id);
             });
         });
-    Promise.resolve(loadButtons(ev, 'make'))
+    Promise.resolve(loadButtonsD(ev, 'make'))
         .then(() => {
             sortFilter.sortItems($('#btnCont'));
 

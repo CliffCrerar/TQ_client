@@ -45,6 +45,11 @@
     margin: 2% 2% 2% 2%;
 }
 
+.filterDropDownM {
+    position: absolute !important;
+    margin: 2% 2% 2% 2%;
+}
+
 
 /* --PART COLLAPSING LOADING OVERLAY--*/
 

@@ -1,3 +1,6 @@
+/*--------------------------*/
+/*  LOAD PARTS FOR DESKTOP  */
+/*--------------------------*/
 module.exports = (ev, fType) => {
 
     const fp = require('./00_filteringPartsData'); // fp.byMake return the filteredPartsData data object
