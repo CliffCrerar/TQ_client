@@ -15,15 +15,28 @@ module.exports = {
         });
     },
     // Filter function
-    filter(criteria, elementsTofilter) {
+    filterCat(criteria, elementsTofilter) {
         let parts = $(elementsTofilter).children();
         //console.log(parts);
-        let partClass = criteria;
+        let fc = criteria;
         //console.log(partClass);
         parts.hide();
         $('.partslistheader').fadeIn('slow');
         parts.each(function(p, part) {
-            if (part.getAttribute('cat') == partClass) {
+            if (part.getAttribute('cat') == fc) {
+                $('#' + part.id).fadeIn('slow');
+            }
+        });
+    },
+    filterMake(criteria, elementsTofilter) {
+        let parts = $(elementsTofilter).children();
+        //console.log(parts);
+        let fc = criteria;
+        //console.log(partClass);
+        parts.hide();
+        $('.partslistheader').fadeIn('slow');
+        parts.each(function(p, part) {
+            if (part.getAttribute('make') == fc) {
                 $('#' + part.id).fadeIn('slow');
             }
         });

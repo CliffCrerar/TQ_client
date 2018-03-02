@@ -23,20 +23,22 @@ import add61 from '../image/add6.1.jpg';
 import add62 from '../image/add6.2.jpg';
 import add63 from '../image/add6.3.jpg';
 
+var slickAddOptions = {
+    arrows: false,
+    autoplay: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    //adaptiveHeight: true
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+}
+
 $(document).ready(() => {
     //Add rail options
-    $('.addFade').slick({
-        arrows: false,
-        autoplay: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear',
-        //adaptiveHeight: true
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-    });
+
     //Include add 1 in html
     $('.add1_1').html('<img class="addImg img-fluid" src="' + add11 + '">');
     $('.add1_2').html('<img class="addImg img-fluid" src="' + add12 + '">');
@@ -61,5 +63,7 @@ $(document).ready(() => {
     $('.add6_1').html('<img class="addImg img-fluid" src="' + add61 + '">');
     $('.add6_2').html('<img class="addImg img-fluid" src="' + add62 + '">');
     $('.add6_3').html('<img class="addImg img-fluid" src="' + add63 + '">');
+    // Activate slick
+    $('.addFade').slick(slickAddOptions);
 });
 //console.log('04_adds.loaded');

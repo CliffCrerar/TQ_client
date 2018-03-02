@@ -13,8 +13,9 @@ module.exports = {
     context: __dirname,
     entry: {
         main: './src/index.js',
-        partscat: './src/partsView.js',
-        contact: './src/contactView.js'
+        catalog: './src/catView.js',
+        contact: './src/contactView.js',
+        adds: './src/addView.js'
     },
     devtool: 'inline-source-map',
     module: {

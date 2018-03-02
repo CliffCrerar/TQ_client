@@ -42,12 +42,63 @@ const loadNav = (screenw) => {
         return require('./html/navBarTopD.html');
     }
 };
-$('body').append(loadNav(vpw));
+Promise.resolve($('body').append(loadNav(vpw)))
+    .then(() => {
+        // THIS IS FOR SPECIAL NAVBAR OPERATIONS
+        $('#N_0').on('click', (ev) => {
+            console.log('HOME BUTTON');
+            if ($('#N_1').hasClass('active')) {
+                $('#P_1').fadeOut();
+            }
+            if ($('#N_2').hasClass('active')) {
+                $('#P_2').fadeOut();
+            }
+            $('#P_0').fadeIn();
+            $('#accordion').empty();
+            $('#left').empty();
+            $('#partsViewContainer').css('display', 'none');
+            $('#partsViewFP').css('display', 'none');
+        });
+        $('#N_1').on('click', (ev) => {
+            console.log('PARTS CAT BUTTON');
+            //require('./js/00_resetViews');
+            $('#accordion').empty();
+            $('#left').empty();
+            $('#P_1').fadeIn();
+            $('#partsViewFP').css('display', 'inherit');
+            $('#partsViewContainer').css('display', 'none');
+            if ($('#N_0').hasClass('active')) {
+                $('#P_0').fadeOut();
+            }
+            if ($('#N_2').hasClass('active')) {
+                $('#P_2').fadeOut();
+            }
+            $('#accordion').empty();
+            $('#left').empty();
+        });
+        $('#N_2').on('click', (ev) => {
+            console.log('CONTACTS BUTTON');
+            //require('./js/00_resetViews');
+            if ($('#N_0').hasClass('active')) {
+                $('#P_0').fadeOut();
+            }
+            if ($('#N_1').hasClass('active')) {
+                $('#P_1').fadeOut();
+            }
+            $('#accordion').empty();
+            $('#left').empty();
+            $('#P_2').fadeIn();
+            $('#partsViewContainer').css('display', 'none');
+            $('#partsViewFP').css('display', 'none');
+
+        });
+
+    });
 /*  IMPLEMENT NAV BAR OPERATION  */
 $('#navTop').on('click', (ev) => {
     var navop = require('./js/02_navbar');
     var navclick;
-    console.log(vpw);
+    //console.log(vpw);
     if (vpw <= 414) {
         navop.navBarOperationM(ev.currentTarget, ev.target);
     } else {
@@ -72,8 +123,11 @@ import './js/04_adds.js'; // Load images and set carousel options
 $('#P_0').append(require('./html/adds.html'));
 /*  NAV BOTTOM  */
 import './css/navB.css'; // CSS
+import { inherits } from 'util';
 $('body').append(require('./html/navBarBottom.html'));
 if (vpw <= 414) { $('.social').remove(); }
+
+
 /* LOAD LOADING SCREEN  */
 window.onload = () => {
     setTimeout(() => {

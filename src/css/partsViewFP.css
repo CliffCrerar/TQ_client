@@ -3,12 +3,13 @@
     display: none;
     max-width: 100%;
     max-height: 100%;
+    padding: 0px;
 }
 
 .badgeBtnCont {
     position: absolute;
     color: white;
-    max-width: 100%;
+    max-width: 98%;
 }
 
 .badgeBtnCont>h1 {

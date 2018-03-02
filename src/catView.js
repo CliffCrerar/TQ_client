@@ -1,7 +1,3 @@
-/*------------------------*/
-/*  PARTS CATELOGUE PAGE  */
-/*------------------------*/
-
 /* IMPORT CSS */
 import './css/partsViewFP.css';
 import './css/partsView.css';
@@ -14,11 +10,12 @@ import { resolve } from 'path';
 /* CALL PART VIEW POPULATE FUNCTION */
 const loadPartList = require('./js/06_pvMainLoad_D');
 const loadButtons = require('./js/08_pvMainFilter_D');
-const psExpand = require('./js/09_plClick');
+const psExpander = require('./js/09_plClick');
 /* SORTING AND FILTERING */
 const sortFilter = require('./js/00_elFilSort');
 /* LOAD PARTS VIEW FRONT PAGE */
 $('#pageCont').append(require('./html/partsViewFP.html'));
+
 $('.badgeBtnCont').css('width', $('#pageCont').width());
 /* POPULATE BADGE BUTTONS ATTRIBUTES INTO HTML */
 const badge = require('./js/05_badges');
@@ -29,23 +26,23 @@ $.each(badge, (make, img) => {
 $('#P_1').append(require('./html/partsViewCont.html'));
 /* CLICK FUNCTION FOR PARTSVIEW FRONT PAGE */
 $('.badgeBtn').on('click', (ev) => {
-
-    console.log(ev.target);
+    $('#P_1').css('height', $('#pageCont').height());
+    //console.log(ev.target);
 
     $('#partsViewFP').fadeOut();
     $('#partsViewContainer').fadeIn();
     //console.log(ev.target.id);
-    Promise.resolve(loadPartList(ev))
+    Promise.resolve(loadPartList(ev, 'make'))
         .then(() => {
             sortFilter.sortItems($('#accordion'));
             // On click event for expanding parts listing
             $('.partListing').on('click', (ev) => {
-                console.log(ev);
-                psExpand.loadCollapsed(ev);
+                //console.log(ev.currentTarget.id);
+                psExpander.loadCollapsed(ev.currentTarget.id);
             });
 
         });
-    Promise.resolve(loadButtons(ev))
+    Promise.resolve(loadButtons(ev, 'cat'))
         .then(() => {
             sortFilter.sortItems($('#btnCont'));
             // On click event for parts view back button
@@ -64,12 +61,20 @@ $('.badgeBtn').on('click', (ev) => {
                 });
                 $(ev.target).addClass('active');
                 //console.log(filtCriteria);
-                sortFilter.filter(filtCriteria, $('#accordion'));
+                sortFilter.filterCat(filtCriteria, $('#accordion'));
             });
         });
 });
 
+$('#accordian').on('load', function() {
+    console.log('accordian loaded');
+});
+
+
+
+
 /* SET ON HOVER FOR PARTS LIST HEADER */
+/*
 $(document).on({
     mouseenter: function(eve) {
         //stuff to do on mouse enter
@@ -80,5 +85,6 @@ $(document).on({
         $('#' + evl.target.id + '>.row>.pClick').addClass('invisible');
     }
 }, '.partListing');
+*/
 
 // console.log('Partscat.loaded');

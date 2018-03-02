@@ -8,12 +8,12 @@ var triumphBadge = require('../image/badge/triumph1.jpg');
 var twinAfricaBadge = require('../image/badge/africatwin1.png');
 
 module.exports = {
-    "bmw": bmwBadge,
-    "landRover": landRoverBadge,
-    "ktm": ktmBadge,
-    "honda": hondaBadge,
-    "yamaha": yamahaBadge,
-    "triumph": triumphBadge,
-    "twinAfrica": twinAfricaBadge
+    "BMW": bmwBadge,
+    "LANDROVER": landRoverBadge,
+    "KTM": ktmBadge,
+    "HONDA": hondaBadge,
+    "YAMAHA": yamahaBadge,
+    "TRIUMPH": triumphBadge,
+    "TWINAFRICA": twinAfricaBadge
 };
 //console.log('05_badges.loaded');

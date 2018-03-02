@@ -2,28 +2,36 @@
 /*CREATES PARTS VIEW FILTERS*/
 /*--------------------------*/
 
-module.exports = function(event) {
-
-    const filterByMake = require('./00_filteringPartsData');
-    let filterBtnName;
-    if (window.navigator.vendor != "") {
-        filterBtnName = $(event.target).attr('alt')
-            //console.log($(event.target).attr('alt'));
-    } else {
-        filterBtnName = event.target.id;
-        //console.log(event.target.id);
-    } // determine browser and extract button name
-    //$('#selectInd').html('MAKE: ' + event.target.id);
+// FTYPE argument should determine what buttons myst be returned 'cat' or 'make'
+module.exports = function(event, fType) {
     $('#left').append(require('../html/partFilControls.html'));
-    $('.defFilter').html('<div class="p2">' + filterBtnName + '</div><div class="filterIcon ml-auto p-2 fa fa-filter"></div>');
-    let parts = filterByMake(event);
-    let categories = require('../json/categories.json');
-    //console.log(categories);
+    $('.defFilter').html('<div class="p2">Apply Filter</div><div class="filterIcon ml-auto p-2 fa fa-filter"></div>');
+    const fp = require('./00_filteringPartsData');
+    const badges = require('../js/05_badges');
+    let disc = event.currentTarget.id; // declare the discriminator for filtering buttons to be created
+    //console.log(event.currentTarget.text);
+    let type = fType;
+    let parts;
+    let btnCapLeg;
+    //console.log(fType);
+    if (type == 'cat') {
+        //console.log('Buttons must be cat');
+        parts = fp.byMake(event);
+        btnCapLeg = require('../json/categories.json');
+        $('#selectedMake').attr('src', badges[disc]);
+    } else if (type == 'make') {
+        //console.log('buttons must be make');
+        parts = fp.byCat(event);
+        btnCapLeg = require('../json/makes.json');
+        $('#selectedMake').remove();
+        $('#showMake').append('<p class="selectionHeading">' + event.currentTarget.text + '</p>');
+    }
+
     let filterList = [];
     var evalElement = '';
     for (var key in parts) {
-        //console.log(parts[key].cat);
-        evalElement = parts[key].cat;
+        //console.log(parts[key][type]);
+        evalElement = parts[key][type];
         if (!filterList.includes(evalElement)) {
             filterList.push(evalElement);
         }
@@ -33,9 +41,9 @@ module.exports = function(event) {
     var btnCaption = '';
     for (var i = 0; i < arrLen; i++) {
         btnCaption = filterList[i];
-        for (var key2 in categories) {
+        for (var key2 in btnCapLeg) {
             if (btnCaption == key2) {
-                btnCaption = categories[key2];
+                btnCaption = btnCapLeg[key2];
             }
         }
         $('#btnCont').append('<button id = "' + filterList[i] + '" type="button" class="btn btn-block btn-outline-success text-left">' + btnCaption + '</button>');
@@ -53,9 +61,12 @@ module.exports = function(event) {
             $('#btnCont').children().each(function(i, el) {
                 $(el).removeClass('active');
             });
+            $('#openFilt>.p2').html('Apply Filter');
+
         } else {
             $('#filterOptions').slideDown('2000').addClass('show');
             $('#openFilt').addClass('active');
+            $('#openFilt>.p2').html('Clear Filter');
         }
     });
 };
