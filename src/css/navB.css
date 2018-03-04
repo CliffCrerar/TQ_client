@@ -10,9 +10,6 @@
         overflow: scroll;
         border-radius: 0px !important;
     }
-    .social {
-        font-size: math(1.5vw + 5);
-    }
 }
 
 .makes {

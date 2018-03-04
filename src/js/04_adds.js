@@ -34,35 +34,35 @@ var slickAddOptions = {
     // You can unslick at a given breakpoint now by adding:
     // settings: "unslick"
     // instead of a settings object
-}
+};
 
 $(document).ready(() => {
     //Add rail options
 
     //Include add 1 in html
-    $('.add1_1').html('<img class="addImg img-fluid" src="' + add11 + '">');
-    $('.add1_2').html('<img class="addImg img-fluid" src="' + add12 + '">');
-    $('.add1_3').html('<img class="addImg img-fluid" src="' + add13 + '">');
+    $('.add1-1').html('<img class="addImg img-fluid" src="' + add11 + '">');
+    $('.add1-2').html('<img class="addImg img-fluid" src="' + add12 + '">');
+    $('.add1-3').html('<img class="addImg img-fluid" src="' + add13 + '">');
     //Include add 2 in html
-    $('.add2_1').html('<img class="addImg img-fluid" src="' + add21 + '">');
-    $('.add2_2').html('<img class="addImg img-fluid" src="' + add22 + '">');
-    $('.add2_3').html('<img class="addImg img-fluid" src="' + add23 + '">');
+    $('.add2-1').html('<img class="addImg img-fluid" src="' + add21 + '">');
+    $('.add2-2').html('<img class="addImg img-fluid" src="' + add22 + '">');
+    $('.add2-3').html('<img class="addImg img-fluid" src="' + add23 + '">');
     //Include add 3 in html
-    $('.add3_1').html('<img class="addImg img-fluid" src="' + add31 + '">');
-    $('.add3_2').html('<img class="addImg img-fluid" src="' + add32 + '">');
-    $('.add3_3').html('<img class="addImg img-fluid" src="' + add33 + '">');
+    $('.add3-1').html('<img class="addImg img-fluid" src="' + add31 + '">');
+    $('.add3-2').html('<img class="addImg img-fluid" src="' + add32 + '">');
+    $('.add3-3').html('<img class="addImg img-fluid" src="' + add33 + '">');
     //Include add 4 in html
-    $('.add4_1').html('<img class="addImg img-fluid" src="' + add41 + '">');
-    $('.add4_2').html('<img class="addImg img-fluid" src="' + add42 + '">');
-    $('.add4_3').html('<img class="addImg img-fluid" src="' + add43 + '">');
+    $('.add4-1').html('<img class="addImg img-fluid" src="' + add41 + '">');
+    $('.add4-2').html('<img class="addImg img-fluid" src="' + add42 + '">');
+    $('.add4-3').html('<img class="addImg img-fluid" src="' + add43 + '">');
     //Include add 5 in html
-    $('.add5_1').html('<img class="addImg img-fluid" src="' + add51 + '">');
-    $('.add5_2').html('<img class="addImg img-fluid" src="' + add52 + '">');
-    $('.add5_3').html('<img class="addImg img-fluid" src="' + add53 + '">');
+    $('.add5-1').html('<img class="addImg img-fluid" src="' + add51 + '">');
+    $('.add5-2').html('<img class="addImg img-fluid" src="' + add52 + '">');
+    $('.add5-3').html('<img class="addImg img-fluid" src="' + add53 + '">');
     //Include add 6 in html
-    $('.add6_1').html('<img class="addImg img-fluid" src="' + add61 + '">');
-    $('.add6_2').html('<img class="addImg img-fluid" src="' + add62 + '">');
-    $('.add6_3').html('<img class="addImg img-fluid" src="' + add63 + '">');
+    $('.add6-1').html('<img class="addImg img-fluid" src="' + add61 + '">');
+    $('.add6-2').html('<img class="addImg img-fluid" src="' + add62 + '">');
+    $('.add6-3').html('<img class="addImg img-fluid" src="' + add63 + '">');
     // Activate slick
     $('.addFade').slick(slickAddOptions);
 });

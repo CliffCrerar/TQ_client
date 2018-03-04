@@ -22,8 +22,8 @@ module.exports = {
 
     byCat(ev) {
         let filteredPartsData = {}; // declare object to store selected parts
-        let targetID = ev.currentTarget.id.split('_')[1]; // get filter criteria which must be class
-        console.log(targetID);
+        let targetID = ev.currentTarget.id.split('-')[1]; // get filter criteria which must be class
+        //console.log(targetID);
         for (var key in partsData) {
             var partClass = partsData[key].cat; // stores the current parts category/class
             if (targetID == partClass) {

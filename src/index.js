@@ -46,52 +46,56 @@ const loadNav = (screenw) => {
 Promise.resolve($('body').append(loadNav(vpw)))
     .then(() => {
         // THIS IS FOR SPECIAL NAVBAR OPERATIONS DESKTOP & MOBILE
-        $('#N_0').on('click', (ev) => {
+        $('#N-0').on('click', (ev) => {
             console.log('HOME BUTTON');
-            if ($('#N_1').hasClass('active')) {
-                $('#P_1').fadeOut();
+            if ($('#N-1').hasClass('active')) {
+                $('#P-1').fadeOut();
             }
-            if ($('#N_2').hasClass('active')) {
-                $('#P_2').fadeOut();
+            if ($('#N-2').hasClass('active')) {
+                $('#P-2').fadeOut();
             }
-            $('#P_0').fadeIn();
+            $('#P-0').fadeIn();
             $('#accordion').empty();
             $('#left').empty();
             $('#partsViewContainerM').empty();
+            $('#filterDropDownM').remove();
             $('#partsViewContainer').css('display', 'none');
             $('#partsViewContainerM').css('display', 'none');
             $('#partsViewFP').css('display', 'none');
+
         });
-        $('#N_1').on('click', (ev) => {
+        $('#N-1').on('click', (ev) => {
             console.log('PARTS CAT BUTTON');
             //require('./js/00_resetViews');
-            $('#P_1').fadeIn();
+            $('#P-1').fadeIn();
             $('#partsViewFP').css('display', 'inherit');
             $('#partsViewContainer').css('display', 'none');
             $('#partsViewContainerM').css('display', 'none');
-            if ($('#N_0').hasClass('active')) {
-                $('#P_0').fadeOut();
+            if ($('#N-0').hasClass('active')) {
+                $('#P-0').fadeOut();
             }
-            if ($('#N_2').hasClass('active')) {
-                $('#P_2').fadeOut();
+            if ($('#N-2').hasClass('active')) {
+                $('#P-2').fadeOut();
             }
             $('#accordion').empty();
             $('#left').empty();
             $('#partsViewContainerM').empty();
+            $('#filterDropDownM').remove();
         });
-        $('#N_2').on('click', (ev) => {
+        $('#N-2').on('click', (ev) => {
             console.log('CONTACTS BUTTON');
             //require('./js/00_resetViews');
-            if ($('#N_0').hasClass('active')) {
-                $('#P_0').fadeOut();
+            if ($('#N-0').hasClass('active')) {
+                $('#P-0').fadeOut();
             }
-            if ($('#N_1').hasClass('active')) {
-                $('#P_1').fadeOut();
+            if ($('#N-1').hasClass('active')) {
+                $('#P-1').fadeOut();
             }
             $('#accordion').empty();
             $('#left').empty();
             $('#partsViewContainerM').empty();
-            $('#P_2').fadeIn();
+            $('#filterDropDownM').remove();
+            $('#P-2').fadeIn();
             $('#partsViewContainer').css('display', 'none');
             $('#partsViewContainerM').css('display', 'none');
             $('#partsViewFP').css('display', 'none');
@@ -105,7 +109,7 @@ Promise.resolve($('body').append(loadNav(vpw)))
     });
 /*  IMPLEMENT NAV BAR OPERATION  */
 $('#navTop').on('click', (ev) => {
-    var navop = require('./js/02_navbar');
+    const navop = require('./js/02_navbar');
     var navclick;
     //console.log(vpw);
     if (vpw <= 414) {
@@ -116,20 +120,20 @@ $('#navTop').on('click', (ev) => {
 });
 /* APPEND PAGE VIEW SECTION */
 $('body').append('<div id="pageCont" style="position:relative" class="pageCont"></div>');
-$('#pageCont').append('<div id="P_0" class="lp"></div>');
+$('#pageCont').append('<div id="P-0" class="lp"></div>');
 /*  LOAD MAIN CAROUSEL  */
 import './css/carousel.css'; // CSS
 import './js/03_carousel.js'; // JS
 const loadCarousel = function(screenw) {
     if (screenw > 414) {
-        return $('#P_0').append(require('./html/carousel.html'));
+        return $('#P-0').append(require('./html/carousel.html'));
     }
 };
 loadCarousel(vpw);
 /*  LOAD ADDS RAIL  */
 import './css/adds.css'; // CSS
 import './js/04_adds.js'; // Load images and set carousel options
-$('#P_0').append(require('./html/adds.html'));
+$('#P-0').append(require('./html/adds.html'));
 /*  NAV BOTTOM  */
 import './css/navB.css'; // CSS
 import { inherits } from 'util';

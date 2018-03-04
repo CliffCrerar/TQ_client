@@ -1,12 +1,144 @@
 .contactView {
     position: absolute;
     display: none;
-    height: 80%;
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.contactViewHeading {
+    font-size: 30px;
+    font-family: orbitron;
+    color: white;
+    margin-left: 1%;
+}
+
+@media screen and (max-width:414px) {
+    .contactViewHeading {
+        font-size: 100%;
+    }
+}
+
+.divline1 {
+    border: 0.5px solid white;
+    margin: 0 1% 0.5% 1%;
+}
+
+.divline2 {
+    border: 0.5px solid white;
+    margin: 5px 5px 5px 5px;
+}
+
+.aboutContainer {
+    height: 89%;
+}
+
+.aboutContainer2 {
+    height: 100%;
+}
+
+.aboutTheOwner {
+    height: 100%;
+}
+
+.ownerHeading {
+    color: white;
+    font-family: black Ops one;
+}
+
+.tqH3 {
+    color: white;
+    font-family: orbitron;
+}
+
+.cardOwnerDesc {
+    height: 20%;
+    overflow: scroll;
+}
+
+.aboutMore {
+    height: 100%;
+}
+
+.moreInfoAboutM {
+    display: none;
+    color: white;
+    font-family: Black Ops One;
+}
+
+.theBusiness {
+    height: 33%;
     overflow: hidden;
 }
 
-.tempResp {
-    background-color: rgba(255, 255, 255, 0.7);
-    border: solid 5px white;
+.theBussHeadings {
+    position: relative;
+    overflow: scroll;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.scrSpyCard {
+    height: 100%;
+}
+
+.itemsAboutTheBusiness {
+    overflow: scroll;
+}
+
+.testimonial {
+    height: 30%;
+}
+
+.testimonialContainer {
+    height: 100%;
+    overflow: hidden;
+}
+
+.testimonials {
+    overflow: scroll;
+}
+
+.testimonialHeading {
+    overflow: scroll;
+}
+
+.feedback {
+    height: 33%;
+    overflow-wrap: break-word
+}
+
+.feedbackTitle {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.formFeedback {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* MOBILE VIEW */
+
+@media screen and (max-width:414px) {
+    .aboutContainer {
+        height: 100%;
+    }
+    .theBusiness {
+        height: 100%;
+    }
+    .feedback {
+        height: 100%;
+    }
+    .testimonial {
+        height: 100%;
+    }
+    .moreInfoAboutM {
+        display: block;
+    }
+    .theBusinessCol {
+        display: none;
+    }
 }

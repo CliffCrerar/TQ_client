@@ -13,7 +13,7 @@ let correctDimension = function(vph, vpw) {
             $('.c1.carousel-inner').css('border-radius', '24px');
             newHeight = (vph * 0.85);
             $('.pageCont').css('height', newHeight);
-            $('#P_0').css('height', newHeight);
+            $('#P-0').css('height', newHeight);
             $('#addsRailID').css('min-height', newHeight);
             $('.subRails').css('min-height', newHeight);
             $('.addContainer').css('height', newHeight / 3);

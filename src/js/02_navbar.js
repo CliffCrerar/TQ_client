@@ -35,7 +35,7 @@ module.exports = {
             }
         }
         $('.navbar-collapse').collapse('toggle');
-        $('#pageCont').css('height', $('#P_' + targetEl.id.split('_')[1]).height());
+        $('#pageCont').css('height', $('#P-' + targetEl.id.split('-')[1]).height());
     },
 };
 //console.log('02_navbar.loaded');

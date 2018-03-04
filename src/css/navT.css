@@ -9,6 +9,12 @@
     #navTop {
         border-radius: 0px !important;
     }
+    .navbar {
+        position: sticky;
+    }
+    .navbar-brand {
+        width: 70% !important;
+    }
 }
 
 #navTop>.nav-item {
@@ -62,6 +68,10 @@
 
 .navbarSupportedContent {
     color: white;
+}
+
+.nav-item {
+    font-family: orbitron
 }
 
 .nav-item.dropdown:hover {

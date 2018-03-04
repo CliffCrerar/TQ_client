@@ -8,9 +8,8 @@
       $('.defFilter').html('<div class="p2">Apply Filter</div><div class="filterIcon ml-auto p-2 fa fa-filter"></div>');
       const fp = require('./00_filteringPartsData');
       const badges = require('../js/05_badges');
-      let disc = event.currentTarget.id; // declare the discriminator for filtering buttons to be created
-      //console.log(event.currentTarget.text);
-      let type = fType;
+      const disc = event.currentTarget.id; // declare the discriminator for filtering buttons to be created
+      const type = fType;
       let parts;
       let btnCapLeg;
       //console.log(fType);
@@ -28,7 +27,7 @@
       }
 
       let filterList = [];
-      var evalElement = '';
+      let evalElement = '';
       for (var key in parts) {
           //console.log(parts[key][type]);
           evalElement = parts[key][type];
@@ -37,8 +36,8 @@
           }
       }
       //console.log(filterList);
-      var arrLen = filterList.length;
-      var btnCaption = '';
+      let arrLen = filterList.length;
+      let btnCaption = '';
       for (var i = 0; i < arrLen; i++) {
           btnCaption = filterList[i];
           for (var key2 in btnCapLeg) {

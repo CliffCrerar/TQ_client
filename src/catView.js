@@ -26,12 +26,13 @@ $.each(badge, (make, img) => {
     $('#' + make.toUpperCase() + '>img').attr('src', img);
 });
 /* LOAD HTML INTO PARTS VIEW CONTAINTER */
-$('#P_1').append(require('./html/partsViewCont.html'));
+if (vpw > 414) { $('#P-1').append(require('./html/partsViewCont.html')); }
+
 /* CLICK FUNCTION FOR PARTSVIEW FRONT PAGE */
 $('.badgeBtn').on('click', (ev) => {
-    $('#P_1').css('height', $('#pageCont').height());
+    $('#P-1').css('height', $('#pageCont').height());
 
-    if (vpw >= 414) {
+    if (vpw > 414) {
         /* BEGINNING OF PARTS LOADING FOR DESKTOP */
         console.log('PARTS LOAD FOR DESKTOP');
         $('#partsViewFP').fadeOut();
@@ -86,8 +87,9 @@ $('.badgeBtn').on('click', (ev) => {
     } else {
         /* BEGINNING OF PARTS LOADING FOR MOBILE */
         console.log('PARTS LOAD FOR MOBILE');
-        $('#partsViewContainer').remove();
-        $('#P_1').append('<div id="partsViewContainerM" class="pvContainer"></div>');
+        //$('#partsViewContainer').remove();
+        $('#partsViewContainerM').remove();
+        $('#P-1').append('<div id="partsViewContainerM" class="pvContainer"></div>');
         $('#partsViewFP').fadeOut();
         $('#partsViewContainerM').fadeIn();
 
@@ -95,11 +97,20 @@ $('.badgeBtn').on('click', (ev) => {
             .then(() => {
                 console.log('MOB PARTLIST Promise resolved');
                 sortFilter.sortItems($('#partsViewContainerM'));
+                $('.quoteM').on('click', (event) => {
+                    console.log('Quote');
+                    psExpander.clickQuote(event);
+                });
             });
-        Promise.resolve(loadButtonsM(ev, 'make'))
+        Promise.resolve(loadButtonsM(ev, 'cat'))
             .then(() => {
                 console.log('MOB Promise resolved');
-                //sortFilter.sortItems($('#partsViewContainerM'));
+                sortFilter.sortItems($('#filtContListM'));
+                $('#filtContListM').on('click', (ev) => {
+                    var filtCriteria = ev.target.id;
+                    //partsViewContainerM
+                    sortFilter.filterCat(filtCriteria, $('#partsViewContainerM'));
+                });
             });
 
         /* END OF PARTS LOADING FOR MOBILE */
