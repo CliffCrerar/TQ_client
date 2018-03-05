@@ -54,8 +54,8 @@ module.exports = {
             '<p class="lead partQteEntry">Part Name : ' + partsData[partID].partName + '</p><br>' +
             '<p class="partEntry">Part Number: ' + partID + '</p>' +
             '<p>For: ' + partsData[partID].make + ' ' + partsData[partID].models + '</p>' +
-            '<p class="lead partQteEntry">Priced(ZAR): ' + partsData[partID].price + '</p>' +
-            '<p class="lead partQteEntry">Priced(USD): ' + partsData[partID].price + '</p>';
+            '<p class="lead partQteEntry">Priced(ZAR): ' + partsData[partID].salePriceZAR + '</p>' +
+            '<p class="lead partQteEntry">Priced(USD): ' + partsData[partID].salePriceUSD + '</p>';
 
         $('#modal-' + partID).find('.card-body').append(cardEntry);
     }

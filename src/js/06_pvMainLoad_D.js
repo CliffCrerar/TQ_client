@@ -18,8 +18,8 @@ module.exports = (ev, fType) => {
             $('#btn-' + partID).attr('name', filteredPartsData[key].partName);
             $('#btn-' + partID + '>.row>.pName').html(filteredPartsData[key].partName);
             $('#btn-' + partID + '>.row>.pNum').html(filteredPartsData[key].partNum);
-            $('#btn-' + partID + '>.row>.pRandPrice').html(filteredPartsData[key].price);
-            $('#btn-' + partID + '>.row>.pDollarPrice').html(filteredPartsData[key].price);
+            $('#btn-' + partID + '>.row>.pRandPrice').html(filteredPartsData[key].salePriceZAR);
+            $('#btn-' + partID + '>.row>.pDollarPrice').html(filteredPartsData[key].salePriceUSD);
             $('#collapse-' + partID + '>.card-body>.se-pre-con-1').attr('id', 'loader-' + partID);
             //console.log(partsAddKey);
         }

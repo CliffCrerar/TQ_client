@@ -1,17 +1,18 @@
 //function that corrects dimensions for elements to fit accordingly
 window.vph = window.innerHeight;
+window.vphM = screen.availHeight;
 window.vpw = screen.width;
 //console.log("SCR_W: ", vph, "SCR_H: ", vpw);
-let correctDimension = function(vph, vpw) {
+let correctDimension = function(vph, vpw, vphM) {
     //Correction of image viewhight   
     //console.log('VPH:', vph, 'VPW:', vpw);
     $(document).ready(() => {
         var newHeight;
-        $('body').css('background-Size', vph + 'px auto');
+        $('body').css('background-Size', vphM + 'px auto');
         if (vpw <= 414) {
             subract = $('#navTop').height();
             $('.c1.carousel-inner').css('border-radius', '24px');
-            newHeight = (vph * 0.85);
+            newHeight = (vphM * 0.85);
             $('.pageCont').css('height', newHeight);
             $('#P-0').css('height', newHeight);
             $('#addsRailID').css('min-height', newHeight);
@@ -32,7 +33,7 @@ let correctDimension = function(vph, vpw) {
         }
     });
 };
-correctDimension(vph, vpw);
+correctDimension(vph, vpw, vphM);
 //console.log('VPH:', vph, 'VPW:', vpw);
 $(document).ready(() => {
     $(window).resize(() => { correctDimension(window.vph, window.vpw); });

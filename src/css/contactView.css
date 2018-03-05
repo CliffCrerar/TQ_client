@@ -12,11 +12,8 @@
     margin-left: 1%;
 }
 
-@media screen and (max-width:414px) {
-    .contactViewHeading {
-        font-size: 100%;
-    }
-}
+
+/* MOBILE VIEW */
 
 .divline1 {
     border: 0.5px solid white;
@@ -51,7 +48,7 @@
 }
 
 .cardOwnerDesc {
-    height: 20%;
+    height: 25%;
     overflow: scroll;
 }
 
@@ -119,24 +116,27 @@
     transform: translateY(-50%);
 }
 
-
-/* MOBILE VIEW */
-
 @media screen and (max-width:414px) {
-    .aboutContainer {
+    .aboutTheOwner {
+        height: 80%;
+    }
+    .aboutMore {
+        height: auto;
+    }
+    .cardOwnerDesc {
+        height: 20%;
+    }
+    .scrSpyCard {
         height: 100%;
     }
-    .theBusiness {
-        height: 100%;
-    }
-    .feedback {
-        height: 100%;
-    }
-    .testimonial {
-        height: 100%;
+    .testimonialContainer {
+        height: 90%;
     }
     .moreInfoAboutM {
         display: block;
+    }
+    .feedback>.col-sm-3 {
+        height: auto;
     }
     .theBusinessCol {
         display: none;

@@ -7,8 +7,13 @@
 
 @media screen and (max-width: 414px) {
     #navBottom {
-        overflow: scroll;
         border-radius: 0px !important;
+    }
+    .aboutDev {
+        font-size: 3vw !important;
+    }
+    .devLogo {
+        height: 15vw !important;
     }
 }
 
@@ -33,4 +38,28 @@
     margin-right: 2%;
     display: inline-flex;
     height: 2.5vh;
+}
+
+
+/* CSS for devlogo */
+
+.devLogoCont {
+    height: 100%;
+    width: 100%;
+}
+
+.aboutDev {
+    position: relative;
+    color: white;
+    font-family: orbitron;
+    margin: auto !important;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.devLogo {
+    position: relative;
+    height: 4.5vw;
+    top: 50%;
+    transform: translateY(-50%);
 }

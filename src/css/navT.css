@@ -9,9 +9,6 @@
     #navTop {
         border-radius: 0px !important;
     }
-    .navbar {
-        position: sticky;
-    }
     .navbar-brand {
         width: 70% !important;
     }

@@ -19,6 +19,7 @@ import './css/landing.css';
 import './css/font.css';
 /* GET PARTS DATA FROM WEB SERVER */
 import './js/00_getParts.js';
+import devLogo from './image/devLogo.png';
 
 /* GET VENDOR */
 if (window.navigator.vendor != "") {
@@ -99,6 +100,12 @@ Promise.resolve($('body').append(loadNav(vpw)))
             $('#partsViewContainer').css('display', 'none');
             $('#partsViewContainerM').css('display', 'none');
             $('#partsViewFP').css('display', 'none');
+            $('#navBottom').empty();
+            Promise.resolve($('#navBottom').append(require('./html/navBarBottomAbout.html')))
+                .then(() => {
+                    console.log(devLogo);
+                    $('#devLogo').attr('src', devLogo);
+                });
         });
         // FOR MOBILE
         $('.navbar-toggler').click((ev) => {

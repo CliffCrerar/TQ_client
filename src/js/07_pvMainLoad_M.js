@@ -13,8 +13,8 @@ module.exports = (ev, fType) => {
             partsMobileHtml = $(partsMobileHtml).attr('id', key).attr('cat', filteredPartsData[key].cat).attr('make', filteredPartsData[key].make);
             $(partsMobileHtml).find('img').attr('src', filteredPartsData[key].imgLink);
             $(partsMobileHtml).find('.pNameM').html(filteredPartsData[key].partName);
-            $(partsMobileHtml).find('.pPriceM-ZAR').html(filteredPartsData[key].price);
-            $(partsMobileHtml).find('.pPriceM-USD').html(filteredPartsData[key].price);
+            $(partsMobileHtml).find('.pPriceM-ZAR').html(filteredPartsData[key].salePriceZAR);
+            $(partsMobileHtml).find('.pPriceM-USD').html(filteredPartsData[key].salePriceUSD);
             $(partsMobileHtml).find('.pNumM').html('Part #: <b>' + filteredPartsData[key].partNum + '</b>');
             $(partsMobileHtml).find('.pDescM').html(filteredPartsData[key].partDesc);
             $(partsMobileHtml).find('.pModelsM').html('<b>Models:</b><br>' + filteredPartsData[key].models.join(' | '));
