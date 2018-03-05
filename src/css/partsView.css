@@ -12,6 +12,7 @@
     max-height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
     border-radius: 4px;
 }
 
@@ -88,6 +89,7 @@
     max-height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 
 .backBtn {
@@ -152,6 +154,7 @@
 
 .dropdown-menu {
     overflow: scroll !important;
+    -webkit-overflow-scrolling: touch;
 }
 
 .dropdown-item {

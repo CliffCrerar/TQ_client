@@ -48,9 +48,10 @@ span.fa {
 }
 
 @media screen and (max-width: 414px) {
-    .pageCont {
+    /*.pageCont {
         overflow: scroll;
-    }
+        -webkit-overflow-scrolling: touch;
+    }*/
     .container-fluid {
         padding: 0px !important;
     }

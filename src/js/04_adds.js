@@ -30,10 +30,11 @@ var slickAddOptions = {
     speed: 500,
     fade: true,
     cssEase: 'linear',
-    //adaptiveHeight: true
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
+    adaptiveHeight: true,
+    mobileFirst: true
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
 };
 
 $(document).ready(() => {
@@ -64,6 +65,9 @@ $(document).ready(() => {
     $('.add6-2').html('<img class="addImg img-fluid" src="' + add62 + '">');
     $('.add6-3').html('<img class="addImg img-fluid" src="' + add63 + '">');
     // Activate slick
-    $('.addFade').slick(slickAddOptions);
+    if (vpw > 414) {
+        $('.addFade').slick(slickAddOptions);
+    }
+
 });
 //console.log('04_adds.loaded');

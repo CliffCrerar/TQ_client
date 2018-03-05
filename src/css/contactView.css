@@ -50,6 +50,7 @@
 .cardOwnerDesc {
     height: 25%;
     overflow: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 .aboutMore {
@@ -70,6 +71,7 @@
 .theBussHeadings {
     position: relative;
     overflow: scroll;
+    -webkit-overflow-scrolling: touch;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -80,6 +82,7 @@
 
 .itemsAboutTheBusiness {
     overflow: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 .testimonial {
@@ -118,19 +121,10 @@
 
 @media screen and (max-width:414px) {
     .aboutTheOwner {
-        height: 80%;
-    }
-    .aboutMore {
-        height: auto;
-    }
-    .cardOwnerDesc {
-        height: 20%;
-    }
-    .scrSpyCard {
         height: 100%;
     }
-    .testimonialContainer {
-        height: 90%;
+    .cardOwnerDesc {
+        height: 100%;
     }
     .moreInfoAboutM {
         display: block;

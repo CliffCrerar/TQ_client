@@ -11,3 +11,7 @@ $('#pageCont').append(require('./html/contactView.html'));
 
 import ownerPic from './image/TQ-owner.png';
 $('#ownerPic').attr('src', ownerPic);
+
+if (vpw <= 414) {
+    $('.aboutMore').remove();
+}
