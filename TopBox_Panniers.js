@@ -167,7 +167,7 @@
           colors: 'Aluminium',
           grnt: '1 Year',
           instTime: 10,
-          price: 3960,
+          price: 4395,
           cat: 'TB',
           make: 'BMW'
       },
@@ -481,7 +481,7 @@
       },
       //Part A110912
       {
-          partNum: 'A110912',
+          partNum: 'A110801_X01',
           partName: 'Pannier RHS',
           partDesc: 'Powder coated New Silver 405 X 455 X285',
           models: ['BMW R1200GS/R1200GS Adventure LC K50 K51'],
@@ -531,7 +531,7 @@
           colors: 'Silver',
           grnt: '1 Year',
           instTime: 20,
-          price: 3960,
+          price: 4395,
           cat: 'TB',
           make: 'BMW'
       },
@@ -539,7 +539,7 @@
       {
           partNum: 'A110802_X02',
           partName: 'Top Box',
-          partDesc: 'Aluminium Side latch Natural Powder Coated New Silver Aluminium (Bracket Required)',
+          partDesc: 'Aluminium Powder Coated New Silver (Bracket Required)',
           models: ['F650GS', 'F700GS', 'F800GS', 'F800GSA'],
           imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110802_X02/599704c1a4862_A110800-01%20(1).JPG&length=1200',
           colors: 'New Silver',
@@ -553,13 +553,13 @@
       {
           partNum: 'A110801_X01',
           partName: 'Top Box',
-          partDesc: 'Aluminium Side latch Natural Powder Coated Black Aluminium (Bracket Required)',
+          partDesc: 'Aluminium Powder Coated Black (Bracket Required)',
           models: ['F650GS', 'F700GS', 'F800GS', 'F800GSA'],
           imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110801_X01/599703f5aac9c_A110811-(0).JPG&length=1200',
           colors: 'Black',
           grnt: '1 Year',
           instTime: 20,
-          price: 4500,
+          price: 4635,
           cat: 'TB',
           make: 'BMW'
       },
@@ -587,7 +587,7 @@
           colors: 'Natural Aluminium',
           grnt: '1 Year',
           instTime: 10,
-          price: 3960,
+          price: 4395,
           cat: 'TB',
           make: 'HND'
       },
