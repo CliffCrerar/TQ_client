@@ -595,7 +595,7 @@
       {
           partNum: 'A110801_X16',
           partName: 'Top Box Black',
-          partDesc: 'Aluminium Side latch Natural Powder Coated Black Aluminium',
+          partDesc: 'Aluminium Side latch Powder Coated Black Aluminium',
           models: ['Honda CRF1000L'],
           imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A110801_X16/59c16e7804440_Honda%20Africa%20Twin%20Top%20Box%20and%20panniers-2.jpg&length=350',
           colors: 'Black',
