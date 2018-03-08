@@ -565,7 +565,7 @@
       },
       //Part A11080_X12
       {
-          partNum: 'A11080_X12',
+          partNum: 'A110800_X12',
           partName: 'Top Box',
           partDesc: 'Aluminium Natural 41 Litre (Volumetric) Constructed from aluminium and stainless steel (Bracket Required )',
           models: ['1050', '1090', '1190', '1290'],
@@ -573,7 +573,7 @@
           colors: 'Silver',
           grnt: '1 Year',
           instTime: 20,
-          price: 3960,
+          price: 4395,
           cat: 'TB',
           make: 'KTM'
       },
