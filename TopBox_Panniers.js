@@ -601,7 +601,7 @@
           colors: 'Black',
           grnt: '1 Year',
           instTime: 10,
-          price: 4500
+          price: 4500,
           cat: 'TB',
           make: 'HND'
       },
