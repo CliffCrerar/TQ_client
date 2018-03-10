@@ -14,6 +14,8 @@ const loadPartListM = require('./js/07_pvMainLoad_M');
 const loadButtonsD = require('./js/08_pvMainFilter_D');
 const loadButtonsM = require('./js/09_pvMainFilter_M');
 const psExpander = require('./js/10_plClick');
+const P = require('./js/00_partloading');
+window.collapsesLoaded = []; // array of part numbers wich collapsed sections have been loaded
 /* SORTING AND FILTERING */
 const sortFilter = require('./js/00_elFilSort');
 /* LOAD PARTS VIEW FRONT PAGE */
@@ -29,6 +31,7 @@ $.each(badge, (make, img) => {
 if (vpw > 414) { $('#P-1').append(require('./html/partsViewCont.html')); }
 
 /* CLICK FUNCTION FOR PARTSVIEW FRONT PAGE */
+const partloading = new P();
 $('.badgeBtn').on('click', (ev) => {
     $('#P-1').css('height', $('#pageCont').height());
 
@@ -38,6 +41,12 @@ $('.badgeBtn').on('click', (ev) => {
         $('#partsViewFP').fadeOut();
         $('#partsViewContainer').fadeIn();
         //console.log(ev.target.id);
+
+
+        var funcLPSD = loadPartListD(ev, 'make');
+        partloading.createPartsList(funcLPSD, sortFilter, psExpander);
+        // LOAD PARTS LIST PROMISE
+        /*
         Promise.resolve(loadPartListD(ev, 'make'))
             .then(() => {
                 sortFilter.sortItems($('#accordion'));
@@ -59,7 +68,8 @@ $('.badgeBtn').on('click', (ev) => {
                         });
                 });
 
-            });
+            });*/
+        //LOAD PARTS LIST PROMISE
 
         Promise.resolve(loadButtonsD(ev, 'cat'))
             .then(() => {
