@@ -48,7 +48,6 @@ $('.addTitle').on('click', (ev) => {
                                 console.log('Quote');
                                 psExpander.clickQuote(event);
                             });
-
                         });
                 });
             });
@@ -61,6 +60,7 @@ $('.addTitle').on('click', (ev) => {
                     $('#left').empty();
                     $('#partsViewContainer').css('display', 'none');
                     $('#P-0').fadeIn();
+                    $('#N-0').addClass('active');
                 });
                 $('#btnCont').on('click', (ev) => {
                     //console.log(ev.target.id)

@@ -2,8 +2,9 @@
 module.exports = {
     navBarOperationD(container, targetEl) {
         //console.log('NAV_D');
+        console.log(targetEl);
         if (!($(targetEl).hasClass('active'))) {
-            $(container).children('a').each((i, el) => {
+            $(container).children('button').each((i, el) => {
                 if ($(el).hasClass('active')) {
                     //var pageOut = $('#P_' + el.id.split('_')[1]);
                     //pageOut.fadeOut();

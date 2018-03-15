@@ -1,7 +1,7 @@
 /*NAV BAR*/
 
 #navTop {
-    background-color: rgba(255, 0, 0, 0.514);
+    /*background-color: rgba(255, 0, 0, 0.514); */
     border-radius: 24px;
 }
 
@@ -14,11 +14,17 @@
     }
 }
 
+#navTop>button {
+    background: transparent;
+    border: 0 transparent;
+}
+
 #navTop>.nav-item {
     color: rgb(146, 146, 146);
 }
 
 #navTop>.nav-item.active {
+    background: #007bff;
     font-weight: bold;
     border-radius: 0px !important;
     color: white;
