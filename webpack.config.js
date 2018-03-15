@@ -5,6 +5,8 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const $ = require('jquery');
 const webpack = require('webpack');
 const ManifestPlugin = require('webpack-manifest-plugin');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
+
 const IP = '172.16.0.104';
 //const IP = '127.0.0.1';
 const PORT = 5500;
@@ -77,7 +79,7 @@ module.exports = {
         }),
         new CleanWebpackPlugin(['dist']),
         new ManifestPlugin(),
-
+        // new UglifyJSPlugin()
     ],
     output: {
         //filename: 'bundle.js',
