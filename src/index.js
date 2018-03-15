@@ -43,6 +43,7 @@ const loadNav = (screenw) => {
         return require('./html/navBarTopD.html');
     }
 };
+
 const pageFlick = new PF();
 Promise.resolve($('body').append(loadNav(vpw)))
     .then((value) => {
@@ -53,7 +54,7 @@ Promise.resolve($('body').append(loadNav(vpw)))
                 pageFlick.M(ev);
             });
         } else {
-            $('#navTop>a').on('click', (ev) => {
+            $('#navTop>button').on('click', (ev) => {
                 console.log('nav click Desktop');
                 pageFlick.D(ev);
             });
@@ -71,7 +72,8 @@ $('#navTop').on('click', (ev) => {
         navop.navBarOperationD(ev.currentTarget, ev.target);
     }
 });
-/* APPEND PAGE VIEW SECTION */
+
+/*  APPEND PAGE VIEW SECTION  */
 $('body').append('<div id="pageCont" style="position:relative" class="pageCont"></div>');
 $('#pageCont').append('<div id="P-0" class="lp"></div>');
 /*  LOAD MAIN CAROUSEL  */
@@ -92,7 +94,6 @@ import './css/navB.css'; // CSS
 import { inherits } from 'util';
 $('body').append(require('./html/navBarBottom.html'));
 if (vpw <= 414) { $('.social').remove(); }
-
 
 /* LOAD LOADING SCREEN  */
 window.onload = () => {
