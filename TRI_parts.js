@@ -17,17 +17,6 @@
             cat: 'WFP'
         },
 
-        //Part A05005
-        {  
-            partNum: 'A05005',
-            partName: 'Side Stand Extender',
-            partDesc: 'Manufactured from aluminium with a rubber foot pad helps with non slip',
-            models: ['800','800XC'],
-            imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A05005/546fa0ba28af3_A05005-PIC04.JPG&length=600',
-            colors: 'Black and Silver',
-            grnt: '0',
-            instTime: 30,
-            price: 305,
-            cat: 'SSE' 
+        
             
         },
