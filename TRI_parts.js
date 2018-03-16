@@ -26,9 +26,7 @@
             imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A05005/546fa0ba28af3_A05005-PIC04.JPG&length=600',
             colors: 'Black and Silver',
             grnt: '0',
-            instTime: 30 ,
-            price: 305,
-            cat: 'SSE', 
+            instTime: '30',
+            cat: 'SSE' 
             
         },
-    
