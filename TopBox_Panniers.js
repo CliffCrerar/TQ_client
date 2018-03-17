@@ -645,6 +645,6 @@
           instTime: 5,
           price: 735,
           cat: 'TBB',
-          make: 'Triumph' 
+          Smake: 'Triumph' 
     },
    
