@@ -639,12 +639,12 @@
           partName: 'Top Box Bracket',
           partDesc: 'Top Box Bracket (To fit Aluminium Top Box Part number A110800 A110801 A110802)',
           models: ['1200'],
-          imgLink: '',
+          imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A11190/54855245b7afe_A11190-PIC01.JPG&length=600',
           colors: 'Silver',
           grnt: '0',
           instTime: 5,
           price: 735,
           cat: 'TBB',
-          Smake: 'Triumph' 
+          make: 'Triumph' 
     },
    
