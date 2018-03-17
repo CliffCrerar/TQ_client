@@ -633,3 +633,18 @@
           cat: 'TBB', 
           make: 'Triumph'  
        },
+       //Part 
+      {  
+          partNum: 'A11180',
+          partName: 'Top Box Bracket',
+          partDesc: 'Top Box Bracket (To fit Aluminium Top Box Part number A110800 A110801 A110802)',
+          models: ['1200'],
+          imgLink: '',
+          colors: 'Silver',
+          grnt: '0',
+          instTime: 5,
+          price: 735,
+          cat: 'TBB',
+          make: 'Triumph' 
+    },
+   
