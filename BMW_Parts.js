@@ -964,7 +964,7 @@ var BMW_parts = [
         colors: 'Silver',
         grnt: '1 Year',
         instTime: 15,
-        price: 360,
+        price: 380,
         cat: 'BLE', 
     },
     //Part A09650
