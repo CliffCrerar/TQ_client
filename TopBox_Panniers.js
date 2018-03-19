@@ -635,7 +635,7 @@
       },
       //Part 
       {
-          partNum: 'A11180',
+          partNum: 'A11190',
           partName: 'Top Box Bracket',
           partDesc: 'Top Box Bracket (To fit Aluminium Top Box Part number A110800 A110801 A110802)',
           models: ['1200'],
