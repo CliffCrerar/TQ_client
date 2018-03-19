@@ -839,7 +839,7 @@ var BMW_parts = [
     //Part A9MR10020
     {  
         partNum: 'A9MR100200',
-        partName: 'BNMW Handle Functional Bar Bags ',
+        partName: 'BMW Handle Functional Bar Bags ',
         partDesc: 'Handle bar bags especially made for BMW’s to carry small items in them',
         models: ['F650GS','F700GS','F800GS','F800GSA'],
         imgLink: 'http://tinyurl.com/yd4zrjnn',
