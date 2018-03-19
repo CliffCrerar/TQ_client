@@ -619,22 +619,22 @@
           cat: 'PAN',
           make: 'BMW'
       },
-       //Part A11180
-      {  
+      //Part A11180
+      {
           partNum: 'A11180',
           partName: 'Top Box Bracket',
           partDesc: 'Top Box Bracket (To fit Aluminium Top Box Part number A110800 A110801 A110802)',
-          models: ['800','800XC'],
+          models: ['800', '800XC'],
           imgLink: 'http://www.motorradical.co.za/thumb.php?path=img/products/A11180/5485d02227e28_A11180-PIC01.JPG&length=600',
           colors: 'Silver',
           grnt: '0',
           instTime: 5,
           price: 735,
-          cat: 'TBB', 
-          make: 'Triumph'  
-       },
-       //Part 
-      {  
+          cat: 'TBB',
+          make: 'Triumph'
+      },
+      //Part 
+      {
           partNum: 'A11180',
           partName: 'Top Box Bracket',
           partDesc: 'Top Box Bracket (To fit Aluminium Top Box Part number A110800 A110801 A110802)',
@@ -645,6 +645,6 @@
           instTime: 5,
           price: 735,
           cat: 'TBB',
-          make: 'Triumph' 
-    },
-   
+          make: 'Triumph'
+      },
+  ];
