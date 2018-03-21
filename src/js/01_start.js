@@ -10,7 +10,7 @@ let correctDimension = function(vph, vpw, vphM) {
         var newHeight;
         $('body').css('background-Size', vphM + 'px auto');
         if (vpw <= 414) {
-            subract = $('#navTop').height();
+            var subract = $('#navTop').height();
             $('.c1.carousel-inner').css('border-radius', '24px');
             newHeight = (vphM * 0.80);
             $('.pageCont').css('height', 'auto');
