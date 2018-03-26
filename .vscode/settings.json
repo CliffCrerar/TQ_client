@@ -10,5 +10,13 @@
     "eslint.options": {
         "configFile": "./eslintrc.json"
     },
-    "eslint._legacyModuleResolve": true,   
+    "eslint._legacyModuleResolve": true,
+    "liveServer.settings.CustomBrowser": "firefox",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": false,
+    "liveServer.settings.fullReload": true,
+    "liveServer.settings.host": "127.0.0.1",
+    "liveServer.settings.port": 5500,
+    "liveServer.settings.root": "/dist",
+    "liveServer.settings.wait": 500,   
 }
