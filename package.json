@@ -5,9 +5,10 @@
     "main": "src/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "webpack --watch",
-        "build": "webpack --config webpack.config.js --display-modules",
-        "builda": "npx webpack --config webpack.config.js --display-modules"
+        "builda": "npx webpack --config webpack.config.js --display-modules",
+        "start": "webpack --watch --mode development",
+        "build": "webpack --config webpack.config.js --display-modules --mode development",
+        "prod": "webpack --config webpack.config.js --optimize-minimize --display-modules --mode production"
     },
     "repository": {
         "type": "git",
@@ -25,7 +26,7 @@
         "node": "^9.5.0",
         "node-sass": "^4.7.2",
         "node.js": "0.0.0",
-        "npm": "^5.7.1",
+        "npm": "^5.8.0",
         "octicons": "^7.1.0",
         "popper.js": "^1.13.0",
         "slick-carousel": "^1.8.1",
