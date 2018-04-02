@@ -28,7 +28,16 @@ module.exports = class {
                     } else {
                         console.log('Collapse was loaded');
                     }
-                    //console.log(ev.currentTarget.id);
+                    //console.log($(ev.target).attr('data-target'));
+                    var collapseTarget = $(ev.target).attr('data-target');
+                    //console.log($(collapseTarget).hasClass('show'));
+                    if($(collapseTarget).hasClass('show')){
+                        $(collapseTarget).collapse('hide');
+                        $('#'+ev.target.id).find('.colapseInd').removeClass('fa-minus').addClass('fa-plus');
+                    }else{
+                        $(collapseTarget).collapse('show');
+                        $('#'+ev.target.id).find('.colapseInd').removeClass('fa-plus').addClass('fa-minus');
+                    }
 
                 });
 

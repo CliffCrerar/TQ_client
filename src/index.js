@@ -9,7 +9,7 @@ import _ from 'lodash';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import 'bootstrap';
 /* FONT AWESOME FOR WEB PACK */
-import 'font-awesome-webpack';
+import '../node_modules/font-awesome/css/font-awesome.css';
 /* SLICK CAROUSEL API */
 import '../node_modules/slick-carousel/slick/slick.css';
 import '../node_modules/slick-carousel/slick/slick.js';

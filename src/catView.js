@@ -6,7 +6,7 @@ import './css/mod_requestQuote.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import 'bootstrap';
 /* FONT AWESOME FOR WEB PACK */
-import 'font-awesome-webpack';
+import '../node_modules/font-awesome/css/font-awesome.css';
 import { resolve } from 'path';
 /* CALL PART VIEW POPULATE FUNCTION */
 const loadPartListD = require('./js/06_pvMainLoad_D');

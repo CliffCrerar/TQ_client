@@ -27,7 +27,7 @@ module.exports = (ev, fType) => {
         .attr("id", "btn-" + key);
       $("#btn-" + partID).attr("name", filteredPartsData[key].partName);
       $("#btn-" + partID + ">.row>.pName").html(
-        '<span class="fa fa-plus" aria-hidden="true"></span>' +
+        '<span class="colapseInd fa fa-plus" aria-hidden="true"></span>' +
           filteredPartsData[key].partName
       );
       $("#btn-" + partID + ">.row>.pNum").html(filteredPartsData[key].partNum);
