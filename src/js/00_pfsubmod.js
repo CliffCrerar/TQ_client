@@ -1,5 +1,5 @@
 module.exports = function() {
-    console.log('common section hide');
+    //console.log('common section hide');
     $('#accordion').empty();
     $('#left').empty();
     $('#partsViewContainerM').empty();

@@ -29,7 +29,7 @@ if (window.navigator.vendor != "") {
 /* LOAD CUSTOM JS */
 import './js/01_start.js'; // adjust user view
 import './js/02_navbar.js'; // JS
-import PF from './js/00_pageFlicking';
+import pageFlick from './js/00_pageFlicking';
 
 /*------------------------*/
 /*  LOAD HOME PAGE HTML   */
@@ -44,24 +44,25 @@ const loadNav = (screenw) => {
     }
 };
 
-const pageFlick = new PF();
+
 Promise.resolve($('body').append(loadNav(vpw)))
     .then((value) => {
         /* PAGE FLICK ACTION */
         if (vpw <= 414) {
             $('.navbar-nav>.nav-item').on('click', (ev) => {
-                console.log('nav click Mobile');
-                pageFlick.M(ev);
+                //console.log('nav click Mobile');
+                pageFlick(ev);
+                $('.navbar-collapse').collapse('toggle');
             });
         } else {
             $('#navTop>button').on('click', (ev) => {
-                console.log('nav click Desktop');
-                pageFlick.D(ev);
+                //console.log('nav click Desktop');
+                pageFlick(ev);
             });
         }
     });
 
-/*  IMPLEMENT NAV BAR OPERATION  */
+/*  IMPLEMENT NAV BAR OPERATION  
 $('#navTop').on('click', (ev) => {
     const navop = require('./js/02_navbar');
     var navclick;
@@ -69,9 +70,9 @@ $('#navTop').on('click', (ev) => {
     if (vpw <= 414) {
         navop.navBarOperationM(ev.currentTarget, ev.target);
     } else {
-        navop.navBarOperationD(ev.currentTarget, ev.target);
+        //navop.navBarOperationD(ev.currentTarget, ev.target);
     }
-});
+});*/
 
 /*  APPEND PAGE VIEW SECTION  */
 $('body').append('<div id="pageCont" style="position:relative" class="pageCont"></div>');
@@ -93,7 +94,6 @@ $('#P-0').append(require('./html/adds.html'));
 import './css/navB.css'; // CSS
 import { inherits } from 'util';
 $('body').append(require('./html/navBarBottom.html'));
-if (vpw <= 414) { $('.social').remove(); }
 
 /* LOAD LOADING SCREEN  */
 window.onload = () => {

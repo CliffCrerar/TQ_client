@@ -3,6 +3,8 @@
 /*-------------------------------------*/
 
 // FTYPE argument should determine what buttons myst be returned 'cat' or 'make'
+
+const badges = require('./05_badges');
 module.exports = function(event, fType) {
     /*  */
     $('#pageCont').append(require('../html/partFilControls_M.html'));
@@ -46,6 +48,7 @@ module.exports = function(event, fType) {
             }
         }
         //$('#btnCont').append('<button id = "' + filterList[i] + '" type="button" class="btn btn-block btn-outline-success text-left">' + btnCaption + '</button>');
+        $('#filtContListM').append('<button id = "' + filterList[i] + '" class="dropdown-item" type="button">' + btnCaption + '</button>');
         $('#filtContListM').append('<button id = "' + filterList[i] + '" class="dropdown-item" type="button">' + btnCaption + '</button>');
     }
 

@@ -64,7 +64,8 @@
 }
 
 .theBusiness {
-    height: 33%;
+    /* height: 33%; <add for testimonials>*/
+    height: 50%;
     overflow: hidden;
 }
 
@@ -84,7 +85,7 @@
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
 }
-
+/*
 .testimonial {
     height: 30%;
 }
@@ -101,9 +102,10 @@
 .testimonialHeading {
     overflow: scroll;
 }
-
+*/
 .feedback {
-    height: 33%;
+    /* height: 33%; <add for testimonials>*/
+    height: 40%;
     overflow-wrap: break-word
 }
 
@@ -117,6 +119,28 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.tqSocial{
+    font-family: orbitron;
+    color: white;
+}
+
+.social {
+    width: 50%;
+    font-size: 1.5vw;
+}
+
+.social>a {
+    margin-right: 2%;
+}
+
+.text-social{
+    color: white !important;
+}
+
+.text-social:hover {
+    color: #076BFF !important;
 }
 
 @media screen and (max-width:414px) {

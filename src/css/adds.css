@@ -65,3 +65,10 @@
     background-color: #F10032 !important;
     opacity: 1;
 }
+
+.imgCS{
+    position: absolute;
+    z-index: 10000;
+    top:50%;
+    transform: translateY(-50%);
+}

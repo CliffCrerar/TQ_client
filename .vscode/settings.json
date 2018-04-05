@@ -8,7 +8,7 @@
     ],
     "eslint.autoFixOnSave": true,
     "eslint.options": {
-        "configFile": "./eslintrc.json"
+        "configFile": "./.eslintrc.json"
     },
     "eslint._legacyModuleResolve": true,
     "liveServer.settings.CustomBrowser": "firefox",
@@ -18,5 +18,21 @@
     "liveServer.settings.host": "127.0.0.1",
     "liveServer.settings.port": 5500,
     "liveServer.settings.root": "/dist",
-    "liveServer.settings.wait": 500,   
+    "liveServer.settings.wait": 500,
+    "html.autoClosingTags": true,
+    "html.format.enable": true,
+    "html.suggest.html5": true,
+    "html.trace.server": "verbose",
+    "html.validate.scripts": true,
+    "html.validate.styles": true,
+    "javascript.format.enable": true,
+    "javascript.validate.enable": true,
+    "editor.codeLens": true,
+    "editor.autoIndent": true,
+    "editor.autoClosingBrackets": true,
+    "editor.cursorBlinking": "phase",
+    "files.autoGuessEncoding": true,
+    "files.autoSave": "onFocusChange",
+    "html.format.indentHandlebars": true,
+    "html.format.indentInnerHtml": true
 }

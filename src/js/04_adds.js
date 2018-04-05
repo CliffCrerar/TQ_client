@@ -23,6 +23,9 @@ import add61 from '../image/add6.1.jpg';
 import add62 from '../image/add6.2.jpg';
 import add63 from '../image/add6.3.jpg';
 
+//COMING SOON
+import CS from '../image/cs4.png';
+
 var slickAddOptions = {
     arrows: false,
     autoplay: true,
@@ -68,6 +71,7 @@ $(document).ready(() => {
     if (vpw > 414) {
         $('.addFade').slick(slickAddOptions);
     }
+    $('#ac5').append('<div class="imgCS"><img class="imgCs img-fluid" src="'+CS+'">');
 
 });
 //console.log('04_adds.loaded');
