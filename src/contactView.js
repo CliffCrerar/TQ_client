@@ -7,11 +7,11 @@
 //import 'bootstrap';
 /* IMPORT CSS */
 import './css/contactView.css';
-$('#pageCont').append(require('./html/contactView.html'));
+$('#pageCont').append(require('./html/contactViewD.html'));
 
 import ownerPic from './image/TQ-owner.png';
 $('#ownerPic').attr('src', ownerPic);
 
 if (vpw <= 414) {
-    $('.aboutMore').remove();
+    //$('.aboutMore').remove();
 }

@@ -49,7 +49,9 @@ module.exports = function(event, fType) {
         }
         //$('#btnCont').append('<button id = "' + filterList[i] + '" type="button" class="btn btn-block btn-outline-success text-left">' + btnCaption + '</button>');
         $('#filtContListM').append('<button id = "' + filterList[i] + '" class="dropdown-item" type="button">' + btnCaption + '</button>');
-        $('#filtContListM').append('<button id = "' + filterList[i] + '" class="dropdown-item" type="button">' + btnCaption + '</button>');
+        /*if(type=='make'){
+            $('#filterDropDownM').append('<img scr="'+badge[disc]+'">');
+        }*/
     }
 
     return $('.filterDropDownM>button').on('click', (ev) => {

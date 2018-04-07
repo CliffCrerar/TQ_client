@@ -19,6 +19,11 @@ import './css/landing.css';
 import './css/font.css';
 import './css/bg.css'; // define backgrounds
 import './css/navT.css'; // CSS
+import './css/navB.css'; // CSS
+import './css/carousel.css'; // CSS
+import './css/adds.css'; // CSS
+
+
 /* GET PARTS DATA FROM WEB SERVER */
 import './js/00_getParts.js';
 import devLogo from './image/devLogo.png';
@@ -28,8 +33,11 @@ if (window.navigator.vendor != "") {
 }
 /* LOAD CUSTOM JS */
 import './js/01_start.js'; // adjust user view
-import './js/02_navbar.js'; // JS
+import './js/04_adds.js'; // Load images and set carousel options
+import './js/03_carousel.js'; // JS
+//import './js/02_navbar.js'; // JS
 import pageFlick from './js/00_pageFlicking';
+
 
 /*------------------------*/
 /*  LOAD HOME PAGE HTML   */
@@ -43,7 +51,6 @@ const loadNav = (screenw) => {
         return require('./html/navBarTopD.html');
     }
 };
-
 
 Promise.resolve($('body').append(loadNav(vpw)))
     .then((value) => {
@@ -75,11 +82,11 @@ $('#navTop').on('click', (ev) => {
 });*/
 
 /*  APPEND PAGE VIEW SECTION  */
+
 $('body').append('<div id="pageCont" style="position:relative" class="pageCont"></div>');
+
 $('#pageCont').append('<div id="P-0" class="lp"></div>');
 /*  LOAD MAIN CAROUSEL  */
-import './css/carousel.css'; // CSS
-import './js/03_carousel.js'; // JS
 const loadCarousel = function(screenw) {
     if (screenw > 414) {
         return $('#P-0').append(require('./html/carousel.html'));
@@ -87,13 +94,10 @@ const loadCarousel = function(screenw) {
 };
 loadCarousel(vpw);
 /*  LOAD ADDS RAIL  */
-import './css/adds.css'; // CSS
-import './js/04_adds.js'; // Load images and set carousel options
 $('#P-0').append(require('./html/adds.html'));
 /*  NAV BOTTOM  */
-import './css/navB.css'; // CSS
-import { inherits } from 'util';
 $('body').append(require('./html/navBarBottom.html'));
+/*  */
 
 /* LOAD LOADING SCREEN  */
 window.onload = () => {

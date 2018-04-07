@@ -5,3 +5,7 @@
 .exampleModal {
     z-index: 4500 !important;
 }
+
+.input-group-text{
+    width: 40px !important;
+}

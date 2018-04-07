@@ -8,12 +8,13 @@ let correctDimension = function(vph, vpw, vphM) {
     //console.log('VPH:', vph, 'VPW:', vpw);
     $(document).ready(() => {
         var newHeight;
-        $('body').css('background-Size', vphM + 'px auto');
+        //$('body').css('background-Size', vphM + 'px auto');
         if (vpw <= 414) {
+            $('body').height('auto')
             var subract = $('#navTop').height();
-            $('.c1.carousel-inner').css('border-radius', '24px');
+            $('.c1.carousel-inner').css('border-radius', '100%');
             newHeight = (vphM * 0.80);
-            $('.pageCont').css('height', 'auto');
+            $('.pageCont').css('height', '100%');
             $('#P-0').css('height', newHeight);
             $('#addsRailID').css('min-height', newHeight);
             $('.subRails').css('min-height', newHeight);
@@ -43,7 +44,7 @@ $(document).ready(() => {
         $('.makes>[alt="' + name + '"]').attr('src', link);
     });
     //adjust height for navbottom
-    var navBottomHeight = $('#navBottom').height();
+        var navBottomHeight = $('#navBottom').height();
     if (vpw <= 414) {
         $('.navBadge').height(navBottomHeight - 5);
     } else {

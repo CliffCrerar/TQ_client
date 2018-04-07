@@ -76,10 +76,14 @@ module.exports = {
 
         new HTMLWebpackPlugin({
             template: './src/html/index.html',
+            favicon: './src/image/true3.png',
+            title: 'TQ Bike $ 4x4 Accessories'
         }),
         new CleanWebpackPlugin(['dist']),
         new ManifestPlugin(),
-        // new UglifyJSPlugin()
+        /*new UglifyJSPlugin({
+            sourceMap: true
+        })*/
     ],
     output: {
         //filename: 'bundle.js',
