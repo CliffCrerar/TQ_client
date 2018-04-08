@@ -129,7 +129,6 @@
     width: 100%;
 }
 
-
 /* Right section */
 
 .sideAddsCont {
@@ -172,4 +171,8 @@
 
 .sideAdd{
     margin-bottom: 1vh;
+}
+
+.btnComingSoom{
+    height: 25px;
 }

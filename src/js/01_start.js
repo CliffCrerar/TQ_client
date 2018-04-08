@@ -10,11 +10,11 @@ let correctDimension = function(vph, vpw, vphM) {
         var newHeight;
         //$('body').css('background-Size', vphM + 'px auto');
         if (vpw <= 414) {
-            $('body').height('auto')
+            $('body').css('height', vph);
             var subract = $('#navTop').height();
             $('.c1.carousel-inner').css('border-radius', '100%');
             newHeight = (vphM * 0.80);
-            $('.pageCont').css('height', '100%');
+            //$('.pageCont').css('height', '100%');
             $('#P-0').css('height', newHeight);
             $('#addsRailID').css('min-height', newHeight);
             $('.subRails').css('min-height', newHeight);

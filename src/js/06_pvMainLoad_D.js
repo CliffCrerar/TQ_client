@@ -5,42 +5,21 @@ module.exports = (ev, fType) => {
   const fp = require("./00_filteringPartsData"); // fp.byMake return the filteredPartsData data object
   // console.log(fType);
   var loadPartsIntoContainer = filteredPartsData => {
-    for (var key in filteredPartsData) {
-      var partHtml = require("../html/partListing_D.html");
-      var partID = key;
-      var partsAddPartID = $(partHtml)
-        .attr("id", partID)
-        .attr("cat", filteredPartsData[key].cat);
+    var lang = window.navigator.language;
+    for (var partID in filteredPartsData) {
+      var partHtml = require("../html/partListing_D.html"); // get framework for part item
+      var partsAddPartID = $(partHtml).attr("id", partID).attr("cat", filteredPartsData[partID].cat); // assign categegory
       $("#accordion").append(partsAddPartID);
-      $("#" + partID)
-        .attr("id", partID)
-        .attr("cat", filteredPartsData[key].cat)
-        .attr("make", filteredPartsData[key].make); // Adding part ID and custom Category and make
+      $("#" + partID).attr("id", partID).attr("cat", filteredPartsData[partID].cat).attr("make", filteredPartsData[partID].make); // Adding part ID and custom Category and make
       $("#" + partID).children(".card-header").attr("id", partID + "heading"); // Adding heading
-      $("#" + partID)
-        .children(".collapse")
-        .attr("id", "collapse-" + partID)
-        .attr("aria-labelledby", partID + "heading");
-      $("#" + partID + ">.card-header>h5>button")
-        .attr("data-target", "#collapse-" + partID)
-        .attr("aria-controls", "collapse-" + key)
-        .attr("id", "btn-" + key);
-      $("#btn-" + partID).attr("name", filteredPartsData[key].partName);
-      $("#btn-" + partID + ">.row>.pName").html(
-        '<span class="colapseInd fa fa-plus" aria-hidden="true"></span>' +
-          filteredPartsData[key].partName
-      );
-      $("#btn-" + partID + ">.row>.pNum").html(filteredPartsData[key].partNum);
-      $("#btn-" + partID + ">.row>.pRandPrice").html(
-        filteredPartsData[key].salePriceZAR
-      );
-      $("#btn-" + partID + ">.row>.pDollarPrice").html(
-        filteredPartsData[key].salePriceUSD
-      );
-      $("#collapse-" + partID + ">.card-body>.se-pre-con-1").attr(
-        "id",
-        "loader-" + partID
-      );
+      $("#" + partID).children(".collapse").attr("id", "collapse-" + partID).attr("aria-labelledby", partID + "heading");
+      $("#" + partID + ">.card-header>h5>button").attr("data-target", "#collapse-" + partID).attr("aria-controls", "collapse-" + partID).attr("id", "btn-" + partID);
+      $("#btn-" + partID).attr("name", filteredPartsData[partID].partName);
+      $("#btn-" + partID + ">.row>.pName").html('<span class="colapseInd fa fa-plus" aria-hidden="true"></span>' + filteredPartsData[partID].partName);
+      $("#btn-" + partID + ">.row>.pNum").html(filteredPartsData[partID].partNum);
+      $("#btn-" + partID + ">.row>.pRandPrice").html('R '+filteredPartsData[partID].salesPriceZAR.toLocaleString(lang));
+      $("#btn-" + partID + ">.row>.pDollarPrice").html('$ '+filteredPartsData[partID].salesPriceUSD.toLocaleString(lang));
+      $("#collapse-" + partID + ">.card-body>.se-pre-con-1").attr("id","loader-" + partID);
       //console.log(partsAddKey);
     }
   };

@@ -25,7 +25,7 @@ import './css/adds.css'; // CSS
 
 
 /* GET PARTS DATA FROM WEB SERVER */
-import './js/00_getParts.js';
+import sreq from './js/00_serverReq.js';
 import devLogo from './image/devLogo.png';
 /* GET VENDOR */
 if (window.navigator.vendor != "") {
@@ -38,6 +38,8 @@ import './js/03_carousel.js'; // JS
 //import './js/02_navbar.js'; // JS
 import pageFlick from './js/00_pageFlicking';
 
+// GET PARTS FROM SERVER
+sreq.getParts();
 
 /*------------------------*/
 /*  LOAD HOME PAGE HTML   */

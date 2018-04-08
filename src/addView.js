@@ -49,6 +49,16 @@ $('.addTitle').on('click', (ev) => {
                                 psExpander.clickQuote(event);
                             });
                         });
+                    //console.log($(ev.target).attr('data-target'));
+                    var collapseTarget = $(ev.target).attr('data-target');
+                    //console.log($(collapseTarget).hasClass('show'));
+                    if($(collapseTarget).hasClass('show')){
+                        $(collapseTarget).collapse('hide');
+                        $('#'+ev.target.id).find('.colapseInd').removeClass('fa-minus').addClass('fa-plus');
+                    }else{
+                        $(collapseTarget).collapse('show');
+                        $('#'+ev.target.id).find('.colapseInd').removeClass('fa-plus').addClass('fa-minus');
+                    }
                 });
             });
         Promise.resolve(loadButtonsD(ev, 'make'))

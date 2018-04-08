@@ -7,10 +7,6 @@ const webpack = require('webpack');
 const ManifestPlugin = require('webpack-manifest-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 
-const IP = '172.16.0.104';
-//const IP = '127.0.0.1';
-const PORT = 5500;
-
 module.exports = {
     context: __dirname,
     entry: {
@@ -20,7 +16,7 @@ module.exports = {
         adds: './src/addView.js'
             //fpView: './src/fullpartView.js'
     },
-    devtool: 'inline-source-map',
+    //devtool: 'inline-source-map',
     module: {
         rules: [
             { test: /\.css$/, use: ['style-loader', 'css-loader'] },
@@ -81,9 +77,9 @@ module.exports = {
         }),
         new CleanWebpackPlugin(['dist']),
         new ManifestPlugin(),
-        /*new UglifyJSPlugin({
+        new UglifyJSPlugin({
             sourceMap: true
-        })*/
+        })
     ],
     output: {
         //filename: 'bundle.js',

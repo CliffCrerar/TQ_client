@@ -145,21 +145,53 @@
 @media screen and (max-width:414px) {
     .contactView{
         height: 100%;
+        position: relative;
     }
-    .aboutTheOwner {
+    .contactViewHeadingM{
+        position: relative;
+        font-family: orbitron;
+        color: white;
+        margin-left: 1%;
+    }
+
+    .cardOwnerDescM{
+        margin: 0 1% 0 1%;
         height: 100%;
     }
-    .cardOwnerDesc {
-        height: 100% !important;
-        display: block;
-    } 
-    .moreInfoAboutM {
-        display: block;
+
+    .feedbackTitleM{
+        color: white;
+        font-family: orbitron;
+        margin-top: 2%;
     }
-    .feedback>.col-sm-3 {
-        height: auto;
+
+    .formFeedbackM{
+        margin: 0 4% 0 4%;
     }
-    .theBusinessCol {
-        display: none;
+
+    .feedbacktype{
+        margin-bottom: 1rem;
     }
+
+    .text-social-m{
+        color: white !important;
+        height: 100%;
+        font-size: 5vh !important;
+    }
+    
+    .text-social-m:hover {
+        color: #076BFF !important;
+    }
+
+    .iaLogoDiv{
+        display: 'block';
+        position: relative;
+        height: 100%;
+    }
+    
+    .devLogoM{
+        width: 50% !important;
+        height: auto !important;
+    }
+
 }
