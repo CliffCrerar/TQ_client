@@ -38,6 +38,10 @@
     border-radius: 0 !important;
 }
 
+.partListing{
+    position: relative !important;
+    z-index: 500 !important;
+}
 
 /* --PART COLLAPSING LOADING OVERLAY--*/
 

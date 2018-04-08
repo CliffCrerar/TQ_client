@@ -1,11 +1,13 @@
+<!doctype html>
+<html>
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="modalMail" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="modalMail">Online enquiry</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
             <div class="modal-body">
                 <form>
@@ -24,7 +26,7 @@
                             <div class="input-group-prepend">
                                 <div class="input-group-text"><span class="fa fa-user"></span></div>
                             </div>
-                            <input type="text" class="form-control" id="reqQteName" placeholder="Name">
+                            <input type="text" class="form-control name" id="reqQteName" placeholder="Name" value="cliff">
                         </div>
                         <!--ADDRESS-->
                         <label class="sr-only" for="reqQteEmail">e-mail address</label>
@@ -32,7 +34,7 @@
                             <div class="input-group-prepend">
                                 <div class="input-group-text"><span class="fa fa-at"></span></div>
                             </div>
-                            <input type="text" class="form-control" id="reqQteEmail" placeholder="email address">
+                            <input type="text" class="form-control email" id="reqQteEmail" placeholder="email address" value="cliff.crerar@gmail.com">
                         </div>
 
                     </form>
@@ -43,15 +45,17 @@
                     </div>
                     <!--TEXT AREA FOR MESSAGE-->
                     <div class="form-group">
-                        <label for="message-text" class="col-form-label">Message:</label>
-                        <textarea class="form-control" id="message-text"></textarea>
+                        <label class="col-form-label">Message:</label>
+                        <textarea class="form-control msg">Message to tq</textarea>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Send message</button>
+                <button type="button" class="btn btn-primary sendQuoteRequest">Send message</button>
             </div>
         </div>
     </div>
 </div>
+            
+</html>

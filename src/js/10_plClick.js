@@ -31,12 +31,35 @@ module.exports = {
                 })
                 .then(() => {
                     var modReqQteHtml = require('../html/mod_requestQuote.html');
-                    modReqQteHtml = $(modReqQteHtml).attr('id', 'modal-' + partID) //.attr('aria-labelledby', 'modalMail-' + partID);
+                    modReqQteHtml = $(modReqQteHtml).attr('id', 'modal-' + partID);
+                    //.attr('aria-labelledby', 'modalMail-' + partID);
                         //modReqQteHtml = $(modReqQteHtml).find('.modal-title').attr('id', 'modalMail-' + partID); //.attr();
                         //modReqQteHtml = $(modReqQteHtml).find('.modal-title').attr('aria-labelledby', 'modal-mail-' + partID);
                         //modReqQteHtml = $(modReqQteHtml).find('.modal-title').html('Request for Quotation(' + partID + ')');
-                    $('#Q-' + partID).parent().append($(modReqQteHtml));
+                        $('#Q-' + partID).parent().append($(modReqQteHtml));
                     //console.log(modReqQteHtmlID);
+                    $('.sendQuoteRequest').on('click',ev=>{
+                        var sendQuoteRequest = require('./12_coms');
+                        //console.log('click send quote');
+                        //console.log(ev.currentTarget.attributes[2].value);
+                        var modalSelector = '#'+ev.currentTarget.attributes[2].value;
+                        var name = $(modalSelector).find('.name').val();
+                        //console.log(name);
+                        var email = $(modalSelector).find('.email').val();
+                        //console.log(email);
+                        var msg = $(modalSelector).find('.msg').val();
+                        //console.log(msg);
+                        var quoteItem = $(modalSelector).find('.card-body').html();
+                        //console.log(quoteItem);
+                        var quote = {
+                            name: name,
+                            email: email,
+                            msg: msg,
+                            item: quoteItem,
+                            type: 'quote'
+                        };
+                        sendQuoteRequest(quote);
+                    });
                 })
                 .then(() => {
                     $('#img-' + partID).on('load', () => {
@@ -53,16 +76,17 @@ module.exports = {
     },
     clickQuote(ev) {
         //console.log('QUOTE: ', ev);
-        console.log($(ev.target));
-        var partID = ev.target.id.split('-')[1];
-        console.log(partID);
+        console.log($(ev.currentTarget));
+        var partID = ev.currentTarget.id.split('-')[1];
+        //console.log(partID);
         $('#modal-' + partID).find('.card-body').empty();
+        $('#modal-' + partID).find('.sendQuoteRequest').attr('data-target','modal-' + partID);
         var cardEntry =
             '<p class="lead partQteEntry">Part Name : ' + partsData[partID].partName + '</p><br>' +
             '<p class="partEntry">Part Number: ' + partID + '</p>' +
             '<p>For: ' + partsData[partID].make + ' ' + partsData[partID].models + '</p>' +
-            '<p class="lead partQteEntry">Priced(ZAR): ' + partsData[partID].salePriceZAR + '</p>' +
-            '<p class="lead partQteEntry">Priced(USD): ' + partsData[partID].salePriceUSD + '</p>';
+            '<p class="lead partQteEntry">Priced(ZAR): ' + partsData[partID].salesPriceZAR + '</p>' +
+            '<p class="lead partQteEntry">Priced(USD): ' + partsData[partID].salesPriceUSD + '</p>';
 
         $('#modal-' + partID).find('.card-body').append(cardEntry);
     }

@@ -11,7 +11,6 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import 'bootstrap';
 /* FONT AWESOME FOR WEB PACK */
 import '../node_modules/font-awesome/css/font-awesome.css';
-import { resolve } from 'path';
 
 const loadPartsListD = require('./js/06_pvMainLoad_D');
 const loadPartListM = require('./js/07_pvMainLoad_M');
@@ -22,6 +21,8 @@ const psExpander = require('./js/10_plClick');
 
 $('.addTitle').on('click', (ev) => {
     $('#N-0').removeClass('active');
+    console.log(ev.currentTarget.id);
+
     let selectedClass = ev.currentTarget.id.split('-')[1]; // get selected class from clicked link
     //console.log(selectedClass);
     $('#P-1').show();
@@ -50,14 +51,14 @@ $('.addTitle').on('click', (ev) => {
                             });
                         });
                     //console.log($(ev.target).attr('data-target'));
-                    var collapseTarget = $(ev.target).attr('data-target');
+                    var collapseTarget = $(ev.currentTarget).attr('data-target');
                     //console.log($(collapseTarget).hasClass('show'));
                     if($(collapseTarget).hasClass('show')){
                         $(collapseTarget).collapse('hide');
-                        $('#'+ev.target.id).find('.colapseInd').removeClass('fa-minus').addClass('fa-plus');
+                        $('#'+ev.currentTarget.id).find('.colapseInd').removeClass('fa-minus').addClass('fa-plus');
                     }else{
                         $(collapseTarget).collapse('show');
-                        $('#'+ev.target.id).find('.colapseInd').removeClass('fa-plus').addClass('fa-minus');
+                        $('#'+ev.currentTarget.id).find('.colapseInd').removeClass('fa-plus').addClass('fa-minus');
                     }
                 });
             });
@@ -79,7 +80,7 @@ $('.addTitle').on('click', (ev) => {
                     $(ev.currentTarget).children().each(function(i, el) {
                         $(el).removeClass('active');
                     });
-                    $(ev.target).addClass('active');
+                    $(ev.currentTarget).addClass('active');
                     //console.log(filtCriteria);
                     sortFilter.filterMake(filtCriteria, $('#accordion'));
                 });

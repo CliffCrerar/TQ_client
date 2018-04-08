@@ -23,7 +23,7 @@ module.exports = {
             { test: /\.exec\.js$/, use: ['script-loader'] },
             { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, use: ["url-loader?limit=10000&mimetype=application/font-woff"] },
             { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, use: ["file-loader"] },
-            /*{
+            {
                 test: /\.scss$/,
                 use: [{
                     loader: "style-loader" // creates style nodes from JS strings
@@ -44,7 +44,7 @@ module.exports = {
 
                     },
                 }]
-            },*/
+            },
             { test: /\.(png|svg|jpg|gif|jpeg)$/, use: ['file-loader'] },
             {
                 test: /\.html$/,
@@ -77,7 +77,9 @@ module.exports = {
         }),
         new CleanWebpackPlugin(['dist']),
         //new ManifestPlugin(),
-        new UglifyJSPlugin({})
+        new UglifyJSPlugin({
+            sourceMap: true
+        })
     ],
     output: {
         //filename: 'bundle.js',

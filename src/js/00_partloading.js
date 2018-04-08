@@ -9,6 +9,10 @@ module.exports = class {
                 sortFilter.sortItems($('#accordion'));
                 // On click event for expanding parts listing
                 $('.partListing').on('click', (ev) => {
+                    var idSelect = '#'+ev.currentTarget.id;
+                    console.log('currentTarget', ev.currentTarget.id);
+                    console.log('Target', ev.target.id);
+                    console.log(idSelect);
                     var colLdd = window.collapsesLoaded.includes(ev.currentTarget.id);
                     if (!colLdd) {
                         Promise.resolve(psExpander.loadCollapsed(ev.currentTarget.id))
@@ -22,21 +26,20 @@ module.exports = class {
                                     console.log('Quote');
                                     psExpander.clickQuote(event);
                                 });
-
                             });
-
                     } else {
                         console.log('Collapse was loaded');
                     }
                     //console.log($(ev.target).attr('data-target'));
-                    var collapseTarget = $(ev.target).attr('data-target');
+                    var collapseTarget = $(ev.currentTarget).attr('data-target');
                     //console.log($(collapseTarget).hasClass('show'));
                     if($(collapseTarget).hasClass('show')){
                         $(collapseTarget).collapse('hide');
-                        $('#'+ev.target.id).find('.colapseInd').removeClass('fa-minus').addClass('fa-plus');
+                        $(idSelect).find('.colapseInd').removeClass('fa-minus').addClass('fa-plus');
                     }else{
                         $(collapseTarget).collapse('show');
-                        $('#'+ev.target.id).find('.colapseInd').removeClass('fa-plus').addClass('fa-minus');
+                        console.log('#'+ev.target.id);
+                        $(idSelect).find('.colapseInd').removeClass('fa-plus').addClass('fa-minus');
                     }
 
                 });

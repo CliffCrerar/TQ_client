@@ -1,6 +1,7 @@
 module.exports = (ev) => {
     $('.nav-item').each((i, el) => {
-        var pageIn = '#P-' + ev.target.id.split('-')[1];
+        console.log(ev.currentTarget.id);
+        var pageIn = '#P-' + ev.currentTarget.id.split('-')[1];
         var active = $(el).hasClass('active');
         if (active) {
             $(el).removeClass('active');
@@ -18,7 +19,7 @@ module.exports = (ev) => {
         }
     });
     //console.log(ev.target.id);
-    $('#'+ev.target.id).addClass('active');
+    $('#'+ev.currentTarget.id).addClass('active');
 };
 
 

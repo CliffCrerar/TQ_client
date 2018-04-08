@@ -13,8 +13,6 @@ if (vpw <= 414) {
     //$('.aboutMore').remove();
     $('#pageCont').append(require('./html/contactViewM.html'));
     $('#ownerPic').attr('src', ownerPic);
-    
-    
 }else{
     $('#pageCont').append(require('./html/contactViewD.html'));
     $('#ownerPic').attr('src', ownerPic);

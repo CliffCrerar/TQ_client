@@ -1,7 +1,7 @@
 //console.log("00.1_Parts request started");
 
-// const URL = "http://34.242.179.249:8010/";
- var URL = "http://172.16.0.104:8010/";
+ const URL = "http://34.242.179.249:8010/";
+// var URL = "http://172.16.0.104:8010/";
 // var URL = 'http://196.32.249.85:8000';
 // var URL = 'http://172.20.10.3:8000';
 
