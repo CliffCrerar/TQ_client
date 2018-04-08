@@ -4,7 +4,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const $ = require('jquery');
 const webpack = require('webpack');
-const ManifestPlugin = require('webpack-manifest-plugin');
+//const ManifestPlugin = require('webpack-manifest-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 
 module.exports = {
@@ -23,7 +23,7 @@ module.exports = {
             { test: /\.exec\.js$/, use: ['script-loader'] },
             { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, use: ["url-loader?limit=10000&mimetype=application/font-woff"] },
             { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, use: ["file-loader"] },
-            {
+            /*{
                 test: /\.scss$/,
                 use: [{
                     loader: "style-loader" // creates style nodes from JS strings
@@ -44,7 +44,7 @@ module.exports = {
 
                     },
                 }]
-            },
+            },*/
             { test: /\.(png|svg|jpg|gif|jpeg)$/, use: ['file-loader'] },
             {
                 test: /\.html$/,
@@ -57,7 +57,7 @@ module.exports = {
                     }
                 }],
             },
-            { test: /\.handlebars$/, loader: "handlebars-loader" },
+            /*{ test: /\.handlebars$/, loader: "handlebars-loader" },*/
             { test: /\.txt$/, use: 'raw-loader' }
         ],
 
@@ -76,10 +76,8 @@ module.exports = {
             title: 'TQ Bike $ 4x4 Accessories'
         }),
         new CleanWebpackPlugin(['dist']),
-        new ManifestPlugin(),
-        new UglifyJSPlugin({
-            sourceMap: true
-        })
+        //new ManifestPlugin(),
+        new UglifyJSPlugin({})
     ],
     output: {
         //filename: 'bundle.js',
