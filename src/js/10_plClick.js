@@ -25,24 +25,25 @@ module.exports = {
                     $('#CS-' + partID).find('.like').attr('id', 'LIKE-' + partID);
 
                     //for comming soon
-                    $('#FV-' + partID+'>img').attr('src', CS);
-                    $('#LIKE-' + partID+'>img').attr('src', CS);
+                    $('#FV-' + partID + '>img').attr('src', CS);
+                    $('#LIKE-' + partID + '>img').attr('src', CS);
                     //for comning soom
                 })
                 .then(() => {
                     var modReqQteHtml = require('../html/mod_requestQuote.html');
                     modReqQteHtml = $(modReqQteHtml).attr('id', 'modal-' + partID);
                     //.attr('aria-labelledby', 'modalMail-' + partID);
-                        //modReqQteHtml = $(modReqQteHtml).find('.modal-title').attr('id', 'modalMail-' + partID); //.attr();
-                        //modReqQteHtml = $(modReqQteHtml).find('.modal-title').attr('aria-labelledby', 'modal-mail-' + partID);
-                        //modReqQteHtml = $(modReqQteHtml).find('.modal-title').html('Request for Quotation(' + partID + ')');
-                        $('#Q-' + partID).parent().append($(modReqQteHtml));
+                    //modReqQteHtml = $(modReqQteHtml).find('.modal-title').attr('id', 'modalMail-' + partID); //.attr();
+                    //modReqQteHtml = $(modReqQteHtml).find('.modal-title').attr('aria-labelledby', 'modal-mail-' + partID);
+                    //modReqQteHtml = $(modReqQteHtml).find('.modal-title').html('Request for Quotation(' + partID + ')');
+                    $('#Q-' + partID).parent().append($(modReqQteHtml));
                     //console.log(modReqQteHtmlID);
-                    $('.sendQuoteRequest').on('click',ev=>{
+                    var sendQuoteRequest = require('./12_coms');
+                    $('.sendQuoteRequest').on('click', ev => {
                         var sendQuoteRequest = require('./12_coms');
                         //console.log('click send quote');
                         //console.log(ev.currentTarget.attributes[2].value);
-                        var modalSelector = '#'+ev.currentTarget.attributes[2].value;
+                        var modalSelector = '#' + ev.currentTarget.attributes[2].value;
                         var name = $(modalSelector).find('.name').val();
                         //console.log(name);
                         var email = $(modalSelector).find('.email').val();
@@ -80,7 +81,7 @@ module.exports = {
         var partID = ev.currentTarget.id.split('-')[1];
         //console.log(partID);
         $('#modal-' + partID).find('.card-body').empty();
-        $('#modal-' + partID).find('.sendQuoteRequest').attr('data-target','modal-' + partID);
+        $('#modal-' + partID).find('.sendQuoteRequest').attr('data-target', 'modal-' + partID);
         var cardEntry =
             '<p class="lead partQteEntry">Part Name : ' + partsData[partID].partName + '</p><br>' +
             '<p class="partEntry">Part Number: ' + partID + '</p>' +

@@ -12,8 +12,10 @@
     margin-left: 1%;
 }
 
+
 /* dev logo */
-.devLogo{
+
+.devLogo {
     width: 15%;
     height: auto !important;
 }
@@ -55,7 +57,7 @@
 
 .cardOwnerDesc {
     height: 25%;
-    overflow: scroll;
+    overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
 }
 
@@ -77,8 +79,6 @@
 
 .theBussHeadings {
     position: relative;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -88,9 +88,11 @@
 }
 
 .itemsAboutTheBusiness {
-    overflow: scroll;
+    overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
 }
+
+
 /*
 .testimonial {
     height: 30%;
@@ -109,6 +111,7 @@
     overflow: scroll;
 }
 */
+
 .feedback {
     /* height: 33%; <add for testimonials>*/
     height: 40%;
@@ -127,12 +130,12 @@
     transform: translateY(-50%);
 }
 
-.tqSocial{
+.tqSocial {
     font-family: orbitron;
     color: white;
 }
 
-.text-social{
+.text-social {
     color: white !important;
     height: 100%;
     font-size: 2.5vh !important;
@@ -143,55 +146,46 @@
 }
 
 @media screen and (max-width:414px) {
-    .contactView{
+    .contactView {
         height: 100%;
         position: relative;
     }
-    .contactViewHeadingM{
+    .contactViewHeadingM {
         position: relative;
         font-family: orbitron;
         color: white;
         margin-left: 1%;
     }
-
-    .cardOwnerDescM{
+    .cardOwnerDescM {
         margin: 0 1% 0 1%;
         height: 100%;
     }
-
-    .feedbackTitleM{
+    .feedbackTitleM {
         color: white;
         font-family: orbitron;
         margin-top: 2%;
     }
-
-    .formFeedbackM{
+    .formFeedbackM {
         margin: 0 4% 0 4%;
     }
-
-    .feedbacktype{
+    .feedbacktype {
         margin-bottom: 1rem;
     }
-
-    .text-social-m{
+    .text-social-m {
         color: white !important;
         height: 100%;
         font-size: 5vh !important;
     }
-    
     .text-social-m:hover {
         color: #076BFF !important;
     }
-
-    .iaLogoDiv{
+    .iaLogoDiv {
         display: 'block';
         position: relative;
         height: 100%;
     }
-    
-    .devLogoM{
+    .devLogoM {
         width: 50% !important;
         height: auto !important;
     }
-
 }
