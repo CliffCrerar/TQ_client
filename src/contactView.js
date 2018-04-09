@@ -17,3 +17,5 @@ if (vpw <= 414) {
     $('#pageCont').append(require('./html/contactViewD.html'));
     $('#ownerPic').attr('src', ownerPic);
 }
+
+require('./js/13_contactView');

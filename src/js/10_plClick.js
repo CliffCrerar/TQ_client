@@ -38,28 +38,8 @@ module.exports = {
                     //modReqQteHtml = $(modReqQteHtml).find('.modal-title').html('Request for Quotation(' + partID + ')');
                     $('#Q-' + partID).parent().append($(modReqQteHtml));
                     //console.log(modReqQteHtmlID);
-                    var sendQuoteRequest = require('./12_coms');
                     $('.sendQuoteRequest').on('click', ev => {
-                        var sendQuoteRequest = require('./12_coms');
-                        //console.log('click send quote');
-                        //console.log(ev.currentTarget.attributes[2].value);
-                        var modalSelector = '#' + ev.currentTarget.attributes[2].value;
-                        var name = $(modalSelector).find('.name').val();
-                        //console.log(name);
-                        var email = $(modalSelector).find('.email').val();
-                        //console.log(email);
-                        var msg = $(modalSelector).find('.msg').val();
-                        //console.log(msg);
-                        var quoteItem = $(modalSelector).find('.card-body').html();
-                        //console.log(quoteItem);
-                        var quote = {
-                            name: name,
-                            email: email,
-                            msg: msg,
-                            item: quoteItem,
-                            type: 'quote'
-                        };
-                        sendQuoteRequest(quote);
+                        require('./10.1_modalAction.js')(ev);
                     });
                 })
                 .then(() => {
@@ -83,7 +63,7 @@ module.exports = {
         $('#modal-' + partID).find('.card-body').empty();
         $('#modal-' + partID).find('.sendQuoteRequest').attr('data-target', 'modal-' + partID);
         var cardEntry =
-            '<p class="lead partQteEntry">Part Name : ' + partsData[partID].partName + '</p><br>' +
+            '<p class="lead partQteEntry">Part Name : ' + partsData[partID].partName + '</p>' +
             '<p class="partEntry">Part Number: ' + partID + '</p>' +
             '<p>For: ' + partsData[partID].make + ' ' + partsData[partID].models + '</p>' +
             '<p class="lead partQteEntry">Priced(ZAR): ' + partsData[partID].salesPriceZAR + '</p>' +

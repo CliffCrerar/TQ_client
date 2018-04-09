@@ -32,6 +32,7 @@ module.exports = (ev, fType) => {
                 //modReqQteHtml = $(modReqQteHtml).find('.modal-title').attr('aria-labelledby', 'modal-mail-' + partID);
                 //modReqQteHtml = $(modReqQteHtml).find('.modal-title').html('Request for Quotation(' + partID + ')');
             $('#Q-' + partID).parent().append($(modReqQteHtml));
+            
             //console.log(modReqQteHtmlID);
         }
     };

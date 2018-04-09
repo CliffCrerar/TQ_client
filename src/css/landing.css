@@ -68,4 +68,20 @@ span.fa {
 /*--------------------------*/
 
 
-/* catelogue */
+/* Alerts */
+
+.alert{
+    display: none;
+    position: absolute;
+    color: white;
+    border-radius: 0px !important;
+    z-index: 7000 !important;
+}
+
+.alert.error{
+    background-color: rgba(218, 0, 0, 0.9)
+}
+
+.alert.success{
+    background-color: rgba(0, 194, 0, 0.9)
+}

@@ -14,7 +14,7 @@ module.exports = function(event, fType) {
     let parts;
     let btnCapLeg;
 
-    console.log(event);
+    //console.log(event);
 
     if (type == 'cat') {
         parts = fp.byMake(event);
@@ -24,8 +24,8 @@ module.exports = function(event, fType) {
         btnCapLeg = require('../json/makes.json');
     }
 
-    console.log(parts);
-    console.log(btnCapLeg);
+    //console.log(parts);
+    //console.log(btnCapLeg);
 
 
     let filterList = [];
@@ -55,7 +55,7 @@ module.exports = function(event, fType) {
     }
 
     return $('.filterDropDownM>button').on('click', (ev) => {
-        console.log('Drop down click');
+        //console.log('Drop down click');
         if ($('#filtContListM').hasClass('show')) {
             $('#filtContListM').addClass('show');
         } else {

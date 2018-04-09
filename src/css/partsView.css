@@ -180,3 +180,8 @@
 .btnComingSoom{
     height: 25px;
 }
+
+.modal-dialog{
+    position: relative !important;
+    z-index: 6000 !important;
+}

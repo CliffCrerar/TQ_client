@@ -99,6 +99,10 @@ $('.addTitle').on('click', (ev) => {
                 $('.quoteM').on('click', (event) => {
                     console.log('Quote');
                     psExpander.clickQuote(event);
+                    $('.sendQuoteRequest').on('click',(ev)=>{
+                        console.log('send modal click');
+                        require('./js/10.1_modalAction')(ev);
+                    });
                 });
             });
         Promise.resolve(loadButtonsM(ev, 'make'))

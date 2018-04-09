@@ -188,4 +188,8 @@
         width: 50% !important;
         height: auto !important;
     }
+    .fbTypeSelect{
+        color: white;
+        font-family: orbitron;
+    }
 }

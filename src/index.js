@@ -42,6 +42,13 @@ import pageFlick from './js/00_pageFlicking';
 sreq.getParts();
 
 /*------------------------*/
+/*  LOAD ALERT HTML       */
+/*------------------------*/
+
+$('body').append(require('./html/alerts.html'));
+
+
+/*------------------------*/
 /*  LOAD HOME PAGE HTML   */
 /*------------------------*/
 

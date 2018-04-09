@@ -30,35 +30,45 @@
             <!-- FEEDBACK FORM-->
             <form class="formFeedbackM">
                     <div class="form-row">
+                        <!--INPUT NAME-->
+                        <div class="col-12 form-group">
+                            <label class="sr-only" for="#fbName">Name</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><span class="fa fa-user"></span></div>
+                                </div>
+                                <input type="text" class="form-control fbControl" id="fbName" placeholder="Name">
+                            </div>
+                        </div>
                         <!--INPUT EMAIL-->
                         <div class="col-12 form-group">
-                            <label class="sr-only" for="feedbackEmailInput">Email</label>
+                            <label class="sr-only" for="#fbEmail">Email</label>
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <div class="input-group-text">@</div>
                                 </div>
-                                <input type="email" class="form-control" id="feedbackEmailInput" placeholder="email">
+                                <input type="email" class="form-control fbControl" id="fbEmail" placeholder="email">
                             </div>
                         </div>
                         <!--DROP DOWN-->
-                        <div class="dropdown col-12 feedbacktype">
-                            <button class="btn btn-primary btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                FEEDBACK TYPE
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Compliment</a>
-                                <a class="dropdown-item" href="#">Complaint</a>
-                                <a class="dropdown-item" href="#">Enquiry</a>
-                                <a class="dropdown-item" href="#">Status of order</a>
+                        <div class="col-12 form-group">
+                            <p class="fbTypeSelect text-center">SELECT FEEDBACK TYPE:</p>
+                            <div class="list-group fbType">
+                                <button type="button" class="list-group-item list-group-item-action text-center active">Compliment</button>
+                                <button type="button" class="list-group-item list-group-item-action text-center">Complaint</button>
+                                <button type="button" class="list-group-item list-group-item-action text-center">Enquiry</button>
+                                <button type="button" class="list-group-item list-group-item-action text-center">Status of order</button>
+                                <button type="button" class="list-group-item list-group-item-action text-center">How to improce our service</button>
+                                <button type="button" class="list-group-item list-group-item-action text-center">How to improve our site</button>
                             </div>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="col-sm-10 form-group">
-                            <textarea class="form-control" id="feedbackMessage" rows="3"></textarea>
+                            <textarea class="form-control fbControl" id="fbMessage" rows="3"></textarea>
                         </div>
                         <div class="col-sm-2 form-group">
-                            <button id="feedbackSend" class="btn btn-success btn-block disabled">SEND</button>
+                            <button type="button" id="fbSend" class="btn btn-success btn-block">SEND</button>
                         </div>
                     </div>
                 </form>
@@ -75,9 +85,6 @@
         </div>
         <!-- /SOCIAL -->
         <div class="divline2"></div>
-
-        
-        
         <div class="iaLogoDiv text-center">
             <a href="http://infinityarc.net/" target="_blank"><img class="devLogoM" src="../image/devLogo.png" alt="devBasge"></a>
         </div>

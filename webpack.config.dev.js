@@ -69,7 +69,6 @@ module.exports = {
             jQuery: 'jquery',
             Popper: ['popper.js', 'default'],
         }),
-
         new HTMLWebpackPlugin({
             template: './src/html/index.html',
             favicon: './src/image/true3.png',

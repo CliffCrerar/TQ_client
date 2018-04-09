@@ -96,29 +96,40 @@
                         <form class="formFeedback">
                             <div class="form-row">
                                 <div class="col form-group">
-                                    <label class="sr-only" for="feedbackEmailInput">Email</label>
+                                    <label class="sr-only" for="#fbName">Name</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><span class="fa fa-user"></span></div>
+                                        </div>
+                                        <input type="text" class="form-control fbControl" id="fbName" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="col form-group">
+                                    <label class="sr-only" for="#fbEmail">Email</label>
                                     <div class="input-group">
                                         <div class="input-group-prepend">
                                             <div class="input-group-text">@</div>
                                         </div>
-                                        <input type="email" class="form-control" id="feedbackEmailInput" placeholder="email">
+                                        <input type="email" class="form-control fbControl" id="fbEmail" placeholder="email">
                                     </div>
                                 </div>
                                 <div class="col form-group">
-                                    <select class="form-control" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="feedBackType">
+                                    <select class="form-control" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="fbType">
                                         <option>Compliment</option>
                                         <option>Complaint</option>
                                         <option>Enquiry</option>
                                         <option>Status on order</option>
+                                        <option>How to improve our service</option>
+                                        <option>How to improve our site</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="col-sm-10 form-group">
-                                    <textarea class="form-control" id="feedbackMessage" rows="3"></textarea>
+                                    <textarea class="form-control fbControl" id="fbMessage" rows="3"></textarea>
                                 </div>
                                 <div class="col-sm-2 form-group">
-                                    <button id="feedbackSend" class="btn btn-success btn-block disabled">SEND</button>
+                                    <button type="button" id="fbSend" class="btn btn-success btn-block">SEND</button>
                                 </div>
                             </div>
                         </form>
