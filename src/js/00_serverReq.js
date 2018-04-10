@@ -39,8 +39,8 @@ module.exports = {
       dataType: 'text/plain',
       data: data,
       success: (response, status)=>{
-        console.log(response);
-        console.log(status);
+        //console.log(response);
+        //console.log(status);
       },
       error: (error, xhr, more) => {
         console.log("Like not processed");

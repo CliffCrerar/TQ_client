@@ -21,7 +21,7 @@ const psExpander = require('./js/10_plClick');
 
 $('.addTitle').on('click', (ev) => {
     $('#N-0').removeClass('active');
-    console.log(ev.currentTarget.id);
+    //console.log(ev.currentTarget.id);
 
     let selectedClass = ev.currentTarget.id.split('-')[1]; // get selected class from clicked link
     //console.log(selectedClass);
@@ -42,11 +42,11 @@ $('.addTitle').on('click', (ev) => {
                         .then(() => {
 
                             $('.like').on('click', (event) => {
-                                console.log('like');
+                                //console.log('like');
                                 psExpander.clickLike(event);
                             });
                             $('.quote').on('click', (event) => {
-                                console.log('Quote');
+                                //console.log('Quote');
                                 psExpander.clickQuote(event);
                             });
                         });
@@ -94,24 +94,24 @@ $('.addTitle').on('click', (ev) => {
         $('#partsViewContainerM').fadeIn();
         Promise.resolve(loadPartListM(ev, 'cat'))
             .then(() => {
-                console.log('MOB PARTLIST Promise resolved');
+                //console.log('MOB PARTLIST Promise resolved');
                 sortFilter.sortItems($('#partsViewContainerM'));
                 $('.quoteM').on('click', (event) => {
-                    console.log('Quote');
+                    //console.log('Quote');
                     psExpander.clickQuote(event);
                     $('.sendQuoteRequest').on('click',(ev)=>{
-                        console.log('send modal click');
+                        //console.log('send modal click');
                         require('./js/10.1_modalAction')(ev);
                     });
                 });
             });
         Promise.resolve(loadButtonsM(ev, 'make'))
             .then(() => {
-                console.log('MOB Promise resolved');
+                //console.log('MOB Promise resolved');
                 sortFilter.sortItems($('#filtContListM'));
                 $('#filtContListM').on('click', (ev) => {
                     var filtCriteria = ev.target.id;
-                    console.log(filtCriteria);
+                    //console.log(filtCriteria);
                     //partsViewContainerM
                     sortFilter.filterMake(filtCriteria, $('#partsViewContainerM'));
                 });

@@ -43,7 +43,7 @@ module.exports = class {
                         $(idSelect).find('.colapseInd').removeClass('fa-minus').addClass('fa-plus');
                     }else{
                         $(collapseTarget).collapse('show');
-                        console.log('#'+ev.target.id);
+                        //console.log('#'+ev.target.id);
                         $(idSelect).find('.colapseInd').removeClass('fa-plus').addClass('fa-minus');
                     }
 

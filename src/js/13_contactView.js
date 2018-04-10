@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-09 21:48:39 
- * Last modified  : 2018-04-09 22:47:18
+ * Last modified  : 2018-04-10 04:10:44
  */
 
 var sendMail = require('./12_sendmail');
@@ -21,7 +21,7 @@ $('.fbType').on('click',(ev)=>{
 });
 
 $('#fbSend').on('click',()=>{
-    console.log('send feedback click');
+    //console.log('send feedback click');
     var feedback = {};
     if(screen.width <= 414){
         var fbType;
@@ -46,6 +46,6 @@ $('#fbSend').on('click',()=>{
             type: 'feedback'
         };
     }
-    console.log(feedback);
+    //console.log(feedback);
     sendMail(feedback);
 });

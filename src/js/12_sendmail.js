@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-08 18:11:45 
- * Last modified  : 2018-04-10 01:23:45
+ * Last modified  : 2018-04-10 04:10:14
  */
 
 // Declare sending IP
@@ -29,8 +29,8 @@ const sendMail = data => {
     dataType: 'text',
     timout: 10000,
     success: (response, status) => {
-      console.log(response);
-      console.log(status);
+      //console.log(response);
+      //console.log(status);
     },
     error: (err, xhr, third) => {
       console.log(err);
@@ -41,7 +41,7 @@ const sendMail = data => {
 };
 
 module.exports = data => {
-  console.log(data);
+  //console.log(data);
 
   var validEmail = data.email.match(pattern);
   //console.log('validmail ',validEmail);

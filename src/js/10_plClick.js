@@ -57,7 +57,7 @@ module.exports = {
     },
     clickQuote(ev) {
         //console.log('QUOTE: ', ev);
-        console.log($(ev.currentTarget));
+        //console.log($(ev.currentTarget));
         var partID = ev.currentTarget.id.split('-')[1];
         //console.log(partID);
         $('#modal-' + partID).find('.card-body').empty();

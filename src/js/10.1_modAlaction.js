@@ -5,12 +5,12 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-10 00:31:12 
- * Last modified  : 2018-04-10 00:39:16
+ * Last modified  : 2018-04-10 04:09:58
  */
 
 module.exports = (ev) => {
     var sendQuoteRequest = require('./12_sendmail');
-    console.log('click send quote');
+    //console.log('click send quote');
     //console.log(ev.currentTarget.attributes[2].value);
     var modalSelector = '#' + ev.currentTarget.attributes[2].value;
     var name = $(modalSelector).find('.name').val();

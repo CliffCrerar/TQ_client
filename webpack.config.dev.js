@@ -72,7 +72,8 @@ module.exports = {
         new HTMLWebpackPlugin({
             template: './src/html/index.html',
             favicon: './src/image/true3.png',
-            title: 'TQ Bike $ 4x4 Accessories'
+            title: 'TQ Bike $ 4x4 Accessories',
+            meta: require('./src/json/htmlMeta.json')
         }),
         new CleanWebpackPlugin(['dist']),
         new ManifestPlugin(),

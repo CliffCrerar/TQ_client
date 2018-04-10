@@ -1,6 +1,6 @@
 module.exports = (ev) => {
     $('.nav-item').each((i, el) => {
-        console.log(ev.currentTarget.id);
+        //console.log(ev.currentTarget.id);
         var pageIn = '#P-' + ev.currentTarget.id.split('-')[1];
         var active = $(el).hasClass('active');
         if (active) {

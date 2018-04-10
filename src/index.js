@@ -2,7 +2,6 @@
 /*       HOME PAGE        */
 /*------------------------*/
 
-/* App root file */
 /* LODASH */
 import _ from 'lodash';
 /* BOOSTRAP 4 */
@@ -23,13 +22,12 @@ import './css/navB.css'; // CSS
 import './css/carousel.css'; // CSS
 import './css/adds.css'; // CSS
 
-
 /* GET PARTS DATA FROM WEB SERVER */
 import sreq from './js/00_serverReq.js';
 import devLogo from './image/devLogo.png';
 /* GET VENDOR */
 if (window.navigator.vendor != "") {
-    console.log(window.navigator.vendor);
+    //console.log(window.navigator.vendor);
 }
 /* LOAD CUSTOM JS */
 import './js/01_start.js'; // adjust user view
@@ -124,8 +122,8 @@ const sendBugReport = data => {
       dataType: 'text',
       timout: 10000,
       success: (response, status) => {
-        console.log(response);
-        console.log(status);
+        //console.log(response);
+        //console.log(status);
       },
       error: (err, xhr, third) => {
         console.log(err);
@@ -139,8 +137,8 @@ const showAlerts = require('./js/14_alerts');
 $('#bugBtn').on('click',()=>{
     $('#bugForm').modal('show');
     $('#rateBtns').on('click',(ev)=>{
-        console.log(ev.target);
-        console.log(ev.currentTarget);
+        //console.log(ev.target);
+        //onsole.log(ev.currentTarget);
         $(ev.currentTarget).children().each((i,el)=>{
             if($(el).hasClass('active')){
                 $(el).removeClass('active');
@@ -151,10 +149,10 @@ $('#bugBtn').on('click',()=>{
     $('#sendBugReport').on('click',()=>{
         let rating = '';
         $('#rateBtns').children().each((i,el)=>{
-            console.log(el);
-            console.log($(el).hasClass('active'));
+            //console.log(el);
+            //console.log($(el).hasClass('active'));
             if($(el).hasClass('active')){
-                console.log($(el).html());
+                //console.log($(el).html());
                 rating = $(el).html();
             }
             if(rating == ''){
@@ -168,7 +166,7 @@ $('#bugBtn').on('click',()=>{
             rating: rating,
             type: 'bugReport'
         };
-        console.log(bugReport);
+        //console.log(bugReport);
         sendBugReport(bugReport);
         $('#bugForm').modal('hide');
         showAlerts('#bugThanks');
@@ -191,4 +189,6 @@ window.onload = () => {
         $('.se-pre-con').fadeOut();
     }, 2000);
 };
+
+$('head').append(require('./html/chromeScript.html'));
 //console.log('Index.loaded');

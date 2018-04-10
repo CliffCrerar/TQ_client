@@ -36,7 +36,7 @@ $('.badgeBtn').on('click', (ev) => {
 
     if (vpw > 414) {
         /* BEGINNING OF PARTS LOADING FOR DESKTOP */
-        console.log('PARTS LOAD FOR DESKTOP');
+        //console.log('PARTS LOAD FOR DESKTOP');
         $('#partsViewFP').fadeOut();
         $('#partsViewContainer').fadeIn();
         //console.log(ev.target.id);
@@ -95,7 +95,7 @@ $('.badgeBtn').on('click', (ev) => {
         /* END OF PARTS LOADING FOR DESKTOP */
     } else {
         /* BEGINNING OF PARTS LOADING FOR MOBILE */
-        console.log('PARTS LOAD FOR MOBILE');
+        //console.log('PARTS LOAD FOR MOBILE');
         //$('#partsViewContainer').remove();
         $('#partsViewContainerM').remove();
         $('#P-1').append('<div id="partsViewContainerM" class="pvContainer"></div>');
@@ -104,16 +104,16 @@ $('.badgeBtn').on('click', (ev) => {
 
         Promise.resolve(loadPartListM(ev, 'make'))
             .then(() => {
-                console.log('MOB PARTLIST Promise resolved');
+                //console.log('MOB PARTLIST Promise resolved');
                 sortFilter.sortItems($('#partsViewContainerM'));
                 $('.quoteM').on('click', (event) => {
-                    console.log('Quote');
+                    //console.log('Quote');
                     psExpander.clickQuote(event);
                 });
             });
         Promise.resolve(loadButtonsM(ev, 'cat'))
             .then(() => {
-                console.log('MOB Promise resolved');
+                //console.log('MOB Promise resolved');
                 sortFilter.sortItems($('#filtContListM'));
                 $('#filtContListM').on('click', (ev) => {
                     var filtCriteria = ev.target.id;
@@ -128,7 +128,7 @@ $('.badgeBtn').on('click', (ev) => {
 });
 
 $('#accordian').on('load', function() {
-    console.log('accordian loaded');
+    //console.log('accordian loaded');
 });
 
 // console.log('Partscat.loaded');
