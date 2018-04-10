@@ -15,11 +15,15 @@
 
 /* dev logo */
 
-.devLogoDiv{
+.devLogoDiv {
+    /* for discretion */
+    display: 'none' important;
     height: auto;
 }
 
 .devLogo {
+    /* for discretion */
+    display: 'none' !important;
     position: absolute;
     right: 0%;
     width: 25%;
@@ -186,15 +190,18 @@
         color: #076BFF !important;
     }
     .iaLogoDiv {
-        display: 'block';
+        /* for discretion display: 'block';*/
+        display: 'none' !important;
         position: relative;
         height: 100%;
     }
     .devLogoM {
+        /* for discretion display: 'block';*/
+        display: 'none' !important;
         width: 50% !important;
         height: auto !important;
     }
-    .fbTypeSelect{
+    .fbTypeSelect {
         color: white;
         font-family: orbitron;
     }

@@ -12,6 +12,9 @@ import 'bootstrap';
 /* FONT AWESOME FOR WEB PACK */
 import '../node_modules/font-awesome/css/font-awesome.css';
 
+/* IMPORT LOGO */
+import tqLogo from './image/tglogo.png';
+
 const loadPartsListD = require('./js/06_pvMainLoad_D');
 const loadPartListM = require('./js/07_pvMainLoad_M');
 const loadButtonsD = require('./js/08_pvMainFilter_D');
@@ -53,12 +56,12 @@ $('.addTitle').on('click', (ev) => {
                     //console.log($(ev.target).attr('data-target'));
                     var collapseTarget = $(ev.currentTarget).attr('data-target');
                     //console.log($(collapseTarget).hasClass('show'));
-                    if($(collapseTarget).hasClass('show')){
+                    if ($(collapseTarget).hasClass('show')) {
                         $(collapseTarget).collapse('hide');
-                        $('#'+ev.currentTarget.id).find('.colapseInd').removeClass('fa-minus').addClass('fa-plus');
-                    }else{
+                        $('#' + ev.currentTarget.id).find('.colapseInd').removeClass('fa-minus').addClass('fa-plus');
+                    } else {
                         $(collapseTarget).collapse('show');
-                        $('#'+ev.currentTarget.id).find('.colapseInd').removeClass('fa-plus').addClass('fa-minus');
+                        $('#' + ev.currentTarget.id).find('.colapseInd').removeClass('fa-plus').addClass('fa-minus');
                     }
                 });
             });
@@ -88,7 +91,7 @@ $('.addTitle').on('click', (ev) => {
         /* END OF PARTS LOADING FOR DESKTOP */
     } else {
         /* BEGINNING OF PARTS LOADING FOR MOBILE */
-        $('#partsViewContainerM').remove();
+        //$('#partsViewContainerM').remove();
         $('#P-1').append('<div id="partsViewContainerM" class="pvContainer"></div>');
         //$('#partsViewFP').fadeOut();
         $('#partsViewContainerM').fadeIn();
@@ -99,7 +102,7 @@ $('.addTitle').on('click', (ev) => {
                 $('.quoteM').on('click', (event) => {
                     //console.log('Quote');
                     psExpander.clickQuote(event);
-                    $('.sendQuoteRequest').on('click',(ev)=>{
+                    $('.sendQuoteRequest').on('click', (ev) => {
                         //console.log('send modal click');
                         require('./js/10.1_modalAction')(ev);
                     });
@@ -119,3 +122,14 @@ $('.addTitle').on('click', (ev) => {
         /* END OF PARTS LOADING FOR MOBILE */
     }
 });
+
+if (vpw <= 414) {
+    var tqLogoHtml = '<div class="card tqLogoDiv">' +
+        '<div class="tqTitleLogoImg">' +
+        '<h1 class="mobileTitle text-center">Top Quality</h1>' +
+        '<img id="tqLogoImg" class="tqLogoImg">' +
+        '</div>' +
+        '</div>';
+    $(tqLogoHtml).insertBefore('#pageCont');
+    $('#tqLogoImg').attr('src', tqLogo);
+}

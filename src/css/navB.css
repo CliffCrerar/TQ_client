@@ -17,22 +17,22 @@
     }
 }
 
-.versionDiv{
+.versionDiv {
     width: 15%;
     color: white;
     font-family: orbitron;
 }
-.versionDiv>p{
-    margin:0px;
+
+.versionDiv>p {
+    margin: 0px;
     font-size: 10px;
 }
 
 .makes {
     width: 70%;
-    overflow-x: scroll;
 }
 
-.reportBugDiv{
+.reportBugDiv {
     width: 15%;
 }
 
