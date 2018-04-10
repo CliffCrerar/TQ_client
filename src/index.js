@@ -190,5 +190,4 @@ window.onload = () => {
     }, 2000);
 };
 
-$('head').append(require('./html/chromeScript.html'));
 //console.log('Index.loaded');
