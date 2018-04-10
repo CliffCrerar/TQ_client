@@ -17,8 +17,23 @@
     }
 }
 
+.versionDiv{
+    width: 15%;
+    color: white;
+    font-family: orbitron;
+}
+.versionDiv>p{
+    margin:0px;
+    font-size: 10px;
+}
+
 .makes {
-    width: 100%;
+    width: 70%;
+    overflow-x: scroll;
+}
+
+.reportBugDiv{
+    width: 15%;
 }
 
 .navBadge {

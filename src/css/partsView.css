@@ -14,6 +14,7 @@
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     border-radius: 4px;
+    padding: 0px !important;
 }
 
 .list-group-item {
@@ -32,6 +33,7 @@
 
 .accordian {
     border-radius: 4px !important;
+    overflow: hidden !important;
 }
 
 .partsListingD {

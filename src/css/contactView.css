@@ -15,8 +15,14 @@
 
 /* dev logo */
 
+.devLogoDiv{
+    height: auto;
+}
+
 .devLogo {
-    width: 15%;
+    position: absolute;
+    right: 0%;
+    width: 25%;
     height: auto !important;
 }
 

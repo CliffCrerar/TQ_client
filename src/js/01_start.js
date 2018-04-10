@@ -37,7 +37,7 @@ let correctDimension = function(vph, vpw, vphM) {
 correctDimension(vph, vpw, vphM);
 //console.log('VPH:', vph, 'VPW:', vpw);
 $(document).ready(() => {
-    $(window).resize(() => { correctDimension(window.vph, window.vpw); });
+    $('body').resize(() => { correctDimension(window.vph, window.vpw); });
     //Load badge sources into images from badge object
     var badge = require('./05_badges.js');
     $.each(badge, (name, link) => {

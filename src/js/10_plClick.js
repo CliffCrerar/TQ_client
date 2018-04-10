@@ -18,7 +18,7 @@ module.exports = {
                     $('#CS-' + partID).find('p.pDesc').html(window.partsData[partID].partDesc); // Assign part description
                     $('#CS-' + partID).find('p.pModels').html(window.partsData[partID].models.join(' | ')); // Assign models
                     $('#CS-' + partID).find('p.pGrnt').html(window.partsData[partID].grnt);
-                    $('#CS-' + partID).find('p.pFtime').html(window.partsData[partID].instTime);
+                    $('#CS-' + partID).find('p.pFtime').html(window.partsData[partID].newInstTime);
                     $('#CS-' + partID).find('img.partImg').attr('src', window.partsData[partID].imgLink).attr('id', 'img-' + partID); // Assign image link
                     $('#CS-' + partID).find('.quote').attr('id', 'Q-' + partID).attr('data-target', '#modal-' + partID);
                     $('#CS-' + partID).find('.fullView').attr('id', 'FV-' + partID).attr('data-target', '#modal-' + partID);

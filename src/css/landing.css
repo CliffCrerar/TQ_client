@@ -85,3 +85,12 @@ span.fa {
 .alert.success{
     background-color: rgba(0, 194, 0, 0.9)
 }
+
+.rateBtns>.active{
+    border: 3px solid black !important;
+}
+
+.bgFormCancel{
+    position: relative !important;
+    left: 0% !important;
+}

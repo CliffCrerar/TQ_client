@@ -107,6 +107,83 @@ $('#P-0').append(require('./html/adds.html'));
 /*  NAV BOTTOM  */
 $('body').append(require('./html/navBarBottom.html'));
 /*  */
+$('body').append(require('./html/bugForm.html'));
+
+
+/* BUG REPORTING */
+const URL = "http://34.242.179.249:8020/";
+// var URL = 'http://172.16.0.104:8020/';
+const sendBugReport = data => {
+    $.ajax({
+      url: URL,
+      method: 'POST',
+      origin: '*',
+      contentType: 'text/plain',
+      //headers: ({'Content-Type:','Access-Control-Allow-Origin':'*'}),
+      data: JSON.stringify(data),
+      dataType: 'text',
+      timout: 10000,
+      success: (response, status) => {
+        console.log(response);
+        console.log(status);
+      },
+      error: (err, xhr, third) => {
+        console.log(err);
+        console.log(xhr);
+        console.log(third);
+      }
+    });
+  };
+
+const showAlerts = require('./js/14_alerts');
+$('#bugBtn').on('click',()=>{
+    $('#bugForm').modal('show');
+    $('#rateBtns').on('click',(ev)=>{
+        console.log(ev.target);
+        console.log(ev.currentTarget);
+        $(ev.currentTarget).children().each((i,el)=>{
+            if($(el).hasClass('active')){
+                $(el).removeClass('active');
+            }
+            $(ev.target).addClass('active');
+        });
+    });
+    $('#sendBugReport').on('click',()=>{
+        let rating = '';
+        $('#rateBtns').children().each((i,el)=>{
+            console.log(el);
+            console.log($(el).hasClass('active'));
+            if($(el).hasClass('active')){
+                console.log($(el).html());
+                rating = $(el).html();
+            }
+            if(rating == ''){
+                rating = 'Not rated';
+            }
+        });
+        var bugReport={
+            email: $('#bugEmail').val(),
+            txt1: $('#txt1').val(),
+            txt2: $('#txt2').val(),
+            rating: rating,
+            type: 'bugReport'
+        };
+        console.log(bugReport);
+        sendBugReport(bugReport);
+        $('#bugForm').modal('hide');
+        showAlerts('#bugThanks');
+    });
+    $('#bugReportCancel').on('click',()=>{
+        $('#bugEmail').val(''),
+        $('#txt1').val(''),
+        $('#txt2').val(''),
+        $('#rateBtns').children().each((i,el)=>{
+            if($(el).hasClass('active')){
+                $(el).removeClass('active');
+            } 
+        });
+    });
+});
 
 /* LOAD LOADING SCREEN  */
 window.onload = () => {

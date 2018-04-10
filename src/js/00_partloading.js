@@ -31,6 +31,11 @@ module.exports = class {
                         console.log('Collapse was loaded');
                     }
                     //console.log($(ev.target).attr('data-target'));
+                    $('.colapseInd').each((i,el) => {
+                        if($(el).hasClass('fa-minus')){
+                            $(el).removeClass('fa-minus').addClass('fa-plus');
+                        }
+                    });
                     var collapseTarget = $(ev.currentTarget).attr('data-target');
                     //console.log($(collapseTarget).hasClass('show'));
                     if($(collapseTarget).hasClass('show')){
