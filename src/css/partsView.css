@@ -40,10 +40,11 @@
     border-radius: 0 !important;
 }
 
-.partListing{
+.partListing {
     position: relative !important;
     z-index: 500 !important;
 }
+
 
 /* --PART COLLAPSING LOADING OVERLAY--*/
 
@@ -135,6 +136,7 @@
     width: 100%;
 }
 
+
 /* Right section */
 
 .sideAddsCont {
@@ -170,20 +172,24 @@
 }
 
 @media screen and (max-width:414px) {
-    .partsView{
+    .partsView {
         height: 100%;
     }
 }
 
-.sideAdd{
+.sideAdd {
     margin-bottom: 1vh;
 }
 
-.btnComingSoom{
+.btnComingSoom {
     height: 25px;
 }
 
-.modal-dialog{
+.modal-dialog {
     position: relative !important;
     z-index: 6000 !important;
+}
+
+.addAnchor {
+    width: 100%;
 }
