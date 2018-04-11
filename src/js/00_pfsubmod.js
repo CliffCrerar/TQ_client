@@ -6,6 +6,7 @@ module.exports = function() {
     $('#filterDropDownM').remove();
     $('#partsViewContainer').css('display', 'none');
     $('#partsViewContainerM').css('display', 'none');
+    //$('.tqLogoDiv').fadeOut();
     //$('#partsViewFP').css('display', 'none');
 };
 

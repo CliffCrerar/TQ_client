@@ -102,6 +102,15 @@
     -webkit-overflow-scrolling: touch;
 }
 
+.contactDetails{
+    color: white;
+    height: 30%;
+}
+
+.contactDetail{
+    width: 50%;
+    font-size: 20px;
+}
 
 /*
 .testimonial {
@@ -204,5 +213,14 @@
     .fbTypeSelect {
         color: white;
         font-family: orbitron;
+    }
+    .contactDetails{
+        color: white;
+        
+    }
+    
+    .contactDetail{
+        width: 100%;
+        font-size: 20px;
     }
 }
