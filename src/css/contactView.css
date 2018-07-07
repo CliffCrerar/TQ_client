@@ -1,0 +1,226 @@
+.contactView {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.contactViewHeading {
+    font-size: 30px;
+    font-family: orbitron;
+    color: white;
+    margin-left: 1%;
+}
+
+
+/* dev logo */
+
+.devLogoDiv {
+    /* for discretion */
+    display: 'none' important;
+    height: auto;
+}
+
+.devLogo {
+    /* for discretion */
+    display: 'none' !important;
+    position: absolute;
+    right: 0%;
+    width: 25%;
+    height: auto !important;
+}
+
+
+/* MOBILE VIEW */
+
+.divline1 {
+    border: 0.5px solid white;
+    margin: 0 1% 0.5% 1%;
+}
+
+.divline2 {
+    border: 0.5px solid white;
+    margin: 5px 5px 5px 5px;
+}
+
+.aboutContainer {
+    height: 89%;
+}
+
+.aboutContainer2 {
+    height: 100%;
+}
+
+.aboutTheOwner {
+    height: 100%;
+}
+
+.ownerHeading {
+    color: white;
+    font-family: black Ops one;
+}
+
+.tqH3 {
+    color: white;
+    font-family: orbitron;
+}
+
+.cardOwnerDesc {
+    height: 25%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.aboutMore {
+    height: 100%;
+}
+
+.moreInfoAboutM {
+    display: none;
+    color: white;
+    font-family: Black Ops One;
+}
+
+.theBusiness {
+    /* height: 33%; <add for testimonials>*/
+    height: 50%;
+    overflow: hidden;
+}
+
+.theBussHeadings {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.scrSpyCard {
+    height: 100%;
+}
+
+.itemsAboutTheBusiness {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.contactDetails{
+    color: white;
+    height: 30%;
+}
+
+.contactDetail{
+    width: 50%;
+    font-size: 20px;
+}
+
+/*
+.testimonial {
+    height: 30%;
+}
+
+.testimonialContainer {
+    height: 100%;
+    overflow: hidden;
+}
+
+.testimonials {
+    overflow: scroll;
+}
+
+.testimonialHeading {
+    overflow: scroll;
+}
+*/
+
+.feedback {
+    /* height: 33%; <add for testimonials>*/
+    height: 40%;
+    overflow-wrap: break-word
+}
+
+.feedbackTitle {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.formFeedback {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tqSocial {
+    font-family: orbitron;
+    color: white;
+}
+
+.text-social {
+    color: white !important;
+    height: 100%;
+    font-size: 2.5vh !important;
+}
+
+.text-social:hover {
+    color: #076BFF !important;
+}
+
+@media screen and (max-width:414px) {
+    .contactView {
+        height: 100%;
+        position: relative;
+    }
+    .contactViewHeadingM {
+        position: relative;
+        font-family: orbitron;
+        color: white;
+        margin-left: 1%;
+    }
+    .cardOwnerDescM {
+        margin: 0 1% 0 1%;
+        height: 100%;
+    }
+    .feedbackTitleM {
+        color: white;
+        font-family: orbitron;
+        margin-top: 2%;
+    }
+    .formFeedbackM {
+        margin: 0 4% 0 4%;
+    }
+    .feedbacktype {
+        margin-bottom: 1rem;
+    }
+    .text-social-m {
+        color: white !important;
+        height: 100%;
+        font-size: 5vh !important;
+    }
+    .text-social-m:hover {
+        color: #076BFF !important;
+    }
+    .iaLogoDiv {
+        /* for discretion display: 'block';*/
+        display: 'none' !important;
+        position: relative;
+        height: 100%;
+    }
+    .devLogoM {
+        /* for discretion display: 'block';*/
+        display: 'none' !important;
+        width: 50% !important;
+        height: auto !important;
+    }
+    .fbTypeSelect {
+        color: white;
+        font-family: orbitron;
+    }
+    .contactDetails{
+        color: white;
+        
+    }
+    
+    .contactDetail{
+        width: 100%;
+        font-size: 20px;
+    }
+}

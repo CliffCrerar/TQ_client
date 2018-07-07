@@ -1,0 +1,74 @@
+#addsRailID {
+    /*background-color: yellow;*/
+    border-radius: 24px;
+    height: 29%;
+    margin-top: 1%;
+    min-width: 100%;
+    overflow: hidden;
+}
+
+.addsRail {
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+}
+
+.subRail {
+    /*background-color: aquamarine;*/
+    border-radius: 24px;
+    height: 100%;
+    width: 50%;
+    z-index: 0;
+}
+
+.addContainer {
+    border: 0px transparent;
+    padding: 0px !important;
+}
+
+.addFade {
+    /*background-color: grey;*/
+    overflow: hidden;
+}
+
+.add {
+    background-color: black;
+    width: auto;
+    height: 100%;
+}
+
+.addImg {
+    height: 100% !important;
+    width: auto !important;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.addTitle {
+    background-color: rgba(52, 58, 64, 0.7);
+    color: white;
+    font-family: Orbitron;
+    font-size: calc(20px + 0.5vh);
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    text-decoration-line: none !important;
+    text-decoration-color: none !important;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+}
+
+.addTitle:hover {
+    background-color: #F10032 !important;
+    opacity: 1;
+}
+
+.imgCS{
+    position: absolute;
+    z-index: 10000;
+    top:50%;
+    transform: translateY(-50%);
+}

@@ -1,0 +1,58 @@
+.partsView {
+    position: absolute;
+    display: none;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0px;
+}
+
+@media screen and (max-width: 414px) {
+    .partsView {
+        max-width: 100%;
+    }
+    .badgeBtnCont {
+        max-width: 100%;
+    }
+}
+
+.badgeBtnCont {
+    position: absolute;
+    color: white;
+    max-width: 98%;
+}
+
+.badgeBtnCont>h1 {
+    font-family: Orbitron;
+    text-shadow: -5px 0 2px black, 0 5px 2px black, 5px 0 5px black, 0 -5px 2px black;
+    margin: 0px 2% 3% 2%;
+}
+
+@media screen and (max-width: 414px) {
+    .badgeBtnCont>h1 {
+        font-size: 100%;
+    }
+}
+
+.btnCol {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vh 0px 2vh 0px !important;
+}
+
+.badgeBtn {
+    background-color: transparent;
+    border: 0px transparent;
+    height: 100%;
+    transition: all .2s ease-in-out;
+}
+
+.badgeBtn:hover {
+    transform: scale(1.2)
+}
+
+.badgeImg {
+    border-radius: 5px;
+    height: 100%;
+}

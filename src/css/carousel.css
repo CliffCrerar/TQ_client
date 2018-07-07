@@ -1,0 +1,40 @@
+.lpCarousel {
+    height: 69%;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slick-track {
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.slickCarousel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100% !important;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.slickSlide>img {
+    height: 100% !important;
+    width: auto;
+}
+
+.moto {
+    background-color: #343a40;
+    opacity: 0.9;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 100%;
+}
+
+.moto>h2 {
+    color: white;
+}

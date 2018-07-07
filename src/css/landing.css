@@ -1,0 +1,123 @@
+/* Framework css*/
+
+body {
+    background-color: rgba(128, 128, 128, 0.589);
+    width: 100%;
+    padding-top: 1%;
+}
+
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../image/preLoader_3.gif') center no-repeat #fff;
+}
+
+span.fa {
+    border: 2px solid transparent
+}
+
+
+/*--------------------------*/
+
+
+/*Adjusting some bootstrap css*/
+
+.container {
+    padding: 0px !important;
+}
+
+.row {
+    margin: 0px !important;
+}
+
+
+/*--------------------------*/
+
+
+/* MAIN DISPLAY SECTION */
+
+.pageCont {
+    position: relative;
+    width: 100%;
+    min-height: 80%;
+    margin-top: 1%;
+}
+
+@media screen and (max-width: 414px) {
+    /*.pageCont {
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+    }*/
+    .container-fluid {
+        padding: 0px !important;
+    }
+}
+
+.lp {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+
+/*--------------------------*/
+
+
+/* Alerts */
+
+.alert {
+    display: none;
+    position: absolute;
+    color: white;
+    border-radius: 0px !important;
+    z-index: 7000 !important;
+}
+
+.alert.error {
+    background-color: rgba(218, 0, 0, 0.9)
+}
+
+.alert.success {
+    background-color: rgba(0, 194, 0, 0.9)
+}
+
+.rateBtns>.active {
+    border: 3px solid black !important;
+}
+
+.bgFormCancel {
+    position: relative !important;
+    left: 0% !important;
+}
+
+
+/* TQ Logo */
+
+.tqLogoDiv {
+    height: 80vh;
+    margin: 15vw;
+    border-radius: 30px !important;
+    background: linear-gradient(to bottom right, #ffffff 0%, #666699 51%);
+}
+
+.tqTitleLogoImg {
+    position: relative;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mobileTitle {
+    font-family: black ops one;
+}
+
+.tqLogoImg {
+    position: relative;
+    width: 100%;
+}

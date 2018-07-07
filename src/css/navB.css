@@ -1,0 +1,67 @@
+#navBottom {
+    border-radius: 24px !important;
+    min-width: 100%;
+    height: 10%;
+    margin-top: 1%;
+}
+
+@media screen and (max-width: 414px) {
+    #navBottom {
+        border-radius: 0px !important;
+    }
+    .aboutDev {
+        font-size: 3vw !important;
+    }
+    .devLogo {
+        height: 15vw !important;
+    }
+}
+
+.versionDiv {
+    width: 15%;
+    color: white;
+    font-family: orbitron;
+}
+
+.versionDiv>p {
+    margin: 0px;
+    font-size: 10px;
+}
+
+.makes {
+    width: 70%;
+}
+
+.reportBugDiv {
+    width: 15%;
+}
+
+.navBadge {
+    margin-right: 2%;
+    display: inline-flex;
+    height: 2.5vh;
+}
+
+
+/* CSS for devlogo */
+
+.devLogoCont {
+    height: 100%;
+    width: 100%;
+}
+
+.aboutDev {
+    position: relative;
+    color: white;
+    font-family: orbitron;
+    margin: auto !important;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.devLogo {
+    position: relative;
+    height: 4.5vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
