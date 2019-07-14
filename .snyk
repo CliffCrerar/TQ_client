@@ -1,0 +1,72 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:extend:20180424':
+    - npm > request > extend:
+        patched: '2019-07-14T00:46:33.376Z'
+    - npm > npm-registry-client > request > extend:
+        patched: '2019-07-14T00:46:33.376Z'
+    - npm > npm-lifecycle > node-gyp > request > extend:
+        patched: '2019-07-14T00:46:33.376Z'
+    - npm > libcipm > npm-lifecycle > node-gyp > request > extend:
+        patched: '2019-07-14T00:46:33.376Z'
+    - update > assemble-core > assemble-fs > vinyl-fs > glob-stream > extend:
+        patched: '2019-07-14T00:46:33.376Z'
+  'npm:hoek:20180212':
+    - npm > request > hawk > hoek:
+        patched: '2019-07-14T00:46:33.376Z'
+    - npm > request > hawk > boom > hoek:
+        patched: '2019-07-14T00:46:33.376Z'
+    - npm > npm-registry-client > request > hawk > hoek:
+        patched: '2019-07-14T00:46:33.376Z'
+    - npm > request > hawk > sntp > hoek:
+        patched: '2019-07-14T00:46:33.376Z'
+    - npm > npm-lifecycle > node-gyp > request > hawk > hoek:
+        patched: '2019-07-14T00:46:33.376Z'
+    - npm > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-07-14T00:46:33.376Z'
+    - npm > npm-registry-client > request > hawk > boom > hoek:
+        patched: '2019-07-14T00:46:33.376Z'
+    - npm > npm-registry-client > request > hawk > sntp > hoek:
+        patched: '2019-07-14T00:46:33.376Z'
+    - npm > npm-lifecycle > node-gyp > request > hawk > sntp > hoek:
+        patched: '2019-07-14T00:46:33.376Z'
+    - npm > npm-registry-client > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-07-14T00:46:33.376Z'
+    - npm > libcipm > npm-lifecycle > node-gyp > request > hawk > hoek:
+        patched: '2019-07-14T00:46:33.376Z'
+    - npm > npm-lifecycle > node-gyp > request > hawk > boom > hoek:
+        patched: '2019-07-14T00:46:33.376Z'
+    - npm > libcipm > npm-lifecycle > node-gyp > request > hawk > boom > hoek:
+        patched: '2019-07-14T00:46:33.376Z'
+    - npm > npm-lifecycle > node-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-07-14T00:46:33.376Z'
+    - npm > libcipm > npm-lifecycle > node-gyp > request > hawk > sntp > hoek:
+        patched: '2019-07-14T00:46:33.376Z'
+    - npm > libcipm > npm-lifecycle > node-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-07-14T00:46:33.376Z'
+  'npm:lodash:20180130':
+    - npm > cli-table2 > lodash:
+        patched: '2019-07-14T00:46:33.376Z'
+  'npm:mime:20170907':
+    - node.js > express > send > mime:
+        patched: '2019-07-14T00:46:33.376Z'
+    - node.js > express > connect > send > mime:
+        patched: '2019-07-14T00:46:33.376Z'
+  'npm:negotiator:20160616':
+    - node.js > express > connect > negotiator:
+        patched: '2019-07-14T00:46:33.376Z'
+  'npm:qs:20140806-1':
+    - node.js > express > connect > qs:
+        patched: '2019-07-14T00:46:33.376Z'
+  'npm:stringstream:20180511':
+    - npm > request > stringstream:
+        patched: '2019-07-14T00:46:33.376Z'
+    - npm > npm-registry-client > request > stringstream:
+        patched: '2019-07-14T00:46:33.376Z'
+    - npm > npm-lifecycle > node-gyp > request > stringstream:
+        patched: '2019-07-14T00:46:33.376Z'
+    - npm > libcipm > npm-lifecycle > node-gyp > request > stringstream:
+        patched: '2019-07-14T00:46:33.376Z'
